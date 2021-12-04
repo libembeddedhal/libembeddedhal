@@ -1,4 +1,0 @@
-<map id="embed::interrupt_pin" name="embed::interrupt_pin">
-<area shape="rect" id="node1" title="Digital interrupt pin hardware abstraction. Use this to trigger an interrupt service routine (ISR) wh..." alt="" coords="15,95,153,121"/>
-<area shape="rect" id="node2" href="$classembed_1_1driver.html" title=" " alt="" coords="5,5,163,47"/>
-</map>

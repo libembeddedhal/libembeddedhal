@@ -1,4 +1,0 @@
-<map id="embed::output_pin" name="embed::output_pin">
-<area shape="rect" id="node1" title="Digital output pin hardware abstraction. Use this to drive a pin HIGH or LOW in order to send a contr..." alt="" coords="15,95,142,121"/>
-<area shape="rect" id="node2" href="$classembed_1_1driver.html" title=" " alt="" coords="5,5,152,47"/>
-</map>

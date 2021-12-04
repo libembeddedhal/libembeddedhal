@@ -1,4 +1,0 @@
-<map id="embed::input_pin" name="embed::input_pin">
-<area shape="rect" id="node1" title="Digital input pin hardware abstraction. Use this to read a pin and determine if the voltage on it is ..." alt="" coords="15,95,134,121"/>
-<area shape="rect" id="node2" href="$classembed_1_1driver.html" title=" " alt="" coords="5,5,144,47"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classembed_1_1driver.html" title="The basis class for all peripheral, device and system drivers in libembeddedhal." alt="" coords="5,132,184,159"/>
-<area shape="rect" id="node2" href="$classembed_1_1adc.html" title="Analog to Digital Converter (ADC) hardware abstraction interface. Use this interface for devices and ..." alt="" coords="259,5,347,32"/>
-<area shape="rect" id="node3" href="$classembed_1_1can__network.html" title="can_network is a canbus message receiver handler and" alt="" coords="232,56,373,83"/>
-<area shape="rect" id="node4" href="$classembed_1_1counter.html" title="Counter hardware abstraction interface. Use this interface for devices and peripherals that have coun..." alt="" coords="247,107,358,133"/>
-<area shape="rect" id="node5" href="$classembed_1_1dac.html" title="Digital to Analog Converter (DAC) hardware abstraction interface. Use this interface for devices and ..." alt="" coords="259,157,347,184"/>
-<area shape="rect" id="node6" href="$classembed_1_1pwm.html" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="255,208,350,235"/>
-<area shape="rect" id="node7" href="$classembed_1_1timer.html" title="Timer hardware abstraction interface. Use this interface for devices and peripherals that have timer ..." alt="" coords="255,259,351,285"/>
-</map>

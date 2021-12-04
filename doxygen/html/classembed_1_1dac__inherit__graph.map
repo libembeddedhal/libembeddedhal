@@ -1,4 +1,0 @@
-<map id="embed::dac" name="embed::dac">
-<area shape="rect" id="node1" title="Digital to Analog Converter (DAC) hardware abstraction interface. Use this interface for devices and ..." alt="" coords="51,80,139,107"/>
-<area shape="rect" id="node2" href="$classembed_1_1driver.html" title="The basis class for all peripheral, device and system drivers in libembeddedhal." alt="" coords="5,5,184,32"/>
-</map>
