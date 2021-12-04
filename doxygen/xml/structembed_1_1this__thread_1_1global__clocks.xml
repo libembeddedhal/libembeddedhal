@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structembed_1_1this__thread_1_1global__clocks" kind="struct" language="C++" prot="public">
+    <compoundname>embed::this_thread::global_clocks</compoundname>
+    <includes refid="clock_8hpp" local="no">clock.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" prot="public" static="yes" mutable="no">
+        <type>auto</type>
+        <definition>auto embed::this_thread::global_clocks::m_incremental_uptime</definition>
+        <argsstring></argsstring>
+        <name>m_incremental_uptime</name>
+        <initializer>= []() -&gt; <ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref> {
+    using namespace std::chrono_literals;
+    static <ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref> count{ 0 };
+    count += 100ns;
+    return count;
+  }</initializer>
+        <briefdescription>
+<para>Default uptime timer that simply counts each time it is called. This should almost never be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp" line="35" column="22" bodyfile="/github/workspace/include/libembeddedhal/clock/clock.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" prot="public" static="yes" mutable="no">
+        <type>auto</type>
+        <definition>auto embed::this_thread::global_clocks::m_loop_delay</definition>
+        <argsstring></argsstring>
+        <name>m_loop_delay</name>
+        <initializer>= [](<ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref> loop_count) {
+    <ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref> count{ 0 };
+    while (count &lt; loop_count) {
+      count += std::chrono::microseconds{ 100 };
+    }
+  }</initializer>
+        <briefdescription>
+<para>Default sleep function that simply counts until it reaches a designated number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp" line="46" column="22" bodyfile="/github/workspace/include/libembeddedhal/clock/clock.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref></type>
+        <definition>sleep_function embed::this_thread::global_clocks::m_global_sleep</definition>
+        <argsstring></argsstring>
+        <name>m_global_sleep</name>
+        <initializer>= <ref refid="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" kindref="member">m_loop_delay</ref></initializer>
+        <briefdescription>
+<para>Store the global sleep function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp" line="56" column="32" bodyfile="/github/workspace/include/libembeddedhal/clock/clock.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref></type>
+        <definition>uptime_function embed::this_thread::global_clocks::m_global_uptime</definition>
+        <argsstring></argsstring>
+        <name>m_global_uptime</name>
+        <initializer>= <ref refid="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" kindref="member">m_incremental_uptime</ref></initializer>
+        <briefdescription>
+<para>Store the global uptime function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp" line="61" column="33" bodyfile="/github/workspace/include/libembeddedhal/clock/clock.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>internal clock </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp" line="27" column="1" bodyfile="/github/workspace/include/libembeddedhal/clock/clock.hpp" bodystart="28" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" prot="public" virt="non-virtual"><scope>embed::this_thread::global_clocks</scope><name>m_global_sleep</name></member>
+      <member refid="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" prot="public" virt="non-virtual"><scope>embed::this_thread::global_clocks</scope><name>m_global_uptime</name></member>
+      <member refid="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" prot="public" virt="non-virtual"><scope>embed::this_thread::global_clocks</scope><name>m_incremental_uptime</name></member>
+      <member refid="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" prot="public" virt="non-virtual"><scope>embed::this_thread::global_clocks</scope><name>m_loop_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

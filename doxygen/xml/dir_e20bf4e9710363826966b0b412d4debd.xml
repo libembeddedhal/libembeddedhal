@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e20bf4e9710363826966b0b412d4debd" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal/can</compoundname>
+    <innerfile refid="can_8hpp">can.hpp</innerfile>
+    <innerfile refid="can__network_8hpp">can_network.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/can/"/>
+  </compounddef>
+</doxygen>

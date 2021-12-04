@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1static__memory__resource" kind="class" language="C++" prot="public">
+    <compoundname>embed::static_memory_resource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::pmr::memory_resource</basecompoundref>
+    <includes refid="static__memory__resource_8hpp" local="no">static_memory_resource.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>BufferSize</declname>
+        <defname>BufferSize</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1static__memory__resource_1a0417eb1ad34a0e5dd98ce46d75b9a6b1" prot="private" static="no" mutable="no">
+        <type>std::array&lt; std::byte, BufferSize &gt;</type>
+        <definition>std::array&lt;std::byte, BufferSize&gt; embed::static_memory_resource&lt; BufferSize &gt;::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="110" column="14" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1static__memory__resource_1a0aebc672f89c65f54b8716b614f842ea" prot="private" static="no" mutable="no">
+        <type>std::byte *</type>
+        <definition>std::byte* embed::static_memory_resource&lt; BufferSize &gt;::m_unallocated_memory</definition>
+        <argsstring></argsstring>
+        <name>m_unallocated_memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="111" column="13" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1static__memory__resource_1a005531515c71f538be2c0854abea0c25" prot="private" static="no" mutable="no">
+        <type>std::pmr::monotonic_buffer_resource</type>
+        <definition>std::pmr::monotonic_buffer_resource embed::static_memory_resource&lt; BufferSize &gt;::m_resource</definition>
+        <argsstring></argsstring>
+        <name>m_resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="112" column="39" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1accc5d3c63b39f659edf8fc3cd068f6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::static_memory_resource&lt; BufferSize &gt;::static_memory_resource</definition>
+        <argsstring>()</argsstring>
+        <name>static_memory_resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="34" column="3" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1a8f950ea93be16b35e1930543313c3025" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t embed::static_memory_resource&lt; BufferSize &gt;::capacity</definition>
+        <argsstring>() noexcept const</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr std::size_t - the total number of bytes that this allocator can allocate before throwing a std::bad_alloc exception. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="45" column="25" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1a8a2645e3abfaaa0d8e7c53b8ebe1dceb" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t embed::static_memory_resource&lt; BufferSize &gt;::memory_used</definition>
+        <argsstring>() noexcept const</argsstring>
+        <name>memory_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::size_t number of bytes that have already been allocated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="49" column="15" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1aa14999eb854014176cded0f4bc406a4c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int embed::static_memory_resource&lt; BufferSize &gt;::memory_available</definition>
+        <argsstring>() noexcept const</argsstring>
+        <name>memory_available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Bytes that have yet to be allocated from this allocator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="56" column="7" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1aa8338b0fd0c40352b002a8bf6ce37000" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* embed::static_memory_resource&lt; BufferSize &gt;::do_allocate</definition>
+        <argsstring>(std::size_t bytes, std::size_t alignment) override</argsstring>
+        <name>do_allocate</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Implemenation of the <ref refid="classembed_1_1static__memory__resource_1aa8338b0fd0c40352b002a8bf6ce37000" kindref="member">do_allocate()</ref> method for std::pmr::memory_resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to allocate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alignment limit for the allocation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* address of the newly allocated buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="67" column="8" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1a95886425ea5d45ec20ecf5f5468ffd72" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::static_memory_resource&lt; BufferSize &gt;::do_deallocate</definition>
+        <argsstring>(void *address, std::size_t bytes, std::size_t alignment) override</argsstring>
+        <name>do_deallocate</name>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Implemenation of the <ref refid="classembed_1_1static__memory__resource_1a95886425ea5d45ec20ecf5f5468ffd72" kindref="member">do_deallocate()</ref> method for std::pmr::memory_resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of space to be deallocated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to allocate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alignment limit for the allocation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="89" column="8" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__memory__resource_1a730601f3a9b7aaa3265ce7421e599291" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool embed::static_memory_resource&lt; BufferSize &gt;::do_is_equal</definition>
+        <argsstring>(const std::pmr::memory_resource &amp;other) const noexcept override</argsstring>
+        <name>do_is_equal</name>
+        <param>
+          <type>const std::pmr::memory_resource &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Implemenation of the <ref refid="classembed_1_1static__memory__resource_1a730601f3a9b7aaa3265ce7421e599291" kindref="member">do_is_equal()</ref> method for std::pmr::memory_resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another memory resource to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true are equal </para>
+</simplesect>
+<simplesect kind="return"><para>false are not equal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="103" column="8" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classembed_1_1static__memory__resource" kindref="compound">static_memory_resource</ref> is the polymorphic memory resource allocator that allows libembeddedhal&apos;s libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc excpetion is thrown. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>USAGE:</para>
+<para>// Make a memory resource with 1kB buffer static_memory_resource&lt;1024&gt; memory_resource; std::pmr::unordered_map&lt;int, const char*&gt; id_name_map(&amp;memory_resource);</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to statically allocate for the memory resource. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::pmr::memory_resource</label>
+      </node>
+      <node id="1">
+        <label>embed::static_memory_resource&lt; BufferSize &gt;</label>
+        <link refid="classembed_1_1static__memory__resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::pmr::memory_resource</label>
+      </node>
+      <node id="1">
+        <label>embed::static_memory_resource&lt; BufferSize &gt;</label>
+        <link refid="classembed_1_1static__memory__resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" line="31" column="1" bodyfile="/github/workspace/include/libembeddedhal/static_memory_resource.hpp" bodystart="32" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classembed_1_1static__memory__resource_1a8f950ea93be16b35e1930543313c3025" prot="public" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>capacity</name></member>
+      <member refid="classembed_1_1static__memory__resource_1aa8338b0fd0c40352b002a8bf6ce37000" prot="protected" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>do_allocate</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a95886425ea5d45ec20ecf5f5468ffd72" prot="protected" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>do_deallocate</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a730601f3a9b7aaa3265ce7421e599291" prot="protected" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>do_is_equal</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a0417eb1ad34a0e5dd98ce46d75b9a6b1" prot="private" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>m_buffer</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a005531515c71f538be2c0854abea0c25" prot="private" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>m_resource</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a0aebc672f89c65f54b8716b614f842ea" prot="private" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>m_unallocated_memory</name></member>
+      <member refid="classembed_1_1static__memory__resource_1aa14999eb854014176cded0f4bc406a4c" prot="public" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>memory_available</name></member>
+      <member refid="classembed_1_1static__memory__resource_1a8a2645e3abfaaa0d8e7c53b8ebe1dceb" prot="public" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>memory_used</name></member>
+      <member refid="classembed_1_1static__memory__resource_1accc5d3c63b39f659edf8fc3cd068f6a8" prot="public" virt="non-virtual"><scope>embed::static_memory_resource</scope><name>static_memory_resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

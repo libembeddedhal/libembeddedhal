@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1spi" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>embed::spi</compoundname>
+    <basecompoundref refid="classembed_1_1driver" prot="public" virt="non-virtual">embed::driver&lt; spi_settings &gt;</basecompoundref>
+    <includes refid="spi_8hpp" local="no">spi.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1spi_1ac83140dcde0da4897c7ad766bd79ab8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool embed::spi::busy</definition>
+        <argsstring>()=0</argsstring>
+        <name>busy</name>
+        <briefdescription>
+<para>Determines if a transfer is currently ongoing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true transfer is currently ongoing </para>
+</simplesect>
+<simplesect kind="return"><para>false device is idle and available for a transaction </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/spi/spi.hpp" line="48" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1spi_1af1f14f47277f4a13c6447c7d07c16997" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::spi::transfer</definition>
+        <argsstring>(std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_write_value=std::byte{ 0xFF })=0</argsstring>
+        <name>transfer</name>
+        <param>
+          <type>std::span&lt; const std::byte &gt;</type>
+          <declname>p_data_out</declname>
+        </param>
+        <param>
+          <type>std::span&lt; std::byte &gt;</type>
+          <declname>p_data_in</declname>
+        </param>
+        <param>
+          <type>std::byte</type>
+          <declname>p_write_value</declname>
+          <defval>std::byte{ 0xFF }</defval>
+        </param>
+        <briefdescription>
+<para>Send and receieve bytes from the spi bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to write data to the bus. If this is set to null/empty then writing is ignored and the p_write_value will be written to the bus. If the length is less than p_data_in, then p_write_value will be written to the bus after this buffer has been sent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to read the data off of the bus. If this is null/empty, then the transfer will be write only and the incoming data will be ignored. If the length of this buffer is less than p_data_out, once this buffer has been filled, the rest of the received bytes on the bus will be dropped. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_write_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filler data to be placed on the bus when the p_data_out buffer has been exhausted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/spi/spi.hpp" line="64" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Serial peripheral interface (SPI) communication protocol hardware abstract interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>embed::spi</label>
+        <link refid="classembed_1_1spi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::driver&lt; spi_settings &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>embed::spi</label>
+        <link refid="classembed_1_1spi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::driver&lt; spi_settings &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/spi/spi.hpp" line="39" column="1" bodyfile="/github/workspace/include/libembeddedhal/spi/spi.hpp" bodystart="40" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classembed_1_1spi_1ac83140dcde0da4897c7ad766bd79ab8c" prot="public" virt="pure-virtual"><scope>embed::spi</scope><name>busy</name></member>
+      <member refid="classembed_1_1driver_1a1677362481d10c3b48544359daadf081" prot="protected" virt="pure-virtual"><scope>embed::spi</scope><name>driver_initialize</name></member>
+      <member refid="classembed_1_1driver_1a947a3487fa3acd0879e83872d9c97b01" prot="public" virt="non-virtual"><scope>embed::spi</scope><name>initialize</name></member>
+      <member refid="classembed_1_1driver_1a7e13fe8999142475da8c5b84927f03aa" prot="public" virt="non-virtual"><scope>embed::spi</scope><name>initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1a346f472e8c212d09c8f45aebd0089d7b" prot="public" virt="non-virtual"><scope>embed::spi</scope><name>is_initialized</name></member>
+      <member refid="classembed_1_1driver_1ab8b2029f33d55b9ffffd6e88d846cd7b" prot="protected" virt="non-virtual"><scope>embed::spi</scope><name>m_initialized</name></member>
+      <member refid="classembed_1_1driver_1aac7d23e384bc27a26b77c8fd681483ef" prot="protected" virt="non-virtual"><scope>embed::spi</scope><name>m_initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1afb925433a5897293609af5fae29e3dc3" prot="protected" virt="non-virtual"><scope>embed::spi</scope><name>m_settings</name></member>
+      <member refid="classembed_1_1driver_1a54440bf23c0c34102f563da1193d99ae" prot="public" virt="non-virtual"><scope>embed::spi</scope><name>reset</name></member>
+      <member refid="classembed_1_1driver_1ae6eb991ebb2321bb3565c2a03a613219" prot="public" virt="non-virtual"><scope>embed::spi</scope><name>settings</name></member>
+      <member refid="classembed_1_1spi_1af1f14f47277f4a13c6447c7d07c16997" prot="public" virt="pure-virtual"><scope>embed::spi</scope><name>transfer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

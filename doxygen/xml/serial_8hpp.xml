@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="serial_8hpp" kind="file" language="C++">
+    <compoundname>serial.hpp</compoundname>
+    <includes refid="driver_8hpp" local="yes">../driver.hpp</includes>
+    <includes local="no">cinttypes</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">span</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>../driver.hpp</label>
+        <link refid="driver_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cinttypes</label>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>enum.hpp</label>
+        <link refid="enum_8hpp"/>
+      </node>
+      <node id="4">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>span</label>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/libembeddedhal/serial/serial.hpp</label>
+        <link refid="serial_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structembed_1_1serial__settings" prot="public">embed::serial_settings</innerclass>
+    <innerclass refid="classembed_1_1serial" prot="public">embed::serial</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../driver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cinttypes&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceembed" kindref="compound">embed</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="structembed_1_1serial__settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1serial__settings" kindref="compound">serial_settings</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5" kindref="member">stop_bits</ref><sp/>:<sp/>uint8_t</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5af97c5d29941bfb1b2fdab0874906ab82" kindref="member">one</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5ab8a9f715dbb64fd5c56e7783c6820a61" kindref="member">two</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72" kindref="member">parity</ref><sp/>:<sp/>uint8_t</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">none</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72aa2b6f2a6066ed8700d83335fc50a2b8e" kindref="member">odd</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72acc935c5faf4c8f7a0468d7552a9b8138" kindref="member">even</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72ab84b8cf8e4af79a2a4bee99694be7f33" kindref="member">forced1</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72a60f2dab25d32fc2bce590dc511a72dae" kindref="member">forced0</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structembed_1_1serial__settings_1abebb5ef90d047b3704a4ce34371b4652" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structembed_1_1serial__settings_1abebb5ef90d047b3704a4ce34371b4652" kindref="member">baud_rate</ref><sp/>=<sp/>115200;</highlight></codeline>
+<codeline lineno="68" refid="structembed_1_1serial__settings_1af205e75751848f04250f1e40c1b0491e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72" kindref="member">parity</ref><sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72" kindref="member">parity</ref><sp/>=<sp/><ref refid="structembed_1_1serial__settings_1ac2988aa8b684a4914287f6fb5a0cef72a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">parity::none</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structembed_1_1serial__settings_1af7ae21b1c9f40b97d0afb4b1aa9c79dc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5" kindref="member">stop_bits</ref><sp/><ref refid="structembed_1_1serial__settings_1af7ae21b1c9f40b97d0afb4b1aa9c79dc" kindref="member">stop</ref><sp/>=<sp/><ref refid="structembed_1_1serial__settings_1aa3b190afd1618bb8653d70614f343ba5af97c5d29941bfb1b2fdab0874906ab82" kindref="member">stop_bits::one</ref>;</highlight></codeline>
+<codeline lineno="78" refid="structembed_1_1serial__settings_1aabc9abaf417d460ec28d0aaf893dc7cd" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="structembed_1_1serial__settings_1aabc9abaf417d460ec28d0aaf893dc7cd" kindref="member">frame_size</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classembed_1_1serial" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classembed_1_1serial" kindref="compound">serial</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1driver" kindref="compound">driver</ref>&lt;serial_settings&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="119" refid="classembed_1_1serial_1a2632150facd5b70f49dedea7108679d6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1serial_1a2632150facd5b70f49dedea7108679d6" kindref="member">write</ref>(std::span&lt;const<sp/>std::byte&gt;<sp/>p_data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="126" refid="classembed_1_1serial_1acaa9db822945c72a220f2ca7c4c03ab9" refkind="member"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1serial_1acaa9db822945c72a220f2ca7c4c03ab9" kindref="member">busy</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="136" refid="classembed_1_1serial_1a01006e49540c953a3bbc7bdfcb9d05c6" refkind="member"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1serial_1a01006e49540c953a3bbc7bdfcb9d05c6" kindref="member">bytes_available</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="151" refid="classembed_1_1serial_1aff1745f3944aaaf9d467257db7a8282a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::span&lt;const<sp/>std::byte&gt;<sp/><ref refid="classembed_1_1serial_1aff1745f3944aaaf9d467257db7a8282a" kindref="member">read</ref>(std::span&lt;std::byte&gt;<sp/>p_data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="158" refid="classembed_1_1serial_1a241d49eb37b52bd1eadd830af0595319" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1serial_1a241d49eb37b52bd1eadd830af0595319" kindref="member">flush</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libembeddedhal/serial/serial.hpp"/>
+  </compounddef>
+</doxygen>

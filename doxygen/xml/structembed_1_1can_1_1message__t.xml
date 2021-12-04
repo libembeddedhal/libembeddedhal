@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structembed_1_1can_1_1message__t" kind="struct" language="C++" prot="public">
+    <compoundname>embed::can::message_t</compoundname>
+    <includes refid="can_8hpp" local="no">can.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1can_1_1message__t_1a15354cd19883024c6a84248585ce219e" prot="public" static="no" mutable="no">
+        <type><ref refid="classembed_1_1can_1a526ae12b76dffd3dda0891247da12b55" kindref="member">id_t</ref></type>
+        <definition>id_t embed::can::message_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="24" column="10" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1can_1_1message__t_1a10af3d52291a016b9d2e1dd30689428e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t embed::can::message_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="25" column="13" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1can_1_1message__t_1adbe3cbe93e44048839edb2ab8ed95238" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, 8 &gt;</type>
+        <definition>std::array&lt;uint8_t, 8&gt; embed::can::message_t::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="26" column="16" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1can_1_1message__t_1ae776e993d158b81e0276ea328006066c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool embed::can::message_t::is_remote_request</definition>
+        <argsstring></argsstring>
+        <name>is_remote_request</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="27" column="10" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="22" column="3" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="23" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structembed_1_1can_1_1message__t_1a15354cd19883024c6a84248585ce219e" prot="public" virt="non-virtual"><scope>embed::can::message_t</scope><name>id</name></member>
+      <member refid="structembed_1_1can_1_1message__t_1ae776e993d158b81e0276ea328006066c" prot="public" virt="non-virtual"><scope>embed::can::message_t</scope><name>is_remote_request</name></member>
+      <member refid="structembed_1_1can_1_1message__t_1a10af3d52291a016b9d2e1dd30689428e" prot="public" virt="non-virtual"><scope>embed::can::message_t</scope><name>length</name></member>
+      <member refid="structembed_1_1can_1_1message__t_1adbe3cbe93e44048839edb2ab8ed95238" prot="public" virt="non-virtual"><scope>embed::can::message_t</scope><name>payload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

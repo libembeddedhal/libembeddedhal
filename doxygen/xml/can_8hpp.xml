@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="can_8hpp" kind="file" language="C++">
+    <compoundname>can.hpp</compoundname>
+    <includes refid="driver_8hpp" local="yes">../driver.hpp</includes>
+    <includes local="no">array</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">cinttypes</includes>
+    <includes local="no">functional</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>../driver.hpp</label>
+        <link refid="driver_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cinttypes</label>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>enum.hpp</label>
+        <link refid="enum_8hpp"/>
+      </node>
+      <node id="6">
+        <label>chrono</label>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/libembeddedhal/can/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structembed_1_1can__settings" prot="public">embed::can_settings</innerclass>
+    <innerclass refid="classembed_1_1can" prot="public">embed::can</innerclass>
+    <innerclass refid="structembed_1_1can_1_1message__t" prot="public">embed::can::message_t</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../driver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cinttypes&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceembed" kindref="compound">embed</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="structembed_1_1can__settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1can__settings" kindref="compound">can_settings</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structembed_1_1can__settings_1adff7b22f9a82b60d171e046f7c3c0407" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structembed_1_1can__settings_1adff7b22f9a82b60d171e046f7c3c0407" kindref="member">clock_rate_hz</ref><sp/>=<sp/>100&apos;000;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classembed_1_1can" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classembed_1_1can" kindref="compound">can</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1driver" kindref="compound">driver</ref>&lt;can_settings&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Can<sp/>message<sp/>ID<sp/>type<sp/>trait</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classembed_1_1can_1a526ae12b76dffd3dda0891247da12b55" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1can_1a526ae12b76dffd3dda0891247da12b55" kindref="member">id_t</ref><sp/>=<sp/>uint32_t;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structembed_1_1can_1_1message__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1can_1_1message__t" kindref="compound">message_t</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="structembed_1_1can_1_1message__t_1a15354cd19883024c6a84248585ce219e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1can_1a526ae12b76dffd3dda0891247da12b55" kindref="member">id_t</ref><sp/><ref refid="structembed_1_1can_1_1message__t_1a15354cd19883024c6a84248585ce219e" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structembed_1_1can_1_1message__t_1a10af3d52291a016b9d2e1dd30689428e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structembed_1_1can_1_1message__t_1a10af3d52291a016b9d2e1dd30689428e" kindref="member">length</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26" refid="structembed_1_1can_1_1message__t_1adbe3cbe93e44048839edb2ab8ed95238" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint8_t,<sp/>8&gt;<sp/><ref refid="structembed_1_1can_1_1message__t_1adbe3cbe93e44048839edb2ab8ed95238" kindref="member">payload</ref>{0};</highlight></codeline>
+<codeline lineno="27" refid="structembed_1_1can_1_1message__t_1ae776e993d158b81e0276ea328006066c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1can_1_1message__t_1ae776e993d158b81e0276ea328006066c" kindref="member">is_remote_request</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classembed_1_1can_1a60e009b5ebdf8bb922b88f080d00a37f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1can_1a60e009b5ebdf8bb922b88f080d00a37f" kindref="member">send</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1can_1_1message__t" kindref="compound">message_t</ref>&amp;<sp/>p_message)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31" refid="classembed_1_1can_1a60b406a9a7689761e6481f451a1bc277" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1can_1_1message__t" kindref="compound">message_t</ref><sp/><ref refid="classembed_1_1can_1a60b406a9a7689761e6481f451a1bc277" kindref="member">receive</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32" refid="classembed_1_1can_1a253e7c87a6a5438adefc991a861232b2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1can_1a253e7c87a6a5438adefc991a861232b2" kindref="member">has_data</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classembed_1_1can_1a996fd4b52acd90ef05b5972c3e2a3fff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1can_1a996fd4b52acd90ef05b5972c3e2a3fff" kindref="member">attach_interrupt</ref>(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="classembed_1_1can" kindref="compound">can</ref>&amp;)&gt;<sp/>p_receive_handler)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libembeddedhal/can/can.hpp"/>
+  </compounddef>
+</doxygen>

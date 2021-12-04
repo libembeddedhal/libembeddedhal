@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="clock_8hpp" kind="file" language="C++">
+    <compoundname>clock.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">functional</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/libembeddedhal/clock/clock.hpp</label>
+        <link refid="clock_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structembed_1_1this__thread_1_1global__clocks" prot="public">embed::this_thread::global_clocks</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <innernamespace refid="namespaceembed_1_1this__thread">embed::this_thread</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespaceembed_1_1this__thread" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceembed_1_1this__thread" kindref="compound">embed::this_thread</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>=<sp/>std::chrono::nanoseconds;</highlight></codeline>
+<codeline lineno="16" refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref><sp/>=<sp/>std::function&lt;void(std::chrono::nanoseconds)&gt;;</highlight></codeline>
+<codeline lineno="21" refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref><sp/>=<sp/>std::function&lt;std::chrono::nanoseconds(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structembed_1_1this__thread_1_1global__clocks" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1this__thread_1_1global__clocks" kindref="compound">global_clocks</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" kindref="member">m_incremental_uptime</ref><sp/>=<sp/>[]()<sp/>-&gt;<sp/><ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>count{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>count<sp/>+=<sp/>100ns;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46" refid="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" kindref="member">m_loop_delay</ref><sp/>=<sp/>[](<ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>loop_count)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>count{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(count<sp/>&lt;<sp/>loop_count)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>+=<sp/>std::chrono::microseconds{<sp/>100<sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56" refid="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" kindref="member">m_global_sleep</ref><sp/>=<sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1ac6fa3c9d11c80464fc5cf793cfcc56fa" kindref="member">m_loop_delay</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" kindref="member">m_global_uptime</ref><sp/>=<sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1aadda5521129361a25908d05d16e1532f" kindref="member">m_incremental_uptime</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sleep_for(<ref refid="namespaceembed_1_1this__thread_1a52242a600cd579fd6ca97984718813da" kindref="member">time_increment</ref><sp/>delay)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" kindref="member">global_clocks::m_global_sleep</ref>(delay);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>uptime()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" kindref="member">global_clocks::m_global_uptime</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_global_sleep(<ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref><sp/><ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a612c94b42185ffffc6f88fa14fc3d3dc" kindref="member">global_clocks::m_global_sleep</ref><sp/>=<sp/><ref refid="namespaceembed_1_1this__thread_1a6cce4592820502535c418e4920890a8a" kindref="member">sleep_function</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_global_uptime(<ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref><sp/><ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="structembed_1_1this__thread_1_1global__clocks_1a0b006a49adf3eaf2b4f97b146b2e9eb8" kindref="member">global_clocks::m_global_uptime</ref><sp/>=<sp/><ref refid="namespaceembed_1_1this__thread_1a8c5134d64bfe076ffeab36051bc6274c" kindref="member">uptime_function</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed::this_thread</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libembeddedhal/clock/clock.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1dac" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>embed::dac</compoundname>
+    <basecompoundref refid="classembed_1_1driver" prot="public" virt="non-virtual">embed::driver&lt;&gt;</basecompoundref>
+    <includes refid="dac_8hpp" local="no">dac.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1dac_1aefe62c17cae7adc84e80a866b08fd841" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::dac::write</definition>
+        <argsstring>(full_scale&lt; uint32_t &gt; value)=0</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="classembed_1_1full__scale" kindref="compound">full_scale</ref>&lt; uint32_t &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Generate a voltage between a defined LOW and HIGH voltage. The LOW and HIGH voltage are generally configured by a reference voltage (usually denoted Vref) connected to the device. Generally though, the low voltage is 0V and the high voltage reference is VCC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>precentage scale from LOW to HIGH </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/dac/dac.hpp" line="26" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Digital to Analog Converter (DAC) hardware abstraction interface. Use this interface for devices and peripherals that can create arbitrary analog voltages between a defined LOW and HIGH voltage. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+      <node id="1">
+        <label>embed::dac</label>
+        <link refid="classembed_1_1dac"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_initialized_settings</edgelabel>
+          <edgelabel>m_settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>embed::dac</label>
+        <link refid="classembed_1_1dac"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>embed::no_settings</label>
+        <link refid="structembed_1_1no__settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/dac/dac.hpp" line="15" column="1" bodyfile="/github/workspace/include/libembeddedhal/dac/dac.hpp" bodystart="16" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classembed_1_1driver_1a1677362481d10c3b48544359daadf081" prot="protected" virt="pure-virtual"><scope>embed::dac</scope><name>driver_initialize</name></member>
+      <member refid="classembed_1_1driver_1a947a3487fa3acd0879e83872d9c97b01" prot="public" virt="non-virtual"><scope>embed::dac</scope><name>initialize</name></member>
+      <member refid="classembed_1_1driver_1a7e13fe8999142475da8c5b84927f03aa" prot="public" virt="non-virtual"><scope>embed::dac</scope><name>initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1a346f472e8c212d09c8f45aebd0089d7b" prot="public" virt="non-virtual"><scope>embed::dac</scope><name>is_initialized</name></member>
+      <member refid="classembed_1_1driver_1ab8b2029f33d55b9ffffd6e88d846cd7b" prot="protected" virt="non-virtual"><scope>embed::dac</scope><name>m_initialized</name></member>
+      <member refid="classembed_1_1driver_1aac7d23e384bc27a26b77c8fd681483ef" prot="protected" virt="non-virtual"><scope>embed::dac</scope><name>m_initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1afb925433a5897293609af5fae29e3dc3" prot="protected" virt="non-virtual"><scope>embed::dac</scope><name>m_settings</name></member>
+      <member refid="classembed_1_1driver_1a54440bf23c0c34102f563da1193d99ae" prot="public" virt="non-virtual"><scope>embed::dac</scope><name>reset</name></member>
+      <member refid="classembed_1_1driver_1ae6eb991ebb2321bb3565c2a03a613219" prot="public" virt="non-virtual"><scope>embed::dac</scope><name>settings</name></member>
+      <member refid="classembed_1_1dac_1aefe62c17cae7adc84e80a866b08fd841" prot="public" virt="pure-virtual"><scope>embed::dac</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

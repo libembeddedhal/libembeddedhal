@@ -1,0 +1,5 @@
+<map id="embed::can_network" name="embed::can_network">
+<area shape="rect" id="node1" title="can_network is a canbus message receiver handler and" alt="" coords="24,185,165,212"/>
+<area shape="rect" id="node2" href="$classembed_1_1driver.html" title="The basis class for all peripheral, device and system drivers in libembeddedhal." alt="" coords="5,109,184,136"/>
+<area shape="rect" id="node3" href="$structembed_1_1no__settings.html" title="An empty settings structure used to indicate that a driver or interface does not have generic setting..." alt="" coords="27,5,162,32"/>
+</map>

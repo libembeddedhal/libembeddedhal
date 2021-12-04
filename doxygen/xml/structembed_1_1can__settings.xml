@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structembed_1_1can__settings" kind="struct" language="C++" prot="public">
+    <compoundname>embed::can_settings</compoundname>
+    <includes refid="can_8hpp" local="no">can.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1can__settings_1adff7b22f9a82b60d171e046f7c3c0407" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t embed::can_settings::clock_rate_hz</definition>
+        <argsstring></argsstring>
+        <name>clock_rate_hz</name>
+        <initializer>= 100&apos;000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="13" column="12" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/can/can.hpp" line="11" column="1" bodyfile="/github/workspace/include/libembeddedhal/can/can.hpp" bodystart="12" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structembed_1_1can__settings_1adff7b22f9a82b60d171e046f7c3c0407" prot="public" virt="non-virtual"><scope>embed::can_settings</scope><name>clock_rate_hz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

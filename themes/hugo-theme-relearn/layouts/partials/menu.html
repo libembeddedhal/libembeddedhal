@@ -1,0 +1,142 @@
+
+    <script>
+      var index_url={{ "index.json" | relLangURL }};
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+    </script>
+    <nav id="sidebar" class="{{ if $.Site.Params.showVisitedLinks }}showVisitedLinks{{ end }}">
+      {{- $currentNode := . }}
+      {{- $showvisitedlinks := .Site.Params.showVisitedLinks }}
+      <div id="header-wrapper">
+        <div id="header">
+{{ partial "logo.html" . }}
+        </div>
+        {{- if not .Site.Params.disableSearch }}
+{{ partial "search.html" . }}
+        {{- end }}
+      </div>
+      {{- if not .Site.Params.disableLandingPageButton }}
+      <div id="homelinks">
+        <ul>
+          <li>
+              <a class="padding" href="{{ .Site.Params.landingPageURL | default "/" | relLangURL }}">{{ .Site.Params.landingPageName | default `<i class="fas fa-home"></i> Home` | safeHTML }}</a>
+          </li>
+        </ul>
+      </div>
+      {{- end }}
+      <div class="highlightable">
+        <ul class="topics">
+          {{- $defaultOrdersectionsby := .Site.Params.ordersectionsby | default "weight" }}
+          {{- $currentOrdersectionsby := .Site.Home.Params.ordersectionsby | default $defaultOrdersectionsby }}
+          {{- $defaultAlwaysopen := .Site.Params.alwaysopen | default false }}
+          {{- if eq $currentOrdersectionsby "title" }}
+            {{- range .Site.Home.Sections.ByTitle }}
+            {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks "alwaysopen" $defaultAlwaysopen }}
+            {{- end }}
+          {{- else }}
+            {{- range .Site.Home.Sections.ByWeight }}
+            {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks "alwaysopen" $defaultAlwaysopen }}
+            {{- end }}
+          {{- end }}
+        </ul>
+        {{- $disableShortcutsTitle := .Site.Params.DisableShortcutsTitle }}
+        {{- with .Site.Menus.shortcuts }}
+        <div id="shortcuts">
+          <div class="nav-title">{{ if not $disableShortcutsTitle }}{{ T "Shortcuts-Title" }}{{ end }}</div>
+          <ul>
+            {{- range sort . "Weight" }}
+            <li>{{ .Pre }}<a class="padding" href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>{{ .Post }}</li>
+            {{- end }}
+          </ul>
+        </div>
+        {{- end }}
+
+        {{- if or .Site.IsMultiLingual $showvisitedlinks }}
+        <div id="prefooter">
+          <hr/>
+          <ul>
+            {{- if and .Site.IsMultiLingual (not .Site.Params.DisableLanguageSwitchingButton) }}
+            <li>
+              <a class="padding">
+                <i class="fas fa-language fa-fw"></i>
+                <div class="select-style">
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    {{- $siteLanguages := .Site.Languages }}
+                    {{- $pageLang := .Page.Lang }}
+                    {{- range .Page.AllTranslations }}
+                      {{- $translation := . }}
+                      {{- range $siteLanguages }}
+                        {{- if eq $translation.Lang .Lang }}
+                          {{- if eq $pageLang .Lang }}
+                    <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}</option>
+                          {{- else }}
+                    <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
+                          {{- end }}
+                        {{- end }}
+                      {{- end }}
+                    {{- end }}
+                  </select>
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                    <g>
+                      <g id="arrow-drop-down">
+                        <polygon points="0,63.75 127.5,191.25 255,63.75" />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            {{- end }}
+
+            {{- if $showvisitedlinks }}
+            <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> {{ T "Clear-History" }}</a></li>
+            {{- end }}
+          </ul>
+        </div>
+        {{- end }}
+        <div id="footer">
+          {{- partial "menu-footer.html" . }}
+        </div>
+      </div>
+    </nav>
+    {{- define "section-tree-nav" }}
+      {{- $showvisitedlinks := .showvisitedlinks }}
+      {{- $currentNode := .currentnode }}
+      {{- $currentFileRelPermalink := .currentnode.RelPermalink }}
+      {{- $alwaysopen := .alwaysopen }}
+      {{- with .sect }}
+        {{- $relearnIsHiddenFrom := index ($currentNode.Scratch.Get "relearnIsHiddenFrom") .RelPermalink }}
+        {{- $hidden := and $relearnIsHiddenFrom (not $.showhidden) (not (.IsAncestor $currentNode)) }}
+        {{- if $hidden }}
+        {{- else if .IsSection }}
+          {{- safeHTML .Params.head }}
+          {{- $defaultOrdersectionsby := .Site.Params.ordersectionsby | default "weight" }}
+          {{- $currentOrdersectionsby := .Params.ordersectionsby | default $defaultOrdersectionsby }}
+          {{- $currentAlwaysopen := .Params.alwaysopen | default $alwaysopen }}
+          <li data-nav-id="{{.RelPermalink}}" title="{{.Title}}" class="dd-item{{if eq .RelPermalink $currentFileRelPermalink}} active{{end}}{{if .IsAncestor $currentNode }} parent{{end}}{{if $currentAlwaysopen}} alwaysopen{{end}}"><a href="{{.RelPermalink}}">
+              {{- partial "menu-pre.html" . }}{{ or .Params.menuTitle .LinkTitle .Title }}{{ partial "menu-post.html" . }}
+              {{- if $showvisitedlinks }}<i class="fas fa-check read-icon"></i>{{ end }}</a><ul>
+              {{- $pages := .Pages }}
+              {{- if .Page.IsHome }}
+                {{- $pages = .Sections }}
+              {{- else if .Page.Sections}}
+                {{- $pages = (.Pages | union .Sections) }}
+              {{- end }}
+              {{- $defaultAlwaysopen := .Site.Params.alwaysopen | default true }}
+              {{- if eq $currentOrdersectionsby "title" }}
+                {{- range $pages.ByTitle }}
+                  {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks "alwaysopen" $defaultAlwaysopen }}
+                {{- end }}
+              {{- else }}
+                {{- range $pages.ByWeight }}
+                {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks "alwaysopen" $defaultAlwaysopen }}
+                {{- end }}
+              {{- end }}</ul></li>
+        {{- else }}
+          <li data-nav-id="{{.RelPermalink}}" title="{{.Title}}" class="dd-item{{if eq .RelPermalink $currentFileRelPermalink}} active{{end}}"><a href="{{.RelPermalink}}">
+              {{- partial "menu-pre.html" . }}{{ or .Params.menuTitle .LinkTitle .Title }}{{ partial "menu-post.html" . }}
+              {{- if $showvisitedlinks }}<i class="fas fa-check read-icon"></i>{{ end }}</a></li>
+        {{- end }}
+      {{- end }}
+    {{- end }}

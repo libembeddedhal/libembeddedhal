@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_fad7e47fb7d2c086310d40fe47f863bc" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal/spi</compoundname>
+    <innerfile refid="spi_8hpp">spi.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/spi/"/>
+  </compounddef>
+</doxygen>

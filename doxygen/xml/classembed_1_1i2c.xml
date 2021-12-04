@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1i2c" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>embed::i2c</compoundname>
+    <basecompoundref refid="classembed_1_1driver" prot="public" virt="non-virtual">embed::driver&lt; i2c_settings &gt;</basecompoundref>
+    <includes refid="i2c_8hpp" local="no">i2c.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1i2c_1a660ff3aad3dcc7ac7d3a1a4f529cc808" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::i2c::transaction</definition>
+        <argsstring>(std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in)=0</argsstring>
+        <name>transaction</name>
+        <param>
+          <type>std::byte</type>
+          <declname>p_address</declname>
+        </param>
+        <param>
+          <type>std::span&lt; const std::byte &gt;</type>
+          <declname>p_data_out</declname>
+        </param>
+        <param>
+          <type>std::span&lt; std::byte &gt;</type>
+          <declname>p_data_in</declname>
+        </param>
+        <briefdescription>
+<para>perform an <ref refid="classembed_1_1i2c" kindref="compound">i2c</ref> transaction with another device on the bus. The type of transaction depends on values of input parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performing Write, Read and Write-Then-Read transactions depends on which span for data_out and data_in are set to null.</para>
+<para><itemizedlist>
+<listitem><para>For write transactions, pass p_data_in as an empty span <computeroutput>std::span&lt;std::byte&gt;{}</computeroutput> and pass a buffer to p_data_out.</para>
+</listitem><listitem><para>For read transactions, pass p_data_out as an empty span <computeroutput>std::span&lt;const std::byte&gt;{}</computeroutput> and pass a buffer to p_data_in.</para>
+</listitem><listitem><para>For write-then-read transactions, pass a buffer for both p_data_in p_data_out.</para>
+</listitem></itemizedlist>
+</para>
+<para>Implementations of transaction can be synchronous, interrupt driven or DMA driven. Calling transaction while a current transaction is ongoing is undefined behavior. To prevent this, poll <ref refid="classembed_1_1i2c_1a6c7304be5c00cfef506c200ce23d4706" kindref="member">busy()</ref> until it returns false.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>7-bit address of the device you want to communicate with. To perform a transaction with a 10-bit address, this parameter must be the address upper byte of the 10-bit address OR&apos;d with 0b1111&apos;0000 (the 10-bit address indicator). The lower byte of the address must be contained in the first byte of the p_data_out span. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be written to the addressed device. Set to nullptr with length zero in order to skip writting. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to store read data from the addressed device. Set to nullptr with length 0 in order to skip reading. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/i2c/i2c.hpp" line="62" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1i2c_1a6c7304be5c00cfef506c200ce23d4706" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool embed::i2c::busy</definition>
+        <argsstring>()=0</argsstring>
+        <name>busy</name>
+        <briefdescription>
+<para>Determines if the <ref refid="classembed_1_1i2c" kindref="compound">i2c</ref> transaction is ongoing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true transaction is currently ongoing </para>
+</simplesect>
+<simplesect kind="return"><para>false device is idle and available for a transaction </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/i2c/i2c.hpp" line="71" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>embed::driver&lt; i2c_settings &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+      <node id="1">
+        <label>embed::i2c</label>
+        <link refid="classembed_1_1i2c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>embed::driver&lt; i2c_settings &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+      <node id="1">
+        <label>embed::i2c</label>
+        <link refid="classembed_1_1i2c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/i2c/i2c.hpp" line="29" column="1" bodyfile="/github/workspace/include/libembeddedhal/i2c/i2c.hpp" bodystart="30" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classembed_1_1i2c_1a6c7304be5c00cfef506c200ce23d4706" prot="public" virt="pure-virtual"><scope>embed::i2c</scope><name>busy</name></member>
+      <member refid="classembed_1_1driver_1a1677362481d10c3b48544359daadf081" prot="protected" virt="pure-virtual"><scope>embed::i2c</scope><name>driver_initialize</name></member>
+      <member refid="classembed_1_1driver_1a947a3487fa3acd0879e83872d9c97b01" prot="public" virt="non-virtual"><scope>embed::i2c</scope><name>initialize</name></member>
+      <member refid="classembed_1_1driver_1a7e13fe8999142475da8c5b84927f03aa" prot="public" virt="non-virtual"><scope>embed::i2c</scope><name>initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1a346f472e8c212d09c8f45aebd0089d7b" prot="public" virt="non-virtual"><scope>embed::i2c</scope><name>is_initialized</name></member>
+      <member refid="classembed_1_1driver_1ab8b2029f33d55b9ffffd6e88d846cd7b" prot="protected" virt="non-virtual"><scope>embed::i2c</scope><name>m_initialized</name></member>
+      <member refid="classembed_1_1driver_1aac7d23e384bc27a26b77c8fd681483ef" prot="protected" virt="non-virtual"><scope>embed::i2c</scope><name>m_initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1afb925433a5897293609af5fae29e3dc3" prot="protected" virt="non-virtual"><scope>embed::i2c</scope><name>m_settings</name></member>
+      <member refid="classembed_1_1driver_1a54440bf23c0c34102f563da1193d99ae" prot="public" virt="non-virtual"><scope>embed::i2c</scope><name>reset</name></member>
+      <member refid="classembed_1_1driver_1ae6eb991ebb2321bb3565c2a03a613219" prot="public" virt="non-virtual"><scope>embed::i2c</scope><name>settings</name></member>
+      <member refid="classembed_1_1i2c_1a660ff3aad3dcc7ac7d3a1a4f529cc808" prot="public" virt="pure-virtual"><scope>embed::i2c</scope><name>transaction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

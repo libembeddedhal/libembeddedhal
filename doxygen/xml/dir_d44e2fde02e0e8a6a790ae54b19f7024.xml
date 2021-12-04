@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d44e2fde02e0e8a6a790ae54b19f7024" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal</compoundname>
+    <innerdir refid="dir_927caa68e237d360131c9e07c9afa597">/github/workspace/include/libembeddedhal/adc</innerdir>
+    <innerdir refid="dir_e20bf4e9710363826966b0b412d4debd">/github/workspace/include/libembeddedhal/can</innerdir>
+    <innerdir refid="dir_f25ad95c46dd226bffda6bee6443a8fb">/github/workspace/include/libembeddedhal/clock</innerdir>
+    <innerdir refid="dir_ad8ece6cee1ba925824cfdb6f5c3da75">/github/workspace/include/libembeddedhal/counter</innerdir>
+    <innerdir refid="dir_721e551b0c5204a89226dce355491e85">/github/workspace/include/libembeddedhal/dac</innerdir>
+    <innerdir refid="dir_3cee096307004f9e28c0239776a33c26">/github/workspace/include/libembeddedhal/display</innerdir>
+    <innerdir refid="dir_55a4b9528082363551010136e678bdc9">/github/workspace/include/libembeddedhal/gpio</innerdir>
+    <innerdir refid="dir_4b54f0ad81c942e33daad38b7db927e0">/github/workspace/include/libembeddedhal/i2c</innerdir>
+    <innerdir refid="dir_c3ea8e27c6da74b0e03e34338a3d15a3">/github/workspace/include/libembeddedhal/imu</innerdir>
+    <innerdir refid="dir_7c0c2efd89501992642cef17876e123b">/github/workspace/include/libembeddedhal/pwm</innerdir>
+    <innerdir refid="dir_9ed38be3b360acaf3dfe962d6d8e508f">/github/workspace/include/libembeddedhal/serial</innerdir>
+    <innerdir refid="dir_fad7e47fb7d2c086310d40fe47f863bc">/github/workspace/include/libembeddedhal/spi</innerdir>
+    <innerdir refid="dir_b9f1d506e6dc52cb20d5a67ec9072e27">/github/workspace/include/libembeddedhal/timer</innerdir>
+    <innerfile refid="context_8hpp">context.hpp</innerfile>
+    <innerfile refid="driver_8hpp">driver.hpp</innerfile>
+    <innerfile refid="enum_8hpp">enum.hpp</innerfile>
+    <innerfile refid="full__scale_8hpp">full_scale.hpp</innerfile>
+    <innerfile refid="static__callable_8hpp">static_callable.hpp</innerfile>
+    <innerfile refid="static__memory__resource_8hpp">static_memory_resource.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1counter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>embed::counter</compoundname>
+    <basecompoundref refid="classembed_1_1driver" prot="public" virt="non-virtual">embed::driver&lt;&gt;</basecompoundref>
+    <includes refid="counter_8hpp" local="no">counter.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>controls</name>
+        <enumvalue id="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896aea2b2676c28c0db26d39331a336c6b92" prot="public">
+          <name>start</name>
+          <briefdescription>
+<para>Control value to start the counter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896aef399b2d446bb37b7c32ad2cc1b6045b" prot="public">
+          <name>stop</name>
+          <briefdescription>
+<para>Control value to stop a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896a86266ee937d97f812a8e57d22b62ee29" prot="public">
+          <name>reset</name>
+          <briefdescription>
+<para>Control value to reset a counter. The counter shall remain in a running or stopped state after this call. So an ongoing counter will continue to count but will have its counter reset to zero if this control is used. If a counter is stopped, then it shall be reset to zero, and stay stopped. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Set of controls for a counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="23" column="3" bodyfile="/github/workspace/include/libembeddedhal/counter/counter.hpp" bodystart="24" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1counter_1a1be2b2ccf263b691869efb7faeceac00" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool embed::counter::is_running</definition>
+        <argsstring>()=0</argsstring>
+        <name>is_running</name>
+        <briefdescription>
+<para>Determine if the counter is currently running. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true counter is currently running </para>
+</simplesect>
+<simplesect kind="return"><para>false counter is currently stopped </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="52" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1counter_1ab2689e7eaab22afbf67faccf85f0bb31" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::counter::control</definition>
+        <argsstring>(controls p_control)=0</argsstring>
+        <name>control</name>
+        <param>
+          <type><ref refid="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896" kindref="member">controls</ref></type>
+          <declname>p_control</declname>
+        </param>
+        <briefdescription>
+<para>Control the state of the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state for the counter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="58" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1counter_1a7c96f78693ea3037a5f3414f1cb4b3d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::counter::period</definition>
+        <argsstring>(std::chrono::nanoseconds p_period)=0</argsstring>
+        <name>period</name>
+        <param>
+          <type>std::chrono::nanoseconds</type>
+          <declname>p_period</declname>
+        </param>
+        <briefdescription>
+<para>Period for each count of the timer. For example a period of 1ms and a count of 500 would mean that 500ms has elapse since the counter has been started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of time each count should be. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="66" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1counter_1a3c275a38f1242bab8a05a47410ec09bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::chrono::nanoseconds</type>
+        <definition>virtual std::chrono::nanoseconds embed::counter::period</definition>
+        <argsstring>()=0</argsstring>
+        <name>period</name>
+        <briefdescription>
+<para>Get the current period for the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::chrono::nanoseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="72" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1counter_1a54d3fb7657d6a128533d4b7c61900b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t embed::counter::count</definition>
+        <argsstring>()=0</argsstring>
+        <name>count</name>
+        <briefdescription>
+<para>Get the count of the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t current count </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="78" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Counter hardware abstraction interface. Use this interface for devices and peripherals that have counting capabilities. Such devices can count up or down. Useful for keeping time. Expect counters to overflow when they reach the end of counting register&apos;s limits. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+      <node id="1">
+        <label>embed::counter</label>
+        <link refid="classembed_1_1counter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_initialized_settings</edgelabel>
+          <edgelabel>m_settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>embed::no_settings</label>
+        <link refid="structembed_1_1no__settings"/>
+      </node>
+      <node id="1">
+        <label>embed::counter</label>
+        <link refid="classembed_1_1counter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/counter/counter.hpp" line="16" column="1" bodyfile="/github/workspace/include/libembeddedhal/counter/counter.hpp" bodystart="17" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classembed_1_1counter_1ab2689e7eaab22afbf67faccf85f0bb31" prot="public" virt="pure-virtual"><scope>embed::counter</scope><name>control</name></member>
+      <member refid="classembed_1_1counter_1a4c1aba30af1ec98a9a67d9e272fdb896" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>controls</name></member>
+      <member refid="classembed_1_1counter_1a54d3fb7657d6a128533d4b7c61900b55" prot="public" virt="pure-virtual"><scope>embed::counter</scope><name>count</name></member>
+      <member refid="classembed_1_1driver_1a1677362481d10c3b48544359daadf081" prot="protected" virt="pure-virtual"><scope>embed::counter</scope><name>driver_initialize</name></member>
+      <member refid="classembed_1_1driver_1a947a3487fa3acd0879e83872d9c97b01" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>initialize</name></member>
+      <member refid="classembed_1_1driver_1a7e13fe8999142475da8c5b84927f03aa" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1a346f472e8c212d09c8f45aebd0089d7b" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>is_initialized</name></member>
+      <member refid="classembed_1_1counter_1a1be2b2ccf263b691869efb7faeceac00" prot="public" virt="pure-virtual"><scope>embed::counter</scope><name>is_running</name></member>
+      <member refid="classembed_1_1driver_1ab8b2029f33d55b9ffffd6e88d846cd7b" prot="protected" virt="non-virtual"><scope>embed::counter</scope><name>m_initialized</name></member>
+      <member refid="classembed_1_1driver_1aac7d23e384bc27a26b77c8fd681483ef" prot="protected" virt="non-virtual"><scope>embed::counter</scope><name>m_initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1afb925433a5897293609af5fae29e3dc3" prot="protected" virt="non-virtual"><scope>embed::counter</scope><name>m_settings</name></member>
+      <member refid="classembed_1_1counter_1a7c96f78693ea3037a5f3414f1cb4b3d2" prot="public" virt="pure-virtual"><scope>embed::counter</scope><name>period</name></member>
+      <member refid="classembed_1_1counter_1a3c275a38f1242bab8a05a47410ec09bc" prot="public" virt="pure-virtual"><scope>embed::counter</scope><name>period</name></member>
+      <member refid="classembed_1_1driver_1a54440bf23c0c34102f563da1193d99ae" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>reset</name></member>
+      <member refid="classembed_1_1driver_1ae6eb991ebb2321bb3565c2a03a613219" prot="public" virt="non-virtual"><scope>embed::counter</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

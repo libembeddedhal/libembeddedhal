@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structembed_1_1output__pin__settings" kind="struct" language="C++" prot="public">
+    <compoundname>embed::output_pin_settings</compoundname>
+    <includes refid="gpio_8hpp" local="no">gpio.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1output__pin__settings_1a72794d716c2e13656c801d6d9c8375a1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool embed::output_pin_settings::starting_level</definition>
+        <argsstring></argsstring>
+        <name>starting_level</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Set the starting level of the output pin on initialization. HIGH voltage defined as true and LOW voltage defined as false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" line="60" column="8" bodyfile="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1output__pin__settings_1a512b0f4821c5fb7e7c480b8d80f91a43" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool embed::output_pin_settings::open_drain</definition>
+        <argsstring></argsstring>
+        <name>open_drain</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Starting level of the output pin. HIGH voltage defined as true and LOW voltage defined as false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" line="66" column="8" bodyfile="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1output__pin__settings_1ab9cf7fc8f9bbc092eb96244aee611687" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceembed_1a5ab6b9e7ccdd68ae6b998c8b586a75a6" kindref="member">pin_resistor</ref></type>
+        <definition>pin_resistor embed::output_pin_settings::resistor</definition>
+        <argsstring></argsstring>
+        <name>resistor</name>
+        <initializer>= <ref refid="namespaceembed_1a5ab6b9e7ccdd68ae6b998c8b586a75a6a5dd40e1f7d5c287d1df85dac013c1c38" kindref="member">pin_resistor::pull_up</ref></initializer>
+        <briefdescription>
+<para>Pull resistor for the pin. This generally only helpful when open drain is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" line="72" column="16" bodyfile="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic settings for output pins. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" line="53" column="1" bodyfile="/github/workspace/include/libembeddedhal/gpio/gpio.hpp" bodystart="54" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structembed_1_1output__pin__settings_1a512b0f4821c5fb7e7c480b8d80f91a43" prot="public" virt="non-virtual"><scope>embed::output_pin_settings</scope><name>open_drain</name></member>
+      <member refid="structembed_1_1output__pin__settings_1ab9cf7fc8f9bbc092eb96244aee611687" prot="public" virt="non-virtual"><scope>embed::output_pin_settings</scope><name>resistor</name></member>
+      <member refid="structembed_1_1output__pin__settings_1a72794d716c2e13656c801d6d9c8375a1" prot="public" virt="non-virtual"><scope>embed::output_pin_settings</scope><name>starting_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

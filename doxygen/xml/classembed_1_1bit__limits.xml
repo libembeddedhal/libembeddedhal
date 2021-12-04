@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1bit__limits" kind="class" language="C++" prot="public">
+    <compoundname>embed::bit_limits</compoundname>
+    <includes refid="full__scale_8hpp" local="no">full_scale.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>uint8_t</type>
+        <declname>bit_width</declname>
+        <defname>bit_width</defname>
+      </param>
+      <param>
+        <type>typename int_t</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classembed_1_1bit__limits_1a4d0a420505e966911033bb1db25d7327" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int_t</type>
+        <definition>static constexpr int_t embed::bit_limits&lt; bit_width, int_t &gt;::max</definition>
+        <argsstring>()</argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>Get the maximum value available for an integer of <computeroutput>bit_width</computeroutput> size and that can be stored within <computeroutput>int_t</computeroutput>. The final value of the function depends also on the sign of the int type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr int_t - returns the maximum value available for an integer of <computeroutput>bit_width</computeroutput> size and that can be stored within <computeroutput>int_t</computeroutput>. The final value of the function depends also on the sign of the int type.</para>
+</simplesect>
+<simplesect kind="return"><para>constexpr int_t maximum value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="46" column="26" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="46" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1bit__limits_1a74eb8b17d9ad93285ef2d9520d504b72" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int_t</type>
+        <definition>static constexpr int_t embed::bit_limits&lt; bit_width, int_t &gt;::min</definition>
+        <argsstring>()</argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>Get the minimum value available for an integer of <computeroutput>bit_width</computeroutput> size and that can be stored within <computeroutput>int_t</computeroutput>. The final value of the function depends also on the sign of the int type. Unsigned ints simply return zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr int_t minimum value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="66" column="26" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="66" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>bit_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="19" column="1" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="20" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classembed_1_1bit__limits_1a4d0a420505e966911033bb1db25d7327" prot="public" virt="non-virtual"><scope>embed::bit_limits</scope><name>max</name></member>
+      <member refid="classembed_1_1bit__limits_1a74eb8b17d9ad93285ef2d9520d504b72" prot="public" virt="non-virtual"><scope>embed::bit_limits</scope><name>min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

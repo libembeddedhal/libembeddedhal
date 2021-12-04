@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_3cee096307004f9e28c0239776a33c26" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal/display</compoundname>
+    <innerfile refid="pixel__display_8hpp">pixel_display.hpp</innerfile>
+    <innerfile refid="text__display_8hpp">text_display.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/display/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="context_8hpp" kind="file" language="C++">
+    <compoundname>context.hpp</compoundname>
+    <includes local="no">string_view</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/github/workspace/include/libembeddedhal/context.hpp</label>
+        <link refid="context_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string_view</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="context_8hpp_1a786d51023bf2ededed548bb861d49aa9" prot="public" static="no">
+        <name>PLATFORM_STRING</name>
+        <initializer>&quot;test&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/context.hpp" line="7" column="9" bodyfile="/github/workspace/include/libembeddedhal/context.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceembed" kindref="compound">embed</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(PLATFORM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="context_8hpp_1a786d51023bf2ededed548bb861d49aa9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLATFORM_STRING<sp/>&quot;test&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#warning<sp/>&quot;No<sp/>platform<sp/>specified,<sp/>defaulting<sp/>to<sp/>&apos;test&apos;<sp/>platform&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR_HELPER(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR(x)<sp/>STR_HELPER(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLATFORM_STRING<sp/>STR(PLATFORM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string_view<sp/><ref refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" kindref="member">platform_string</ref><sp/>=<sp/><ref refid="context_8hpp_1a786d51023bf2ededed548bb861d49aa9" kindref="member">PLATFORM_STRING</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespaceembed_1aea8ad233b7538689ad6f63d629743222" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1aea8ad233b7538689ad6f63d629743222" kindref="member">is_platform</ref>(std::string_view<sp/>p_platform)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" kindref="member">platform_string</ref>.starts_with(p_platform);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespaceembed_1a34fb9ef716de27d60ec74784b0a16307" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceembed_1a34fb9ef716de27d60ec74784b0a16307" kindref="member">is_a_test</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" kindref="member">platform_string</ref>.starts_with(</highlight><highlight class="stringliteral">&quot;unit_test&quot;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" kindref="member">platform_string</ref>.starts_with(</highlight><highlight class="stringliteral">&quot;unittest&quot;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceembed_1a0c3a3fccb52284cef1b912f6c2c4c5cc" kindref="member">platform_string</ref>.starts_with(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libembeddedhal/context.hpp"/>
+  </compounddef>
+</doxygen>

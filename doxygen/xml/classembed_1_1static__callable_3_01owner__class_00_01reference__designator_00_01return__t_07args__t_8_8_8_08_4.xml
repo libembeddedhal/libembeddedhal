@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4" kind="class" language="C++" prot="public">
+    <compoundname>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;</compoundname>
+    <includes refid="static__callable_8hpp" local="no">static_callable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class owner_class</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>reference_designator</declname>
+        <defname>reference_designator</defname>
+      </param>
+      <param>
+        <type>typename return_t</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>args_t</declname>
+        <defname>args_t</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1a7128859ce658dfba40cc8bf153ded33b" prot="private" static="yes" mutable="no">
+        <type>std::function&lt; return_t(args_t...)&gt;</type>
+        <definition>std::function&lt;return_t(args_t...)&gt; embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+<para>the polymorphic callback to be </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_callable.hpp" line="65" column="31" bodyfile="/github/workspace/include/libembeddedhal/static_callable.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1adb9aceaf500b6d66ba03782a669ba3b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;::static_callable</definition>
+        <argsstring>(std::function&lt; return_t(args_t...)&gt; p_callback)</argsstring>
+        <name>static_callable</name>
+        <param>
+          <type>std::function&lt; return_t(args_t...)&gt;</type>
+          <declname>p_callback</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new static callable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_callable.hpp" line="38" column="3" bodyfile="/github/workspace/include/libembeddedhal/static_callable.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1a121f3acadb5eaf4121adb7bfa2b6f4d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>auto* embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;::get_handler</definition>
+        <argsstring>()</argsstring>
+        <name>get_handler</name>
+        <briefdescription>
+<para>Get the handler object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_callable.hpp" line="48" column="8" bodyfile="/github/workspace/include/libembeddedhal/static_callable.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1adab1cd41908a3cf6f72c739113689cb1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>return_t</type>
+        <definition>static return_t embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;::handler</definition>
+        <argsstring>(args_t... args)</argsstring>
+        <name>handler</name>
+        <param>
+          <type>args_t...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>private free function that calls the polymorphic callback. This is the function that can be used as entries in an interrupt vector tables or passed as a function pointer to C API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>return_t the return type of the callback </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/static_callable.hpp" line="59" column="19" bodyfile="/github/workspace/include/libembeddedhal/static_callable.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialization of <ref refid="classembed_1_1static__callable" kindref="compound">static_callable</ref> with the return type and arguments split up. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>owner_class</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see <ref refid="classembed_1_1static__callable" kindref="compound">static_callable</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference_designator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see <ref refid="classembed_1_1static__callable" kindref="compound">static_callable</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>return_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/static_callable.hpp" line="30" column="1" bodyfile="/github/workspace/include/libembeddedhal/static_callable.hpp" bodystart="31" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1a7128859ce658dfba40cc8bf153ded33b" prot="private" virt="non-virtual"><scope>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;</scope><name>callback</name></member>
+      <member refid="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1a121f3acadb5eaf4121adb7bfa2b6f4d5" prot="public" virt="non-virtual"><scope>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;</scope><name>get_handler</name></member>
+      <member refid="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1adab1cd41908a3cf6f72c739113689cb1" prot="private" virt="non-virtual"><scope>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;</scope><name>handler</name></member>
+      <member refid="classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4_1adb9aceaf500b6d66ba03782a669ba3b4" prot="public" virt="non-virtual"><scope>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)&gt;</scope><name>static_callable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

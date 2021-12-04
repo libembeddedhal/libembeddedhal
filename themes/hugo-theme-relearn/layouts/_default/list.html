@@ -1,0 +1,20 @@
+{{- partial "header.html" . }}
+{{- if eq .Kind "section" }}
+
+{{ partial "content.html" . }}
+{{- end }}
+        {{- if or (eq .Kind "taxonomy") (eq .Kind "term") }}
+          <ul>
+          {{- range .Pages }}
+            {{- if and .Title (or (ne (.Scratch.Get "relearnIsHiddenStem") true) (ne .Site.Params.disableTagHiddenPages true) ) }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{- end }}
+          {{- end }}
+          </ul>
+        {{- end }}
+          <footer class=" footline">
+          {{- with .Params.LastModifierDisplayName }}
+            <i class='fas fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{ with $.Date }} <i class='fas fa-calendar'></i> {{ .Format "02/01/2006" }}{{ end }}
+          {{- end }}
+          </footer>
+{{- partial "footer.html" . }}

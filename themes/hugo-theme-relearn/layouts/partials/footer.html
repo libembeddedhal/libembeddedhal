@@ -1,0 +1,52 @@
+        {{- if .Params.chapter }}
+        </div> <!-- end chapter-->
+        {{- end }}
+        </main><!-- #body-inner -->
+{{- partial "custom-comments.html" . }}
+      </div>
+      <div id="navigation">
+  {{- $showPrevNext := (and (not .Params.disableNextPrev) (not .Site.Params.disableNextPrev)) }}
+  {{- if $showPrevNext }}
+    {{- with ($.Scratch.Get "relearnPrevPage") }}
+        <a class="nav nav-prev" href="{{.RelPermalink}}" title="{{.Title}}"><i class="fa fa-chevron-left"></i></a>
+    {{- end}}
+    {{- with ($.Scratch.Get "relearnNextPage") }}
+        <a class="nav nav-next" href="{{.RelPermalink}}" title="{{.Title}}"><i class="fa fa-chevron-right"></i></a>
+    {{- end }}
+  {{- end }}
+      </div>
+    </div><!-- #body -->
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="{{"js/clipboard.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{"js/perfect-scrollbar.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{"js/perfect-scrollbar.jquery.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{"js/jquery.svg.pan.zoom.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{"js/featherlight.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{"js/modernizr.custom-3.6.0.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+{{- if (or (and (ne .Params.disableMermaid nil) (not .Params.disableMermaid)) (not .Site.Params.disableMermaid)) }}
+  {{- if isset .Params "custommermaidurl" }}
+    <script src="{{ .Params.customMermaidURL }}"></script>
+  {{- else if isset .Site.Params "custommermaidurl" }}
+    <script src="{{ .Site.Params.customMermaidURL }}"></script>
+  {{- else }}
+    <script src="{{"js/mermaid.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+  {{- end }}
+  {{- if isset .Params "mermaidinitialize" }}
+      {{- $.Scratch.Set "mermaidInitialize" .Params.mermaidInitialize }}
+  {{- else if isset .Site.Params "mermaidinitialize" }}
+      {{- $.Scratch.Set "mermaidInitialize" .Site.Params.mermaidInitialize }}
+  {{- else }}
+      {{- $.Scratch.Set "mermaidInitialize" "{ \"startOnLoad\": true }" }}
+  {{- end }}
+    <script>
+      if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
+        mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse({{ $.Scratch.Get "mermaidInitialize" }}), { startOnLoad: false } ) );
+      }
+    </script>
+{{- end }}
+    <script src="{{"js/relearn.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+    {{- partial "custom-footer.html" . }}
+  </body>
+</html>

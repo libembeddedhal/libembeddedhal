@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1full__scale" kind="class" language="C++" prot="public">
+    <compoundname>embed::full_scale</compoundname>
+    <includes refid="full__scale_8hpp" local="no">full_scale.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1full__scale_1ad7c1fd9bcd334afffd3c5f779793aa5a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t embed::full_scale&lt; T &gt;::bit_width</definition>
+        <argsstring></argsstring>
+        <name>bit_width</name>
+        <initializer>= sizeof(T) * CHAR_BIT</initializer>
+        <briefdescription>
+<para>Calculate the number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="175" column="27" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1full__scale_1aa372261d840ae3e1ac3f56bc2900b0f9" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T embed::full_scale&lt; T &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="197" column="5" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1full__scale_1ab1ae7f3a156abced5ec4bb21c6f3fe91" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr embed::full_scale&lt; T &gt;::full_scale</definition>
+        <argsstring>()</argsstring>
+        <name>full_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="177" column="13" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1full__scale_1ada396c0b7336f0ea809b485553254b50" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>bit_width</declname>
+            <defname>bit_width</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr embed::full_scale&lt; T &gt;::full_scale</definition>
+        <argsstring>(bit_depth&lt; U, bit_width &gt; p_value)</argsstring>
+        <name>full_scale</name>
+        <param>
+          <type><ref refid="structembed_1_1bit__depth" kindref="compound">bit_depth</ref>&lt; U, <ref refid="classembed_1_1full__scale_1ad7c1fd9bcd334afffd3c5f779793aa5a" kindref="member">bit_width</ref> &gt;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="182" column="13" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1full__scale_1a20d97dfafe9e6806aa6193a5c5eee02b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>bit_width</declname>
+            <defname>bit_width</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="classembed_1_1full__scale" kindref="compound">full_scale</ref>&lt; T &gt; &amp;</type>
+        <definition>constexpr full_scale&lt;T&gt;&amp; embed::full_scale&lt; T &gt;::operator=</definition>
+        <argsstring>(bit_depth&lt; U, bit_width &gt; p_value)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structembed_1_1bit__depth" kindref="compound">bit_depth</ref>&lt; U, <ref refid="classembed_1_1full__scale_1ad7c1fd9bcd334afffd3c5f779793aa5a" kindref="member">bit_width</ref> &gt;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="188" column="24" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1full__scale_1a3fa551382bb4e54cecfe092afd9410a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T embed::full_scale&lt; T &gt;::value</definition>
+        <argsstring>()</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="194" column="5" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="194" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/full_scale.hpp" line="164" column="1" bodyfile="/github/workspace/include/libembeddedhal/full_scale.hpp" bodystart="165" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classembed_1_1full__scale_1ad7c1fd9bcd334afffd3c5f779793aa5a" prot="public" virt="non-virtual"><scope>embed::full_scale</scope><name>bit_width</name></member>
+      <member refid="classembed_1_1full__scale_1ab1ae7f3a156abced5ec4bb21c6f3fe91" prot="public" virt="non-virtual"><scope>embed::full_scale</scope><name>full_scale</name></member>
+      <member refid="classembed_1_1full__scale_1ada396c0b7336f0ea809b485553254b50" prot="public" virt="non-virtual"><scope>embed::full_scale</scope><name>full_scale</name></member>
+      <member refid="classembed_1_1full__scale_1aa372261d840ae3e1ac3f56bc2900b0f9" prot="private" virt="non-virtual"><scope>embed::full_scale</scope><name>m_value</name></member>
+      <member refid="classembed_1_1full__scale_1a20d97dfafe9e6806aa6193a5c5eee02b" prot="public" virt="non-virtual"><scope>embed::full_scale</scope><name>operator=</name></member>
+      <member refid="classembed_1_1full__scale_1a3fa551382bb4e54cecfe092afd9410a8" prot="public" virt="non-virtual"><scope>embed::full_scale</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

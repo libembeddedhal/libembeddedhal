@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dac_8hpp" kind="file" language="C++">
+    <compoundname>dac.hpp</compoundname>
+    <includes local="no">cinttypes</includes>
+    <includes refid="driver_8hpp" local="yes">../driver.hpp</includes>
+    <includes refid="full__scale_8hpp" local="yes">../full_scale.hpp</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>limits</label>
+      </node>
+      <node id="3">
+        <label>../driver.hpp</label>
+        <link refid="driver_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cinttypes</label>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/libembeddedhal/dac/dac.hpp</label>
+        <link refid="dac_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>enum.hpp</label>
+        <link refid="enum_8hpp"/>
+      </node>
+      <node id="8">
+        <label>climits</label>
+      </node>
+      <node id="6">
+        <label>../full_scale.hpp</label>
+        <link refid="full__scale_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>concepts</label>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classembed_1_1dac" prot="public">embed::dac</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cinttypes&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../driver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../full_scale.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceembed" kindref="compound">embed</ref><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="classembed_1_1dac" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classembed_1_1dac" kindref="compound">dac</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1driver" kindref="compound">driver</ref>&lt;&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classembed_1_1dac_1aefe62c17cae7adc84e80a866b08fd841" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1dac_1aefe62c17cae7adc84e80a866b08fd841" kindref="member">write</ref>(<ref refid="classembed_1_1full__scale" kindref="compound">full_scale&lt;uint32_t&gt;</ref><sp/><ref refid="namespaceembed_1adb81fed604e4119c9318e47024eeb4b3" kindref="member">value</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libembeddedhal/dac/dac.hpp"/>
+  </compounddef>
+</doxygen>

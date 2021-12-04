@@ -1,0 +1,4 @@
+<map id="embed::pwm" name="embed::pwm">
+<area shape="rect" id="node1" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="47,80,142,107"/>
+<area shape="rect" id="node2" href="$classembed_1_1driver.html" title="The basis class for all peripheral, device and system drivers in libembeddedhal." alt="" coords="5,5,184,32"/>
+</map>

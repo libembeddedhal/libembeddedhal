@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_ad8ece6cee1ba925824cfdb6f5c3da75" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal/counter</compoundname>
+    <innerfile refid="counter_8hpp">counter.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/counter/"/>
+  </compounddef>
+</doxygen>

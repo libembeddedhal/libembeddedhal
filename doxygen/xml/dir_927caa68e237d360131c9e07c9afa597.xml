@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_927caa68e237d360131c9e07c9afa597" kind="dir">
+    <compoundname>/github/workspace/include/libembeddedhal/adc</compoundname>
+    <innerfile refid="adc_8hpp">adc.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libembeddedhal/adc/"/>
+  </compounddef>
+</doxygen>

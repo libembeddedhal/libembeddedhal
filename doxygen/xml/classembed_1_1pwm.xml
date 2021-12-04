@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classembed_1_1pwm" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>embed::pwm</compoundname>
+    <basecompoundref refid="classembed_1_1driver" prot="public" virt="non-virtual">embed::driver&lt;&gt;</basecompoundref>
+    <includes refid="pwm_8hpp" local="no">pwm.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classembed_1_1pwm_1afdd94125ad15984c5d2a0a1e4e06d4c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::pwm::frequency</definition>
+        <argsstring>(uint32_t frequency_hz)=0</argsstring>
+        <name>frequency</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>frequency_hz</declname>
+        </param>
+        <briefdescription>
+<para>Set the operating frequency of the pwm channel. Note that on many implementations, setting the frequency of a singular channel can have the effect of changing the frequency of all of the channels on the same pwm peripheral. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frequency_hz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency of the pwm channel in hertz </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" line="23" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1pwm_1a2386b4771cba6aacc52cee284e6d8a97" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint32_t</type>
+        <definition>virtual uint32_t embed::pwm::frequency</definition>
+        <argsstring>()=0</argsstring>
+        <name>frequency</name>
+        <briefdescription>
+<para>Get the operating frequency of the pwm channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint32_t frequency of the pwm channel in hertz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" line="29" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1pwm_1a7be0deafffda62ebc139deb95f2f8ac1" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void embed::pwm::duty_cycle</definition>
+        <argsstring>(full_scale&lt; uint32_t &gt; duty_cycle)=0</argsstring>
+        <name>duty_cycle</name>
+        <param>
+          <type><ref refid="classembed_1_1full__scale" kindref="compound">full_scale</ref>&lt; uint32_t &gt;</type>
+          <declname>duty_cycle</declname>
+        </param>
+        <briefdescription>
+<para>Set the duty cycle percentage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duty_cycle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set the duty cycle of the pwm. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" line="35" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1pwm_1a85356e45fe5b142102930d0b964ee372" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classembed_1_1full__scale" kindref="compound">full_scale</ref>&lt; uint32_t &gt;</type>
+        <definition>virtual full_scale&lt;uint32_t&gt; embed::pwm::duty_cycle</definition>
+        <argsstring>()=0</argsstring>
+        <name>duty_cycle</name>
+        <briefdescription>
+<para>Get the duty cycle percentage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>full_scale&lt;uint32_t&gt; duty cycle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" line="41" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Pulse Width Modulation (PWM) channel hardware abstraction. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>embed::pwm</label>
+        <link refid="classembed_1_1pwm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>embed::pwm</label>
+        <link refid="classembed_1_1pwm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::driver&lt; settings_t &gt;</label>
+        <link refid="classembed_1_1driver"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_initialized_settings</edgelabel>
+          <edgelabel>m_settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>embed::no_settings</label>
+        <link refid="structembed_1_1no__settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" line="13" column="1" bodyfile="/github/workspace/include/libembeddedhal/pwm/pwm.hpp" bodystart="14" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classembed_1_1driver_1a1677362481d10c3b48544359daadf081" prot="protected" virt="pure-virtual"><scope>embed::pwm</scope><name>driver_initialize</name></member>
+      <member refid="classembed_1_1pwm_1a7be0deafffda62ebc139deb95f2f8ac1" prot="private" virt="pure-virtual"><scope>embed::pwm</scope><name>duty_cycle</name></member>
+      <member refid="classembed_1_1pwm_1a85356e45fe5b142102930d0b964ee372" prot="private" virt="pure-virtual"><scope>embed::pwm</scope><name>duty_cycle</name></member>
+      <member refid="classembed_1_1pwm_1afdd94125ad15984c5d2a0a1e4e06d4c1" prot="private" virt="pure-virtual"><scope>embed::pwm</scope><name>frequency</name></member>
+      <member refid="classembed_1_1pwm_1a2386b4771cba6aacc52cee284e6d8a97" prot="private" virt="pure-virtual"><scope>embed::pwm</scope><name>frequency</name></member>
+      <member refid="classembed_1_1driver_1a947a3487fa3acd0879e83872d9c97b01" prot="public" virt="non-virtual"><scope>embed::pwm</scope><name>initialize</name></member>
+      <member refid="classembed_1_1driver_1a7e13fe8999142475da8c5b84927f03aa" prot="public" virt="non-virtual"><scope>embed::pwm</scope><name>initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1a346f472e8c212d09c8f45aebd0089d7b" prot="public" virt="non-virtual"><scope>embed::pwm</scope><name>is_initialized</name></member>
+      <member refid="classembed_1_1driver_1ab8b2029f33d55b9ffffd6e88d846cd7b" prot="protected" virt="non-virtual"><scope>embed::pwm</scope><name>m_initialized</name></member>
+      <member refid="classembed_1_1driver_1aac7d23e384bc27a26b77c8fd681483ef" prot="protected" virt="non-virtual"><scope>embed::pwm</scope><name>m_initialized_settings</name></member>
+      <member refid="classembed_1_1driver_1afb925433a5897293609af5fae29e3dc3" prot="protected" virt="non-virtual"><scope>embed::pwm</scope><name>m_settings</name></member>
+      <member refid="classembed_1_1driver_1a54440bf23c0c34102f563da1193d99ae" prot="public" virt="non-virtual"><scope>embed::pwm</scope><name>reset</name></member>
+      <member refid="classembed_1_1driver_1ae6eb991ebb2321bb3565c2a03a613219" prot="public" virt="non-virtual"><scope>embed::pwm</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
