@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::timer :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1638640020 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1638640020 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1638640020></script>
+<link href=/libembeddedhal/css/nucleus.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1638653624 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1638653624></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1timer/>
@@ -33,9 +33,9 @@ libembeddedhal
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1638640020></script>
-<script src=/libembeddedhal/js/auto-complete.js?1638640020></script>
-<script src=/libembeddedhal/js/search.js?1638640020></script>
+<script src=/libembeddedhal/js/lunr.min.js?1638653624></script>
+<script src=/libembeddedhal/js/auto-complete.js?1638653624></script>
+<script src=/libembeddedhal/js/search.js?1638653624></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -51,7 +51,7 @@ libembeddedhal
 <li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1bit__depth/>embed::bit_depth</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can/>embed::can</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ title=embed::can::message_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>embed::can::message_t</a></li>
@@ -119,6 +119,7 @@ libembeddedhal
 <li><a href=#public-types>Public Types</a></li>
 <li><a href=#public-functions>Public Functions</a></li>
 <li><a href=#additional-inherited-members>Additional inherited members</a></li>
+<li><a href=#detailed-description>Detailed Description</a></li>
 <li><a href=#public-types-documentation>Public Types Documentation</a>
 <ul>
 <li><a href=#enum-controls>enum controls</a></li>
@@ -142,7 +143,7 @@ libembeddedhal
 <main id=body-inner>
 <h1>embed::timer</h1>
 <p><strong>embed::timer Class Reference</strong></p>
-<p>Timer hardware abstraction interface. Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer&rsquo;s time has expired, an event/interrupt/signal is generated.</p>
+<p>Timer hardware abstraction interface. <a href=#detailed-description>More&mldr;</a></p>
 <p><code>#include &lt;timer.hpp></code></p>
 <p>Inherits from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></p>
 <h2 id=public-types>Public Types</h2>
@@ -230,7 +231,7 @@ libembeddedhal
 <tbody>
 <tr>
 <td>virtual bool</td>
-<td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
 </tr>
 </tbody>
 </table>
@@ -245,18 +246,22 @@ libembeddedhal
 <tbody>
 <tr>
 <td>settings_t</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-settings>m_settings</a></strong></td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-settings>m_settings</a></strong> Mutable settings.</td>
 </tr>
 <tr>
 <td>settings_t</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized-settings>m_initialized_settings</a></strong></td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized-settings>m_initialized_settings</a></strong> Saved version of the settings at initialization.</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized>m_initialized</a></strong></td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized>m_initialized</a></strong> Determines if the driver has been initialized.</td>
 </tr>
 </tbody>
 </table>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>timer;
+</code></pre></div><p>Timer hardware abstraction interface.</p>
+<p>Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer&rsquo;s time has expired, an event/interrupt/signal is generated.</p>
 <h2 id=public-types-documentation>Public Types Documentation</h2>
 <h3 id=enum-controls>enum controls</h3>
 <table>
@@ -347,7 +352,7 @@ libembeddedhal
 </ul>
 <p>When called this will, stop and reset the timer. To start the timer, <code>control(controls::start)</code> must be called.</p>
 <hr>
-<p>Updated on 2021-12-04 at 17:46:59 +0000</p>
+<p>Updated on 2021-12-04 at 21:33:44 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -360,14 +365,14 @@ libembeddedhal
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1638640020></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1638640020></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1638640020></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1638640020></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1638640020></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1638640020></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1638640020></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1638653624></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1638653624></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1638653624></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1638653624></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1638653624></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1638653624></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1638653624></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1638640020></script>
+<script src=/libembeddedhal/js/relearn.js?1638653624></script>
 </body>
 </html>

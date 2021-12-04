@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::can_network::node_t :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1638640019 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1638640019 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1638640019></script>
+<link href=/libembeddedhal/css/nucleus.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1638653624 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1638653624 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1638653624></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1can__network_1_1node__t/>
@@ -33,9 +33,9 @@ libembeddedhal
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1638640019></script>
-<script src=/libembeddedhal/js/auto-complete.js?1638640019></script>
-<script src=/libembeddedhal/js/search.js?1638640019></script>
+<script src=/libembeddedhal/js/lunr.min.js?1638653624></script>
+<script src=/libembeddedhal/js/auto-complete.js?1638653624></script>
+<script src=/libembeddedhal/js/search.js?1638653624></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -51,7 +51,7 @@ libembeddedhal
 <li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1bit__depth/>embed::bit_depth</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can/>embed::can</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ title=embed::can::message_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>embed::can::message_t</a></li>
@@ -136,7 +136,7 @@ libembeddedhal
 <main id=body-inner>
 <h1>embed::can_network::node_t</h1>
 <p><strong>embed::can_network::node_t Class Reference</strong></p>
-<p><a href=#detailed-description>More&mldr;</a></p>
+<p>A can network node stores the can messages in a lock free way. <a href=#detailed-description>More&mldr;</a></p>
 <p><code>#include &lt;can_network.hpp></code></p>
 <h2 id=public-functions>Public Functions</h2>
 <table>
@@ -149,7 +149,7 @@ libembeddedhal
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-node-t>node_t</a></strong>()Default constructor.</td>
+<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-node-t>node_t</a></strong>()Construct a new node t object.</td>
 </tr>
 <tr>
 <td><a href=classes/classembed_1_1can__network_1_1node__t/>node_t</a> &</td>
@@ -157,37 +157,47 @@ libembeddedhal
 </tr>
 <tr>
 <td></td>
-<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-node-t>node_t</a></strong>(const <a href=classes/classembed_1_1can__network_1_1node__t/>node_t</a> & node)Copy constructor.</td>
+<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-node-t>node_t</a></strong>(const <a href=classes/classembed_1_1can__network_1_1node__t/>node_t</a> & node)Construct a new node t object.</td>
 </tr>
 <tr>
 <td><a href=classes/structembed_1_1can_1_1message__t/>can::message_t</a></td>
-<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-secure-get>secure_get</a></strong>()</td>
+<td><strong><a href=classes/classembed_1_1can__network_1_1node__t/#function-secure-get>secure_get</a></strong>()Get this node&rsquo;s can message.</td>
 </tr>
 </tbody>
 </table>
 <h2 id=detailed-description>Detailed Description</h2>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>can_network<span style=color:#f92672>::</span>node_t;
-</code></pre></div><p>The node stored in the <a href=classes/classembed_1_1can__network/>can_network</a> map. Holds the latest CAN message and contains methods for updating and retreiving can messages in a thread-safe manner that does not invoke OS locks.</p>
-<p>Updating the CAN message data is completely lock free. Retrieving data is NOT lock free, but instead uses atomics to poll for when the update() function has completed in some other thread. This asymmetry in locking is to reduce latency for write case rather than than read case. Storing a CAN message is typically done via an interrupt service routine or a thread that MUST NOT block in anyway or the system can lock up. Where as reading data typically is done by a userspace thread which can typically wait a few cycles to get its data.</p>
+</code></pre></div><p>A can network node stores the can messages in a lock free way.</p>
+<p>Updating the can message data is completely lock free. Retrieving data uses atomics to poll for when the update() function has completed. This asymmetry in locking is to reduce write time, which is usually done in an interrupt context, rather than than read time, which is performed by a driver in a thread or main thread.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
 <h3 id=function-node_t>function node_t</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> node_t()
-</code></pre></div><p>Default constructor.</p>
+</code></pre></div><p>Construct a new node t object.</p>
 <h3 id=function-operator>function operator=</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> node_t <span style=color:#f92672>&amp;</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>=</span>(
     <span style=color:#66d9ef>const</span> node_t <span style=color:#f92672>&amp;</span> node
 )
 </code></pre></div><p>Node assignment operator.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>node</strong> the node copy</li>
+</ul>
+<p><strong>Return</strong>: <a href=classes/classembed_1_1can__network_1_1node__t/>node_t</a>& reference to this object</p>
 <h3 id=function-node_t-1>function node_t</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> node_t(
     <span style=color:#66d9ef>const</span> node_t <span style=color:#f92672>&amp;</span> node
 )
-</code></pre></div><p>Copy constructor.</p>
+</code></pre></div><p>Construct a new node t object.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>node</strong> the object to copy</li>
+</ul>
 <h3 id=function-secure_get>function secure_get</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> can<span style=color:#f92672>::</span>message_t secure_get()
-</code></pre></div><p>Return a CAN message, but only do so if the CAN message of this node is not currently be modified by another thread that is using the update() method.</p>
+</code></pre></div><p>Get this node&rsquo;s can message.</p>
+<p><strong>Return</strong>: <a href=classes/structembed_1_1can_1_1message__t/>can::message_t</a></p>
 <hr>
-<p>Updated on 2021-12-04 at 17:46:59 +0000</p>
+<p>Updated on 2021-12-04 at 21:33:44 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -200,14 +210,14 @@ libembeddedhal
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1638640019></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1638640019></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1638640019></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1638640019></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1638640019></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1638640019></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1638640019></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1638653624></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1638653624></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1638653624></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1638653624></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1638653624></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1638653624></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1638653624></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1638640019></script>
+<script src=/libembeddedhal/js/relearn.js?1638653624></script>
 </body>
 </html>
