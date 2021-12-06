@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::pwm :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/classembed_1_1pwm/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -73,7 +72,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1no__settings/ title=embed::no_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1no__settings/>embed::no_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1output__pin/ title=embed::output_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1output__pin/>embed::output_pin</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1output__pin__settings/ title=embed::output_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1output__pin__settings/>embed::output_pin_settings</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class="dd-item active"><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1serial/>embed::serial</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1spi/ title=embed::spi class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1spi/>embed::spi</a></li>
@@ -107,26 +106,109 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/classembed_1_1pwm/ aria-disabled=true><span itemprop=name>embed::pwm</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#additional-inherited-members>Additional inherited members</a></li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::pwm</h1>
+<p><strong>embed::pwm Class Reference</strong></p>
+<p>Pulse Width Modulation (PWM) channel hardware abstraction.</p>
+<p><code>#include &lt;pwm.hpp></code></p>
+<p>Inherits from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></p>
+<h2 id=additional-inherited-members>Additional inherited members</h2>
+<p><strong>Public Functions inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, <a href>reset()</a> must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-reset>reset</a></strong>()Reset the driver in order to run initialize again. This is helpful if the application needs to change the settings of a driver after it is first initialized, like baud rate for serial or pull resistor for a pin.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-is-initialized>is_initialized</a></strong>() constDetermine if the driver has been initialized.</td>
+</tr>
+<tr>
+<td>settings_t &</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-settings>settings</a></strong>()Get access to uncommitted driver settings.</td>
+</tr>
+<tr>
+<td>const settings_t &</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-initialized-settings>initialized_settings</a></strong>() constGet access to the settings that were used in the latest initialization. These settings only get updated when a successful <a href=classes/classembed_1_1driver/#function-initialize>initialize()</a> has occurred.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Functions inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Attributes inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>settings_t</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-settings>m_settings</a></strong> Mutable settings.</td>
+</tr>
+<tr>
+<td>settings_t</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized-settings>m_initialized_settings</a></strong> Saved version of the settings at initialization.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized>m_initialized</a></strong> Determines if the driver has been initialized.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/structembed_1_1output__pin__settings/ title=embed::output_pin_settings><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

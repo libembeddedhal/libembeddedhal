@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::interrupt_pin_settings :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -68,7 +67,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1input__pin/ title=embed::input_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1input__pin/>embed::input_pin</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/ title=embed::input_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ title=embed::interrupt_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ title=embed::interrupt_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ title=embed::interrupt_pin_settings class="dd-item active"><a href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/ title=embed::invalid_option_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1no__settings/ title=embed::no_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1no__settings/>embed::no_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1output__pin/ title=embed::output_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1output__pin/>embed::output_pin</a></li>
@@ -107,26 +106,62 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ aria-disabled=true><span itemprop=name>embed::interrupt_pin_settings</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-attributes>Public Attributes</a></li>
+<li><a href=#public-attributes-documentation>Public Attributes Documentation</a>
+<ul>
+<li><a href=#variable-resistor>variable resistor</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::interrupt_pin_settings</h1>
+<p><strong>embed::interrupt_pin_settings Struct Reference</strong></p>
+<p>Generic settings for interrupt pins.</p>
+<p><code>#include &lt;gpio.hpp></code></p>
+<h2 id=public-attributes>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin_resistor</td>
+<td><strong><a href=classes/structembed_1_1interrupt__pin__settings/#variable-resistor>resistor</a></strong> pull resistor for an interrupt pin. Generally advised to NOT use <code>pin_resistor::none</code> and if it is used and external pull resistor should be placed on the pin to prevent random interrupt from firing.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=public-attributes-documentation>Public Attributes Documentation</h2>
+<h3 id=variable-resistor>variable resistor</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>pin_resistor resistor <span style=color:#f92672>=</span> pin_resistor<span style=color:#f92672>::</span>pull_up;
+</code></pre></div><p>pull resistor for an interrupt pin. Generally advised to NOT use <code>pin_resistor::none</code> and if it is used and external pull resistor should be placed on the pin to prevent random interrupt from firing.</p>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ title=embed::interrupt_pin><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/ title=embed::invalid_option_t><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::static_callable :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/classembed_1_1static__callable/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -78,7 +77,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1spi/ title=embed::spi class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1spi/>embed::spi</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1spi__settings/>embed::spi_settings</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class="dd-item active"><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>" class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)></a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
@@ -107,26 +106,49 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/classembed_1_1static__callable/ aria-disabled=true><span itemprop=name>embed::static_callable</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#detailed-description>Detailed Description</a></li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::static_callable</h1>
+<p><strong>embed::static_callable Class Reference</strong></p>
+<p>General class which will be used to allow for signature to be used and then split by the below class. <a href=#detailed-description>More&mldr;</a></p>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>owner_class</span> ,
+<span style=color:#66d9ef>int</span> reference_designator,
+<span style=color:#66d9ef>typename</span> signature <span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>static_callable;
+</code></pre></div><p>General class which will be used to allow for signature to be used and then split by the below class.</p>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>owner_class</strong></li>
+<li><strong>reference_designator</strong></li>
+<li><strong>signature</strong></li>
+</ul>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>"><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

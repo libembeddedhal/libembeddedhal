@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::static_memory_resource :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -80,7 +79,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1spi__settings/>embed::spi_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>" class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)></a></li>
-<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class="dd-item active"><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
@@ -107,26 +106,168 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ aria-disabled=true><span itemprop=name>embed::static_memory_resource</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-functions>Public Functions</a></li>
+<li><a href=#protected-functions>Protected Functions</a></li>
+<li><a href=#detailed-description>Detailed Description</a></li>
+<li><a href=#public-functions-documentation>Public Functions Documentation</a>
+<ul>
+<li><a href=#function-static_memory_resource>function static_memory_resource</a></li>
+<li><a href=#function-capacity>function capacity</a></li>
+<li><a href=#function-memory_used>function memory_used</a></li>
+<li><a href=#function-memory_available>function memory_available</a></li>
+</ul>
+</li>
+<li><a href=#protected-functions-documentation>Protected Functions Documentation</a>
+<ul>
+<li><a href=#function-do_allocate>function do_allocate</a></li>
+<li><a href=#function-do_deallocate>function do_deallocate</a></li>
+<li><a href=#function-do_is_equal>function do_is_equal</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::static_memory_resource</h1>
+<p><strong>embed::static_memory_resource Class Reference</strong></p>
+<p>The <a href>static_memory_resource</a> is the polymorphic memory resource allocator that allows libembeddedhal&rsquo;s libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc excpetion is thrown. <a href=#detailed-description>More&mldr;</a></p>
+<p><code>#include &lt;static_memory_resource.hpp></code></p>
+<p>Inherits from std::pmr::memory_resource</p>
+<h2 id=public-functions>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-static-memory-resource>static_memory_resource</a></strong>()</td>
+</tr>
+<tr>
+<td>constexpr std::size_t</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-capacity>capacity</a></strong>() const</td>
+</tr>
+<tr>
+<td>std::size_t</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-memory-used>memory_used</a></strong>() const</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-memory-available>memory_available</a></strong>() const</td>
+</tr>
+</tbody>
+</table>
+<h2 id=protected-functions>Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>void *</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-do-allocate>do_allocate</a></strong>(std::size_t bytes, std::size_t alignment) overrideImplemenation of the <a href>do_allocate()</a> method for std::pmr::memory_resource.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-do-deallocate>do_deallocate</a></strong>(void * address, std::size_t bytes, std::size_t alignment) overrideImplemenation of the <a href>do_deallocate()</a> method for std::pmr::memory_resource.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/#function-do-is-equal>do_is_equal</a></strong>(const std::pmr::memory_resource & other) const overrideImplemenation of the <a href>do_is_equal()</a> method for std::pmr::memory_resource.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BufferSize<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>static_memory_resource;
+</code></pre></div><p>The <a href>static_memory_resource</a> is the polymorphic memory resource allocator that allows libembeddedhal&rsquo;s libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc excpetion is thrown.</p>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>BufferSize</strong> number of bytes to statically allocate for the memory resource.</li>
+</ul>
+<p>USAGE:</p>
+<p>// Make a memory resource with 1kB buffer static_memory_resource&lt;1024> memory_resource; std::pmr::unordered_map&lt;int, const char*> id_name_map(&memory_resource);</p>
+<h2 id=public-functions-documentation>Public Functions Documentation</h2>
+<h3 id=function-static_memory_resource>function static_memory_resource</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> static_memory_resource()
+</code></pre></div><h3 id=function-capacity>function capacity</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> std<span style=color:#f92672>::</span>size_t capacity() <span style=color:#66d9ef>const</span>
+</code></pre></div><p><strong>Return</strong>: constexpr std::size_t - the total number of bytes that this allocator can allocate before throwing a std::bad_alloc exception.</p>
+<h3 id=function-memory_used>function memory_used</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> std<span style=color:#f92672>::</span>size_t memory_used() <span style=color:#66d9ef>const</span>
+</code></pre></div><p><strong>Return</strong>: std::size_t number of bytes that have already been allocated.</p>
+<h3 id=function-memory_available>function memory_available</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>int</span> memory_available() <span style=color:#66d9ef>const</span>
+</code></pre></div><p><strong>Return</strong>: int Bytes that have yet to be allocated from this allocator.</p>
+<h2 id=protected-functions-documentation>Protected Functions Documentation</h2>
+<h3 id=function-do_allocate>function do_allocate</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>*</span> do_allocate(
+    std<span style=color:#f92672>::</span>size_t bytes,
+    std<span style=color:#f92672>::</span>size_t alignment
+) <span style=color:#66d9ef>override</span>
+</code></pre></div><p>Implemenation of the <a href>do_allocate()</a> method for std::pmr::memory_resource.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>bytes</strong> number of bytes to allocate</li>
+<li><strong>alignment</strong> alignment limit for the allocation</li>
+</ul>
+<p><strong>Return</strong>: void* address of the newly allocated buffer</p>
+<h3 id=function-do_deallocate>function do_deallocate</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> do_deallocate(
+    <span style=color:#66d9ef>void</span> <span style=color:#f92672>*</span> address,
+    std<span style=color:#f92672>::</span>size_t bytes,
+    std<span style=color:#f92672>::</span>size_t alignment
+) <span style=color:#66d9ef>override</span>
+</code></pre></div><p>Implemenation of the <a href>do_deallocate()</a> method for std::pmr::memory_resource.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>address</strong> address of space to be deallocated</li>
+<li><strong>bytes</strong> number of bytes to allocate</li>
+<li><strong>alignment</strong> alignment limit for the allocation</li>
+</ul>
+<h3 id=function-do_is_equal>function do_is_equal</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>bool</span> do_is_equal(
+    <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>pmr<span style=color:#f92672>::</span>memory_resource <span style=color:#f92672>&amp;</span> other
+) <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>override</span>
+</code></pre></div><p>Implemenation of the <a href>do_is_equal()</a> method for std::pmr::memory_resource.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>other</strong> another memory resource to</li>
+</ul>
+<p><strong>Return</strong>:</p>
+<ul>
+<li>true are equal</li>
+<li>false are not equal</li>
+</ul>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>"><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

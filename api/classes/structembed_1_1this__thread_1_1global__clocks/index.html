@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::this_thread::global_clocks :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -81,7 +80,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>" class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)></a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class="dd-item active"><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
 <li data-nav-id=/libembeddedhal/api/namespaces/ title=Namespaces class="dd-item alwaysopen"><a href=/libembeddedhal/api/namespaces/>Namespaces</a><ul>
@@ -107,26 +106,96 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ aria-disabled=true><span itemprop=name>embed::this_thread::global_clocks</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-attributes>Public Attributes</a></li>
+<li><a href=#public-attributes-documentation>Public Attributes Documentation</a>
+<ul>
+<li><a href=#variable-m_incremental_uptime>variable m_incremental_uptime</a></li>
+<li><a href=#variable-m_loop_delay>variable m_loop_delay</a></li>
+<li><a href=#variable-m_global_sleep>variable m_global_sleep</a></li>
+<li><a href=#variable-m_global_uptime>variable m_global_uptime</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::this_thread::global_clocks</h1>
+<p><strong>embed::this_thread::global_clocks Struct Reference</strong></p>
+<p>structure containing internal clock variables and functions</p>
+<p><code>#include &lt;clock.hpp></code></p>
+<h2 id=public-attributes>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auto</td>
+<td><strong><a href=classes/structembed_1_1this__thread_1_1global__clocks/#variable-m-incremental-uptime>m_incremental_uptime</a></strong> Default uptime timer that simply counts each time it is called. This should almost never be used.</td>
+</tr>
+<tr>
+<td>auto</td>
+<td><strong><a href=classes/structembed_1_1this__thread_1_1global__clocks/#variable-m-loop-delay>m_loop_delay</a></strong> Default sleep function that simply counts until it reaches a designated number.</td>
+</tr>
+<tr>
+<td>sleep_function</td>
+<td><strong><a href=classes/structembed_1_1this__thread_1_1global__clocks/#variable-m-global-sleep>m_global_sleep</a></strong> Store the global sleep function.</td>
+</tr>
+<tr>
+<td>uptime_function</td>
+<td><strong><a href=classes/structembed_1_1this__thread_1_1global__clocks/#variable-m-global-uptime>m_global_uptime</a></strong> Store the global uptime function.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=public-attributes-documentation>Public Attributes Documentation</h2>
+<h3 id=variable-m_incremental_uptime>variable m_incremental_uptime</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>auto</span> m_incremental_uptime <span style=color:#f92672>=</span> []() <span style=color:#f92672>-&gt;</span> time_increment {
+    <span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std<span style=color:#f92672>::</span>chrono_literals;
+    <span style=color:#66d9ef>static</span> time_increment count{ <span style=color:#ae81ff>0</span> };
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>100</span>ns;
+    <span style=color:#66d9ef>return</span> count;
+  };
+</code></pre></div><p>Default uptime timer that simply counts each time it is called. This should almost never be used.</p>
+<h3 id=variable-m_loop_delay>variable m_loop_delay</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>auto</span> m_loop_delay <span style=color:#f92672>=</span> [](time_increment loop_count) {
+    time_increment count{ <span style=color:#ae81ff>0</span> };
+    <span style=color:#66d9ef>while</span> (count <span style=color:#f92672>&lt;</span> loop_count) {
+      count <span style=color:#f92672>+=</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>microseconds{ <span style=color:#ae81ff>100</span> };
+    }
+  };
+</code></pre></div><p>Default sleep function that simply counts until it reaches a designated number.</p>
+<h3 id=variable-m_global_sleep>variable m_global_sleep</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> sleep_function m_global_sleep <span style=color:#f92672>=</span> m_loop_delay;
+</code></pre></div><p>Store the global sleep function.</p>
+<h3 id=variable-m_global_uptime>variable m_global_uptime</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> uptime_function m_global_uptime <span style=color:#f92672>=</span> m_incremental_uptime;
+</code></pre></div><p>Store the global uptime function.</p>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

@@ -1,0 +1,530 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.89.4">
+<meta name=generator content="Relearn 2.9.2
+">
+<meta name=description content>
+<title>embed :: libembeddedhal docs</title>
+<link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1638755011 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1638755011 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/libembeddedhal/api/namespaces/namespaceembed/>
+<script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=/libembeddedhal/ style="color:#3d414d;font-family:work sans,helvetica,tahoma,geneva,arial,sans-serif;font-size:30px;font-weight:300;margin-top:-2px;text-transform:uppercase"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310.797 310.797" style="enable-background:new 0 0 310.797 310.797;width:50%"><g><path d="M208.859 27.307 208.8 11.308 189.311.0l-87.893 51.407.11 19.635L63.697 93.104l.073 47.457-18.592 11.161-.155 101.334 20.214 11.833 12.422-7.502 18.173 11.395v30.12l20.075 11.895 87.333-50.921-.053-21.302 45.583-26.463v-38.133l17.004-10.152V60.551L208.859 27.307zm-21.557 6.085 6.559-3.846.048 23.674-6.607 3.86V33.392zM158.816 50.059l6.558-3.836.049 23.653-6.606 3.86V50.059zm-29.643 17.33 6.558-3.844.049 23.68-6.606 3.871V67.389zM101.529 87.725l-.049 13.891 20.164 11.813 87.158-51.046.095-17.363 23.033 14.225-107.389 63.021L83.517 98.361l18.012-10.636zM73.18 167.153l20.375-12.225-.105 7.768-20.383 12.171.113-7.714zM72.604 203.263l.018-1.205 20.374-12.225-.105 7.768-20.382 12.17L72.604 203.263zM72.846 242.79l.113-7.716 19.222-11.532-.106 7.768-19.229 11.48zm43.924 21.416-24.647-15.455 14.838-8.553.311-101.059-20.912-12.13-7.59 4.552v-18.703l38 22.237V264.206zm6.706 25.577.086-4.327 6.5-3.833.02 4.32L123.476 289.783zm29.643-17.314v-4.324l6.603-3.849.004 4.303-6.607 3.87zm28.487-16.641v-4.336l6.602-3.861.004 4.296L181.606 255.828zm52.164-51.621-102 59.915V134.869l102-59.72V204.207zm18.042-49.549-3.042 1.85v-7.696l3.167-1.964-.125 7.81zm-3.042-31.371v-7.695l3.151-1.969.139 7.721L248.77 123.287zm3.493-36.656-3.493 2.086v-7.694l3.599-2.159L252.263 86.631z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
+</br><svg viewBox="0 0 300 25"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">libembeddedhal</text></svg>
+</a>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script src=/libembeddedhal/js/lunr.min.js?1638755011></script>
+<script src=/libembeddedhal/js/auto-complete.js?1638755011></script>
+<script src=/libembeddedhal/js/search.js?1638755011></script>
+</div>
+<div id=homelinks>
+<ul>
+<li>
+<a class=padding href=/libembeddedhal/><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
+<li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can/>embed::can</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ title=embed::can::message_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>embed::can::message_t</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can__network/ title=embed::can_network class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can__network/>embed::can_network</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can__network_1_1node__t/ title=embed::can_network::node_t class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can__network_1_1node__t/>embed::can_network::node_t</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can__settings/ title=embed::can_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can__settings/>embed::can_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1counter/ title=embed::counter class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1counter/>embed::counter</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1dac/ title=embed::dac class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1dac/>embed::dac</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1driver/ title=embed::driver class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1driver/>embed::driver</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1full__scale/ title=embed::full_scale class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1full__scale/>embed::full_scale</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1i2c/ title=embed::i2c class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1i2c/>embed::i2c</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1i2c__settings/ title=embed::i2c_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1i2c__settings/>embed::i2c_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1input__pin/ title=embed::input_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1input__pin/>embed::input_pin</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/ title=embed::input_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ title=embed::interrupt_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ title=embed::interrupt_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/ title=embed::invalid_option_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1no__settings/ title=embed::no_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1no__settings/>embed::no_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1output__pin/ title=embed::output_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1output__pin/>embed::output_pin</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1output__pin__settings/ title=embed::output_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1output__pin__settings/>embed::output_pin_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1serial/>embed::serial</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1spi/ title=embed::spi class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1spi/>embed::spi</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1spi__settings/>embed::spi_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t...)>" class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t...)></a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
+<li data-nav-id=/libembeddedhal/api/namespaces/ title=Namespaces class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/namespaces/>Namespaces</a><ul>
+<li data-nav-id=/libembeddedhal/api/namespaces/namespaceembed/ title=embed class="dd-item active"><a href=/libembeddedhal/api/namespaces/namespaceembed/>embed</a></li>
+<li data-nav-id=/libembeddedhal/api/namespaces/namespaceembed_1_1this__thread/ title=embed::this_thread class=dd-item><a href=/libembeddedhal/api/namespaces/namespaceembed_1_1this__thread/>embed::this_thread</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/pages/ title=Pages class="dd-item alwaysopen"><a href=/libembeddedhal/api/pages/>Pages</a><ul></ul></li></ul></li>
+</ul>
+<div id=footer>
+<p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p>
+</div>
+</div>
+</nav>
+<div id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div id=top-bar>
+<div id=breadcrumbs>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
+<meta itemprop=itemListOrder content="Descending">
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/namespaces/><span itemprop=name>Namespaces</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/namespaces/namespaceembed/ aria-disabled=true><span itemprop=name>embed</span></a></li>
+</ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#namespaces>Namespaces</a></li>
+<li><a href=#classes>Classes</a></li>
+<li><a href=#types>Types</a></li>
+<li><a href=#functions>Functions</a></li>
+<li><a href=#attributes>Attributes</a></li>
+<li><a href=#types-documentation>Types Documentation</a>
+<ul>
+<li><a href=#enum-pin_resistor>enum pin_resistor</a></li>
+</ul>
+</li>
+<li><a href=#functions-documentation>Functions Documentation</a>
+<ul>
+<li><a href=#function-is_platform>function is_platform</a></li>
+<li><a href=#function-is_a_test>function is_a_test</a></li>
+<li><a href=#function-value>function value</a></li>
+<li><a href=#function-generate_field_of_ones>function generate_field_of_ones</a></li>
+<li><a href=#function-increase_bit_depth>function increase_bit_depth</a></li>
+<li><a href=#function-operator>function operator*</a></li>
+</ul>
+</li>
+<li><a href=#attributes-documentation>Attributes Documentation</a>
+<ul>
+<li><a href=#variable-platform_string>variable platform_string</a></li>
+<li><a href=#variable-invalid_option>variable invalid_option</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<main id=body-inner>
+<h1>embed</h1>
+<p><strong>embed Namespace Reference</strong></p>
+<h2 id=namespaces>Namespaces</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href=namespaces/namespaceembed_1_1this__thread/>embed::this_thread</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id=classes>Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1adc/>embed::adc</a></strong> Analog to Digital Converter (ADC) hardware abstraction interface.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1can__settings/>embed::can_settings</a></strong> Generic settings for a can peripheral.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1can/>embed::can</a></strong> Controller Area Network (CAN bus) hardware abstraction interface.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1can__network/>embed::can_network</a></strong> <a href>can_network</a> is a canbus message receiver handler and</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1counter/>embed::counter</a></strong> Counter hardware abstraction interface. Use this interface for devices and peripherals that have counting capabilities. Such devices can count up or down. Useful for keeping time. Expect counters to overflow when they reach the end of counting register&rsquo;s limits.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1dac/>embed::dac</a></strong> Digital to Analog Converter (DAC) hardware abstraction interface.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></strong> Used for defining static_asserts that should always fail, but only if the static_assert line is hit via <code>if constexpr</code> control block. Prefer to NOT use this directly but to use <code>invalid_option</code> instead.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1no__settings/>embed::no_settings</a></strong> An empty settings structure used to indicate that a driver or interface does not have generic settings.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1driver/>embed::driver</a></strong> The basis class for all peripheral, device and system drivers in libembeddedhal.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1bit__limits/>embed::bit_limits</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1bit__depth/>embed::bit_depth</a></strong> A type based on bit width that contains a value.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1full__scale/>embed::full_scale</a></strong> A bit resolution erased representation of a precentage value using only integral arithmetic.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></strong> Generic settings for input pins.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1output__pin__settings/>embed::output_pin_settings</a></strong> Generic settings for output pins.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></strong> Generic settings for interrupt pins.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1input__pin/>embed::input_pin</a></strong> Digital input pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1output__pin/>embed::output_pin</a></strong> Digital output pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></strong> Digital interrupt pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1i2c__settings/>embed::i2c_settings</a></strong> Generic settings for a standard I2C device.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1i2c/>embed::i2c</a></strong> Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1pwm/>embed::pwm</a></strong> Pulse Width Modulation (PWM) channel hardware abstraction.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1serial__settings/>embed::serial_settings</a></strong> Generic settings for a standard serial device.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1serial/>embed::serial</a></strong> Serial communication protocol hardware abstract interface.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1spi__settings/>embed::spi_settings</a></strong> Generic settings for a standard SPI device.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1spi/>embed::spi</a></strong> Serial peripheral interface (SPI) communication protocol hardware abstract interface.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1static__callable/>embed::static_callable</a></strong> General class which will be used to allow for signature to be used and then split by the below class.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t&mldr;)></a></strong> Specialization of <a href=classes/classembed_1_1static__callable/>static_callable</a> with the return type and arguments split up.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></strong> The <a href>static_memory_resource</a> is the polymorphic memory resource allocator that allows libembeddedhal&rsquo;s libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc excpetion is thrown.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1timer/>embed::timer</a></strong> Timer hardware abstraction interface.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=types>Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enum class</td>
+<td><strong><a href=namespaces/namespaceembed/#enum-pin-resistor>pin_resistor</a></strong> { none = 0, pull_down, pull_up}Set of possible pin mode resistor settings.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=functions>Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constexpr bool</td>
+<td><strong><a href=namespaces/namespaceembed/#function-is-platform>is_platform</a></strong>(std::string_view p_platform)Determines if the current application was built for a specific platform. For example:</td>
+</tr>
+<tr>
+<td>constexpr bool</td>
+<td><strong><a href=namespaces/namespaceembed/#function-is-a-test>is_a_test</a></strong>()Determines if the application is a test.</td>
+</tr>
+<tr>
+<td>template &lt;typename enum_type > constexpr auto</td>
+<td><strong><a href=namespaces/namespaceembed/#function-value>value</a></strong>(enum_type enum_value)Helper function to convert an enum to its integral value.</td>
+</tr>
+<tr>
+<td>template &lt;size_t bit_field_width> consteval uint32_t</td>
+<td><strong><a href=namespaces/namespaceembed/#function-generate-field-of-ones>generate_field_of_ones</a></strong>()Generate a mask of 1s at compiletime.</td>
+</tr>
+<tr>
+<td>template &lt;std::integral T,size_t source_width,std::integral U> constexpr static T</td>
+<td><strong><a href=namespaces/namespaceembed/#function-increase-bit-depth>increase_bit_depth</a></strong>(U p_value)Take a value of arbitrary bit resolution and create a value with scaled up the bit resolution.</td>
+</tr>
+<tr>
+<td>template &lt;std::unsigned_integral T,std::unsigned_integral U> auto</td>
+<td><strong><a href=namespaces/namespaceembed/#function-operator*>operator*</a></strong>(U p_value, <a href=classes/classembed_1_1full__scale/>full_scale</a>&lt; T > p_scale)Scale an integral value by a full_scale value.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=attributes>Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constexpr const std::string_view</td>
+<td><strong><a href=namespaces/namespaceembed/#variable-platform-string>platform_string</a></strong> The platform string determines which platform this application was built for. Use this to determine at compile or runtime if the running application is a &ldquo;test&rdquo;, an &ldquo;lpc40&rdquo; series mcu, and &ldquo;stm&rdquo; series mcu or a raspberry pi (&ldquo;rpi&rdquo;).</td>
+</tr>
+<tr>
+<td>constexpr bool</td>
+<td><strong><a href=namespaces/namespaceembed/#variable-invalid-option>invalid_option</a></strong> Helper definition to simplify the usage of <a href>invalid_option_t</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=types-documentation>Types Documentation</h2>
+<h3 id=enum-pin_resistor>enum pin_resistor</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>0</td>
+<td>No pull up. This will cause the pin to float. This may be desirable if the pin has an external resistor attached or if the signal is sensitive to external devices like resistors.</td>
+</tr>
+<tr>
+<td>pull_down</td>
+<td></td>
+<td>Pull the pin down to devices GND. This will ensure that the voltage read by the pin when there is no signal on the pin is LOW (or false).</td>
+</tr>
+<tr>
+<td>pull_up</td>
+<td></td>
+<td>See pull down explanation, but in this case the pin is pulled up to VCC, also called VDD on some systems.</td>
+</tr>
+</tbody>
+</table>
+<p>Set of possible pin mode resistor settings.</p>
+<p>See each enumeration to get more details about when and how these should be used.</p>
+<h2 id=functions-documentation>Functions Documentation</h2>
+<h3 id=function-is_platform>function is_platform</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>bool</span> is_platform(
+    std<span style=color:#f92672>::</span>string_view p_platform
+)
+</code></pre></div><p>Determines if the current application was built for a specific platform. For example:</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_platform</strong> platform string pattern to check against</li>
+</ul>
+<p><strong>Return</strong>:</p>
+<ul>
+<li>true matches the platform string</li>
+<li>false does not matches the platform string</li>
+</ul>
+<p>embed::is_platform(&ldquo;lpc4078&rdquo;);</p>
+<p>Will return true if the PLATFORM macro defined at compile time was equal to lpc4078. If the developer wants to be less specific, let say, to just determine if the platform is in the lpc40xx family then the following example will work.</p>
+<p>embed::is_platform(&ldquo;lpc40&rdquo;);</p>
+<h3 id=function-is_a_test>function is_a_test</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>bool</span> is_a_test()
+</code></pre></div><p>Determines if the application is a test.</p>
+<p><strong>Return</strong>:</p>
+<ul>
+<li>true this application is a test</li>
+<li>false this application is not a test</li>
+</ul>
+<h3 id=function-value>function value</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> enum_type <span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>auto</span> value(
+    enum_type enum_value
+)
+</code></pre></div><p>Helper function to convert an enum to its integral value.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>enum_value</strong> the enumeration you want to convert into an integral value</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>enum_type</strong> the underlying type of the enumeration. Do not supply this value, it is inferred by the enum_value passed to the function.</li>
+</ul>
+<p><strong>Return</strong>: constexpr auto return the integral value of the enum.</p>
+<h3 id=function-generate_field_of_ones>function generate_field_of_ones</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t bit_field_width<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>static</span> <span style=color:#66d9ef>consteval</span> <span style=color:#66d9ef>uint32_t</span> generate_field_of_ones()
+</code></pre></div><p>Generate a mask of 1s at compiletime.</p>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>bit_field_width</strong> number of 1s in the mask</li>
+</ul>
+<p><strong>Return</strong>: consteval uint32_t mask with 1s at the LSB</p>
+<h3 id=function-increase_bit_depth>function increase_bit_depth</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>std<span style=color:#f92672>::</span>integral T,
+size_t source_width,
+std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>static</span> T increase_bit_depth(
+    U p_value
+)
+</code></pre></div><p>Take a value of arbitrary bit resolution and create a value with scaled up the bit resolution.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_value</strong> the value to be scaled</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>T</strong> integral type to bring the resolution of U up to.</li>
+<li><strong>source_width</strong> the bit resolution of the input value</li>
+<li><strong>U</strong> integral type of the input value</li>
+</ul>
+<p><strong>Return</strong>: constexpr T p_value but with resolution scaled up to type T</p>
+<p>The purpose of bit scaling a value is to take a value of lower bit resolution, scale it up but keep the percentage relative to the bits resolution. This is useful for bit resolution erasure as well as image upscaling.</p>
+<p>For example, lets take an 8-bit value of 127 (or 0x7F). This value is 50% of an 8-bit number. 50% of an 32-bit would be 2147483647 or 0x7FFFFFFF which is half of 2^32. A perfect upscaling would take 0x7F and generate 0x7FFFFFFF in this case. Doing so is quite costly and requires multiplication and division operations which are slower opetation.</p>
+<p>Fast and efficient bit scaling is done via bit replication. For example, to scale an 8-bit value up to 32-bits would look like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#ae81ff>8</span><span style=color:#f92672>-</span>bit   [ <span style=color:#ae81ff>0x7F</span> ]
+           <span style=color:#f92672>|</span><span style=color:#960050;background-color:#1e0010>\\\</span>_____________________
+           <span style=color:#f92672>|</span> <span style=color:#960050;background-color:#1e0010>\\</span>___________          \
+           <span style=color:#f92672>|</span>  <span style=color:#960050;background-color:#1e0010>\</span>____       <span style=color:#960050;background-color:#1e0010>\</span>          \
+           <span style=color:#f92672>|</span>       <span style=color:#960050;background-color:#1e0010>\</span>       <span style=color:#960050;background-color:#1e0010>\</span>          <span style=color:#f92672>|</span>
+           <span style=color:#f92672>|</span>        <span style=color:#f92672>|</span>       <span style=color:#f92672>|</span>         <span style=color:#f92672>|</span>
+           V        V       V         V
+<span style=color:#ae81ff>32</span><span style=color:#f92672>-</span>bit  [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ]
+</code></pre></div><p>Expected 32-bit value is: 0x7FFFFFFF Actual value from scaling: 0x7F7F7F7F % difference is: (0x7FFFFFFF - 0x7F7F7F7F) / 0x7FFFFFFF = 0.39215684% A precent difference well below 1% makes this a viable solution for most applications.</p>
+<h3 id=function-operator>function operator*</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>std<span style=color:#f92672>::</span>unsigned_integral T,
+std<span style=color:#f92672>::</span>unsigned_integral U<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>auto</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
+    U p_value,
+    full_scale<span style=color:#f92672>&lt;</span> T <span style=color:#f92672>&gt;</span> p_scale
+)
+</code></pre></div><p>Scale an integral value by a full_scale value.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_value</strong> value to be scaled</li>
+<li><strong>p_scale</strong> value scalar</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>T</strong> underlying type of the full scale value</li>
+<li><strong>U</strong> type of the integral value to be scaled</li>
+</ul>
+<p><strong>Return</strong>: auto the scaled down result of p_value * p_scale.</p>
+<p>Returns a scaled down version of the input value. For example if the input is 100 and the scale value represents a percentage of 50%, then performing the following operation: <code>100 * full_scale_50_percent</code> is equivalent to <code>100 * 0.5f</code>.</p>
+<h2 id=attributes-documentation>Attributes Documentation</h2>
+<h3 id=variable-platform_string>variable platform_string</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>string_view platform_string <span style=color:#f92672>=</span> PLATFORM_STRING;
+</code></pre></div><p>The platform string determines which platform this application was built for. Use this to determine at compile or runtime if the running application is a &ldquo;test&rdquo;, an &ldquo;lpc40&rdquo; series mcu, and &ldquo;stm&rdquo; series mcu or a raspberry pi (&ldquo;rpi&rdquo;).</p>
+<h3 id=variable-invalid_option>variable invalid_option</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>bool</span> invalid_option <span style=color:#f92672>=</span> invalid_option_t<span style=color:#f92672>&lt;</span>options...<span style=color:#f92672>&gt;::</span>value;
+</code></pre></div><p>Helper definition to simplify the usage of <a href>invalid_option_t</a>.</p>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>options</strong> ignored by the application but needed to create a non-trivial specialization of this class which allows its usage in static_assert.</li>
+</ul>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
+<footer class=footline>
+</footer>
+</main>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/libembeddedhal/api/namespaces/ title=Namespaces><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/namespaces/namespaceembed_1_1this__thread/ title=embed::this_thread><i class="fa fa-chevron-right"></i></a>
+</div>
+</div>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/libembeddedhal/js/clipboard.min.js?1638755011></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1638755011></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1638755011></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1638755011></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1638755011></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1638755011></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1638755011></script>
+<script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
+<script src=/libembeddedhal/js/relearn.js?1638755011></script>
+</body>
+</html>

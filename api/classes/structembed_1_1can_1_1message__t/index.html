@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::can::message_t :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,13 +48,13 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can/>embed::can</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ title=embed::can::message_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>embed::can::message_t</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ title=embed::can::message_t class="dd-item active"><a href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/>embed::can::message_t</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can__network/ title=embed::can_network class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can__network/>embed::can_network</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can__network_1_1node__t/ title=embed::can_network::node_t class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can__network_1_1node__t/>embed::can_network::node_t</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1can__settings/ title=embed::can_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1can__settings/>embed::can_settings</a></li>
@@ -107,26 +106,86 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/structembed_1_1can_1_1message__t/ aria-disabled=true><span itemprop=name>embed::can::message_t</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-attributes>Public Attributes</a></li>
+<li><a href=#public-attributes-documentation>Public Attributes Documentation</a>
+<ul>
+<li><a href=#variable-id>variable id</a></li>
+<li><a href=#variable-length>variable length</a></li>
+<li><a href=#variable-payload>variable payload</a></li>
+<li><a href=#variable-is_remote_request>variable is_remote_request</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::can::message_t</h1>
+<p><strong>embed::can::message_t Struct Reference</strong></p>
+<p>Attributes of a can message.</p>
+<p><code>#include &lt;can.hpp></code></p>
+<h2 id=public-attributes>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href=classes/classembed_1_1can/#using-id-t>id_t</a></td>
+<td><strong><a href=classes/structembed_1_1can_1_1message__t/#variable-id>id</a></strong> ID of the message.</td>
+</tr>
+<tr>
+<td>uint8_t</td>
+<td><strong><a href=classes/structembed_1_1can_1_1message__t/#variable-length>length</a></strong> The number of elements in the payload.</td>
+</tr>
+<tr>
+<td>std::array&lt; uint8_t, 8 ></td>
+<td><strong><a href=classes/structembed_1_1can_1_1message__t/#variable-payload>payload</a></strong> The message data.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/structembed_1_1can_1_1message__t/#variable-is-remote-request>is_remote_request</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id=public-attributes-documentation>Public Attributes Documentation</h2>
+<h3 id=variable-id>variable id</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>id_t id;
+</code></pre></div><p>ID of the message.</p>
+<h3 id=variable-length>variable length</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>uint8_t</span> length <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</code></pre></div><p>The number of elements in the payload.</p>
+<h3 id=variable-payload>variable payload</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>uint8_t</span>, <span style=color:#ae81ff>8</span> <span style=color:#f92672>&gt;</span> payload { <span style=color:#ae81ff>0</span> };
+</code></pre></div><p>The message data.</p>
+<h3 id=variable-is_remote_request>variable is_remote_request</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>bool</span> is_remote_request <span style=color:#f92672>=</span> false;
+</code></pre></div><p>Whether or not the message is a remote request frame. If true, then length and payload are ignored.</p>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1can__network/ title=embed::can_network><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

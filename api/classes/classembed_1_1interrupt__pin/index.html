@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.89.4">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/api/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Apis :: libembeddedhal docs</title>
+<title>embed::interrupt_pin :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1638755011 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1638755011 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1638755011></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/>
+<body data-url=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -49,8 +48,8 @@
 <ul class=topics>
 <li data-nav-id=/libembeddedhal/basics/ title=Basics class=dd-item><a href=/libembeddedhal/basics/>Basics</a><ul>
 <li data-nav-id=/libembeddedhal/basics/first-content/ title="First Content" class=dd-item><a href=/libembeddedhal/basics/first-content/>First Content</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item active parent"><a href=/libembeddedhal/api/>Apis</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=Apis class="dd-item parent"><a href=/libembeddedhal/api/>Apis</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__depth/ title=embed::bit_depth class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__depth/>embed::bit_depth</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1bit__limits/>embed::bit_limits</a></li>
@@ -67,7 +66,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1i2c__settings/ title=embed::i2c_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1i2c__settings/>embed::i2c_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1input__pin/ title=embed::input_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1input__pin/>embed::input_pin</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/ title=embed::input_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ title=embed::interrupt_pin class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ title=embed::interrupt_pin class="dd-item active"><a href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ title=embed::interrupt_pin_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/ title=embed::invalid_option_t class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1no__settings/ title=embed::no_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1no__settings/>embed::no_settings</a></li>
@@ -107,26 +106,218 @@
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/ aria-disabled=true><span itemprop=name>Apis</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>Apis</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/ aria-disabled=true><span itemprop=name>embed::interrupt_pin</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-types>Public Types</a></li>
+<li><a href=#public-functions>Public Functions</a></li>
+<li><a href=#additional-inherited-members>Additional inherited members</a></li>
+<li><a href=#detailed-description>Detailed Description</a></li>
+<li><a href=#public-types-documentation>Public Types Documentation</a>
+<ul>
+<li><a href=#enum-trigger_edge>enum trigger_edge</a></li>
+</ul>
+</li>
+<li><a href=#public-functions-documentation>Public Functions Documentation</a>
+<ul>
+<li><a href=#function-level>function level</a></li>
+<li><a href=#function-attach_interrupt>function attach_interrupt</a></li>
+<li><a href=#function-detach_interrupt>function detach_interrupt</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>Apis</h1>
+<h1>embed::interrupt_pin</h1>
+<p><strong>embed::interrupt_pin Class Reference</strong></p>
+<p>Digital interrupt pin hardware abstraction. <a href=#detailed-description>More&mldr;</a></p>
+<p><code>#include &lt;gpio.hpp></code></p>
+<p>Inherits from <a href=classes/classembed_1_1driver/>embed::driver&lt; interrupt_pin_settings ></a></p>
+<h2 id=public-types>Public Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enum class</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#enum-trigger-edge>trigger_edge</a></strong> { falling = 0, rising = 1, both = 2}The condition in which an interrupt is triggered.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=public-functions>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-level>level</a></strong>() const =0Return the voltage level of the pin.</td>
+</tr>
+<tr>
+<td>virtual void</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-attach-interrupt>attach_interrupt</a></strong>(std::function&lt; void(void)> p_callback, <a href=classes/classembed_1_1interrupt__pin/#enum-trigger-edge>trigger_edge</a> p_trigger) =0Enable interrupts for this pin. Pass in the callback to be executed when the trigger condition is met. This function can be called multiple times if the callback or trigger conditions need to be changed. detach_interrupts() does not need to be called before re-running this function.</td>
+</tr>
+<tr>
+<td>virtual void</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-detach-interrupt>detach_interrupt</a></strong>() =0Disable interrupts for this pin.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=additional-inherited-members>Additional inherited members</h2>
+<p><strong>Public Functions inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt; interrupt_pin_settings ></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, <a href>reset()</a> must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-reset>reset</a></strong>()Reset the driver in order to run initialize again. This is helpful if the application needs to change the settings of a driver after it is first initialized, like baud rate for serial or pull resistor for a pin.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-is-initialized>is_initialized</a></strong>() constDetermine if the driver has been initialized.</td>
+</tr>
+<tr>
+<td>settings_t &</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-settings>settings</a></strong>()Get access to uncommitted driver settings.</td>
+</tr>
+<tr>
+<td>const settings_t &</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-initialized-settings>initialized_settings</a></strong>() constGet access to the settings that were used in the latest initialization. These settings only get updated when a successful <a href=classes/classembed_1_1driver/#function-initialize>initialize()</a> has occurred.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Functions inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt; interrupt_pin_settings ></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Attributes inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt; interrupt_pin_settings ></a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>settings_t</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-settings>m_settings</a></strong> Mutable settings.</td>
+</tr>
+<tr>
+<td>settings_t</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized-settings>m_initialized_settings</a></strong> Saved version of the settings at initialization.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized>m_initialized</a></strong> Determines if the driver has been initialized.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>interrupt_pin;
+</code></pre></div><p>Digital interrupt pin hardware abstraction.</p>
+<p>Use this to trigger an interrupt service routine (ISR) when a pin detects a falling edge (when the pin&rsquo;s voltage transitions from HIGH to LOW), a rising edge (when the pin&rsquo;s voltage transitions from LOW to HIGH), or any transition of state on the pin.</p>
+<h2 id=public-types-documentation>Public Types Documentation</h2>
+<h3 id=enum-trigger_edge>enum trigger_edge</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>falling</td>
+<td>0</td>
+<td>Trigger and interrupt when a pin transitions from HIGH voltage to LOW voltage.</td>
+</tr>
+<tr>
+<td>rising</td>
+<td>1</td>
+<td>Trigger and interrupt when a pin transitions from LOW voltage to HIGH voltage.</td>
+</tr>
+<tr>
+<td>both</td>
+<td>2</td>
+<td>Trigger and interrupt when a pin transitions it state.</td>
+</tr>
+</tbody>
+</table>
+<p>The condition in which an interrupt is triggered.</p>
+<h2 id=public-functions-documentation>Public Functions Documentation</h2>
+<h3 id=function-level>function level</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>bool</span> level() <span style=color:#66d9ef>const</span> <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</code></pre></div><p>Return the voltage level of the pin.</p>
+<p><strong>Return</strong>:</p>
+<ul>
+<li>true HIGH voltage</li>
+<li>false LOW voltage</li>
+</ul>
+<h3 id=function-attach_interrupt>function attach_interrupt</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> attach_interrupt(
+    std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span>(<span style=color:#66d9ef>void</span>)<span style=color:#f92672>&gt;</span> p_callback,
+    trigger_edge p_trigger
+) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</code></pre></div><p>Enable interrupts for this pin. Pass in the callback to be executed when the trigger condition is met. This function can be called multiple times if the callback or trigger conditions need to be changed. detach_interrupts() does not need to be called before re-running this function.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_callback</strong> function to execute when the trigger condition is met</li>
+<li><strong>p_trigger</strong> the trigger condition that will signal the system to run the callback.</li>
+</ul>
+<h3 id=function-detach_interrupt>function detach_interrupt</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> detach_interrupt() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</code></pre></div><p>Disable interrupts for this pin.</p>
+<hr>
+<p>Updated on 2021-12-06 at 01:43:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/basics/first-content/ title="First Content"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/ title=Classes><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/structembed_1_1input__pin__settings/ title=embed::input_pin_settings><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/structembed_1_1interrupt__pin__settings/ title=embed::interrupt_pin_settings><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
