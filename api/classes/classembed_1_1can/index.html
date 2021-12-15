@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.90.1">
 <meta name=generator content="Relearn 2.9.2
 ">
 <meta name=description content>
 <title>embed::can :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1639154091 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1639154091></script>
+<link href=/libembeddedhal/css/nucleus.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1639572275 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1639572275></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1can/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1639154091></script>
-<script src=/libembeddedhal/js/auto-complete.js?1639154091></script>
-<script src=/libembeddedhal/js/search.js?1639154091></script>
+<script src=/libembeddedhal/js/lunr.min.js?1639572275></script>
+<script src=/libembeddedhal/js/auto-complete.js?1639572275></script>
+<script src=/libembeddedhal/js/search.js?1639572275></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -215,19 +215,19 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1can/#function-send>send</a></strong>(const <a href=classes/structembed_1_1can_1_1message__t/>message_t</a> & p_message) =0Send a can message over the can bus.</td>
 </tr>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; bool ></td>
 <td><strong><a href=classes/classembed_1_1can/#function-has-data>has_data</a></strong>() =0Determine if the can bus has any queued up can messages.</td>
 </tr>
 <tr>
-<td>virtual <a href=classes/structembed_1_1can_1_1message__t/>message_t</a></td>
+<td>virtual boost::leaf::result&lt; <a href=classes/structembed_1_1can_1_1message__t/>message_t</a> ></td>
 <td><strong><a href=classes/classembed_1_1can/#function-receive>receive</a></strong>() =0Receieve a message from the can bus if one is available.</td>
 </tr>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1can/#function-attach-interrupt>attach_interrupt</a></strong>(std::function&lt; void(<a href=classes/classembed_1_1can/>can</a> &p_can)> p_receive_handler) =0Setup driver to execute callback when a can message is received.</td>
 </tr>
 </tbody>
@@ -243,7 +243,7 @@
 </thead>
 <tbody>
 <tr>
-<td>bool</td>
+<td>boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, <a href>reset()</a> must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
 </tr>
 </tbody>
@@ -308,29 +308,26 @@
 </code></pre></div><p>Can message ID type trait.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
 <h3 id=function-send>function send</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> send(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> send(
     <span style=color:#66d9ef>const</span> message_t <span style=color:#f92672>&amp;</span> p_message
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Send a can message over the can bus.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_message</strong> the message to be sent</li>
+<li><strong>p_message</strong> - the message to be sent</li>
 </ul>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <h3 id=function-has_data>function has_data</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>bool</span> has_data() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>bool</span> <span style=color:#f92672>&gt;</span> has_data() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Determine if the can bus has any queued up can messages.</p>
-<p><strong>Return</strong>:</p>
-<ul>
-<li>true a can message is available to be read</li>
-<li>false no messages available to be read</li>
-</ul>
+<p><strong>Return</strong>: boost::leaf::result - true if a can message is available to read, false otherwise.</p>
 <h3 id=function-receive>function receive</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> message_t receive() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> message_t <span style=color:#f92672>&gt;</span> receive() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Receieve a message from the can bus if one is available.</p>
-<p><strong>Return</strong>: <a href=classes/structembed_1_1can_1_1message__t/>message_t</a> can message from the bus</p>
+<p><strong>Return</strong>: boost::leaf::result&lt;message_t> - a can message from the bus</p>
 <p>Behavior is undefined if no data is available.</p>
 <h3 id=function-attach_interrupt>function attach_interrupt</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> attach_interrupt(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> attach_interrupt(
     std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span>(can <span style=color:#f92672>&amp;</span>p_can)<span style=color:#f92672>&gt;</span> p_receive_handler
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Setup driver to execute callback when a can message is received.</p>
@@ -338,8 +335,9 @@
 <ul>
 <li><strong>p_receive_handler</strong> - can message reception callback. Set to nullptr to disable receive interrupts.</li>
 </ul>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <hr>
-<p>Updated on 2021-12-10 at 16:34:51 +0000</p>
+<p>Updated on 2021-12-15 at 12:44:35 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -352,14 +350,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639154091></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639154091></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1639154091></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639154091></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1639154091></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639572275></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639572275></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1639572275></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639572275></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1639572275></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1639154091></script>
+<script src=/libembeddedhal/js/relearn.js?1639572275></script>
 </body>
 </html>

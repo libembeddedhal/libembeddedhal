@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.90.1">
 <meta name=generator content="Relearn 2.9.2
 ">
 <meta name=description content>
 <title>embed::static_memory_resource :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1639154091 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1639154091></script>
+<link href=/libembeddedhal/css/nucleus.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1639572275 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1639572275></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1639154091></script>
-<script src=/libembeddedhal/js/auto-complete.js?1639154091></script>
-<script src=/libembeddedhal/js/search.js?1639154091></script>
+<script src=/libembeddedhal/js/lunr.min.js?1639572275></script>
+<script src=/libembeddedhal/js/auto-complete.js?1639572275></script>
+<script src=/libembeddedhal/js/search.js?1639572275></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -232,7 +232,7 @@
 </code></pre></div><p>The <a href>static_memory_resource</a> is the polymorphic memory resource allocator that allows libembeddedhal&rsquo;s libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc excpetion is thrown.</p>
 <p><strong>Template Parameters</strong>:</p>
 <ul>
-<li><strong>BufferSize</strong> number of bytes to statically allocate for the memory resource.</li>
+<li><strong>BufferSize</strong> - number of bytes to statically allocate for the memory resource.</li>
 </ul>
 <p>USAGE:</p>
 <p>// Make a memory resource with 1kB buffer static_memory_resource&lt;1024> memory_resource; std::pmr::unordered_map&lt;int, const char*> id_name_map(&memory_resource);</p>
@@ -244,10 +244,10 @@
 </code></pre></div><p><strong>Return</strong>: constexpr std::size_t - the total number of bytes that this allocator can allocate before throwing a std::bad_alloc exception.</p>
 <h3 id=function-memory_used>function memory_used</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> std<span style=color:#f92672>::</span>size_t memory_used() <span style=color:#66d9ef>const</span>
-</code></pre></div><p><strong>Return</strong>: std::size_t number of bytes that have already been allocated.</p>
+</code></pre></div><p><strong>Return</strong>: std::size_t - number of bytes that have already been allocated.</p>
 <h3 id=function-memory_available>function memory_available</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>int</span> memory_available() <span style=color:#66d9ef>const</span>
-</code></pre></div><p><strong>Return</strong>: int Bytes that have yet to be allocated from this allocator.</p>
+</code></pre></div><p><strong>Return</strong>: int - Bytes that have yet to be allocated from this allocator.</p>
 <h2 id=protected-functions-documentation>Protected Functions Documentation</h2>
 <h3 id=function-do_allocate>function do_allocate</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>*</span> do_allocate(
@@ -257,10 +257,10 @@
 </code></pre></div><p>Implemenation of the <a href>do_allocate()</a> method for std::pmr::memory_resource.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_bytes</strong> number of bytes to allocate</li>
-<li><strong>p_alignment</strong> alignment limit for the allocation</li>
+<li><strong>p_bytes</strong> - number of bytes to allocate</li>
+<li><strong>p_alignment</strong> - alignment limit for the allocation</li>
 </ul>
-<p><strong>Return</strong>: void* address of the newly allocated buffer</p>
+<p><strong>Return</strong>: void* - address of the newly allocated buffer</p>
 <h3 id=function-do_deallocate>function do_deallocate</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> do_deallocate(
     <span style=color:#66d9ef>void</span> <span style=color:#f92672>*</span> p_address,
@@ -270,9 +270,9 @@
 </code></pre></div><p>Implemenation of the <a href>do_deallocate()</a> method for std::pmr::memory_resource.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_address</strong> address of space to be deallocated</li>
-<li><strong>p_bytes</strong> number of bytes to allocate</li>
-<li><strong>p_alignment</strong> alignment limit for the allocation</li>
+<li><strong>p_address</strong> - address of space to be deallocated</li>
+<li><strong>p_bytes</strong> - number of bytes to allocate</li>
+<li><strong>p_alignment</strong> - alignment limit for the allocation</li>
 </ul>
 <h3 id=function-do_is_equal>function do_is_equal</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>bool</span> do_is_equal(
@@ -281,15 +281,15 @@
 </code></pre></div><p>Implemenation of the <a href>do_is_equal()</a> method for std::pmr::memory_resource.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_other</strong> another memory resource to</li>
+<li><strong>p_other</strong> - another memory resource to</li>
 </ul>
 <p><strong>Return</strong>:</p>
 <ul>
-<li>true are equal</li>
-<li>false are not equal</li>
+<li>true - are equal</li>
+<li>false - are not equal</li>
 </ul>
 <hr>
-<p>Updated on 2021-12-10 at 16:34:51 +0000</p>
+<p>Updated on 2021-12-15 at 12:44:35 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -302,14 +302,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639154091></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639154091></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1639154091></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639154091></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1639154091></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639572275></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639572275></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1639572275></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639572275></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1639572275></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1639154091></script>
+<script src=/libembeddedhal/js/relearn.js?1639572275></script>
 </body>
 </html>

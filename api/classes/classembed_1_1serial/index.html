@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.90.1">
 <meta name=generator content="Relearn 2.9.2
 ">
 <meta name=description content>
 <title>embed::serial :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1639154091 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1639154091></script>
+<link href=/libembeddedhal/css/nucleus.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1639572275 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1639572275></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1serial/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1639154091></script>
-<script src=/libembeddedhal/js/auto-complete.js?1639154091></script>
-<script src=/libembeddedhal/js/search.js?1639154091></script>
+<script src=/libembeddedhal/js/lunr.min.js?1639572275></script>
+<script src=/libembeddedhal/js/auto-complete.js?1639572275></script>
+<script src=/libembeddedhal/js/search.js?1639572275></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -180,23 +180,23 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1serial/#function-write>write</a></strong>(std::span&lt; const std::byte > p_data) =0Write data on the transmitter line of the port. The exact implementation for this can be polling, interrupt driven or DMA driven. There is no guarantee on exactly how a write operation will operate, thus the <a href>busy()</a> function must polled called after this returns to determine if the write operation has finished. Attempting to call <a href>write()</a> when tranmission is busy is undefined behavior.</td>
 </tr>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; bool ></td>
 <td><strong><a href=classes/classembed_1_1serial/#function-busy>busy</a></strong>() =0Determines if the write operation is currently on going.</td>
 </tr>
 <tr>
-<td>virtual size_t</td>
+<td>virtual boost::leaf::result&lt; size_t ></td>
 <td><strong><a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available</a></strong>() =0The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame. For frames above 8-bits the number of bytes returned indicates the number of bytes a buffer needs to be to return all of the data held in the buffer.</td>
 </tr>
 <tr>
-<td>virtual std::span&lt; const std::byte ></td>
+<td>virtual boost::leaf::result&lt; std::span&lt; const std::byte > ></td>
 <td><strong><a href=classes/classembed_1_1serial/#function-read>read</a></strong>(std::span&lt; std::byte > p_data) =0Read the bytes received over the ports receiver line and stored in the serial implementations buffer. The number of bytes read will subtract the number of bytes available until it reaches zero.</td>
 </tr>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1serial/#function-flush>flush</a></strong>() =0Set <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> to zero and clear any received data stored in hardware registers. This operation must be faster than simply running <a href=classes/classembed_1_1serial/#function-read>read()</a> until <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> is empty.</td>
 </tr>
 </tbody>
@@ -212,7 +212,7 @@
 </thead>
 <tbody>
 <tr>
-<td>bool</td>
+<td>boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, <a href>reset()</a> must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
 </tr>
 </tbody>
@@ -279,43 +279,41 @@
 <p>All implementations MUST allow the user to supply their own buffer of arbitrary size, such that the amount of buffered data can be tailored to the needs of the application.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
 <h3 id=function-write>function write</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> write(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write(
     std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Write data on the transmitter line of the port. The exact implementation for this can be polling, interrupt driven or DMA driven. There is no guarantee on exactly how a write operation will operate, thus the <a href>busy()</a> function must polled called after this returns to determine if the write operation has finished. Attempting to call <a href>write()</a> when tranmission is busy is undefined behavior.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_data</strong> data to be transmitted over the serial port transmitter line</li>
+<li><strong>p_data</strong> - data to be transmitted over the serial port transmitter line</li>
 </ul>
+<p><strong>Return</strong>: boost::leaf::result - any errors that occured during this operation.</p>
 <p>Data frames are not compact when frame size is less than 8 bits. Meaning that, if you want to send three 5-bit frames, then you will need to use a span of at least 3 bytes to hold each value.</p>
 <p>When writing data with frame size greater than 8 is in little endian order. Meaning that the first byte in the sequence is the lower byte and the next is the greater byte. If you wanted to send a 9-bit frame with value 0x14A, the first byte must be 0x4A and the next 0x01.</p>
 <h3 id=function-busy>function busy</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>bool</span> busy() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>bool</span> <span style=color:#f92672>&gt;</span> busy() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Determines if the write operation is currently on going.</p>
-<p><strong>Return</strong>:</p>
-<ul>
-<li>true serial transmitter is currently writing data to the port</li>
-<li>false serial transmitter is idle and available to write data</li>
-</ul>
+<p><strong>Return</strong>: boost::leaf::result - serial transmitter is currently writing data to the port</p>
 <h3 id=function-bytes_available>function bytes_available</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> size_t bytes_available() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> size_t <span style=color:#f92672>&gt;</span> bytes_available() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame. For frames above 8-bits the number of bytes returned indicates the number of bytes a buffer needs to be to return all of the data held in the buffer.</p>
-<p><strong>Return</strong>: size_t number of buffered by the serial driver and are available to be read by the <a href=classes/classembed_1_1serial/#function-read>read()</a> function.</p>
+<p><strong>Return</strong>: boost::leaf::result&lt;size_t> - number of buffered by the serial driver and are available to be read by the <a href=classes/classembed_1_1serial/#function-read>read()</a> function.</p>
 <h3 id=function-read>function read</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> read(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> read(
     std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Read the bytes received over the ports receiver line and stored in the serial implementations buffer. The number of bytes read will subtract the number of bytes available until it reaches zero.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_data</strong> Buffer to read bytes back from. If the length of this buffer is greater than the value returned by <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> then buffer is filled up to the length returned by <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a>. The rest of the buffer is left untouched.</li>
+<li><strong>p_data</strong> - Buffer to read bytes back from. If the length of this buffer is greater than the value returned by <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> then buffer is filled up to the length returned by <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a>. The rest of the buffer is left untouched.</li>
 </ul>
-<p><strong>Return</strong>: std::span provides a means to get the length of bytes read into the buffer p_data. The address will ALWAYS be the same as p_data and the length will be equal to the number of bytes read from the buffer.</p>
+<p><strong>Return</strong>: boost::leaf::result&lt;std::span> - provides a means to get the length of bytes read into the buffer p_data. The address will ALWAYS be the same as p_data and the length will be equal to the number of bytes read from the buffer.</p>
 <h3 id=function-flush>function flush</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> flush() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> flush() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Set <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> to zero and clear any received data stored in hardware registers. This operation must be faster than simply running <a href=classes/classembed_1_1serial/#function-read>read()</a> until <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> is empty.</p>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <hr>
-<p>Updated on 2021-12-10 at 16:34:51 +0000</p>
+<p>Updated on 2021-12-15 at 12:44:35 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -328,14 +326,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639154091></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639154091></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1639154091></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639154091></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1639154091></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639572275></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639572275></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1639572275></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639572275></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1639572275></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1639154091></script>
+<script src=/libembeddedhal/js/relearn.js?1639572275></script>
 </body>
 </html>

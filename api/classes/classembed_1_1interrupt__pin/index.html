@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.90.1">
 <meta name=generator content="Relearn 2.9.2
 ">
 <meta name=description content>
 <title>embed::interrupt_pin :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1639154091 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1639154091 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1639154091></script>
+<link href=/libembeddedhal/css/nucleus.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1639572275 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1639572275 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1639572275></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1639154091></script>
-<script src=/libembeddedhal/js/auto-complete.js?1639154091></script>
-<script src=/libembeddedhal/js/search.js?1639154091></script>
+<script src=/libembeddedhal/js/lunr.min.js?1639572275></script>
+<script src=/libembeddedhal/js/auto-complete.js?1639572275></script>
+<script src=/libembeddedhal/js/search.js?1639572275></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -199,15 +199,15 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; bool ></td>
 <td><strong><a href=classes/classembed_1_1interrupt__pin/#function-level>level</a></strong>() const =0Return the voltage level of the pin.</td>
 </tr>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1interrupt__pin/#function-attach-interrupt>attach_interrupt</a></strong>(std::function&lt; void(void)> p_callback, <a href=classes/classembed_1_1interrupt__pin/#enum-trigger-edge>trigger_edge</a> p_trigger) =0Enable interrupts for this pin. Pass in the callback to be executed when the trigger condition is met. This function can be called multiple times if the callback or trigger conditions need to be changed. detach_interrupts() does not need to be called before re-running this function.</td>
 </tr>
 <tr>
-<td>virtual void</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1interrupt__pin/#function-detach-interrupt>detach_interrupt</a></strong>() =0Disable interrupts for this pin.</td>
 </tr>
 </tbody>
@@ -223,7 +223,7 @@
 </thead>
 <tbody>
 <tr>
-<td>bool</td>
+<td>boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, <a href>reset()</a> must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
 </tr>
 <tr>
@@ -254,7 +254,7 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual bool</td>
+<td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-driver-initialize>driver_initialize</a></strong>() =0Implementation of driver initialize by the inherited driver.</td>
 </tr>
 </tbody>
@@ -317,15 +317,11 @@
 <p>The condition in which an interrupt is triggered.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
 <h3 id=function-level>function level</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>bool</span> level() <span style=color:#66d9ef>const</span> <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>bool</span> <span style=color:#f92672>&gt;</span> level() <span style=color:#66d9ef>const</span> <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Return the voltage level of the pin.</p>
-<p><strong>Return</strong>:</p>
-<ul>
-<li>true HIGH voltage</li>
-<li>false LOW voltage</li>
-</ul>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <h3 id=function-attach_interrupt>function attach_interrupt</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> attach_interrupt(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> attach_interrupt(
     std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span>(<span style=color:#66d9ef>void</span>)<span style=color:#f92672>&gt;</span> p_callback,
     trigger_edge p_trigger
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
@@ -335,11 +331,13 @@
 <li><strong>p_callback</strong> function to execute when the trigger condition is met</li>
 <li><strong>p_trigger</strong> the trigger condition that will signal the system to run the callback.</li>
 </ul>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <h3 id=function-detach_interrupt>function detach_interrupt</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>void</span> detach_interrupt() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> detach_interrupt() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Disable interrupts for this pin.</p>
+<p><strong>Return</strong>: boost::leaf::result</p>
 <hr>
-<p>Updated on 2021-12-10 at 16:34:51 +0000</p>
+<p>Updated on 2021-12-15 at 12:44:35 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -352,14 +350,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639154091></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639154091></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639154091></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1639154091></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639154091></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1639154091></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1639572275></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1639572275></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1639572275></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1639572275></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1639572275></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1639572275></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1639154091></script>
+<script src=/libembeddedhal/js/relearn.js?1639572275></script>
 </body>
 </html>
