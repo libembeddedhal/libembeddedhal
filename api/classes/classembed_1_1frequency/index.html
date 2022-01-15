@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::frequency :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1642265054 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1642265054 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1642265054></script>
+<link href=/libembeddedhal/css/nucleus.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1642273767 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1642273767 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1642273767></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1frequency/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1642265054></script>
-<script src=/libembeddedhal/js/auto-complete.js?1642265054></script>
-<script src=/libembeddedhal/js/search.js?1642265054></script>
+<script src=/libembeddedhal/js/lunr.min.js?1642273767></script>
+<script src=/libembeddedhal/js/auto-complete.js?1642273767></script>
+<script src=/libembeddedhal/js/search.js?1642273767></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -176,6 +176,7 @@
 <li><a href=#function-cycles_per_second>function cycles_per_second</a></li>
 <li><a href=#function-divider>function divider</a></li>
 <li><a href=#function-cycles_per>function cycles_per</a></li>
+<li><a href=#function-duration_from_cycles>function duration_from_cycles</a></li>
 <li><a href=#function-calculate_duty_cycle-1>function calculate_duty_cycle</a></li>
 <li><a href=#function-calculate_duty_cycle-2>function calculate_duty_cycle</a></li>
 <li><a href=#function-operator>function operator&lt;=></a></li>
@@ -248,6 +249,10 @@
 <tr>
 <td>template &lt;typename Rep ,typename Period > constexpr <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
 <td><strong><a href=classes/classembed_1_1frequency/#function-cycles-per>cycles_per</a></strong>(std::chrono::duration&lt; Rep, Period > p_duration) constCalculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a paricular time duration at this frequency.</td>
+</tr>
+<tr>
+<td>template std::chrono::duration&lt; Rep, Period ></td>
+<td><strong><a href=classes/classembed_1_1frequency/#function-duration-from-cycles>duration_from_cycles</a></strong>(<a href=classes/classembed_1_1frequency/#using-int-t>int_t</a> p_cycles)Calculate the time duration based on the frequency and a number of cycles.</td>
 </tr>
 <tr>
 <td>template &lt;std::integral T,typename Rep ,typename Period > constexpr <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a></td>
@@ -368,6 +373,23 @@
 <li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
 </ul>
 <p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
+<h3 id=function-duration_from_cycles>function duration_from_cycles</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> Rep  <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds<span style=color:#f92672>::</span>rep,
+<span style=color:#66d9ef>typename</span> Period  <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds<span style=color:#f92672>::</span>period<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>inline</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> duration_from_cycles(
+    int_t p_cycles
+)
+</code></pre></div><p>Calculate the time duration based on the frequency and a number of cycles.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_cycles</strong> - number of cycles within the time duration</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>Rep</strong> - type of the duration</li>
+<li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
+</ul>
+<p><strong>Return</strong>: std::chrono::duration&lt;Rep, Period> - time duration based on this frequency and the number of cycles.</p>
 <h3 id=function-calculate_duty_cycle-1>function calculate_duty_cycle</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>std<span style=color:#f92672>::</span>integral T,
 <span style=color:#66d9ef>typename</span> Rep ,
@@ -540,7 +562,7 @@
 </ul>
 <p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
 <hr>
-<p>Updated on 2022-01-15 at 16:44:14 +0000</p>
+<p>Updated on 2022-01-15 at 19:09:27 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -553,14 +575,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1642265054></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642265054></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642265054></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642265054></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1642265054></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642265054></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1642265054></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1642273767></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642273767></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642273767></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642273767></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1642273767></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642273767></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1642273767></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1642265054></script>
+<script src=/libembeddedhal/js/relearn.js?1642273767></script>
 </body>
 </html>
