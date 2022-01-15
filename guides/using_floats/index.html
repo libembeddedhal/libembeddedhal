@@ -5,9 +5,8 @@
 <meta name=generator content="Hugo 0.92.0">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/installation/index.xml title="libembeddedhal docs">
 <meta name=description content>
-<title>Installation :: libembeddedhal docs</title>
+<title>Using Floats :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1642258374 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1642258374 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1642258374 rel=stylesheet>
@@ -20,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1642258374></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/installation/>
+<body data-url=/libembeddedhal/guides/using_floats/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -47,18 +46,18 @@
 </div>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/libembeddedhal/installation/ title=Installation class="dd-item active parent"><a href=/libembeddedhal/installation/><b>1. </b>Installation</a><ul>
+<li data-nav-id=/libembeddedhal/installation/ title=Installation class=dd-item><a href=/libembeddedhal/installation/><b>1. </b>Installation</a><ul>
 <li data-nav-id=/libembeddedhal/installation/getting_started/ title="Getting Started" class=dd-item><a href=/libembeddedhal/installation/getting_started/>Getting Started</a></li>
 <li data-nav-id=/libembeddedhal/installation/flashing/ title=Flashing class=dd-item><a href=/libembeddedhal/installation/flashing/>Flashing</a></li>
 <li data-nav-id=/libembeddedhal/installation/jtag/ title=Debugging class=dd-item><a href=/libembeddedhal/installation/jtag/>Debugging</a></li>
 <li data-nav-id=/libembeddedhal/installation/exploring_the_ecosystem/ title="Exploring the Ecosystem" class=dd-item><a href=/libembeddedhal/installation/exploring_the_ecosystem/>Exploring the Ecosystem</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/guides/ title=Guides class=dd-item><a href=/libembeddedhal/guides/><b>2. </b>Guides</a><ul>
+<li data-nav-id=/libembeddedhal/guides/ title=Guides class="dd-item parent"><a href=/libembeddedhal/guides/><b>2. </b>Guides</a><ul>
 <li data-nav-id=/libembeddedhal/guides/new_project/ title="Creating a Project" class=dd-item><a href=/libembeddedhal/guides/new_project/>Creating a Project</a></li>
 <li data-nav-id=/libembeddedhal/guides/driver_usage/ title="How to Use Drivers" class=dd-item><a href=/libembeddedhal/guides/driver_usage/>How to Use Drivers</a></li>
 <li data-nav-id=/libembeddedhal/guides/error_handling/ title="Error Handling" class=dd-item><a href=/libembeddedhal/guides/error_handling/>Error Handling</a></li>
 <li data-nav-id=/libembeddedhal/guides/multiplatform_apps/ title="Multiplatform Applications" class=dd-item><a href=/libembeddedhal/guides/multiplatform_apps/>Multiplatform Applications</a></li>
 <li data-nav-id=/libembeddedhal/guides/unit_testing/ title="Unit Testing" class=dd-item><a href=/libembeddedhal/guides/unit_testing/>Unit Testing</a></li>
-<li data-nav-id=/libembeddedhal/guides/using_floats/ title="Using Floats" class=dd-item><a href=/libembeddedhal/guides/using_floats/>Using Floats</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/guides/using_floats/ title="Using Floats" class="dd-item active"><a href=/libembeddedhal/guides/using_floats/>Using Floats</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/ title=API class=dd-item><a href=/libembeddedhal/api/><b>3. </b>API</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
@@ -149,27 +148,77 @@
 <i class="fas fa-bars"></i>
 </a>
 </span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
 <meta itemprop=itemListOrder content="Descending">
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/installation/ aria-disabled=true><span itemprop=name>Installation</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/guides/><span itemprop=name>Guides</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/guides/using_floats/ aria-disabled=true><span itemprop=name>Using Floats</span></a></li>
 </ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#runtime-cost>Runtime Cost</a></li>
+<li><a href=#space-cost>Space Cost</a>
+<ul>
+<li><a href=#32-bit-integer-conversion-only>32-bit integer conversion only:</a></li>
+<li><a href=#64-bit-integer-conversion-only>64-bit integer conversion only:</a></li>
+<li><a href=#both-32-bit--64-bit-conversion>Both 32-bit & 64-bit conversion:</a></li>
+</ul>
+</li>
+<li><a href=#problems-with-floats>Problems with Floats</a></li>
+</ul>
+</nav>
+</div>
 </div>
 </div>
 <div id=head-tags>
 </div>
-<div id=chapter>
 <main id=body-inner>
-<h1 id=quick-start>Quick Start</h1>
-<p>TBD</p>
+<h1>Using Floats</h1>
+<h2 id=runtime-cost>Runtime Cost</h2>
+<ul>
+<li><a href=https://blog.segger.com/wp-content/uploads/2019/11/Bench_Comparison.pdf>https://blog.segger.com/wp-content/uploads/2019/11/Bench_Comparison.pdf</a></li>
+<li><a href=https://blog.segger.com/floating-point-face-off-part-2-comparing-performance/>https://blog.segger.com/floating-point-face-off-part-2-comparing-performance/</a></li>
+</ul>
+<h2 id=space-cost>Space Cost</h2>
+<p>Each was tested with the following operators (+, -, *, /, &lt;, >, ==, &lt;=, >=):</p>
+<h3 id=32-bit-integer-conversion-only>32-bit integer conversion only:</h3>
+<ul>
+<li>Floats: <code>1392</code> bytes</li>
+<li>Doubles: <code>1968</code> bytes</li>
+</ul>
+<h3 id=64-bit-integer-conversion-only>64-bit integer conversion only:</h3>
+<ul>
+<li>Floats: <code>3088</code> bytes</li>
+<li>Doubles: <code>2128</code> bytes</li>
+</ul>
+<h3 id=both-32-bit--64-bit-conversion>Both 32-bit & 64-bit conversion:</h3>
+<ul>
+<li>Doubles + Floats: <code>3072</code> bytes</li>
+<li>Doubles + Floats: <code>3592</code> bytes</li>
+</ul>
+<h2 id=problems-with-floats>Problems with Floats</h2>
+<ul>
+<li>Infinties & NaN</li>
+<li>Lose of precision</li>
+<li>Conversion to integer types</li>
+<li>Floating-point environment
+<ul>
+<li><a href=https://en.cppreference.com/w/cpp/numeric/fenv>https://en.cppreference.com/w/cpp/numeric/fenv</a></li>
+<li>Requires TLS which is disabled for stock arm-none-eabi-gcc</li>
+</ul>
+</li>
+</ul>
 <footer class=footline>
 </footer>
-</div>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/ title=Welcome><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/installation/getting_started/ title="Getting Started"><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/guides/unit_testing/ title="Unit Testing"><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/ title=API><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
