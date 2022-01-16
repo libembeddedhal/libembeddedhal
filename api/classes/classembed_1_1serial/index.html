@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::serial :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1642273767 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1642273767></script>
+<link href=/libembeddedhal/css/nucleus.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1642308075 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1642308075></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1serial/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1642273767></script>
-<script src=/libembeddedhal/js/auto-complete.js?1642273767></script>
-<script src=/libembeddedhal/js/search.js?1642273767></script>
+<script src=/libembeddedhal/js/lunr.min.js?1642308075></script>
+<script src=/libembeddedhal/js/auto-complete.js?1642308075></script>
+<script src=/libembeddedhal/js/search.js?1642308075></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -197,7 +197,7 @@
 <tbody>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1serial_1_1frame__error/>frame_error</a></strong> Error type indicating that a frame error occured during reception. This error is returned when calling <a href>bytes_available()</a>.</td>
+<td><strong><a href=classes/structembed_1_1serial_1_1frame__error/>frame_error</a></strong> Error type indicating that a frame error occurred during reception. This error is returned when calling <a href>bytes_available()</a>.</td>
 </tr>
 <tr>
 <td>struct</td>
@@ -205,7 +205,7 @@
 </tr>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1serial_1_1parity__error/>parity_error</a></strong> Error type indicating that a parity error occured during reception. This error is returned when calling <a href>bytes_available()</a>.</td>
+<td><strong><a href=classes/structembed_1_1serial_1_1parity__error/>parity_error</a></strong> Error type indicating that a parity error occurred during reception. This error is returned when calling <a href>bytes_available()</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -322,7 +322,7 @@
 <ul>
 <li><strong>p_data</strong> - data to be transmitted over the serial port transmitter line</li>
 </ul>
-<p><strong>Return</strong>: boost::leaf::result - any error that occured during this operation.</p>
+<p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <p>Data frames are not compact when frame size is less than 8 bits. Meaning that, if you want to send three 5-bit frames, then you will need to use a span of at least 3 bytes to hold each value.</p>
 <p>When writing data with frame size greater than 8 is in little endian order. Meaning that the first byte in the sequence is the lower byte and the next is the greater byte. If you wanted to send a 9-bit frame with value 0x14A, the first byte must be 0x4A and the next 0x01.</p>
 <p>serial ports will report <code>transmit_error</code> will an error occurs. Any other reported error will bubble up come from</p>
@@ -343,9 +343,9 @@
 <h3 id=function-flush>function flush</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> flush() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Set <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> to zero and clear any received data stored in hardware registers. This operation must be faster than simply running <a href=classes/classembed_1_1serial/#function-read>read()</a> until <a href=classes/classembed_1_1serial/#function-bytes-available>bytes_available()</a> is empty.</p>
-<p><strong>Return</strong>: boost::leaf::result - any error that occured during this operation.</p>
+<p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <hr>
-<p>Updated on 2022-01-15 at 19:09:27 +0000</p>
+<p>Updated on 2022-01-16 at 04:41:14 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -358,14 +358,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1642273767></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642273767></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642273767></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642273767></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1642273767></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642273767></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1642273767></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1642308075></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642308075></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642308075></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642308075></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1642308075></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642308075></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1642308075></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1642273767></script>
+<script src=/libembeddedhal/js/relearn.js?1642308075></script>
 </body>
 </html>

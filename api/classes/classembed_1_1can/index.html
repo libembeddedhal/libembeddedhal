@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::can :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1642273767 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1642273767 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1642273767></script>
+<link href=/libembeddedhal/css/nucleus.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1642308075 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1642308075 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1642308075></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1can/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1642273767></script>
-<script src=/libembeddedhal/js/auto-complete.js?1642273767></script>
-<script src=/libembeddedhal/js/search.js?1642273767></script>
+<script src=/libembeddedhal/js/lunr.min.js?1642308075></script>
+<script src=/libembeddedhal/js/auto-complete.js?1642308075></script>
+<script src=/libembeddedhal/js/search.js?1642308075></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -202,7 +202,7 @@
 <tbody>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1can_1_1message__t/>message_t</a></strong> Attributes of a can message.</td>
+<td><strong><a href=classes/structembed_1_1can_1_1message__t/>message_t</a></strong> Structure of a CAN message.</td>
 </tr>
 </tbody>
 </table>
@@ -244,7 +244,7 @@
 </tr>
 <tr>
 <td>virtual boost::leaf::result&lt; void ></td>
-<td><strong><a href=classes/classembed_1_1can/#function-attach-interrupt>attach_interrupt</a></strong>(std::function&lt; void(<a href=classes/classembed_1_1can/>can</a> &p_can)> p_receive_handler) =0Setup driver to execute callback when a can message is received.</td>
+<td><strong><a href=classes/classembed_1_1can/#function-attach-interrupt>attach_interrupt</a></strong>(std::function&lt; void(const <a href=classes/structembed_1_1can_1_1message__t/>message_t</a> &p_message)> p_receive_handler) =0Setup driver to execute callback when a can message is received.</td>
 </tr>
 </tbody>
 </table>
@@ -332,7 +332,7 @@
 <ul>
 <li><strong>p_message</strong> - the message to be sent</li>
 </ul>
-<p><strong>Return</strong>: boost::leaf::result - any error that occured during this operation.</p>
+<p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <h3 id=function-has_data>function has_data</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>bool</span> <span style=color:#f92672>&gt;</span> has_data() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Determine if the can bus has any queued up can messages.</p>
@@ -344,16 +344,16 @@
 <p>Behavior is undefined if no data is available.</p>
 <h3 id=function-attach_interrupt>function attach_interrupt</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> attach_interrupt(
-    std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span>(can <span style=color:#f92672>&amp;</span>p_can)<span style=color:#f92672>&gt;</span> p_receive_handler
+    std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span>(<span style=color:#66d9ef>const</span> message_t <span style=color:#f92672>&amp;</span>p_message)<span style=color:#f92672>&gt;</span> p_receive_handler
 ) <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Setup driver to execute callback when a can message is received.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
-<li><strong>p_receive_handler</strong> - can message reception callback. Set to nullptr to disable receive interrupts.</li>
+<li><strong>p_receive_handler</strong> - this handler will be called when the can device receives a message. Set to nullptr to disable receive interrupts.</li>
 </ul>
-<p><strong>Return</strong>: boost::leaf::result - any error that occured during this operation.</p>
+<p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <hr>
-<p>Updated on 2022-01-15 at 19:09:27 +0000</p>
+<p>Updated on 2022-01-16 at 04:41:14 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -366,14 +366,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1642273767></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642273767></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642273767></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642273767></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1642273767></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642273767></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1642273767></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1642308075></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642308075></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642308075></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642308075></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1642308075></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642308075></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1642308075></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1642273767></script>
+<script src=/libembeddedhal/js/relearn.js?1642308075></script>
 </body>
 </html>
