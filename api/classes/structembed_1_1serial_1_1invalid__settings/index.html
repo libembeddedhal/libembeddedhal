@@ -5,10 +5,8 @@
 <meta name=generator content="Hugo 0.92.0">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libembeddedhal/index.xml title="libembeddedhal docs">
-<link rel=alternate type=application/json href=/libembeddedhal/index.json title="libembeddedhal docs">
 <meta name=description content>
-<title>Welcome :: libembeddedhal docs</title>
+<title>embed::serial::invalid_settings :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1642696970 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1642696970 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1642696970 rel=stylesheet>
@@ -21,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1642696970></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/>
+<body data-url=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -60,8 +58,8 @@
 <li data-nav-id=/libembeddedhal/guides/multiplatform_apps/ title="Multiplatform Applications" class=dd-item><a href=/libembeddedhal/guides/multiplatform_apps/>Multiplatform Applications</a></li>
 <li data-nav-id=/libembeddedhal/guides/unit_testing/ title="Unit Testing" class=dd-item><a href=/libembeddedhal/guides/unit_testing/>Unit Testing</a></li>
 <li data-nav-id=/libembeddedhal/guides/using_floats/ title="Using Floats" class=dd-item><a href=/libembeddedhal/guides/using_floats/>Using Floats</a></li></ul></li>
-<li data-nav-id=/libembeddedhal/api/ title=API class=dd-item><a href=/libembeddedhal/api/><b>3. </b>API</a><ul>
-<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
+<li data-nav-id=/libembeddedhal/api/ title=API class="dd-item parent"><a href=/libembeddedhal/api/><b>3. </b>API</a><ul>
+<li data-nav-id=/libembeddedhal/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/classes/>Classes</a><ul>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1adc/ title=embed::adc class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1adc/>embed::adc</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1bit__limits/ title=embed::bit_limits class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1bit__limits/>embed::bit_limits</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1can/ title=embed::can class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1can/>embed::can</a></li>
@@ -92,7 +90,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1serial/>embed::serial</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/ title=embed::serial::frame_error class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/>embed::serial::frame_error</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/ title=embed::serial::invalid_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/>embed::serial::invalid_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/ title=embed::serial::invalid_settings class="dd-item active"><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/>embed::serial::invalid_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1packets__lost/ title=embed::serial::packets_lost class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1packets__lost/>embed::serial::packets_lost</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1parity__error/ title=embed::serial::parity_error class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1parity__error/>embed::serial::parity_error</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
@@ -143,20 +141,55 @@
 <div id=body>
 <div id=overlay></div>
 <div class="padding highlightable">
+<div id=top-bar>
+<div id=breadcrumbs>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
+<meta itemprop=itemListOrder content="Descending">
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>API</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/ aria-disabled=true><span itemprop=name>embed::serial::invalid_settings</span></a></li>
+</ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#detailed-description>Detailed Description</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div id=head-tags>
 </div>
-<div id=chapter>
 <main id=body-inner>
-<span id=sidebar-toggle-span>
-<a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i> navigation</a>
-</span>
-<h1 id=welcome>Welcome!</h1>
-<p>TBD</p>
-</div>
+<h1>embed::serial::invalid_settings</h1>
+<p><strong>embed::serial::invalid_settings Struct Reference</strong></p>
+<p>Error type indicating that the settings for serial uart could not be set. <a href=#detailed-description>More&mldr;</a></p>
+<p><code>#include &lt;serial.hpp></code></p>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>serial<span style=color:#f92672>::</span>invalid_settings;
+</code></pre></div><p>Error type indicating that the settings for serial uart could not be set.</p>
+<p><strong>How to handle these errors:</strong></p>
+<ul>
+<li>The nature of this error signifies an bug in the code. The documentation of the peripheral and the API of the driver should be consulted in order to determine what are possible settings for this serial port.</li>
+</ul>
+<hr>
+<p>Updated on 2022-01-20 at 16:42:49 +0000</p>
+<footer class=footline>
+</footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/libembeddedhal/installation/ title=Installation><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/ title=embed::serial::frame_error><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/structembed_1_1serial_1_1packets__lost/ title=embed::serial::packets_lost><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

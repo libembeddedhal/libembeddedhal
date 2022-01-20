@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::config :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1642476535 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1642476535 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1642476535></script>
+<link href=/libembeddedhal/css/nucleus.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1642696970 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1642696970 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1642696970></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed_1_1config/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1642476535></script>
-<script src=/libembeddedhal/js/auto-complete.js?1642476535></script>
-<script src=/libembeddedhal/js/search.js?1642476535></script>
+<script src=/libembeddedhal/js/lunr.min.js?1642696970></script>
+<script src=/libembeddedhal/js/auto-complete.js?1642696970></script>
+<script src=/libembeddedhal/js/search.js?1642696970></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -90,6 +90,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1serial/>embed::serial</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/ title=embed::serial::frame_error class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/>embed::serial::frame_error</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/ title=embed::serial::invalid_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/>embed::serial::invalid_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1packets__lost/ title=embed::serial::packets_lost class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1packets__lost/>embed::serial::packets_lost</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1parity__error/ title=embed::serial::parity_error class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1parity__error/>embed::serial::parity_error</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
@@ -161,13 +162,6 @@
 <nav id=TableOfContents>
 <ul>
 <li><a href=#namespaces>Namespaces</a></li>
-<li><a href=#functions>Functions</a></li>
-<li><a href=#functions-documentation>Functions Documentation</a>
-<ul>
-<li><a href=#function-is_platform>function is_platform</a></li>
-<li><a href=#function-is_a_test>function is_a_test</a></li>
-</ul>
-</li>
 </ul>
 </nav>
 </div>
@@ -191,53 +185,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id=functions>Functions</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>constexpr bool</td>
-<td><strong><a href=namespaces/namespaceembed_1_1config/#function-is-platform>is_platform</a></strong>(std::string_view p_platform)Determines if the current application was built for a specific platform. For example:</td>
-</tr>
-<tr>
-<td>constexpr bool</td>
-<td><strong><a href=namespaces/namespaceembed_1_1config/#function-is-a-test>is_a_test</a></strong>()Determines if the application is a test.</td>
-</tr>
-</tbody>
-</table>
-<h2 id=functions-documentation>Functions Documentation</h2>
-<h3 id=function-is_platform>function is_platform</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>bool</span> is_platform(
-    std<span style=color:#f92672>::</span>string_view p_platform
-)
-</code></pre></div><p>Determines if the current application was built for a specific platform. For example:</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_platform</strong> - platform string pattern to check against</li>
-</ul>
-<p><strong>Return</strong>:</p>
-<ul>
-<li>true - matches the platform string</li>
-<li>false - does not matches the platform string</li>
-</ul>
-<p>embed::config::is_platform(&ldquo;lpc4078&rdquo;);</p>
-<p>Will return true if the PLATFORM macro defined at compile time was equal to lpc4078. If the developer wants to be less specific, let say, to just determine if the platform is in the lpc40xx family then the following example will work.</p>
-<p>embed::config::is_platform(&ldquo;lpc40&rdquo;);</p>
-<h3 id=function-is_a_test>function is_a_test</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>bool</span> is_a_test()
-</code></pre></div><p>Determines if the application is a test.</p>
-<p><strong>Return</strong>:</p>
-<ul>
-<li>true - this application is a test</li>
-<li>false - this application is not a test</li>
-</ul>
 <hr>
-<p>Updated on 2022-01-18 at 03:28:54 +0000</p>
+<p>Updated on 2022-01-20 at 16:42:49 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -250,14 +199,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1642476535></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642476535></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642476535></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642476535></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1642476535></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642476535></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1642476535></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1642696970></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642696970></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642696970></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642696970></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1642696970></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642696970></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1642696970></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1642476535></script>
+<script src=/libembeddedhal/js/relearn.js?1642696970></script>
 </body>
 </html>
