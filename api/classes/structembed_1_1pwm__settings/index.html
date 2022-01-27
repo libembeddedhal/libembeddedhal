@@ -6,7 +6,7 @@
 <meta name=generator content="Relearn 2.9.2
 ">
 <meta name=description content>
-<title>embed::static_callable :: libembeddedhal docs</title>
+<title>embed::pwm_settings :: libembeddedhal docs</title>
 <link href=/libembeddedhal/css/nucleus.css?1643320496 rel=stylesheet>
 <link href=/libembeddedhal/css/fontawesome-all.min.css?1643320496 rel=stylesheet>
 <link href=/libembeddedhal/css/featherlight.min.css?1643320496 rel=stylesheet>
@@ -19,7 +19,7 @@
 <script src=/libembeddedhal/js/jquery.min.js?1643320496></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libembeddedhal/api/classes/classembed_1_1static__callable/>
+<body data-url=/libembeddedhal/api/classes/structembed_1_1pwm__settings/>
 <script>var index_url="/libembeddedhal/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -91,7 +91,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1overflow__counter/ title=embed::overflow_counter class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1overflow__counter/>embed::overflow_counter</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1percent/ title=embed::percent class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1percent/>embed::percent</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1pwm/>embed::pwm</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1pwm__settings/ title=embed::pwm_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1pwm__settings/>embed::pwm_settings</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1pwm__settings/ title=embed::pwm_settings class="dd-item active"><a href=/libembeddedhal/api/classes/structembed_1_1pwm__settings/>embed::pwm_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1serial/>embed::serial</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/ title=embed::serial::frame_error class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1frame__error/>embed::serial::frame_error</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/ title=embed::serial::invalid_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial_1_1invalid__settings/>embed::serial::invalid_settings</a></li>
@@ -100,7 +100,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1serial__settings/ title=embed::serial_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1serial__settings/>embed::serial_settings</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1spi/ title=embed::spi class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1spi/>embed::spi</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1spi__settings/>embed::spi_settings</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class="dd-item active"><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable/ title=embed::static_callable class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable/>embed::static_callable</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>" class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4/>embed::static_callable&lt; owner_class, reference_designator, return_t(args_t... p_args)></a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
@@ -157,14 +157,20 @@
 <li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libembeddedhal/><span itemprop=name>Welcome</span></a> > </li>
 <li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libembeddedhal/api/><span itemprop=name>API</span></a> > </li>
 <li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libembeddedhal/api/classes/><span itemprop=name>Classes</span></a> > </li>
-<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/classembed_1_1static__callable/ aria-disabled=true><span itemprop=name>embed::static_callable</span></a></li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libembeddedhal/api/classes/structembed_1_1pwm__settings/ aria-disabled=true><span itemprop=name>embed::pwm_settings</span></a></li>
 </ol>
 </div>
 <div class=progress>
 <div class=wrapper>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#public-attributes>Public Attributes</a></li>
 <li><a href=#detailed-description>Detailed Description</a></li>
+<li><a href=#public-attributes-documentation>Public Attributes Documentation</a>
+<ul>
+<li><a href=#variable-frequency>variable frequency</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -173,21 +179,32 @@
 <div id=head-tags>
 </div>
 <main id=body-inner>
-<h1>embed::static_callable</h1>
-<p><strong>embed::static_callable Class Reference</strong></p>
-<p>General class which will be used to allow for signature to be used and then split by the below class. <a href=#detailed-description>More&mldr;</a></p>
+<h1>embed::pwm_settings</h1>
+<p><strong>embed::pwm_settings Struct Reference</strong></p>
+<p><a href=#detailed-description>More&mldr;</a></p>
+<p><code>#include &lt;pwm.hpp></code></p>
+<h2 id=public-attributes>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href=classes/classembed_1_1frequency/>embed::frequency</a></td>
+<td><strong><a href=classes/structembed_1_1pwm__settings/#variable-frequency>frequency</a></strong> The target channel PWM frequency.</td>
+</tr>
+</tbody>
+</table>
 <h2 id=detailed-description>Detailed Description</h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>owner_class</span> ,
-<span style=color:#66d9ef>int</span> reference_designator,
-<span style=color:#66d9ef>typename</span> signature <span style=color:#f92672>&gt;</span>
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>static_callable;
-</code></pre></div><p>General class which will be used to allow for signature to be used and then split by the below class.</p>
-<p><strong>Template Parameters</strong>:</p>
-<ul>
-<li><strong>owner_class</strong> class that this static callable belongs to</li>
-<li><strong>reference_designator</strong> this template argument is used to generate unique static objects for each needed callback</li>
-<li><strong>signature</strong> function signature to be split up in the <a href=classes/classembed_1_1static__callable/>static_callable</a> specialization</li>
-</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>pwm_settings;
+</code></pre></div><p>Generic settings for a hardware Pulse Width Modulation (PWM) generating devices devices.</p>
+<h2 id=public-attributes-documentation>Public Attributes Documentation</h2>
+<h3 id=variable-frequency>variable frequency</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>embed<span style=color:#f92672>::</span>frequency frequency <span style=color:#f92672>=</span> embed<span style=color:#f92672>::</span>frequency(<span style=color:#ae81ff>1&#39;000</span>);
+</code></pre></div><p>The target channel PWM frequency.</p>
 <hr>
 <p>Updated on 2022-01-27 at 21:54:56 +0000</p>
 <footer class=footline>
@@ -195,8 +212,8 @@
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/libembeddedhal/api/classes/structembed_1_1spi__settings/ title=embed::spi_settings><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4/ title="embed::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>"><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libembeddedhal/api/classes/classembed_1_1pwm/ title=embed::pwm><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libembeddedhal/api/classes/classembed_1_1serial/ title=embed::serial><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
