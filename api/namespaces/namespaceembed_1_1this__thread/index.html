@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::this_thread :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1642939550 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1642939550 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1642939550></script>
+<link href=/libembeddedhal/css/nucleus.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643291177 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643291177 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643291177></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed_1_1this__thread/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1642939550></script>
-<script src=/libembeddedhal/js/auto-complete.js?1642939550></script>
-<script src=/libembeddedhal/js/search.js?1642939550></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643291177></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643291177></script>
+<script src=/libembeddedhal/js/search.js?1643291177></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -102,8 +102,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1delay__too__large/ title=embed::timer::delay_too_large class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1delay__too__large/>embed::timer::delay_too_large</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1delay__too__small/ title=embed::timer::delay_too_small class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1delay__too__small/>embed::timer::delay_too_small</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/ title=embed::timer::out_of_bounds class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/>embed::timer::out_of_bounds</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
 <li data-nav-id=/libembeddedhal/api/namespaces/ title=Namespaces class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/namespaces/>Namespaces</a><ul>
 <li data-nav-id=/libembeddedhal/api/namespaces/namespaceembed/ title=embed class=dd-item><a href=/libembeddedhal/api/namespaces/namespaceembed/>embed</a></li>
@@ -167,7 +166,7 @@
 <li><a href=#functions>Functions</a></li>
 <li><a href=#types-documentation>Types Documentation</a>
 <ul>
-<li><a href=#using-time_increment>using time_increment</a></li>
+<li><a href=#using-time_period>using time_period</a></li>
 <li><a href=#using-sleep_function>using sleep_function</a></li>
 <li><a href=#using-uptime_function>using uptime_function</a></li>
 </ul>
@@ -216,15 +215,15 @@
 <tbody>
 <tr>
 <td>using std::chrono::nanoseconds</td>
-<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-time-increment>time_increment</a></strong> smallest increment of time for clocks</td>
+<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-time-period>time_period</a></strong> Smallest increment of time for clocks.</td>
 </tr>
 <tr>
-<td>using std::function&lt; void(time_increment p_sleep_time)></td>
-<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-sleep-function>sleep_function</a></strong> definition of a sleep function</td>
+<td>using std::function&lt; void(time_period p_sleep_time)></td>
+<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-sleep-function>sleep_function</a></strong> Definition of a sleep function.</td>
 </tr>
 <tr>
-<td>using std::function&lt; time_increment(void)></td>
-<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-uptime-function>uptime_function</a></strong> definition of an uptime function</td>
+<td>using std::function&lt; time_period(void)></td>
+<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#using-uptime-function>uptime_function</a></strong> Definition of an uptime function.</td>
 </tr>
 </tbody>
 </table>
@@ -239,7 +238,7 @@
 <tbody>
 <tr>
 <td>auto</td>
-<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#function-sleep-for>sleep_for</a></strong>(time_increment p_delay)Delay execution of the program by a predefined time.</td>
+<td><strong><a href=namespaces/namespaceembed_1_1this__thread/#function-sleep-for>sleep_for</a></strong>(time_period p_delay)Delay execution of the program by a predefined time.</td>
 </tr>
 <tr>
 <td>auto</td>
@@ -256,19 +255,19 @@
 </tbody>
 </table>
 <h2 id=types-documentation>Types Documentation</h2>
-<h3 id=using-time_increment>using time_increment</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>time_increment <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds;
-</code></pre></div><p>smallest increment of time for clocks</p>
+<h3 id=using-time_period>using time_period</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>time_period <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds;
+</code></pre></div><p>Smallest increment of time for clocks.</p>
 <h3 id=using-sleep_function>using sleep_function</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>sleep_function <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>void</span>(time_increment p_sleep_time)<span style=color:#f92672>&gt;</span>;
-</code></pre></div><p>definition of a sleep function</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>sleep_function <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>void</span>(time_period p_sleep_time)<span style=color:#f92672>&gt;</span>;
+</code></pre></div><p>Definition of a sleep function.</p>
 <h3 id=using-uptime_function>using uptime_function</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>uptime_function <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span>time_increment(<span style=color:#66d9ef>void</span>)<span style=color:#f92672>&gt;</span>;
-</code></pre></div><p>definition of an uptime function</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>this_thread<span style=color:#f92672>::</span>uptime_function <span style=color:#f92672>=</span> <span style=color:#66d9ef>typedef</span> std<span style=color:#f92672>::</span>function<span style=color:#f92672>&lt;</span>time_period(<span style=color:#66d9ef>void</span>)<span style=color:#f92672>&gt;</span>;
+</code></pre></div><p>Definition of an uptime function.</p>
 <h2 id=functions-documentation>Functions Documentation</h2>
 <h3 id=function-sleep_for>function sleep_for</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>auto</span> sleep_for(
-    time_increment p_delay
+    time_period p_delay
 )
 </code></pre></div><p>Delay execution of the program by a predefined time.</p>
 <p><strong>Parameters</strong>:</p>
@@ -298,7 +297,7 @@
 <li><strong>p_uptime_function</strong> - the function to return the current system uptime</li>
 </ul>
 <hr>
-<p>Updated on 2022-01-23 at 12:05:49 +0000</p>
+<p>Updated on 2022-01-27 at 13:46:16 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -311,14 +310,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1642939550></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1642939550></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1642939550></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1642939550></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1642939550></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1642939550></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1642939550></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643291177></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643291177></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643291177></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643291177></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643291177></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643291177></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643291177></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1642939550></script>
+<script src=/libembeddedhal/js/relearn.js?1643291177></script>
 </body>
 </html>
