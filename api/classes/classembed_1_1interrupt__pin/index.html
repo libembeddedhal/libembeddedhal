@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::interrupt_pin :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643291177 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643291177 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643291177></script>
+<link href=/libembeddedhal/css/nucleus.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643306117 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643306117 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643306117></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1interrupt__pin/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643291177></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643291177></script>
-<script src=/libembeddedhal/js/search.js?1643291177></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643306117></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643306117></script>
+<script src=/libembeddedhal/js/search.js?1643306117></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -172,6 +172,10 @@
 </li>
 <li><a href=#public-functions-documentation>Public Functions Documentation</a>
 <ul>
+<li><a href=#function-interrupt_pin>function interrupt_pin</a></li>
+<li><a href=#function-interrupt_pin-1>function interrupt_pin</a></li>
+<li><a href=#function-operator>function operator=</a></li>
+<li><a href=#function-interrupt_pin-2>function ~interrupt_pin</a></li>
 <li><a href=#function-level>function level</a></li>
 <li><a href=#function-attach_interrupt>function attach_interrupt</a></li>
 <li><a href=#function-detach_interrupt>function detach_interrupt</a></li>
@@ -215,6 +219,22 @@
 </thead>
 <tbody>
 <tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-interrupt-pin>interrupt_pin</a></strong>() =defaultdefault constructor</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-interrupt-pin>interrupt_pin</a></strong>(const <a href=classes/classembed_1_1interrupt__pin/>interrupt_pin</a> & p_other) =deleteExplicitly delete copy constructor to prevent slicing.</td>
+</tr>
+<tr>
+<td><a href=classes/classembed_1_1interrupt__pin/>interrupt_pin</a> &</td>
+<td><strong><a href="classes/classembed_1_1interrupt__pin/#function-operator=">operator=</a></strong>(const <a href=classes/classembed_1_1interrupt__pin/>interrupt_pin</a> & p_other) =deleteExplicitly delete assignment operator to prevent slicing.</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/#function-~interrupt-pin>~interrupt_pin</a></strong>() =defaultDestroy the object.</td>
+</tr>
+<tr>
 <td>virtual boost::leaf::result&lt; bool ></td>
 <td><strong><a href=classes/classembed_1_1interrupt__pin/#function-level>level</a></strong>() const =0Return the voltage level of the pin.</td>
 </tr>
@@ -238,6 +258,18 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver>driver</a></strong>() =defaultdefault constructor</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver>driver</a></strong>(const <a href=classes/classembed_1_1driver/>driver</a> & p_other) =deleteExplicitly delete copy constructor to prevent slicing.</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href=classes/classembed_1_1driver/#function-~driver>~driver</a></strong>() =defaultDestroy the object.</td>
+</tr>
 <tr>
 <td>boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-initialize>initialize</a></strong>()Initialize the driver, apply the setting as defined in the settings_t structure and enable it. Calling this function after it has already been initialized will return false. In order to run initialization again, reset() must be called. After initialization, the settings are committed and saved into another settings structure. This settings can be looked up and inspected by the application.</td>
@@ -275,29 +307,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Protected Attributes inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt; interrupt_pin_settings ></a></strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>settings_t</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-settings>m_settings</a></strong> Mutable settings.</td>
-</tr>
-<tr>
-<td>settings_t</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized-settings>m_initialized_settings</a></strong> Saved version of the settings at initialization.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><strong><a href=classes/classembed_1_1driver/#variable-m-initialized>m_initialized</a></strong> Determines if the driver has been initialized.</td>
-</tr>
-</tbody>
-</table>
 <h2 id=detailed-description>Detailed Description</h2>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>interrupt_pin;
 </code></pre></div><p>Digital interrupt pin hardware abstraction.</p>
@@ -332,6 +341,22 @@
 </table>
 <p>The condition in which an interrupt is triggered.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
+<h3 id=function-interrupt_pin>function interrupt_pin</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>interrupt_pin() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
+</code></pre></div><p>default constructor</p>
+<h3 id=function-interrupt_pin-1>function interrupt_pin</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>interrupt_pin(
+    <span style=color:#66d9ef>const</span> interrupt_pin <span style=color:#f92672>&amp;</span> p_other
+) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
+</code></pre></div><p>Explicitly delete copy constructor to prevent slicing.</p>
+<h3 id=function-operator>function operator=</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>interrupt_pin <span style=color:#f92672>&amp;</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>=</span>(
+    <span style=color:#66d9ef>const</span> interrupt_pin <span style=color:#f92672>&amp;</span> p_other
+) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
+</code></pre></div><p>Explicitly delete assignment operator to prevent slicing.</p>
+<h3 id=function-interrupt_pin-2>function ~interrupt_pin</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#f92672>~</span>interrupt_pin() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
+</code></pre></div><p>Destroy the object.</p>
 <h3 id=function-level>function level</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>bool</span> <span style=color:#f92672>&gt;</span> level() <span style=color:#66d9ef>const</span> <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>Return the voltage level of the pin.</p>
@@ -353,7 +378,7 @@
 </code></pre></div><p>Disable interrupts for this pin.</p>
 <p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <hr>
-<p>Updated on 2022-01-27 at 13:46:16 +0000</p>
+<p>Updated on 2022-01-27 at 17:55:16 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -366,14 +391,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643291177></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643291177></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643291177></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643291177></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643291177></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643291177></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643291177></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643306117></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643306117></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643306117></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643306117></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643306117></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643306117></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643306117></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643291177></script>
+<script src=/libembeddedhal/js/relearn.js?1643306117></script>
 </body>
 </html>
