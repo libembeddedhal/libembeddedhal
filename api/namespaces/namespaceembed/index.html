@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643416111 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643416111 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643416111></script>
+<link href=/libembeddedhal/css/nucleus.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643471225 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643471225 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643471225></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643416111></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643416111></script>
-<script src=/libembeddedhal/js/search.js?1643416111></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643471225></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643471225></script>
+<script src=/libembeddedhal/js/search.js?1643471225></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -187,6 +187,11 @@
 <li><a href=#function-set_as_global_sleep>function set_as_global_sleep</a></li>
 <li><a href=#function-set_as_global_uptime>function set_as_global_uptime</a></li>
 <li><a href=#function-value>function value</a></li>
+<li><a href=#function-write>function write</a></li>
+<li><a href=#function-read>function read</a></li>
+<li><a href=#function-read-1>function read</a></li>
+<li><a href=#function-write_then_read>function write_then_read</a></li>
+<li><a href=#function-write_then_read-1>function write_then_read</a></li>
 <li><a href=#function-absolute_value>function absolute_value</a></li>
 <li><a href=#function-rounding_division>function rounding_division</a></li>
 <li><a href=#function-upscale_integer>function upscale_integer</a></li>
@@ -444,6 +449,26 @@
 <td><strong><a href=namespaces/namespaceembed/#function-value>value</a></strong>(enumeration auto p_enum_value)Helper function to convert an enum to its integral value.</td>
 </tr>
 <tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write>write</a></strong>(<a href=classes/classembed_1_1i2c/>i2c</a> & p_i2c, std::byte p_address, std::span&lt; const std::byte > p_data_out)write data to a target device on the <a href>i2c</a> bus</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-read>read</a></strong>(<a href=classes/classembed_1_1i2c/>i2c</a> & p_i2c, std::byte p_address, std::span&lt; std::byte > p_data_in)read bytes from target device on <a href>i2c</a> bus</td>
+</tr>
+<tr>
+<td>template &lt;size_t BytesToRead> boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead > ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-read>read</a></strong>(<a href=classes/classembed_1_1i2c/>i2c</a> & p_i2c, std::byte p_address)return array of read bytes from target device on <a href>i2c</a> bus</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write-then-read>write_then_read</a></strong>(<a href=classes/classembed_1_1i2c/>i2c</a> & p_i2c, std::byte p_address, std::span&lt; const std::byte > p_data_out, std::span&lt; std::byte > p_data_in)write and then read bytes from target device on <a href>i2c</a> bus</td>
+</tr>
+<tr>
+<td>template &lt;size_t BytesToRead> boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead > ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write-then-read>write_then_read</a></strong>(<a href=classes/classembed_1_1i2c/>i2c</a> & p_i2c, std::byte p_address, std::span&lt; const std::byte > p_data_out)write and then return an array of read bytes from target device on <a href>i2c</a> bus</td>
+</tr>
+<tr>
 <td>constexpr auto</td>
 <td><strong><a href=namespaces/namespaceembed/#function-absolute-value>absolute_value</a></strong>(std::integral auto p_value)Generic absolute value function that works for integer types. This is preferred over the C API for rounding numbers such as abs(), labs() and llabs(). This function relieves the need in template code to check the type of the integer and select the correct function to call.</td>
 </tr>
@@ -630,6 +655,91 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <li><strong>p_enum_value</strong> - the enumeration you want to convert into an integral value</li>
 </ul>
 <p><strong>Return</strong>: constexpr auto - return the integral value of the enum with the same type as the enumeration.</p>
+<h3 id=function-write>function write</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write(
+    i2c <span style=color:#f92672>&amp;</span> p_i2c,
+    std<span style=color:#f92672>::</span>byte p_address,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out
+)
+</code></pre></div><p>write data to a target device on the <a href>i2c</a> bus</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_i2c</strong> - <a href=classes/classembed_1_1i2c/>i2c</a> driver</li>
+<li><strong>p_address</strong> - target address</li>
+<li><strong>p_data_out</strong> - buffer of bytes to write to the target device</li>
+</ul>
+<p><strong>Return</strong>: boost::leaf::result - any errors associated with the read call</p>
+<p>Shorthand for writing i2c.transfer(&mldr;) for write only operations</p>
+<h3 id=function-read>function read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> read(
+    i2c <span style=color:#f92672>&amp;</span> p_i2c,
+    std<span style=color:#f92672>::</span>byte p_address,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_in
+)
+</code></pre></div><p>read bytes from target device on <a href>i2c</a> bus</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_i2c</strong> - <a href=classes/classembed_1_1i2c/>i2c</a> driver</li>
+<li><strong>p_address</strong> - target address</li>
+<li><strong>p_data_in</strong> - buffer to read bytes into from target device</li>
+</ul>
+<p><strong>Return</strong>: boost::leaf::result - any errors associated with the read call</p>
+<p>Shorthand for writing i2c.transfer(&mldr;) for read only operations</p>
+<h3 id=function-read-1>function read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> read(
+    i2c <span style=color:#f92672>&amp;</span> p_i2c,
+    std<span style=color:#f92672>::</span>byte p_address
+)
+</code></pre></div><p>return array of read bytes from target device on <a href>i2c</a> bus</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_i2c</strong> - <a href=classes/classembed_1_1i2c/>i2c</a> driver</li>
+<li><strong>p_address</strong> - target address</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>BytesToRead</strong> - number of bytes to read</li>
+</ul>
+<p><strong>Return</strong>: boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&#187; - array of bytes from target device or an error.</p>
+<p>Eliminates the need to create a buffer and pass it into the read function.</p>
+<h3 id=function-write_then_read>function write_then_read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write_then_read(
+    i2c <span style=color:#f92672>&amp;</span> p_i2c,
+    std<span style=color:#f92672>::</span>byte p_address,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_in
+)
+</code></pre></div><p>write and then read bytes from target device on <a href>i2c</a> bus</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_i2c</strong> - <a href=classes/classembed_1_1i2c/>i2c</a> driver</li>
+<li><strong>p_address</strong> - target address</li>
+<li><strong>p_data_out</strong> - buffer of bytes to write to the target device</li>
+<li><strong>p_data_in</strong> - buffer to read bytes into from target device</li>
+</ul>
+<p><strong>Return</strong>: boost::leaf::result - any errors associated with the read call</p>
+<p>This API simply calls transaction. This API is here for consistency across the other other communication protocols such as SPI and serial.</p>
+<h3 id=function-write_then_read-1>function write_then_read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> write_then_read(
+    i2c <span style=color:#f92672>&amp;</span> p_i2c,
+    std<span style=color:#f92672>::</span>byte p_address,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out
+)
+</code></pre></div><p>write and then return an array of read bytes from target device on <a href>i2c</a> bus</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_i2c</strong> - <a href=classes/classembed_1_1i2c/>i2c</a> driver</li>
+<li><strong>p_address</strong> - target address</li>
+<li><strong>p_data_out</strong> - buffer of bytes to write to the target device</li>
+</ul>
+<p><strong>Template Parameters</strong>:</p>
+<ul>
+<li><strong>BytesToRead</strong> - number of bytes to read after write</li>
+</ul>
+<p><strong>Return</strong>: boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&#187;</p>
+<p>Eliminates the need to create a buffer and pass it into the read function.</p>
 <h3 id=function-absolute_value>function absolute_value</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>auto</span> absolute_value(
     std<span style=color:#f92672>::</span>integral <span style=color:#66d9ef>auto</span> p_value
@@ -723,7 +833,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> frequency default_clock_rate <span style=color:#f92672>=</span> frequency(<span style=color:#ae81ff>100&#39;000</span>);
 </code></pre></div><p>Default clock rate for serial communication protocols.</p>
 <hr>
-<p>Updated on 2022-01-29 at 00:28:31 +0000</p>
+<p>Updated on 2022-01-29 at 15:47:04 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -736,14 +846,14 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643416111></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643416111></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643416111></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643416111></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643416111></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643416111></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643416111></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643471225></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643471225></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643471225></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643471225></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643471225></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643471225></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643471225></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643416111></script>
+<script src=/libembeddedhal/js/relearn.js?1643471225></script>
 </body>
 </html>
