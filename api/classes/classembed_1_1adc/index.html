@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::adc :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643415196 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643415196 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643415196></script>
+<link href=/libembeddedhal/css/nucleus.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643416111 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643416111 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643416111></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1adc/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643415196></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643415196></script>
-<script src=/libembeddedhal/js/search.js?1643415196></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643416111></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643416111></script>
+<script src=/libembeddedhal/js/search.js?1643416111></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -164,8 +164,18 @@
 <div class=wrapper>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#public-functions>Public Functions</a></li>
 <li><a href=#additional-inherited-members>Additional inherited members</a></li>
 <li><a href=#detailed-description>Detailed Description</a></li>
+<li><a href=#public-functions-documentation>Public Functions Documentation</a>
+<ul>
+<li><a href=#function-adc>function adc</a></li>
+<li><a href=#function-adc-1>function adc</a></li>
+<li><a href=#function-operator>function operator=</a></li>
+<li><a href=#function-adc-2>function ~adc</a></li>
+<li><a href=#function-read>function read</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -179,6 +189,37 @@
 <p>Analog to Digital Converter (ADC) hardware abstraction interface. <a href=#detailed-description>More&mldr;</a></p>
 <p><code>#include &lt;adc.hpp></code></p>
 <p>Inherits from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></p>
+<h2 id=public-functions>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1adc/#function-adc>adc</a></strong>() =defaultdefault constructor</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1adc/#function-adc>adc</a></strong>(const <a href=classes/classembed_1_1adc/>adc</a> & p_other) =deleteExplicitly delete copy constructor to prevent slicing.</td>
+</tr>
+<tr>
+<td><a href=classes/classembed_1_1adc/>adc</a> &</td>
+<td><strong><a href="classes/classembed_1_1adc/#function-operator=">operator=</a></strong>(const <a href=classes/classembed_1_1adc/>adc</a> & p_other) =deleteExplicitly delete assignment operator to prevent slicing.</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href=classes/classembed_1_1adc/#function-~adc>~adc</a></strong>() =defaultDestroy the object.</td>
+</tr>
+<tr>
+<td>virtual boost::leaf::result&lt; <a href=classes/classembed_1_1percent/>percent</a> ></td>
+<td><strong><a href=classes/classembed_1_1adc/#function-read>read</a></strong>() =0Read a sample from the analog to digital converter.</td>
+</tr>
+</tbody>
+</table>
 <h2 id=additional-inherited-members>Additional inherited members</h2>
 <p><strong>Public Functions inherited from <a href=classes/classembed_1_1driver/>embed::driver&lt;></a></strong></p>
 <table>
@@ -242,8 +283,30 @@
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>adc;
 </code></pre></div><p>Analog to Digital Converter (ADC) hardware abstraction interface.</p>
 <p>Use this interface for devices and peripherals that can convert analog voltage signals into a digital number.</p>
+<h2 id=public-functions-documentation>Public Functions Documentation</h2>
+<h3 id=function-adc>function adc</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>adc() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
+</code></pre></div><p>default constructor</p>
+<h3 id=function-adc-1>function adc</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>adc(
+    <span style=color:#66d9ef>const</span> adc <span style=color:#f92672>&amp;</span> p_other
+) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
+</code></pre></div><p>Explicitly delete copy constructor to prevent slicing.</p>
+<h3 id=function-operator>function operator=</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>adc <span style=color:#f92672>&amp;</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>=</span>(
+    <span style=color:#66d9ef>const</span> adc <span style=color:#f92672>&amp;</span> p_other
+) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
+</code></pre></div><p>Explicitly delete assignment operator to prevent slicing.</p>
+<h3 id=function-adc-2>function ~adc</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#f92672>~</span>adc() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
+</code></pre></div><p>Destroy the object.</p>
+<h3 id=function-read>function read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> percent <span style=color:#f92672>&gt;</span> read() <span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</code></pre></div><p>Read a sample from the analog to digital converter.</p>
+<p><strong>Return</strong>: boost::leaf::result - Return the value of the ADC as a full_scale value. Typical implemenation for a 12-bit adc would look like: <code>return embed::bit_depth&lt;uint32_t, 12>(adc_value);</code>.</p>
+<p>This function makes no assumptions about how the conversation is made via the ADC. Conversions could be performed at each call of this function. Conversions can be ongoing by hardware and this function returns the latest sample or the first sample from a queue. The conversation can also occur over a communication protocol like SPI or I2C which could effect the time it takes for this function to return. It is the responsibility of the application developer to understand how a particular ADC will effect their application.</p>
 <hr>
-<p>Updated on 2022-01-29 at 00:13:16 +0000</p>
+<p>Updated on 2022-01-29 at 00:28:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -256,14 +319,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643415196></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643415196></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643415196></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643415196></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643415196></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643415196></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643415196></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643416111></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643416111></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643416111></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643416111></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643416111></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643416111></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643416111></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643415196></script>
+<script src=/libembeddedhal/js/relearn.js?1643416111></script>
 </body>
 </html>
