@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::percent :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643334769 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643334769 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643334769></script>
+<link href=/libembeddedhal/css/nucleus.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643415196 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643415196 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643415196></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1percent/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643334769></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643334769></script>
-<script src=/libembeddedhal/js/search.js?1643334769></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643415196></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643415196></script>
+<script src=/libembeddedhal/js/search.js?1643415196></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -188,6 +188,7 @@
 <li><a href=#function-to>function to</a></li>
 <li><a href=#function-operator-float>function operator float</a></li>
 <li><a href=#function-operator-double>function operator double</a></li>
+<li><a href=#function-to_string>function to_string</a></li>
 </ul>
 </li>
 <li><a href=#friends-1>Friends</a>
@@ -274,7 +275,7 @@
 </tr>
 <tr>
 <td>template &lt;std::floating_point T> constexpr T</td>
-<td><strong><a href=classes/classembed_1_1percent/#function-to>to</a></strong>() const</td>
+<td><strong><a href=classes/classembed_1_1percent/#function-to>to</a></strong>() constConvert percent to a floating point representation.</td>
 </tr>
 <tr>
 <td></td>
@@ -283,6 +284,10 @@
 <tr>
 <td></td>
 <td><strong><a href=classes/classembed_1_1percent/#function-operator-double>operator double</a></strong>() constexplicit cast to double.</td>
+</tr>
+<tr>
+<td>auto</td>
+<td><strong><a href=classes/classembed_1_1percent/#function-to-string>to_string</a></strong>() constconvert this percentage value into a string from -1.0 to +1.0</td>
 </tr>
 </tbody>
 </table>
@@ -396,11 +401,12 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <h3 id=function-to>function to</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>std<span style=color:#f92672>::</span>floating_point T<span style=color:#f92672>&gt;</span>
 <span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> T to() <span style=color:#66d9ef>const</span>
-</code></pre></div><p><strong>Template Parameters</strong>:</p>
+</code></pre></div><p>Convert percent to a floating point representation.</p>
+<p><strong>Template Parameters</strong>:</p>
 <ul>
-<li><strong>T</strong></li>
+<li><strong>T</strong> - floating point type</li>
 </ul>
-<p><strong>Return</strong>: constexpr T</p>
+<p><strong>Return</strong>: constexpr T - float representation of the precentage between 0.0f and 1.0f.</p>
 <h3 id=function-operator-float>function operator float</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>explicit</span> <span style=color:#66d9ef>operator</span> <span style=color:#66d9ef>float</span>() <span style=color:#66d9ef>const</span>
 </code></pre></div><p>explicit cast to float.</p>
@@ -409,6 +415,42 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>explicit</span> <span style=color:#66d9ef>operator</span> <span style=color:#66d9ef>double</span>() <span style=color:#66d9ef>const</span>
 </code></pre></div><p>explicit cast to double.</p>
 <p><strong>Return</strong>: double - double representation of the precentage between 0.0 and 1.0</p>
+<h3 id=function-to_string>function to_string</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>auto</span> to_string() <span style=color:#66d9ef>const</span>
+</code></pre></div><p>convert this percentage value into a string from -1.0 to +1.0</p>
+<p><strong>Return</strong>: auto - string representation of the percent.</p>
+<p>Strings are computed using integer arithmetic only.</p>
+<p>The format of the string will follow these rules:</p>
+<ul>
+<li>
+<p>Will always have a leading + or - sign</p>
+</li>
+<li>
+<p>Will always be 13 characters where the last character is the &lsquo;\0&rsquo;</p>
+</li>
+<li>
+<p>Will start with either a &lsquo;1&rsquo; or a &lsquo;0&rsquo; character
+Example string:</p>
+</li>
+<li>
+<p>+1.000000000</p>
+</li>
+<li>
+<p>+0.250000000</p>
+</li>
+<li>
+<p>+0.125000000</p>
+</li>
+<li>
+<p>-0.333333333</p>
+</li>
+<li>
+<p>-0.111111111</p>
+</li>
+<li>
+<p>-0.666666667</p>
+</li>
+</ul>
 <h2 id=friends-1>Friends</h2>
 <h3 id=friend-operator>friend operator*</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>auto</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
@@ -446,7 +488,7 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 </ul>
 <p><strong>Return</strong>: constexpr auto - see other operator*</p>
 <hr>
-<p>Updated on 2022-01-28 at 01:52:48 +0000</p>
+<p>Updated on 2022-01-29 at 00:13:16 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -459,14 +501,14 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643334769></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643334769></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643334769></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643334769></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643334769></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643334769></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643334769></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643415196></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643415196></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643415196></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643415196></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643415196></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643415196></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643415196></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643334769></script>
+<script src=/libembeddedhal/js/relearn.js?1643415196></script>
 </body>
 </html>
