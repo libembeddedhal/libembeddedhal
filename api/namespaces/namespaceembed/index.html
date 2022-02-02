@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643723315 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643723315 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643723315></script>
+<link href=/libembeddedhal/css/nucleus.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643809939 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643809939 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643809939></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643723315></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643723315></script>
-<script src=/libembeddedhal/js/search.js?1643723315></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643809939></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643809939></script>
+<script src=/libembeddedhal/js/search.js?1643809939></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -74,6 +74,7 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1driver/ title=embed::driver class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1driver/>embed::driver</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1duty__cycle/ title=embed::duty_cycle class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1duty__cycle/>embed::duty_cycle</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1error_1_1stacktrace/ title=embed::error::stacktrace class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1error_1_1stacktrace/>embed::error::stacktrace</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1error_1_1timeout/ title=embed::error::timeout class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1error_1_1timeout/>embed::error::timeout</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1error_1_1universal/ title=embed::error::universal class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1error_1_1universal/>embed::error::universal</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1frequency/ title=embed::frequency class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1frequency/>embed::frequency</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1i2c/ title=embed::i2c class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1i2c/>embed::i2c</a></li>
@@ -195,11 +196,17 @@
 <li><a href=#function-absolute_value>function absolute_value</a></li>
 <li><a href=#function-rounding_division>function rounding_division</a></li>
 <li><a href=#function-upscale_integer>function upscale_integer</a></li>
+<li><a href=#function-wait>function wait</a></li>
 <li><a href=#function-write-1>function write</a></li>
 <li><a href=#function-read-2>function read</a></li>
 <li><a href=#function-read-3>function read</a></li>
 <li><a href=#function-write_then_read-2>function write_then_read</a></li>
 <li><a href=#function-write_then_read-3>function write_then_read</a></li>
+<li><a href=#function-write-2>function write</a></li>
+<li><a href=#function-read-4>function read</a></li>
+<li><a href=#function-read-5>function read</a></li>
+<li><a href=#function-write_then_read-4>function write_then_read</a></li>
+<li><a href=#function-write_then_read-5>function write_then_read</a></li>
 <li><a href=#function-to_array>function to_array</a></li>
 </ul>
 </li>
@@ -484,6 +491,30 @@
 <tr>
 <td>template &lt;std::integral T,size_t SourceWidth,std::integral U> constexpr static T</td>
 <td><strong><a href=namespaces/namespaceembed/#function-upscale-integer>upscale_integer</a></strong>(U p_value)Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-wait>wait</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, size_t p_length, std::optional&lt; std::chrono::nanoseconds > p_timeout =std::nullopt)</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write>write</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, std::span&lt; const std::byte > p_data_out)</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; std::span&lt; const std::byte > ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-read>read</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, std::span&lt; std::byte > p_data_in, std::optional&lt; std::chrono::nanoseconds > p_timeout =std::nullopt)</td>
+</tr>
+<tr>
+<td>template &lt;size_t BytesToRead> boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead > ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-read>read</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, std::optional&lt; std::chrono::nanoseconds > p_timeout =std::nullopt)</td>
+</tr>
+<tr>
+<td>boost::leaf::result&lt; void ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write-then-read>write_then_read</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, std::span&lt; const std::byte > p_data_out, std::span&lt; std::byte > p_data_in, std::optional&lt; std::chrono::nanoseconds > p_timeout =std::nullopt)</td>
+</tr>
+<tr>
+<td>template &lt;size_t BytesToRead> boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead > ></td>
+<td><strong><a href=namespaces/namespaceembed/#function-write-then-read>write_then_read</a></strong>(<a href=classes/classembed_1_1serial/>serial</a> & p_serial, std::span&lt; const std::byte > p_data_out, std::optional&lt; std::chrono::nanoseconds > p_timeout =std::nullopt)</td>
 </tr>
 <tr>
 <td>boost::leaf::result&lt; void ></td>
@@ -823,7 +854,44 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
            V        V       V         V
 <span style=color:#ae81ff>32</span><span style=color:#f92672>-</span>bit  [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ] [ <span style=color:#ae81ff>0x7F</span> ]
 </code></pre></div><p>Expected 32-bit value is: 0x7FFFFFFF Actual value from scaling: 0x7F7F7F7F % difference is: (0x7FFFFFFF - 0x7F7F7F7F) / 0x7FFFFFFF = 0.39215684% A precent difference well below 1% makes this a viable solution for most applications.</p>
-<h3 id=function-write-1>function write</h3>
+<h3 id=function-wait>function wait</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> wait(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    size_t p_length,
+    std<span style=color:#f92672>::</span>optional<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds <span style=color:#f92672>&gt;</span> p_timeout <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>nullopt
+)
+</code></pre></div><h3 id=function-write-1>function write</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out
+)
+</code></pre></div><h3 id=function-read-2>function read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> read(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_in,
+    std<span style=color:#f92672>::</span>optional<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds <span style=color:#f92672>&gt;</span> p_timeout <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>nullopt
+)
+</code></pre></div><h3 id=function-read-3>function read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> read(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    std<span style=color:#f92672>::</span>optional<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds <span style=color:#f92672>&gt;</span> p_timeout <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>nullopt
+)
+</code></pre></div><h3 id=function-write_then_read-2>function write_then_read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write_then_read(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_in,
+    std<span style=color:#f92672>::</span>optional<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds <span style=color:#f92672>&gt;</span> p_timeout <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>nullopt
+)
+</code></pre></div><h3 id=function-write_then_read-3>function write_then_read</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
+<span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> write_then_read(
+    serial <span style=color:#f92672>&amp;</span> p_serial,
+    std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out,
+    std<span style=color:#f92672>::</span>optional<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds <span style=color:#f92672>&gt;</span> p_timeout <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>nullopt
+)
+</code></pre></div><h3 id=function-write-2>function write</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write(
     spi <span style=color:#f92672>&amp;</span> p_spi,
     std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out
@@ -835,7 +903,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <li><strong>p_data_out</strong> - data to be written to the SPI bus</li>
 </ul>
 <p><strong>Return</strong>: boost::leaf::result - any errors associated with this call</p>
-<h3 id=function-read-2>function read</h3>
+<h3 id=function-read-4>function read</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> read(
     spi <span style=color:#f92672>&amp;</span> p_spi,
     std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_in,
@@ -850,7 +918,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 </ul>
 <p><strong>Return</strong>: boost::leaf::result - any errors associated with this call</p>
 <p>Filler bytes will be placed on the write line.</p>
-<h3 id=function-read-3>function read</h3>
+<h3 id=function-read-5>function read</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
 <span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> read(
     spi <span style=color:#f92672>&amp;</span> p_spi,
@@ -868,7 +936,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 </ul>
 <p><strong>Return</strong>: boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&#187; - any errors associated with this call</p>
 <p>Filler bytes will be placed on the write line.</p>
-<h3 id=function-write_then_read-2>function write_then_read</h3>
+<h3 id=function-write_then_read-4>function write_then_read</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> write_then_read(
     spi <span style=color:#f92672>&amp;</span> p_spi,
     std<span style=color:#f92672>::</span>span<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>const</span> std<span style=color:#f92672>::</span>byte <span style=color:#f92672>&gt;</span> p_data_out,
@@ -885,7 +953,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 </ul>
 <p><strong>Return</strong>: boost::leaf::result</p>
 <p>This utility function that fits the use case of many SPI devices where a transaction is not full duplex. In many spi devices, full duplex means that as data is being written to the SPI bus, the peripheral device is sending data back on the read line. In most cases, the protocol is to write data to the bus, and ignore the read line because the peripheral is not writing anything meaningful to that line, then reading from SPI bus and writing nothing meaningful to the write line as the peripheral is ignoring that line.</p>
-<h3 id=function-write_then_read-3>function write_then_read</h3>
+<h3 id=function-write_then_read-5>function write_then_read</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>size_t BytesToRead<span style=color:#f92672>&gt;</span>
 <span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>array<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span>byte, BytesToRead <span style=color:#f92672>&gt;</span> <span style=color:#f92672>&gt;</span> write_then_read(
     spi <span style=color:#f92672>&amp;</span> p_spi,
@@ -939,7 +1007,7 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> frequency default_clock_rate <span style=color:#f92672>=</span> frequency(<span style=color:#ae81ff>100&#39;000</span>);
 </code></pre></div><p>Default clock rate for serial communication protocols.</p>
 <hr>
-<p>Updated on 2022-02-01 at 13:48:34 +0000</p>
+<p>Updated on 2022-02-02 at 13:52:19 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -952,14 +1020,14 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643723315></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643723315></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643723315></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643723315></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643723315></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643723315></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643723315></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643809939></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643809939></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643809939></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643809939></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643809939></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643809939></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643809939></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643723315></script>
+<script src=/libembeddedhal/js/relearn.js?1643809939></script>
 </body>
 </html>
