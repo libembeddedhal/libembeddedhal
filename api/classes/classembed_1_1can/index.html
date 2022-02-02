@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::can :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643809939 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643809939 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643809939></script>
+<link href=/libembeddedhal/css/nucleus.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1643811534 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1643811534 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1643811534></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1can/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643809939></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643809939></script>
-<script src=/libembeddedhal/js/search.js?1643809939></script>
+<script src=/libembeddedhal/js/lunr.min.js?1643811534></script>
+<script src=/libembeddedhal/js/auto-complete.js?1643811534></script>
+<script src=/libembeddedhal/js/search.js?1643811534></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -176,10 +176,6 @@
 </li>
 <li><a href=#public-functions-documentation>Public Functions Documentation</a>
 <ul>
-<li><a href=#function-can>function can</a></li>
-<li><a href=#function-can-1>function can</a></li>
-<li><a href=#function-operator>function operator=</a></li>
-<li><a href=#function-can-2>function ~can</a></li>
 <li><a href=#function-send>function send</a></li>
 <li><a href=#function-attach_interrupt>function attach_interrupt</a></li>
 </ul>
@@ -237,22 +233,6 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href=classes/classembed_1_1can/#function-can>can</a></strong>() =defaultdefault constructor</td>
-</tr>
-<tr>
-<td></td>
-<td><strong><a href=classes/classembed_1_1can/#function-can>can</a></strong>(const <a href=classes/classembed_1_1can/>can</a> & p_other) =deleteExplicitly delete copy constructor to prevent slicing.</td>
-</tr>
-<tr>
-<td><a href=classes/classembed_1_1can/>can</a> &</td>
-<td><strong><a href="classes/classembed_1_1can/#function-operator=">operator=</a></strong>(const <a href=classes/classembed_1_1can/>can</a> & p_other) =deleteExplicitly delete assignment operator to prevent slicing.</td>
-</tr>
-<tr>
-<td>virtual</td>
-<td><strong><a href=classes/classembed_1_1can/#function-~can>~can</a></strong>() =defaultDestroy the object.</td>
-</tr>
-<tr>
 <td>virtual boost::leaf::result&lt; void ></td>
 <td><strong><a href=classes/classembed_1_1can/#function-send>send</a></strong>(const <a href=classes/structembed_1_1can_1_1message__t/>message_t</a> & p_message) =0Send a can message over the can bus.</td>
 </tr>
@@ -279,6 +259,14 @@
 <tr>
 <td></td>
 <td><strong><a href=classes/classembed_1_1driver/#function-driver>driver</a></strong>(const <a href=classes/classembed_1_1driver/>driver</a> & p_other) =deleteExplicitly delete copy constructor to prevent slicing.</td>
+</tr>
+<tr>
+<td><a href=classes/classembed_1_1driver/>driver</a> &</td>
+<td><strong><a href="classes/classembed_1_1driver/#function-operator=">operator=</a></strong>(const <a href=classes/classembed_1_1driver/>driver</a> & p_other) =deleteExplicitly delete assignment operator to prevent slicing.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href=classes/classembed_1_1driver/#function-driver>driver</a></strong>(const <a href=classes/classembed_1_1driver/>driver</a> && p_other) =deleteExplicitly delete move constructor.</td>
 </tr>
 <tr>
 <td>virtual</td>
@@ -326,22 +314,6 @@
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>can<span style=color:#f92672>::</span>id_t <span style=color:#f92672>=</span>  <span style=color:#66d9ef>uint32_t</span>;
 </code></pre></div><p>Can message ID type trait.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
-<h3 id=function-can>function can</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>can() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
-</code></pre></div><p>default constructor</p>
-<h3 id=function-can-1>function can</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>can(
-    <span style=color:#66d9ef>const</span> can <span style=color:#f92672>&amp;</span> p_other
-) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
-</code></pre></div><p>Explicitly delete copy constructor to prevent slicing.</p>
-<h3 id=function-operator>function operator=</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>can <span style=color:#f92672>&amp;</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>=</span>(
-    <span style=color:#66d9ef>const</span> can <span style=color:#f92672>&amp;</span> p_other
-) <span style=color:#f92672>=</span><span style=color:#66d9ef>delete</span>
-</code></pre></div><p>Explicitly delete assignment operator to prevent slicing.</p>
-<h3 id=function-can-2>function ~can</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> <span style=color:#f92672>~</span>can() <span style=color:#f92672>=</span><span style=color:#66d9ef>default</span>
-</code></pre></div><p>Destroy the object.</p>
 <h3 id=function-send>function send</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> send(
     <span style=color:#66d9ef>const</span> message_t <span style=color:#f92672>&amp;</span> p_message
@@ -363,7 +335,7 @@
 </ul>
 <p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
 <hr>
-<p>Updated on 2022-02-02 at 13:52:19 +0000</p>
+<p>Updated on 2022-02-02 at 14:18:54 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -376,14 +348,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643809939></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643809939></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643809939></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643809939></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643809939></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643809939></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643809939></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1643811534></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643811534></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643811534></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643811534></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1643811534></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643811534></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1643811534></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643809939></script>
+<script src=/libembeddedhal/js/relearn.js?1643811534></script>
 </body>
 </html>
