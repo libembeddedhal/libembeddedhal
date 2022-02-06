@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1643893947 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1643893947 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1643893947></script>
+<link href=/libembeddedhal/css/nucleus.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1644148914 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1644148914 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1644148914></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1643893947></script>
-<script src=/libembeddedhal/js/auto-complete.js?1643893947></script>
-<script src=/libembeddedhal/js/search.js?1643893947></script>
+<script src=/libembeddedhal/js/lunr.min.js?1644148914></script>
+<script src=/libembeddedhal/js/auto-complete.js?1644148914></script>
+<script src=/libembeddedhal/js/search.js?1644148914></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -213,7 +213,6 @@
 <li><a href=#attributes-documentation>Attributes Documentation</a>
 <ul>
 <li><a href=#variable-invalid_option>variable invalid_option</a></li>
-<li><a href=#variable-enumeration>variable enumeration</a></li>
 <li><a href=#variable-default_clock_rate>variable default_clock_rate</a></li>
 </ul>
 </li>
@@ -267,10 +266,6 @@
 <td><strong><a href=classes/structembed_1_1bit__limits/>embed::bit_limits</a></strong> Similar to std::numeric_limits except that this object can give properties of integral types of arbitrary bit widths.</td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1can__settings/>embed::can_settings</a></strong> Generic settings for a can peripheral.</td>
-</tr>
-<tr>
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1can/>embed::can</a></strong> Controller Area Network (CAN bus) hardware abstraction interface.</td>
 </tr>
@@ -280,23 +275,19 @@
 </tr>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1counter__settings/>embed::counter_settings</a></strong> Generic settings for a hardware counting devices.</td>
+<td><strong><a href=classes/structembed_1_1can__settings/>embed::can_settings</a></strong> Generic settings for a can peripheral.</td>
 </tr>
 <tr>
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1counter/>embed::counter</a></strong> Counter hardware abstraction interface. Use this interface for devices and peripherals that have counting capabilities. Such devices can count up or down. Useful for keeping time. Expect counters to overflow when they reach the end of counting register&rsquo;s limits.</td>
 </tr>
 <tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1counter__settings/>embed::counter_settings</a></strong> Generic settings for a hardware counting devices.</td>
+</tr>
+<tr>
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1dac/>embed::dac</a></strong> Digital to Analog Converter (DAC) hardware abstraction interface.</td>
-</tr>
-<tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></strong> Used for defining static_asserts that should always fail, but only if the static_assert line is hit via <code>if constexpr</code> control block. Prefer to NOT use this directly but to use <code>invalid_option</code> instead.</td>
-</tr>
-<tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1no__settings/>embed::no_settings</a></strong> An empty settings structure used to indicate that a driver or interface does not have generic settings.</td>
 </tr>
 <tr>
 <td>class</td>
@@ -311,28 +302,8 @@
 <td><strong><a href=classes/classembed_1_1frequency/>embed::frequency</a></strong> Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the integer representation of a signal frequency.</td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></strong> Generic settings for input pins.</td>
-</tr>
-<tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1output__pin__settings/>embed::output_pin_settings</a></strong> Generic settings for output pins.</td>
-</tr>
-<tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></strong> Generic settings for interrupt pins.</td>
-</tr>
-<tr>
 <td>class</td>
-<td><strong><a href=classes/classembed_1_1input__pin/>embed::input_pin</a></strong> Digital input pin hardware abstraction.</td>
-</tr>
-<tr>
-<td>class</td>
-<td><strong><a href=classes/classembed_1_1output__pin/>embed::output_pin</a></strong> Digital output pin hardware abstraction.</td>
-</tr>
-<tr>
-<td>class</td>
-<td><strong><a href=classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></strong> Digital interrupt pin hardware abstraction.</td>
+<td><strong><a href=classes/classembed_1_1i2c/>embed::i2c</a></strong> Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface.</td>
 </tr>
 <tr>
 <td>struct</td>
@@ -340,7 +311,35 @@
 </tr>
 <tr>
 <td>class</td>
-<td><strong><a href=classes/classembed_1_1i2c/>embed::i2c</a></strong> Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface.</td>
+<td><strong><a href=classes/classembed_1_1input__pin/>embed::input_pin</a></strong> Digital input pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1input__pin__settings/>embed::input_pin_settings</a></strong> Generic settings for input pins.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1interrupt__pin/>embed::interrupt_pin</a></strong> Digital interrupt pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1interrupt__pin__settings/>embed::interrupt_pin_settings</a></strong> Generic settings for interrupt pins.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1invalid__option__t/>embed::invalid_option_t</a></strong> Used for defining static_asserts that should always fail, but only if the static_assert line is hit via <code>if constexpr</code> control block. Prefer to NOT use this directly but to use <code>invalid_option</code> instead.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1no__settings/>embed::no_settings</a></strong> An empty settings structure used to indicate that a driver or interface does not have generic settings.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1output__pin/>embed::output_pin</a></strong> Digital output pin hardware abstraction.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1output__pin__settings/>embed::output_pin_settings</a></strong> Generic settings for output pins.</td>
 </tr>
 <tr>
 <td>class</td>
@@ -351,16 +350,12 @@
 <td><strong><a href=classes/classembed_1_1percent/>embed::percent</a></strong> A integer representation of a precentage.</td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href=classes/structembed_1_1pwm__settings/>embed::pwm_settings</a></strong></td>
-</tr>
-<tr>
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1pwm/>embed::pwm</a></strong> Pulse Width Modulation (PWM) channel hardware abstraction.</td>
 </tr>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1serial__settings/>embed::serial_settings</a></strong> Generic settings for a standard serial device.</td>
+<td><strong><a href=classes/structembed_1_1pwm__settings/>embed::pwm_settings</a></strong></td>
 </tr>
 <tr>
 <td>class</td>
@@ -368,11 +363,15 @@
 </tr>
 <tr>
 <td>struct</td>
-<td><strong><a href=classes/structembed_1_1spi__settings/>embed::spi_settings</a></strong> Generic settings for a standard SPI device.</td>
+<td><strong><a href=classes/structembed_1_1serial__settings/>embed::serial_settings</a></strong> Generic settings for a standard serial device.</td>
 </tr>
 <tr>
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1spi/>embed::spi</a></strong> Serial peripheral interface (SPI) communication protocol hardware abstract interface.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href=classes/structembed_1_1spi__settings/>embed::spi_settings</a></strong> Generic settings for a standard SPI device.</td>
 </tr>
 <tr>
 <td>class</td>
@@ -489,7 +488,7 @@
 <td><strong><a href=namespaces/namespaceembed/#function-rounding-division>rounding_division</a></strong>(T p_numerator, T p_denominator)Perform integer division and round the value up if the next decimal place is greater than or equal to 0.5.</td>
 </tr>
 <tr>
-<td>template &lt;std::integral T,size_t SourceWidth,std::integral U> constexpr static T</td>
+<td>template &lt;std::integral T,size_t SourceWidth,std::integral U> constexpr T</td>
 <td><strong><a href=namespaces/namespaceembed/#function-upscale-integer>upscale_integer</a></strong>(U p_value)Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.</td>
 </tr>
 <tr>
@@ -554,10 +553,6 @@
 <tr>
 <td>constexpr bool</td>
 <td><strong><a href=namespaces/namespaceembed/#variable-invalid-option>invalid_option</a></strong> Helper definition to simplify the usage of <a href>invalid_option_t</a>.</td>
-</tr>
-<tr>
-<td>concept</td>
-<td><strong><a href=namespaces/namespaceembed/#variable-enumeration>enumeration</a></strong> concept for enumeration types</td>
 </tr>
 <tr>
 <td>constexpr <a href=classes/classembed_1_1frequency/>frequency</a></td>
@@ -827,7 +822,7 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>std<span style=color:#f92672>::</span>integral T,
 size_t SourceWidth,
 std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</span>
-<span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>static</span> T upscale_integer(
+<span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> T upscale_integer(
     U p_value
 )
 </code></pre></div><p>Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.</p>
@@ -996,18 +991,11 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <ul>
 <li><strong>options</strong> ignored by the application but needed to create a non-trivial specialization of this class which allows its usage in static_assert.</li>
 </ul>
-<h3 id=variable-enumeration>variable enumeration</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>concept</span> enumeration <span style=color:#f92672>=</span> std<span style=color:#f92672>::</span>is_enum_v<span style=color:#f92672>&lt;</span>T<span style=color:#f92672>&gt;</span>;
-</code></pre></div><p>concept for enumeration types</p>
-<p><strong>Template Parameters</strong>:</p>
-<ul>
-<li><strong>T</strong> - enum type</li>
-</ul>
 <h3 id=variable-default_clock_rate>variable default_clock_rate</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> frequency default_clock_rate <span style=color:#f92672>=</span> frequency(<span style=color:#ae81ff>100&#39;000</span>);
 </code></pre></div><p>Default clock rate for serial communication protocols.</p>
 <hr>
-<p>Updated on 2022-02-03 at 13:12:26 +0000</p>
+<p>Updated on 2022-02-06 at 12:01:53 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -1020,14 +1008,14 @@ std<span style=color:#f92672>::</span>integral U<span style=color:#f92672>&gt;</
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1643893947></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1643893947></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1643893947></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1643893947></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1643893947></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1643893947></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1643893947></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1644148914></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1644148914></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1644148914></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1644148914></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1644148914></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1644148914></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1644148914></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1643893947></script>
+<script src=/libembeddedhal/js/relearn.js?1644148914></script>
 </body>
 </html>
