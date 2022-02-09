@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::frequency :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1644377317 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1644377317 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1644377317></script>
+<link href=/libembeddedhal/css/nucleus.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1644405382 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1644405382 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1644405382></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1frequency/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1644377317></script>
-<script src=/libembeddedhal/js/auto-complete.js?1644377317></script>
-<script src=/libembeddedhal/js/search.js?1644377317></script>
+<script src=/libembeddedhal/js/lunr.min.js?1644405382></script>
+<script src=/libembeddedhal/js/auto-complete.js?1644405382></script>
+<script src=/libembeddedhal/js/search.js?1644405382></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -184,14 +184,12 @@
 </li>
 <li><a href=#friends-1>Friends</a>
 <ul>
-<li><a href=#friend-operator>friend operator+</a></li>
-<li><a href=#friend-operator->friend operator-</a></li>
+<li><a href=#friend-operator>friend operator*</a></li>
 <li><a href=#friend-operator-1>friend operator*</a></li>
-<li><a href=#friend-operator-2>friend operator*</a></li>
+<li><a href=#friend-operator-2>friend operator/</a></li>
 <li><a href=#friend-operator-3>friend operator/</a></li>
-<li><a href=#friend-operator-4>friend operator/</a></li>
+<li><a href=#friend-operator-4>friend operator*</a></li>
 <li><a href=#friend-operator-5>friend operator*</a></li>
-<li><a href=#friend-operator-6>friend operator*</a></li>
 </ul>
 </li>
 </ul>
@@ -277,14 +275,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>constexpr friend <a href=classes/classembed_1_1frequency/>frequency</a></td>
-<td><strong><a href=classes/classembed_1_1frequency/#friend-operator+>operator+</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_lhs, <a href=classes/classembed_1_1frequency/>frequency</a> p_rhs) sum two frequencies together</td>
-</tr>
-<tr>
-<td>constexpr friend <a href=classes/classembed_1_1frequency/>frequency</a></td>
-<td><strong><a href=classes/classembed_1_1frequency/#friend-operator->operator-</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_lhs, <a href=classes/classembed_1_1frequency/>frequency</a> p_rhs) subtract two frequencies from each other</td>
-</tr>
 <tr>
 <td>constexpr friend <a href=classes/classembed_1_1frequency/>frequency</a></td>
 <td><strong><a href=classes/classembed_1_1frequency/#friend-operator*>operator*</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_lhs, Integer p_rhs) Scale up a frequency by an integer factor.</td>
@@ -428,33 +418,7 @@
 </code></pre></div><p>Default operators for &lt;, &lt;=, >, >= and ==.</p>
 <p><strong>Return</strong>: auto - result of the comparison</p>
 <h2 id=friends-1>Friends</h2>
-<h3 id=friend-operator>friend operator+</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> frequency <span style=color:#66d9ef>operator</span><span style=color:#f92672>+</span>(
-    frequency p_lhs,
-
-    frequency p_rhs
-);
-</code></pre></div><p>sum two frequencies together</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_lhs</strong> - left hand frequency</li>
-<li><strong>p_rhs</strong> - right hand frequency</li>
-</ul>
-<p><strong>Return</strong>: constexpr frequency - sum of the two frequencies</p>
-<h3 id=friend-operator->friend operator-</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> frequency <span style=color:#66d9ef>operator</span><span style=color:#f92672>-</span>(
-    frequency p_lhs,
-
-    frequency p_rhs
-);
-</code></pre></div><p>subtract two frequencies from each other</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_lhs</strong> - left hand frequency</li>
-<li><strong>p_rhs</strong> - right hand frequency</li>
-</ul>
-<p><strong>Return</strong>: constexpr frequency - difference of two frequencies</p>
-<h3 id=friend-operator-1>friend operator*</h3>
+<h3 id=friend-operator>friend operator*</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> frequency <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     frequency p_lhs,
 
@@ -471,7 +435,7 @@
 <li><strong>Integer</strong> - type of the integer</li>
 </ul>
 <p><strong>Return</strong>: constexpr frequency</p>
-<h3 id=friend-operator-2>friend operator*</h3>
+<h3 id=friend-operator-1>friend operator*</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> frequency <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     Integer p_rhs,
 
@@ -488,7 +452,7 @@
 <li><strong>Integer</strong> - type of the integer</li>
 </ul>
 <p><strong>Return</strong>: constexpr frequency</p>
-<h3 id=friend-operator-3>friend operator/</h3>
+<h3 id=friend-operator-2>friend operator/</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> frequency <span style=color:#66d9ef>operator</span><span style=color:#f92672>/</span>(
     frequency p_lhs,
 
@@ -505,7 +469,7 @@
 <li><strong>Integer</strong> - type of the integer</li>
 </ul>
 <p><strong>Return</strong>: constexpr frequency</p>
-<h3 id=friend-operator-4>friend operator/</h3>
+<h3 id=friend-operator-3>friend operator/</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>/</span>(
     frequency p_input,
 
@@ -518,7 +482,7 @@
 <li><strong>p_target</strong> - the target frequency to reach via an integer divider</li>
 </ul>
 <p><strong>Return</strong>: constexpr int_t - frequency divider value representing the number of cycles in the input that constitute one cycle in the target frequency.</p>
-<h3 id=friend-operator-5>friend operator*</h3>
+<h3 id=friend-operator-4>friend operator*</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     frequency p_input,
 
@@ -536,7 +500,7 @@
 <li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
 </ul>
 <p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
-<h3 id=friend-operator-6>friend operator*</h3>
+<h3 id=friend-operator-5>friend operator*</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> p_duration,
 
@@ -555,7 +519,7 @@
 </ul>
 <p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
 <hr>
-<p>Updated on 2022-02-09 at 03:28:37 +0000</p>
+<p>Updated on 2022-02-09 at 11:16:22 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -568,14 +532,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1644377317></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1644377317></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1644377317></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1644377317></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1644377317></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1644377317></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1644377317></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1644405382></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1644405382></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1644405382></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1644405382></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1644405382></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1644405382></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1644405382></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1644377317></script>
+<script src=/libembeddedhal/js/relearn.js?1644405382></script>
 </body>
 </html>
