@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::frequency :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1644409307 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1644409307 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1644409307></script>
+<link href=/libembeddedhal/css/nucleus.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1644410251 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1644410251 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1644410251></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1frequency/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1644409307></script>
-<script src=/libembeddedhal/js/auto-complete.js?1644409307></script>
-<script src=/libembeddedhal/js/search.js?1644409307></script>
+<script src=/libembeddedhal/js/lunr.min.js?1644410251></script>
+<script src=/libembeddedhal/js/auto-complete.js?1644410251></script>
+<script src=/libembeddedhal/js/search.js?1644410251></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -161,14 +161,8 @@
 <div class=wrapper>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#public-types>Public Types</a></li>
 <li><a href=#public-functions>Public Functions</a></li>
 <li><a href=#friends>Friends</a></li>
-<li><a href=#public-types-documentation>Public Types Documentation</a>
-<ul>
-<li><a href=#using-int_t>using int_t</a></li>
-</ul>
-</li>
 <li><a href=#public-functions-documentation>Public Functions Documentation</a>
 <ul>
 <li><a href=#function-calculate_duty_cycle>function calculate_duty_cycle</a></li>
@@ -204,21 +198,6 @@
 <p><strong>embed::frequency Class Reference</strong></p>
 <p>Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the integer representation of a signal frequency.</p>
 <p><code>#include &lt;frequency.hpp></code></p>
-<h2 id=public-types>Public Types</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>using std::int64_t</td>
-<td><strong><a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></strong> Integer type used throughout the class.</td>
-</tr>
-</tbody>
-</table>
 <h2 id=public-functions>Public Functions</h2>
 <table>
 <thead>
@@ -230,27 +209,27 @@
 <tbody>
 <tr>
 <td>constexpr <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a></td>
-<td><strong><a href=classes/classembed_1_1frequency/#function-calculate-duty-cycle>calculate_duty_cycle</a></strong>(<a href=classes/classembed_1_1frequency/#using-int-t>int_t</a> p_cycles, <a href=classes/classembed_1_1percent/>percent</a> p_precent)Generate a <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent.</td>
+<td><strong><a href=classes/classembed_1_1frequency/#function-calculate-duty-cycle>calculate_duty_cycle</a></strong>(std::int64_t p_cycles, <a href=classes/classembed_1_1percent/>percent</a> p_precent)Generate a <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent.</td>
 </tr>
 <tr>
 <td>constexpr</td>
-<td><strong><a href=classes/classembed_1_1frequency/#function-frequency>frequency</a></strong>(<a href=classes/classembed_1_1frequency/#using-int-t>int_t</a> p_value)construct the frequency object</td>
+<td><strong><a href=classes/classembed_1_1frequency/#function-frequency>frequency</a></strong>(std::int64_t p_value)construct the frequency object</td>
 </tr>
 <tr>
 <td>constexpr auto</td>
 <td><strong><a href=classes/classembed_1_1frequency/#function-cycles-per-second>cycles_per_second</a></strong>() constGet the frequency as an integer.</td>
 </tr>
 <tr>
-<td>constexpr <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
+<td>constexpr std::int64_t</td>
 <td><strong><a href=classes/classembed_1_1frequency/#function-divider>divider</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_target) constCalculate the frequency divider required to generate the output frequency provided.</td>
 </tr>
 <tr>
-<td>template &lt;typename Rep ,typename Period > constexpr <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
+<td>template &lt;typename Rep ,typename Period > constexpr std::int64_t</td>
 <td><strong><a href=classes/classembed_1_1frequency/#function-cycles-per>cycles_per</a></strong>(std::chrono::duration&lt; Rep, Period > p_duration) constCalculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a paricular time duration at this frequency.</td>
 </tr>
 <tr>
 <td>template constexpr std::chrono::duration&lt; Rep, Period ></td>
-<td><strong><a href=classes/classembed_1_1frequency/#function-duration-from-cycles>duration_from_cycles</a></strong>(<a href=classes/classembed_1_1frequency/#using-int-t>int_t</a> p_cycles) constCalculate the time duration based on the frequency and a number of cycles.</td>
+<td><strong><a href=classes/classembed_1_1frequency/#function-duration-from-cycles>duration_from_cycles</a></strong>(std::int64_t p_cycles) constCalculate the time duration based on the frequency and a number of cycles.</td>
 </tr>
 <tr>
 <td>template &lt;typename Rep ,typename Period > constexpr <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a></td>
@@ -288,27 +267,23 @@
 <td><strong><a href=classes/classembed_1_1frequency/#friend-operator/>operator/</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_lhs, Integer p_rhs) Scale down a frequency by an integer factor.</td>
 </tr>
 <tr>
-<td>constexpr friend <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
+<td>constexpr friend std::int64_t</td>
 <td><strong><a href=classes/classembed_1_1frequency/#friend-operator/>operator/</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_input, <a href=classes/classembed_1_1frequency/>frequency</a> p_target) Scale down a frequency by an integer factor.</td>
 </tr>
 <tr>
-<td>constexpr friend <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
+<td>constexpr friend std::int64_t</td>
 <td><strong><a href=classes/classembed_1_1frequency/#friend-operator*>operator*</a></strong>(<a href=classes/classembed_1_1frequency/>frequency</a> p_input, std::chrono::duration&lt; Rep, Period > p_duration) multiplying a frequency by a time period returns the number of cycles of the input frequency contained within the time duration.</td>
 </tr>
 <tr>
-<td>constexpr friend <a href=classes/classembed_1_1frequency/#using-int-t>int_t</a></td>
+<td>constexpr friend std::int64_t</td>
 <td><strong><a href=classes/classembed_1_1frequency/#friend-operator*>operator*</a></strong>(std::chrono::duration&lt; Rep, Period > p_duration, <a href=classes/classembed_1_1frequency/>frequency</a> p_input) multiplying a frequency by a time period returns the number of cycles of the input frequency contained within the time duration.</td>
 </tr>
 </tbody>
 </table>
-<h2 id=public-types-documentation>Public Types Documentation</h2>
-<h3 id=using-int_t>using int_t</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>using</span> embed<span style=color:#f92672>::</span>frequency<span style=color:#f92672>::</span>int_t <span style=color:#f92672>=</span>  std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span>;
-</code></pre></div><p>Integer type used throughout the class.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
 <h3 id=function-calculate_duty_cycle>function calculate_duty_cycle</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> duty_cycle calculate_duty_cycle(
-    int_t p_cycles,
+    std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> p_cycles,
     percent p_precent
 )
 </code></pre></div><p>Generate a <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent.</p>
@@ -320,7 +295,7 @@
 <p><strong>Return</strong>: constexpr <a href=classes/structembed_1_1duty__cycle/>duty_cycle</a> - the duty cycle cycle counts</p>
 <h3 id=function-frequency>function frequency</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>explicit</span> <span style=color:#66d9ef>constexpr</span> frequency(
-    int_t p_value
+    std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> p_value
 )
 </code></pre></div><p>construct the frequency object</p>
 <p><strong>Parameters</strong>:</p>
@@ -332,7 +307,7 @@
 </code></pre></div><p>Get the frequency as an integer.</p>
 <p><strong>Return</strong>: constexpr auto - frequency value as an integer</p>
 <h3 id=function-divider>function divider</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> int_t divider(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> divider(
     frequency p_target
 ) <span style=color:#66d9ef>const</span>
 </code></pre></div><p>Calculate the frequency divider required to generate the output frequency provided.</p>
@@ -340,11 +315,11 @@
 <ul>
 <li><strong>p_target</strong> - the target output frequency</li>
 </ul>
-<p><strong>Return</strong>: constexpr int_t - the divider, when applied to this frequency, will achieve the p_target frequency. A value of is an error and 0 indicates that the output frequency is greater than this frequency and there does not exist an integer divider that can produce the output frequency.</p>
+<p><strong>Return</strong>: constexpr std::int64_t - the divider, when applied to this frequency, will achieve the p_target frequency. A value of is an error and 0 indicates that the output frequency is greater than this frequency and there does not exist an integer divider that can produce the output frequency.</p>
 <h3 id=function-cycles_per>function cycles_per</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> Rep ,
 <span style=color:#66d9ef>typename</span> Period <span style=color:#f92672>&gt;</span>
-<span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> int_t cycles_per(
+<span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> cycles_per(
     std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> p_duration
 ) <span style=color:#66d9ef>const</span>
 </code></pre></div><p>Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a paricular time duration at this frequency.</p>
@@ -357,12 +332,12 @@
 <li><strong>Rep</strong> - type of the duration</li>
 <li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
 </ul>
-<p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
+<p><strong>Return</strong>: constexpr std::int64_t - the number of cycles of this frequency within the duration.</p>
 <h3 id=function-duration_from_cycles>function duration_from_cycles</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> Rep  <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds<span style=color:#f92672>::</span>rep,
 <span style=color:#66d9ef>typename</span> Period  <span style=color:#f92672>=</span>std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds<span style=color:#f92672>::</span>period<span style=color:#f92672>&gt;</span>
 <span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>constexpr</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> duration_from_cycles(
-    int_t p_cycles
+    std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> p_cycles
 ) <span style=color:#66d9ef>const</span>
 </code></pre></div><p>Calculate the time duration based on the frequency and a number of cycles.</p>
 <p><strong>Parameters</strong>:</p>
@@ -470,7 +445,7 @@
 </ul>
 <p><strong>Return</strong>: constexpr frequency</p>
 <h3 id=friend-operator-3>friend operator/</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>/</span>(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>/</span>(
     frequency p_input,
 
     frequency p_target
@@ -481,9 +456,9 @@
 <li><strong>p_input</strong> - the input frequency to be divided down to the target frequency with an integer divider</li>
 <li><strong>p_target</strong> - the target frequency to reach via an integer divider</li>
 </ul>
-<p><strong>Return</strong>: constexpr int_t - frequency divider value representing the number of cycles in the input that constitute one cycle in the target frequency.</p>
+<p><strong>Return</strong>: constexpr std::int64_t - frequency divider value representing the number of cycles in the input that constitute one cycle in the target frequency.</p>
 <h3 id=friend-operator-4>friend operator*</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     frequency p_input,
 
     std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> p_duration
@@ -499,9 +474,9 @@
 <li><strong>Rep</strong> - type of the duration</li>
 <li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
 </ul>
-<p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
+<p><strong>Return</strong>: constexpr std::int64_t - the number of cycles of this frequency within the duration.</p>
 <h3 id=friend-operator-5>friend operator*</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> int_t <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>friend</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>friend</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>int64_t</span> <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(
     std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>duration<span style=color:#f92672>&lt;</span> Rep, Period <span style=color:#f92672>&gt;</span> p_duration,
 
     frequency p_input
@@ -517,9 +492,9 @@
 <li><strong>Rep</strong> - type of the duration</li>
 <li><strong>Period</strong> - ratio of the time duration relative to 1 second</li>
 </ul>
-<p><strong>Return</strong>: constexpr int_t - the number of cycles of this frequency within the duration.</p>
+<p><strong>Return</strong>: constexpr std::int64_t - the number of cycles of this frequency within the duration.</p>
 <hr>
-<p>Updated on 2022-02-09 at 12:21:47 +0000</p>
+<p>Updated on 2022-02-09 at 12:37:31 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -532,14 +507,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1644409307></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1644409307></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1644409307></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1644409307></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1644409307></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1644409307></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1644409307></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1644410251></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1644410251></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1644410251></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1644410251></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1644410251></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1644410251></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1644410251></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1644409307></script>
+<script src=/libembeddedhal/js/relearn.js?1644410251></script>
 </body>
 </html>
