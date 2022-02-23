@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed::counter :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1645449782 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1645449782></script>
+<link href=/libembeddedhal/css/nucleus.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1645640845 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1645640845 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1645640845></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/classes/classembed_1_1counter/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1645449782></script>
-<script src=/libembeddedhal/js/auto-complete.js?1645449782></script>
-<script src=/libembeddedhal/js/search.js?1645449782></script>
+<script src=/libembeddedhal/js/lunr.min.js?1645640845></script>
+<script src=/libembeddedhal/js/auto-complete.js?1645640845></script>
+<script src=/libembeddedhal/js/search.js?1645640845></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -102,7 +102,8 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/ title=embed::timer::out_of_bounds class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/>embed::timer::out_of_bounds</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/ title=embed::timer::out_of_bounds class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/>embed::timer::out_of_bounds</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1uptime__counter/ title=embed::uptime_counter class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1uptime__counter/>embed::uptime_counter</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
 <li data-nav-id=/libembeddedhal/api/namespaces/ title=Namespaces class="dd-item alwaysopen"><a href=/libembeddedhal/api/namespaces/>Namespaces</a><ul>
 <li data-nav-id=/libembeddedhal/api/namespaces/namespaceembed/ title=embed class=dd-item><a href=/libembeddedhal/api/namespaces/namespaceembed/>embed</a></li>
@@ -165,13 +166,12 @@
 <li><a href=#public-functions>Public Functions</a></li>
 <li><a href=#public-types-documentation>Public Types Documentation</a>
 <ul>
-<li><a href=#enum-controls>enum controls</a></li>
+<li><a href=#enum-errors>enum errors</a></li>
 </ul>
 </li>
 <li><a href=#public-functions-documentation>Public Functions Documentation</a>
 <ul>
-<li><a href=#function-control>function control</a></li>
-<li><a href=#function-is_running>function is_running</a></li>
+<li><a href=#function-frequency>function frequency</a></li>
 <li><a href=#function-uptime>function uptime</a></li>
 </ul>
 </li>
@@ -198,7 +198,7 @@
 <tbody>
 <tr>
 <td>enum class</td>
-<td><strong><a href=classes/classembed_1_1counter/#enum-controls>controls</a></strong> { start, stop, reset}Set of controls for a counter.</td>
+<td><strong><a href=classes/classembed_1_1counter/#enum-errors>errors</a></strong> { backtrack}Enumerations listing out the potential errors a counter could encounter.</td>
 </tr>
 </tbody>
 </table>
@@ -212,21 +212,17 @@
 </thead>
 <tbody>
 <tr>
-<td>virtual boost::leaf::result&lt; void ></td>
-<td><strong><a href=classes/classembed_1_1counter/#function-control>control</a></strong>(<a href=classes/classembed_1_1counter/#enum-controls>controls</a> p_control)Control the state of the counter.</td>
+<td>boost::leaf::result&lt; <a href=classes/classembed_1_1frequency/>embed::frequency</a> ></td>
+<td><strong><a href=classes/classembed_1_1counter/#function-frequency>frequency</a></strong>()Returns the operating frequency of the counter.</td>
 </tr>
 <tr>
-<td>virtual bool</td>
-<td><strong><a href=classes/classembed_1_1counter/#function-is-running>is_running</a></strong>()Determine if the counter is currently running.</td>
-</tr>
-<tr>
-<td>std::chrono::nanoseconds</td>
+<td>boost::leaf::result&lt; std::uint64_t ></td>
 <td><strong><a href=classes/classembed_1_1counter/#function-uptime>uptime</a></strong>()Get the uptime of the counter since it has started.</td>
 </tr>
 </tbody>
 </table>
 <h2 id=public-types-documentation>Public Types Documentation</h2>
-<h3 id=enum-controls>enum controls</h3>
+<h3 id=enum-errors>enum errors</h3>
 <table>
 <thead>
 <tr>
@@ -237,50 +233,30 @@
 </thead>
 <tbody>
 <tr>
-<td>start</td>
+<td>backtrack</td>
 <td></td>
-<td>Start the counter.</td>
-</tr>
-<tr>
-<td>stop</td>
-<td></td>
-<td>Stop a counter.</td>
-</tr>
-<tr>
-<td>reset</td>
-<td></td>
-<td>Control value to reset a counter. The counter shall remain in a running or stopped state after this call. So an ongoing counter will continue to count but will have its counter reset to zero if this control is used. If a counter is stopped, then it shall be reset to zero, and stay stopped.</td>
+<td>The counter has back tracked and a previous value is greater than the current value. This is an invalid state for a hardware counter and considered an error.</td>
 </tr>
 </tbody>
 </table>
-<p>Set of controls for a counter.</p>
+<p>Enumerations listing out the potential errors a counter could encounter.</p>
 <h2 id=public-functions-documentation>Public Functions Documentation</h2>
-<h3 id=function-control>function control</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>virtual</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> control(
-    controls p_control
-)
-</code></pre></div><p>Control the state of the counter.</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_control</strong> - new state for the counter</li>
-</ul>
-<p><strong>Return</strong>: boost::leaf::result - any error that occurred during this operation.</p>
-<h3 id=function-is_running>function is_running</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>virtual</span> <span style=color:#66d9ef>bool</span> is_running()
-</code></pre></div><p>Determine if the counter is currently running.</p>
-<p><strong>Return</strong>: bool - true if the counter is currently running.</p>
-<p>If attempting to check if the counter is running results in an error, then treat that as if the counter is not active and return false.</p>
+<h3 id=function-frequency>function frequency</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> embed<span style=color:#f92672>::</span>frequency <span style=color:#f92672>&gt;</span> frequency()
+</code></pre></div><p>Returns the operating frequency of the counter.</p>
+<p><strong>Return</strong>: boost::leaf::result<a href=embed::frequency>embed::frequency</a> - the operating frequency of the counter.</p>
 <h3 id=function-uptime>function uptime</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds uptime()
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> std<span style=color:#f92672>::</span><span style=color:#66d9ef>uint64_t</span> <span style=color:#f92672>&gt;</span> uptime()
 </code></pre></div><p>Get the uptime of the counter since it has started.</p>
 <p><strong>Return</strong>: std::chrono::nanoseconds - the current uptime since the counter has started.</p>
+<p>The count for a counter must always count up.</p>
 <p>Most counters are only support 32-bits or lower. In this case there are multiple way to increase the bit width of the counter:</p>
 <ol>
 <li>Use the overflow_count class to detect overflows each time the count is called. In cases where this is used, the counter::count() must be called often enough to detect overflows</li>
 <li>Use the overflow_count class with overflow interrupt. This will eliminate the need to call the count often enough to detect the overflows.</li>
 </ol>
 <hr>
-<p>Updated on 2022-02-21 at 13:23:01 +0000</p>
+<p>Updated on 2022-02-23 at 18:27:25 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -293,14 +269,14 @@
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1645449782></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1645449782></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1645449782></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1645449782></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1645449782></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1645449782></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1645449782></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1645640845></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1645640845></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1645640845></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1645640845></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1645640845></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1645640845></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1645640845></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1645449782></script>
+<script src=/libembeddedhal/js/relearn.js?1645640845></script>
 </body>
 </html>

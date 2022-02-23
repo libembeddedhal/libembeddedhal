@@ -7,16 +7,16 @@
 ">
 <meta name=description content>
 <title>embed :: libembeddedhal docs</title>
-<link href=/libembeddedhal/css/nucleus.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/fontawesome-all.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/featherlight.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/auto-complete.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/theme.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/theme-green.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/variant.css?1645449782 rel=stylesheet>
-<link href=/libembeddedhal/css/print.css?1645449782 rel=stylesheet media=print>
-<script src=/libembeddedhal/js/jquery.min.js?1645449782></script>
+<link href=/libembeddedhal/css/nucleus.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/fontawesome-all.min.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/featherlight.min.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/perfect-scrollbar.min.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/auto-complete.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/theme.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/theme-green.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/variant.css?1645640846 rel=stylesheet>
+<link href=/libembeddedhal/css/print.css?1645640846 rel=stylesheet media=print>
+<script src=/libembeddedhal/js/jquery.min.js?1645640846></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/libembeddedhal/api/namespaces/namespaceembed/>
@@ -33,9 +33,9 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/libembeddedhal/js/lunr.min.js?1645449782></script>
-<script src=/libembeddedhal/js/auto-complete.js?1645449782></script>
-<script src=/libembeddedhal/js/search.js?1645449782></script>
+<script src=/libembeddedhal/js/lunr.min.js?1645640846></script>
+<script src=/libembeddedhal/js/auto-complete.js?1645640846></script>
+<script src=/libembeddedhal/js/search.js?1645640846></script>
 </div>
 <div id=homelinks>
 <ul>
@@ -102,7 +102,8 @@
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/ title=embed::static_memory_resource class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1static__memory__resource/>embed::static_memory_resource</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/ title=embed::this_thread::global_clocks class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1this__thread_1_1global__clocks/>embed::this_thread::global_clocks</a></li>
 <li data-nav-id=/libembeddedhal/api/classes/classembed_1_1timer/ title=embed::timer class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1timer/>embed::timer</a></li>
-<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/ title=embed::timer::out_of_bounds class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/>embed::timer::out_of_bounds</a></li></ul></li>
+<li data-nav-id=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/ title=embed::timer::out_of_bounds class=dd-item><a href=/libembeddedhal/api/classes/structembed_1_1timer_1_1out__of__bounds/>embed::timer::out_of_bounds</a></li>
+<li data-nav-id=/libembeddedhal/api/classes/classembed_1_1uptime__counter/ title=embed::uptime_counter class=dd-item><a href=/libembeddedhal/api/classes/classembed_1_1uptime__counter/>embed::uptime_counter</a></li></ul></li>
 <li data-nav-id=/libembeddedhal/api/modules/ title=Modules class="dd-item alwaysopen"><a href=/libembeddedhal/api/modules/>Modules</a><ul></ul></li>
 <li data-nav-id=/libembeddedhal/api/namespaces/ title=Namespaces class="dd-item parent alwaysopen"><a href=/libembeddedhal/api/namespaces/>Namespaces</a><ul>
 <li data-nav-id=/libembeddedhal/api/namespaces/namespaceembed/ title=embed class="dd-item active"><a href=/libembeddedhal/api/namespaces/namespaceembed/>embed</a></li>
@@ -176,9 +177,6 @@
 <li><a href=#function-generate_field_of_ones>function generate_field_of_ones</a></li>
 <li><a href=#function-is_platform>function is_platform</a></li>
 <li><a href=#function-is_a_test>function is_a_test</a></li>
-<li><a href=#function-reset>function reset</a></li>
-<li><a href=#function-start>function start</a></li>
-<li><a href=#function-stop>function stop</a></li>
 <li><a href=#function-wait_for>function wait_for</a></li>
 <li><a href=#function-set_as_global_sleep>function set_as_global_sleep</a></li>
 <li><a href=#function-set_as_global_uptime>function set_as_global_uptime</a></li>
@@ -335,6 +333,10 @@
 <td>class</td>
 <td><strong><a href=classes/classembed_1_1timer/>embed::timer</a></strong> Timer hardware abstraction interface.</td>
 </tr>
+<tr>
+<td>class</td>
+<td><strong><a href=classes/classembed_1_1uptime__counter/>embed::uptime_counter</a></strong> uptime counter takes a hardware counter and calculates the uptime in nanoseconds.</td>
+</tr>
 </tbody>
 </table>
 <h2 id=types>Types</h2>
@@ -375,18 +377,6 @@
 </tr>
 <tr>
 <td>boost::leaf::result&lt; void ></td>
-<td><strong><a href=namespaces/namespaceembed/#function-reset>reset</a></strong>(<a href=classes/classembed_1_1counter/>counter</a> & p_counter)Reset counter.</td>
-</tr>
-<tr>
-<td>boost::leaf::result&lt; void ></td>
-<td><strong><a href=namespaces/namespaceembed/#function-start>start</a></strong>(<a href=classes/classembed_1_1counter/>counter</a> & p_counter)Start counter.</td>
-</tr>
-<tr>
-<td>boost::leaf::result&lt; void ></td>
-<td><strong><a href=namespaces/namespaceembed/#function-stop>stop</a></strong>(<a href=classes/classembed_1_1counter/>counter</a> & p_counter)Stop counter.</td>
-</tr>
-<tr>
-<td>void</td>
 <td><strong><a href=namespaces/namespaceembed/#function-wait-for>wait_for</a></strong>(<a href=classes/classembed_1_1counter/>counter</a> & p_counter, std::chrono::nanoseconds p_wait_duration)pause execution for this duration of time using a hardware counter object.</td>
 </tr>
 <tr>
@@ -395,7 +385,7 @@
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href=namespaces/namespaceembed/#function-set-as-global-uptime>set_as_global_uptime</a></strong>(<a href=classes/classembed_1_1counter/>counter</a> & p_counter)Use this counter as the global sleep function.</td>
+<td><strong><a href=namespaces/namespaceembed/#function-set-as-global-uptime>set_as_global_uptime</a></strong>(<a href=classes/classembed_1_1uptime__counter/>uptime_counter</a> & p_counter)Use this counter as the global sleep function.</td>
 </tr>
 <tr>
 <td>constexpr auto</td>
@@ -565,38 +555,8 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <li>true - this application is a test</li>
 <li>false - this application is not a test</li>
 </ul>
-<h3 id=function-reset>function reset</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> reset(
-    counter <span style=color:#f92672>&amp;</span> p_counter
-)
-</code></pre></div><p>Reset counter.</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_counter</strong> - hardware counter driver</li>
-</ul>
-<p><strong>Return</strong>: boost::leaf::result - any errors that occurred when attempting to reset counter.</p>
-<h3 id=function-start>function start</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> start(
-    counter <span style=color:#f92672>&amp;</span> p_counter
-)
-</code></pre></div><p>Start counter.</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_counter</strong> - hardware counter driver</li>
-</ul>
-<p><strong>Return</strong>: boost::leaf::result - any errors that occurred when attempting to start counter.</p>
-<h3 id=function-stop>function stop</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> stop(
-    counter <span style=color:#f92672>&amp;</span> p_counter
-)
-</code></pre></div><p>Stop counter.</p>
-<p><strong>Parameters</strong>:</p>
-<ul>
-<li><strong>p_counter</strong> - hardware counter driver</li>
-</ul>
-<p><strong>Return</strong>: boost::leaf::result - any errors that occurred when attempting to stop counter.</p>
 <h3 id=function-wait_for>function wait_for</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> wait_for(
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>result<span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>void</span> <span style=color:#f92672>&gt;</span> wait_for(
     counter <span style=color:#f92672>&amp;</span> p_counter,
     std<span style=color:#f92672>::</span>chrono<span style=color:#f92672>::</span>nanoseconds p_wait_duration
 )
@@ -615,15 +575,17 @@ std<span style=color:#f92672>::</span>integral T<span style=color:#f92672>&gt;</
 <ul>
 <li><strong>p_counter</strong> - hardware counter driver</li>
 </ul>
+<p>The counter must be infailable meaning that frequency() and uptime() must never return an error, otherwise the program will abort.</p>
 <h3 id=function-set_as_global_uptime>function set_as_global_uptime</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> <span style=color:#66d9ef>void</span> set_as_global_uptime(
-    counter <span style=color:#f92672>&amp;</span> p_counter
+    uptime_counter <span style=color:#f92672>&amp;</span> p_counter
 )
 </code></pre></div><p>Use this counter as the global sleep function.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>p_counter</strong> - hardware counter driver</li>
 </ul>
+<p>The counter must be infailable meaning that frequency() and uptime() must never return an error, otherwise the program will abort.</p>
 <h3 id=function-value>function value</h3>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>auto</span> value(
     enumeration <span style=color:#66d9ef>auto</span> p_enum_value
@@ -916,7 +878,7 @@ boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>r
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>constexpr</span> frequency default_clock_rate <span style=color:#f92672>=</span> frequency(<span style=color:#ae81ff>100&#39;000</span>);
 </code></pre></div><p>Default clock rate for serial communication protocols.</p>
 <hr>
-<p>Updated on 2022-02-21 at 13:23:01 +0000</p>
+<p>Updated on 2022-02-23 at 18:27:25 +0000</p>
 <footer class=footline>
 </footer>
 </main>
@@ -929,14 +891,14 @@ boost<span style=color:#f92672>::</span>leaf<span style=color:#f92672>::</span>r
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/libembeddedhal/js/clipboard.min.js?1645449782></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1645449782></script>
-<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1645449782></script>
-<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1645449782></script>
-<script src=/libembeddedhal/js/featherlight.min.js?1645449782></script>
-<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1645449782></script>
-<script src=/libembeddedhal/js/mermaid.min.js?1645449782></script>
+<script src=/libembeddedhal/js/clipboard.min.js?1645640846></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.min.js?1645640846></script>
+<script src=/libembeddedhal/js/perfect-scrollbar.jquery.min.js?1645640846></script>
+<script src=/libembeddedhal/js/jquery.svg.pan.zoom.js?1645640846></script>
+<script src=/libembeddedhal/js/featherlight.min.js?1645640846></script>
+<script src=/libembeddedhal/js/modernizr.custom-3.6.0.js?1645640846></script>
+<script src=/libembeddedhal/js/mermaid.min.js?1645640846></script>
 <script>typeof mermaid!='undefined'&&typeof mermaid.mermaidAPI!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
-<script src=/libembeddedhal/js/relearn.js?1645449782></script>
+<script src=/libembeddedhal/js/relearn.js?1645640846></script>
 </body>
 </html>
