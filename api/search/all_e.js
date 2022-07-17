@@ -11,5 +11,5 @@ var searchData=
   ['resistor_8',['resistor',['../structembed_1_1input__pin_1_1settings.html#a2d8d7d47e0514753b30f0367bd803b49',1,'embed::input_pin::settings::resistor()'],['../structembed_1_1interrupt__pin_1_1settings.html#aaefd6627fa799919ddcab8cebe406789',1,'embed::interrupt_pin::settings::resistor()'],['../structembed_1_1output__pin_1_1settings.html#a192041fdc0fe584018c2b81064412f4f',1,'embed::output_pin::settings::resistor()']]],
   ['rising_9',['rising',['../classembed_1_1interrupt__pin.html#a07c33ec3b21b40346a0b765bb14627e9a637aa1a3f3fe939460e3e6126a3cb76a',1,'embed::interrupt_pin']]],
   ['rotary_5fencoder_10',['rotary_encoder',['../classembed_1_1rotary__encoder.html',1,'embed']]],
-  ['rounding_5fdivision_11',['rounding_division',['../namespaceembed.html#a84ea33bb969785c47247cfe0da9aa98e',1,'embed']]]
+  ['rounding_5fdivision_11',['rounding_division',['../group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e',1,'embed']]]
 ];

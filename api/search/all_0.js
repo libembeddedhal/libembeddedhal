@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['absolute_5fvalue_0',['absolute_value',['../namespaceembed.html#a6f0922a28ac81378eb689b2ab4bc299a',1,'embed']]],
+  ['absolute_5fvalue_0',['absolute_value',['../group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a',1,'embed']]],
   ['accelerometer_1',['accelerometer',['../classembed_1_1accelerometer.html',1,'embed::accelerometer'],['../structembed_1_1mock_1_1accelerometer.html',1,'embed::mock::accelerometer']]],
   ['adc_2',['adc',['../structembed_1_1mock_1_1adc.html#ac1788863c884041303da43b8134f4414',1,'embed::mock::adc']]],
   ['adc_3',['Adc',['../group__adc.html',1,'']]],

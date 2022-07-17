@@ -3,6 +3,6 @@
 <area shape="rect" id="node2" href="$classembed_1_1frequency.html#a383cdc3d72a91dedffcd92d3b0e73d8a" title="Calculate time duration based on the frequency and a number of cycles." alt="" coords="209,35,384,76"/>
 <area shape="rect" id="node6" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="219,101,374,127"/>
 <area shape="rect" id="node3" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="432,5,599,47"/>
-<area shape="rect" id="node4" href="$namespaceembed.html#a84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="432,71,599,98"/>
-<area shape="rect" id="node5" href="$namespaceembed.html#a6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="647,71,801,98"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="432,71,599,98"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="647,71,801,98"/>
 </map>

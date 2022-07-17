@@ -82,7 +82,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="namespaceembed.html#a84ea33bb969785c47247cfe0da9aa98e" target="_top" xlink:title="Perform integer division and round the value up if the next decimal place is greater than or equal to...">
+<g id="a_node6"><a xlink:href="group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" target="_top" xlink:title="Perform integer division and round the value up if the next decimal place is greater than or equal to...">
 <polygon fill="white" stroke="black" points="289.5,-0.5 289.5,-19.5 414.5,-19.5 414.5,-0.5 289.5,-0.5"/>
 <text text-anchor="middle" x="352" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::rounding_division</text>
 </a>
@@ -121,7 +121,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="namespaceembed.html#a6f0922a28ac81378eb689b2ab4bc299a" target="_top" xlink:title="Generic absolute value function that works for integer types.">
+<g id="a_node7"><a xlink:href="group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" target="_top" xlink:title="Generic absolute value function that works for integer types.">
 <polygon fill="white" stroke="black" points="451,-0.5 451,-19.5 567,-19.5 567,-0.5 451,-0.5"/>
 <text text-anchor="middle" x="509" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::absolute_value</text>
 </a>

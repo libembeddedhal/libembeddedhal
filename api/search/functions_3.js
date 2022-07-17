@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['delay_0',['delay',['../group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e',1,'embed::delay(embed::counter &amp;p_counter, embed::time_duration p_duration) noexcept'],['../group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9',1,'embed::delay(serial &amp;p_serial, size_t p_length) noexcept'],['../namespaceembed.html#a97875bb7b670ec00ce39b28244c9b6c3',1,'embed::delay(Timeout p_timeout_function) noexcept']]],
+  ['delay_0',['delay',['../group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e',1,'embed::delay(embed::counter &amp;p_counter, embed::time_duration p_duration) noexcept'],['../group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9',1,'embed::delay(serial &amp;p_serial, size_t p_length) noexcept'],['../group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3',1,'embed::delay(Timeout p_timeout_function) noexcept']]],
   ['detach_5finterrupt_1',['detach_interrupt',['../classembed_1_1interrupt__pin.html#ae6304867ff31dffeb9856fdf0bded904',1,'embed::interrupt_pin']]],
   ['divide_2',['divide',['../classembed_1_1frequency.html#a7a0a49000c46f52507a958882e31d77c',1,'embed::frequency']]],
   ['do_5fallocate_3',['do_allocate',['../classembed_1_1static__memory__resource.html#adfc8bbd5da7738dee4ba596a347f3b60',1,'embed::static_memory_resource']]],

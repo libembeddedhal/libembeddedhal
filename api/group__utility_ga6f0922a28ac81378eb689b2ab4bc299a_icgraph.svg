@@ -36,7 +36,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="namespaceembed.html#a84ea33bb969785c47247cfe0da9aa98e" target="_top" xlink:title="Perform integer division and round the value up if the next decimal place is greater than or equal to...">
+<g id="a_node7"><a xlink:href="group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" target="_top" xlink:title="Perform integer division and round the value up if the next decimal place is greater than or equal to...">
 <polygon fill="white" stroke="black" points="568,-131.5 568,-150.5 693,-150.5 693,-131.5 568,-131.5"/>
 <text text-anchor="middle" x="630.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::rounding_division</text>
 </a>

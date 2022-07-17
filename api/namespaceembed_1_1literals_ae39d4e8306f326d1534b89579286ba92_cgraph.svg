@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="namespaceembed.html#ae16c194ce0da26dc80d1aabd4a87d5cd" target="_top" xlink:title="Helper function to convert an enum to its integral value.">
+<g id="a_node2"><a xlink:href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd" target="_top" xlink:title="Helper function to convert an enum to its integral value.">
 <polygon fill="white" stroke="black" points="186,-0.5 186,-19.5 260,-19.5 260,-0.5 186,-0.5"/>
 <text text-anchor="middle" x="223" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::value</text>
 </a>

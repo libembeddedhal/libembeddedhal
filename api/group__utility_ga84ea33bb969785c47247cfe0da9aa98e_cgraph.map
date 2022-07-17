@@ -1,4 +1,4 @@
 <map id="embed::rounding_division" name="embed::rounding_division">
 <area shape="rect" id="node1" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="5,5,172,32"/>
-<area shape="rect" id="node2" href="$namespaceembed.html#a6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="220,5,375,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="220,5,375,32"/>
 </map>

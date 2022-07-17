@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classembed_1_1frequency.html',''); ini
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classembed_1_1frequency-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">embed::frequency Class Reference</div></div>
+  <div class="headertitle"><div class="title">embed::frequency Class Reference<div class="ingroups"><a class="el" href="group__utility.html">Utility</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a0a49000c46f52507a958882e31d77c"><td class="memItemLeft" align="right" valign="top">constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a7a0a49000c46f52507a958882e31d77c">divide</a> (<a class="el" href="classembed_1_1frequency.html">frequency</a> p_target) const noexcept</td></tr>
 <tr class="memdesc:a7a0a49000c46f52507a958882e31d77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the frequency divide required to generate the output frequency provided.  <a href="classembed_1_1frequency.html#a7a0a49000c46f52507a958882e31d77c">More...</a><br /></td></tr>
 <tr class="separator:a7a0a49000c46f52507a958882e31d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa67b1e2379926c43c248b98207ff95a0"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0">cycles_per</a> (<a class="el" href="namespaceembed.html#a702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration) const noexcept</td></tr>
+<tr class="memitem:aa67b1e2379926c43c248b98207ff95a0"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0">cycles_per</a> (<a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration) const noexcept</td></tr>
 <tr class="memdesc:aa67b1e2379926c43c248b98207ff95a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency.  <a href="classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0">More...</a><br /></td></tr>
 <tr class="separator:aa67b1e2379926c43c248b98207ff95a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8cfde28a6f6869694c509934c764ef"><td class="memTemplParams" colspan="2">template&lt;typename Period  = std::femto&gt; </td></tr>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a383cdc3d72a91dedffcd92d3b0e73d8a"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a383cdc3d72a91dedffcd92d3b0e73d8a">duration_from_cycles</a> (std::int32_t p_cycles) const noexcept</td></tr>
 <tr class="memdesc:a383cdc3d72a91dedffcd92d3b0e73d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate time duration based on the frequency and a number of cycles.  <a href="classembed_1_1frequency.html#a383cdc3d72a91dedffcd92d3b0e73d8a">More...</a><br /></td></tr>
 <tr class="separator:a383cdc3d72a91dedffcd92d3b0e73d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba09620a9c2d43071e7f486d8c7fbdf"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf">calculate_duty_cycle</a> (<a class="el" href="namespaceembed.html#a702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) const noexcept</td></tr>
+<tr class="memitem:a6ba09620a9c2d43071e7f486d8c7fbdf"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf">calculate_duty_cycle</a> (<a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) const noexcept</td></tr>
 <tr class="memdesc:a6ba09620a9c2d43071e7f486d8c7fbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a duty cycle based on a time duration, the percent and this driving frequency. Typically used for PWM or clock lines with controllable duty cycles for serial communication.  <a href="classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf">More...</a><br /></td></tr>
 <tr class="separator:a6ba09620a9c2d43071e7f486d8c7fbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2063d8976c488b5dd47ad13791b47aa0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a2063d8976c488b5dd47ad13791b47aa0">calculate_duty_cycle</a> (<a class="el" href="classembed_1_1frequency.html">frequency</a> p_target, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) const noexcept</td></tr>
@@ -206,7 +206,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">boost::leaf::result&lt; <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> &gt; embed::frequency::calculate_duty_cycle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceembed.html#a702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
           <td class="paramname"><em>p_duration</em>, </td>
         </tr>
         <tr>
@@ -368,7 +368,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">std::int64_t embed::frequency::cycles_per </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceembed.html#a702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
           <td class="paramname"><em>p_duration</em></td><td>)</td>
           <td> const</td>
         </tr>
