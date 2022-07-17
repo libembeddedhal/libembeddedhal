@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1timer.html" title="Timer hardware abstraction interface." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1timer.html" title="Mock timer implementation for use in unit tests and simulations with spy functions for schedule(),..." alt="" coords="149,5,284,32"/>
+</map>

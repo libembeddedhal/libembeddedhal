@@ -1,0 +1,4 @@
+<map id="embed::pwm" name="embed::pwm">
+<area shape="rect" id="node1" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="25,5,119,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1pwm.html" title="Mock pwm implementation for use in unit tests and simulations with spy functions for configure() and ..." alt="" coords="5,80,139,107"/>
+</map>

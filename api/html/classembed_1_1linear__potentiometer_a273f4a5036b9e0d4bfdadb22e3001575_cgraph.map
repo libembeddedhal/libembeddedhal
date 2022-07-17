@@ -1,0 +1,4 @@
+<map id="embed::linear_potentiometer::read" name="embed::linear_potentiometer::read">
+<area shape="rect" id="node1" title="Read the distance the linear potentiometer has traveled." alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1adc.html#a9b59c27b2f466473fb8851ae3e258261" title="Read a sample from the analog to digital converter." alt="" coords="237,13,356,39"/>
+</map>

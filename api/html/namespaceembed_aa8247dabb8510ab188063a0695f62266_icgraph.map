@@ -1,0 +1,4 @@
+<map id="embed::multiply_with_overflow_detection" name="embed::multiply_with_overflow_detection">
+<area shape="rect" id="node1" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="213,5,356,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a8aadd42f3e1a726eed76b1aa564d5acb" title="Scale up a frequency by an integer factor." alt="" coords="5,13,165,39"/>
+</map>

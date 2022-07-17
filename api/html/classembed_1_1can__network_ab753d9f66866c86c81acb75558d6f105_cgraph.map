@@ -1,0 +1,4 @@
+<map id="embed::can_network::can_network" name="embed::can_network::can_network">
+<area shape="rect" id="node1" title="Construct a new can network object." alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1can.html#a756c443b46b839c437af2a59e4b5a47f" title="Setup driver to execute callback when a can message is received." alt="" coords="195,5,325,47"/>
+</map>

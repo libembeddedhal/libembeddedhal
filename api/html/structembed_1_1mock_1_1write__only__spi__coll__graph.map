@@ -1,0 +1,5 @@
+<map id="embed::mock::write_only_spi" name="embed::mock::write_only_spi">
+<area shape="rect" id="node1" title="Mock spi implementation for use in unit tests and simulations with a spy functions for configure() an..." alt="" coords="47,109,181,151"/>
+<area shape="rect" id="node2" href="$classembed_1_1spi.html" title="Serial peripheral interface (SPI) communication protocol hardware abstract interface." alt="" coords="5,13,89,39"/>
+<area shape="rect" id="node3" href="$classembed_1_1spy__handler.html" title=" " alt="" coords="114,5,250,47"/>
+</map>

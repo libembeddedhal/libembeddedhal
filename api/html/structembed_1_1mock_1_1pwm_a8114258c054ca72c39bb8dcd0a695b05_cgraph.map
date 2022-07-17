@@ -1,0 +1,4 @@
+<map id="embed::mock::pwm::reset" name="embed::mock::pwm::reset">
+<area shape="rect" id="node1" title="Reset spy information for both configure() and duty_cycle()" alt="" coords="5,13,173,39"/>
+<area shape="rect" id="node2" href="$classembed_1_1spy__handler.html#ab5cb258d1c804c5df3c2905337d0c20c" title="Reset call recordings and turns off error trigger." alt="" coords="221,5,357,47"/>
+</map>

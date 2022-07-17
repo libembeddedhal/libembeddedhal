@@ -1,0 +1,4 @@
+<map id="embed::frequency::duration_from_cycles" name="embed::frequency::duration_from_cycles">
+<area shape="rect" id="node1" title="Calculate time duration based on the frequency and a number of cycles." alt="" coords="209,5,384,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1uptime__counter.html#a2681752c4655bc02bd0f4446d120623e" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="5,5,161,47"/>
+</map>

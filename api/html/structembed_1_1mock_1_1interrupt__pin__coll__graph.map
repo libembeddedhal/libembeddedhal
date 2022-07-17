@@ -1,0 +1,7 @@
+<map id="embed::mock::interrupt_pin" name="embed::mock::interrupt_pin">
+<area shape="rect" id="node1" title="mock interrupt_pin implementation for use in unit tests and simulations." alt="" coords="328,100,504,127"/>
+<area shape="rect" id="node2" href="$classembed_1_1interrupt__pin.html" title="Digital interrupt pin hardware abstraction." alt="" coords="11,5,150,32"/>
+<area shape="rect" id="node3" href="$classembed_1_1spy__handler.html" title=" " alt="" coords="13,57,149,98"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,121,156,177"/>
+<area shape="rect" id="node5" href="$classembed_1_1spy__handler.html" title=" " alt="" coords="13,201,149,242"/>
+</map>

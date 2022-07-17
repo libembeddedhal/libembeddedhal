@@ -1,0 +1,4 @@
+<map id="embed::mock::output_pin::reset" name="embed::mock::output_pin::reset">
+<area shape="rect" id="node1" title="Reset spy information for configure() and level()" alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1spy__handler.html#ab5cb258d1c804c5df3c2905337d0c20c" title="Reset call recordings and turns off error trigger." alt="" coords="195,5,331,47"/>
+</map>

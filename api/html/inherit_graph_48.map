@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1temperature__sensor.html" title="Hardware abstraction interface for temperature sensing devices." alt="" coords="5,5,141,47"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1temperature__sensor.html" title="Mock temperature sensor implementation for use in unit tests and simulations." alt="" coords="189,5,364,47"/>
+</map>

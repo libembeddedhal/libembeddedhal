@@ -1,0 +1,5 @@
+<map id="embed::accelerometer::sample" name="embed::accelerometer::sample">
+<area shape="rect" id="node1" title="Representation of a sample of accelerometer data." alt="" coords="5,228,155,269"/>
+<area shape="rect" id="node2" href="$structembed_1_1accelerometer_1_1axis__t.html" title=" " alt="" coords="5,124,155,165"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html" title="A integer representation of a percentage." alt="" coords="25,5,135,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="embed::write_then_read" name="embed::write_then_read">
+<area shape="rect" id="node1" title="Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SP..." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$group__i2c.html#gab3da8ebe957f4f6042eadd908039bb19" title="write data to a target device on the i2c bus" alt="" coords="212,5,307,32"/>
+</map>

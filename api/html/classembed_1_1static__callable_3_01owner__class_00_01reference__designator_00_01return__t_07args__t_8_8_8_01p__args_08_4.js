@@ -1,0 +1,5 @@
+var classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4 =
+[
+    [ "static_callable", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a2d64ea7683d62e8cd33c96f83fc41514", null ],
+    [ "get_handler", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a4b3a26ad0784abf11d217b43a19084d8", null ]
+];

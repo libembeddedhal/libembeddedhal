@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1dac.html" title="Digital to Analog Converter (DAC) hardware abstraction interface." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1dac.html" title="Mock dac implementation for use in unit tests and simulations with a spy function for write()" alt="" coords="141,5,268,32"/>
+</map>

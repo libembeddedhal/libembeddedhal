@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1spi.html" title="Serial peripheral interface (SPI) communication protocol hardware abstract interface." alt="" coords="5,13,89,39"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1write__only__spi.html" title="Mock spi implementation for use in unit tests and simulations with a spy functions for configure() an..." alt="" coords="137,5,271,47"/>
+</map>

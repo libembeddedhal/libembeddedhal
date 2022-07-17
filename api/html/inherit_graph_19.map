@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1input__pin.html" title="Digital input pin hardware abstraction interface." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1input__pin.html" title="mock input_pin implementation for use in unit tests and simulations." alt="" coords="172,5,329,32"/>
+</map>

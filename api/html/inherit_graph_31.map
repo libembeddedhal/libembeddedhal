@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classembed_1_1pwm.html" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1pwm.html" title="Mock pwm implementation for use in unit tests and simulations with spy functions for configure() and ..." alt="" coords="148,5,281,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="embed::percent::scale" name="embed::percent::scale">
+<area shape="rect" id="node1" title="Get the value of the percent after it is scaled to a range. The output value is bound within the give..." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="200,5,368,32"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#ad205fdaffa0fc8a9b7c227b704571b74" title="Get the 0% value in its raw representation." alt="" coords="200,56,368,83"/>
+</map>

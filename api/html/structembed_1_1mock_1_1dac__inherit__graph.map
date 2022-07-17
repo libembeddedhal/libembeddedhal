@@ -1,0 +1,4 @@
+<map id="embed::mock::dac" name="embed::mock::dac">
+<area shape="rect" id="node1" title="Mock dac implementation for use in unit tests and simulations with a spy function for write()" alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node2" href="$classembed_1_1dac.html" title="Digital to Analog Converter (DAC) hardware abstraction interface." alt="" coords="25,5,113,32"/>
+</map>

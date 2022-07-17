@@ -1,0 +1,6 @@
+<map id="embed::mock::output_pin" name="embed::mock::output_pin">
+<area shape="rect" id="node1" title="mock output pin for use in unit tests and simulations" alt="" coords="142,109,307,136"/>
+<area shape="rect" id="node2" href="$classembed_1_1output__pin.html" title="Digital output pin hardware abstraction." alt="" coords="5,13,132,39"/>
+<area shape="rect" id="node3" href="$classembed_1_1spy__handler.html" title=" " alt="" coords="157,5,293,47"/>
+<area shape="rect" id="node4" href="$classembed_1_1spy__handler.html" title=" " alt="" coords="317,5,453,47"/>
+</map>

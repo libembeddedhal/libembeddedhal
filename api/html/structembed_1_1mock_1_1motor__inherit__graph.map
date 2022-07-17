@@ -1,0 +1,4 @@
+<map id="embed::mock::motor" name="embed::mock::motor">
+<area shape="rect" id="node1" title="Mock motor implementation for use in unit tests and simulations with a spy function for power()" alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node2" href="$classembed_1_1motor.html" title="Hardware abstraction for open loop continuous rotary and linear actuators." alt="" coords="25,5,125,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="embed::serial::read" name="embed::serial::read">
+<area shape="rect" id="node1" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer...." alt="" coords="145,5,275,32"/>
+<area shape="rect" id="node2" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,5,97,32"/>
+</map>

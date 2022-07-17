@@ -1,0 +1,4 @@
+<map id="embed::counter_timeout::operator()" name="embed::counter_timeout::operator()">
+<area shape="rect" id="node1" title="Call this object to check if it has timed out." alt="" coords="5,5,165,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="213,13,368,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="embed::mock::timer::reset" name="embed::mock::timer::reset">
+<area shape="rect" id="node1" title="Reset spy information for schedule(), clear(), and is_running()" alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1spy__handler.html#ab5cb258d1c804c5df3c2905337d0c20c" title="Reset call recordings and turns off error trigger." alt="" coords="188,5,324,47"/>
+</map>

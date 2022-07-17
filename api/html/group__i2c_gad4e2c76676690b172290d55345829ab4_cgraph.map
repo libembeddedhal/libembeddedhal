@@ -1,0 +1,4 @@
+<map id="embed::read" name="embed::read">
+<area shape="rect" id="node1" title="return array of read bytes from target device on i2c bus" alt="" coords="5,5,97,32"/>
+<area shape="rect" id="node2" href="$group__i2c.html#ga0c8123d63fc4021f7c05c91db66cde59" title="read bytes from target device on i2c bus" alt="" coords="145,5,237,32"/>
+</map>

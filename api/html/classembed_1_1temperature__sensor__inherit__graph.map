@@ -1,0 +1,4 @@
+<map id="embed::temperature_sensor" name="embed::temperature_sensor">
+<area shape="rect" id="node1" title="Hardware abstraction interface for temperature sensing devices." alt="" coords="25,5,161,47"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1temperature__sensor.html" title="Mock temperature sensor implementation for use in unit tests and simulations." alt="" coords="5,95,180,136"/>
+</map>

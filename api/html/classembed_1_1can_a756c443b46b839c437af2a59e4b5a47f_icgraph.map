@@ -1,0 +1,4 @@
+<map id="embed::can::attach_interrupt" name="embed::can::attach_interrupt">
+<area shape="rect" id="node1" title="Setup driver to execute callback when a can message is received." alt="" coords="195,5,325,47"/>
+<area shape="rect" id="node2" href="$classembed_1_1can__network.html#ab753d9f66866c86c81acb75558d6f105" title="Construct a new can network object." alt="" coords="5,5,147,47"/>
+</map>

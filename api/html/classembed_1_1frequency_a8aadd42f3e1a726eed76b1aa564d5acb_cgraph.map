@@ -1,0 +1,5 @@
+<map id="embed::frequency::scale" name="embed::frequency::scale">
+<area shape="rect" id="node1" title="Scale up a frequency by an integer factor." alt="" coords="5,46,165,73"/>
+<area shape="rect" id="node2" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="213,5,380,47"/>
+<area shape="rect" id="node3" href="$namespaceembed.html#aa8247dabb8510ab188063a0695f62266" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="225,71,368,112"/>
+</map>

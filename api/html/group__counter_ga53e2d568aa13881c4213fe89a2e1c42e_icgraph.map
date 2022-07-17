@@ -1,0 +1,4 @@
+<map id="embed::delay" name="embed::delay">
+<area shape="rect" id="node1" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,29,243,56"/>
+<area shape="rect" id="node2" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,29,97,56"/>
+</map>

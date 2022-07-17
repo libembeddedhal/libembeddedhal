@@ -1,0 +1,7 @@
+<map id="embed::percent::percent" name="embed::percent::percent">
+<area shape="rect" id="node1" title="Construct 0% percent object." alt="" coords="407,64,565,91"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666" title="Convert a fixed width integer value into a percentage based on its distance to the end of its bit wid..." alt="" coords="200,5,359,32"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="208,57,351,98"/>
+<area shape="rect" id="node5" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="5,123,152,149"/>
+<area shape="rect" id="node4" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="11,57,146,98"/>
+</map>

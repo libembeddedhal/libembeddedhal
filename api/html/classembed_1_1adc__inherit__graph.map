@@ -1,0 +1,4 @@
+<map id="embed::adc" name="embed::adc">
+<area shape="rect" id="node1" title="Analog to Digital Converter (ADC) hardware abstraction interface." alt="" coords="25,5,113,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1adc.html" title="Mock adc implementation for use in unit tests and simulations." alt="" coords="5,80,132,107"/>
+</map>

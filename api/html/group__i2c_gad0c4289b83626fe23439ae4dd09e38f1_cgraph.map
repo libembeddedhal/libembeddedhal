@@ -1,0 +1,4 @@
+<map id="embed::write_then_read" name="embed::write_then_read">
+<area shape="rect" id="node1" title="write and then return an array of read bytes from target device on i2c bus" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$group__i2c.html#gad7c2710f12c1b9c4efa5f12e7f5d2db1" title="write and then read bytes from target device on i2c bus" alt="" coords="212,5,371,32"/>
+</map>

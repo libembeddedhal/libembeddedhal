@@ -1,0 +1,4 @@
+<map id="embed::spi" name="embed::spi">
+<area shape="rect" id="node1" title="Serial peripheral interface (SPI) communication protocol hardware abstract interface." alt="" coords="30,5,114,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1mock_1_1write__only__spi.html" title="Mock spi implementation for use in unit tests and simulations with a spy functions for configure() an..." alt="" coords="5,80,139,121"/>
+</map>
