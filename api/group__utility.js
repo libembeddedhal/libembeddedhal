@@ -14,10 +14,16 @@ var group__utility =
       [ "low", "structembed_1_1duty__cycle.html#a1662bb9f0f66c15c62f909db7041c8b8", null ]
     ] ],
     [ "embed::frequency", "classembed_1_1frequency.html", [
+      [ "selection_mode", "classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c", [
+        [ "higher", "classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44cafa2ec87a2e6783b2193f71bfdf0f9cc8", null ],
+        [ "lower", "classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44ca81e073b428b50247daba38531dcf412a", null ],
+        [ "closest", "classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44ca95eb60add4a468892d9be1ba83b2c946", null ]
+      ] ],
       [ "frequency", "classembed_1_1frequency.html#a7be42ec847c0b6fdaceb5cd34ff456ae", null ],
       [ "calculate_duty_cycle", "classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf", null ],
       [ "calculate_duty_cycle", "classembed_1_1frequency.html#a2063d8976c488b5dd47ad13791b47aa0", null ],
       [ "calculate_duty_cycle", "classembed_1_1frequency.html#ac5e0ec1ff02f4253db3778da5773ff63", null ],
+      [ "closest", "classembed_1_1frequency.html#a470be2d90b5c33b45bb0e972d6715647", null ],
       [ "cycles_per", "classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0", null ],
       [ "cycles_per_second", "classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec", null ],
       [ "divide", "classembed_1_1frequency.html#a7a0a49000c46f52507a958882e31d77c", null ],
@@ -73,6 +79,7 @@ var group__utility =
     [ "embed::timeout", "group__utility.html#ga14bf1de1f69079a66e89a1534066c06f", null ],
     [ "embed::absolute_value", "group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a", null ],
     [ "embed::delay", "group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3", null ],
+    [ "embed::distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "embed::generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
     [ "embed::multiply_with_overflow_detection", "group__utility.html#gaa8247dabb8510ab188063a0695f62266", null ],
     [ "embed::rounding_division", "group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e", null ],

@@ -1,0 +1,4 @@
+<map id="embed::distance" name="embed::distance">
+<area shape="rect" id="node1" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="224,5,340,32"/>
+<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a470be2d90b5c33b45bb0e972d6715647" title="Calculate divider for the closest resulting frequency to target." alt="" coords="5,5,176,32"/>
+</map>

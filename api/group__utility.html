@@ -172,6 +172,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga84ea33bb969785c47247cfe0da9aa98e"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e">embed::rounding_division</a> (T p_numerator, T p_denominator) noexcept</td></tr>
 <tr class="memdesc:ga84ea33bb969785c47247cfe0da9aa98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform integer division and round the value up if the next decimal place is greater than or equal to 0.5.  <a href="group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e">More...</a><br /></td></tr>
 <tr class="separator:ga84ea33bb969785c47247cfe0da9aa98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">embed::distance</a> (T p_left, T p_right) noexcept</td></tr>
+<tr class="memdesc:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of their difference.  <a href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">More...</a><br /></td></tr>
+<tr class="separator:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memTemplParams" colspan="2">template&lt;std::integral T, size_t SourceWidth, std::integral U&gt; </td></tr>
 <tr class="memitem:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">embed::upscale_integer</a> (U p_value) noexcept</td></tr>
 <tr class="memdesc:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.  <a href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">More...</a><br /></td></tr>
@@ -324,6 +328,66 @@ template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - returns an error if an error other than <a class="el" href="structembed_1_1error_1_1timeout.html" title="An error indicating a timeout event.">embed::error::timeout</a> is returned, otherwise returns success. </dd></dl>
+
+</div>
+</div>
+<a id="ga0abcbcb6d4ed9f8dc86ca404255d36d1" name="ga0abcbcb6d4ed9f8dc86ca404255d36d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0abcbcb6d4ed9f8dc86ca404255d36d1">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T embed::distance </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>p_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>p_right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of their difference. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- integral type of the two values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_left</td><td>- the first point of the distance calculation </td></tr>
+    <tr><td class="paramname">p_right</td><td>- the second point of the distance calculation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr T - absolute value of the difference between the two points. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0abcbcb6d4ed9f8dc86ca404255d36d1_icgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

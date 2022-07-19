@@ -56,6 +56,7 @@ var namespaceembed =
     [ "delay", "group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e", null ],
     [ "delay", "group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9", null ],
     [ "delay", "group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3", null ],
+    [ "distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
     [ "is_a_test", "namespaceembed.html#a211adbeffac02bf2b2a99dea8b4747f1", null ],
     [ "is_platform", "namespaceembed.html#ac417a8389f38767cd28f8ae422fdb0f2", null ],

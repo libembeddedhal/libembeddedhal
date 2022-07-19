@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classembed_1_1frequency.html',''); ini
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -106,6 +107,15 @@ $(document).ready(function(){initNavTree('classembed_1_1frequency.html',''); ini
 
 <p><code>#include &lt;<a class="el" href="frequency_8hpp_source.html">frequency.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6435115961f0dd82f04eb1247f4ea44c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c">selection_mode</a> { <a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44cafa2ec87a2e6783b2193f71bfdf0f9cc8">higher</a>
+, <a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44ca81e073b428b50247daba38531dcf412a">lower</a>
+, <a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44ca95eb60add4a468892d9be1ba83b2c946">closest</a>
+ }</td></tr>
+<tr class="memdesc:a6435115961f0dd82f04eb1247f4ea44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divider selection mode for achieving a target frequency.  <a href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c">More...</a><br /></td></tr>
+<tr class="separator:a6435115961f0dd82f04eb1247f4ea44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7be42ec847c0b6fdaceb5cd34ff456ae"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a7be42ec847c0b6fdaceb5cd34ff456ae">frequency</a> (std::uint32_t p_value) noexcept</td></tr>
@@ -133,6 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2063d8976c488b5dd47ad13791b47aa0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a2063d8976c488b5dd47ad13791b47aa0">calculate_duty_cycle</a> (<a class="el" href="classembed_1_1frequency.html">frequency</a> p_target, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) const noexcept</td></tr>
 <tr class="memdesc:a2063d8976c488b5dd47ad13791b47aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a duty cycle based on a target, the percent and this driving frequency. Typically used for PWM or clock lines with controllable duty cycles for serial communication.  <a href="classembed_1_1frequency.html#a2063d8976c488b5dd47ad13791b47aa0">More...</a><br /></td></tr>
 <tr class="separator:a2063d8976c488b5dd47ad13791b47aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470be2d90b5c33b45bb0e972d6715647"><td class="memTemplParams" colspan="2">template&lt;typename InputIt &gt; </td></tr>
+<tr class="memitem:a470be2d90b5c33b45bb0e972d6715647"><td class="memTemplItemLeft" align="right" valign="top">constexpr InputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#a470be2d90b5c33b45bb0e972d6715647">closest</a> (InputIt p_first, InputIt p_last, <a class="el" href="classembed_1_1frequency.html">frequency</a> p_target, <a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c">selection_mode</a> p_selection_mode)</td></tr>
+<tr class="memdesc:a470be2d90b5c33b45bb0e972d6715647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate divider for the closest resulting frequency to target.  <a href="classembed_1_1frequency.html#a470be2d90b5c33b45bb0e972d6715647">More...</a><br /></td></tr>
+<tr class="separator:a470be2d90b5c33b45bb0e972d6715647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4fe319cedfab09cd4d71a41d73a5048"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html#ac4fe319cedfab09cd4d71a41d73a5048">operator&lt;=&gt;</a> (const <a class="el" href="classembed_1_1frequency.html">frequency</a> &amp;) const noexcept=default</td></tr>
 <tr class="memdesc:ac4fe319cedfab09cd4d71a41d73a5048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default operators for &lt;, &lt;=, &gt;, &gt;= and ==.  <a href="classembed_1_1frequency.html#ac4fe319cedfab09cd4d71a41d73a5048">More...</a><br /></td></tr>
 <tr class="separator:ac4fe319cedfab09cd4d71a41d73a5048"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +172,40 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the integer representation of a signal frequency. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a6435115961f0dd82f04eb1247f4ea44c" name="a6435115961f0dd82f04eb1247f4ea44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6435115961f0dd82f04eb1247f4ea44c">&#9670;&nbsp;</a></span>selection_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c">embed::frequency::selection_mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Divider selection mode for achieving a target frequency. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6435115961f0dd82f04eb1247f4ea44cafa2ec87a2e6783b2193f71bfdf0f9cc8" name="a6435115961f0dd82f04eb1247f4ea44cafa2ec87a2e6783b2193f71bfdf0f9cc8"></a>higher&#160;</td><td class="fielddoc"><p >Restrict dividers to achieve frequencies above target frequency. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6435115961f0dd82f04eb1247f4ea44ca81e073b428b50247daba38531dcf412a" name="a6435115961f0dd82f04eb1247f4ea44ca81e073b428b50247daba38531dcf412a"></a>lower&#160;</td><td class="fielddoc"><p >Restrict dividers to achieve frequencies below target frequency. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6435115961f0dd82f04eb1247f4ea44ca95eb60add4a468892d9be1ba83b2c946" name="a6435115961f0dd82f04eb1247f4ea44ca95eb60add4a468892d9be1ba83b2c946"></a>closest&#160;</td><td class="fielddoc"><p >Do not restrict dividers. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7be42ec847c0b6fdaceb5cd34ff456ae" name="a7be42ec847c0b6fdaceb5cd34ff456ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7be42ec847c0b6fdaceb5cd34ff456ae">&#9670;&nbsp;</a></span>frequency()</h2>
 
@@ -356,6 +403,80 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a470be2d90b5c33b45bb0e972d6715647" name="a470be2d90b5c33b45bb0e972d6715647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470be2d90b5c33b45bb0e972d6715647">&#9670;&nbsp;</a></span>closest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr InputIt embed::frequency::closest </td>
+          <td>(</td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>p_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>p_last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classembed_1_1frequency.html">frequency</a>&#160;</td>
+          <td class="paramname"><em>p_target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44c">selection_mode</a>&#160;</td>
+          <td class="paramname"><em>p_selection_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate divider for the closest resulting frequency to target. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">InputIt</td><td>- iterator type from the container. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_first</td><td>- iterator to the first item in the search space of available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_last</td><td>- iterator after the last item in search space of available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_target</td><td>- the ideal frequency to be achieved by selecting one of the available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_selection_mode</td><td>- the selection mode for dividers. This can restrict the dividers to result in a frequency less than or equal to the target, higher than or equal to the target or not restrict the dividers at all and get the closest value to the target. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>InputIt - an iterator pointing to the resulting best divider if a solution is found. If no solution is found, p_last is returned. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1frequency_a470be2d90b5c33b45bb0e972d6715647_cgraph.svg" width="396" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="aa67b1e2379926c43c248b98207ff95a0" name="aa67b1e2379926c43c248b98207ff95a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa67b1e2379926c43c248b98207ff95a0">&#9670;&nbsp;</a></span>cycles_per()</h2>
 
@@ -431,7 +552,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1frequency_ae253d42390060843082b1ef6c2b300ec_icgraph.svg" width="935" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1frequency_ae253d42390060843082b1ef6c2b300ec_icgraph.svg" width="935" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
