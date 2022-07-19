@@ -1,5 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"structembed_1_1output__pin_1_1settings.html#ad78fb3591ddd2ef74a29d87994c55be7":[1,9,0,0,1],
+"structembed_1_1pwm_1_1settings.html":[1,10,0,0],
+"structembed_1_1pwm_1_1settings.html#a77b5d570a8eb4892098f1eb3f479398f":[1,10,0,0,1],
+"structembed_1_1pwm_1_1settings.html#aaa323d919eb51a768466add267adbb64":[1,10,0,0,0],
+"structembed_1_1serial_1_1frame__error.html":[1,11,0,0],
 "structembed_1_1serial_1_1frame__error.html#a1a381c1a25bb77b8c1468f41c1e72ebc":[1,11,0,0,0],
 "structembed_1_1serial_1_1packets__lost.html":[1,11,0,1],
 "structembed_1_1serial_1_1packets__lost.html#a038cdade7d4f1d164c267f5d34a949bc":[1,11,0,1,1],

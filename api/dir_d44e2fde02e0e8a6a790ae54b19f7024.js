@@ -18,7 +18,7 @@ var dir_d44e2fde02e0e8a6a790ae54b19f7024 =
     [ "bit_limits.hpp", "bit__limits_8hpp.html", "bit__limits_8hpp" ],
     [ "config.hpp", "config_8hpp.html", "config_8hpp" ],
     [ "enum.hpp", "enum_8hpp.html", "enum_8hpp" ],
-    [ "error.hpp", "error_8hpp.html", null ],
+    [ "error.hpp", "error_8hpp.html", "error_8hpp" ],
     [ "frequency.hpp", "frequency_8hpp.html", "frequency_8hpp" ],
     [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
     [ "overflow_counter.hpp", "overflow__counter_8hpp.html", null ],

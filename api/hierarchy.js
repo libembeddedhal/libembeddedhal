@@ -18,6 +18,9 @@ var hierarchy =
       [ "embed::mock::dac", "structembed_1_1mock_1_1dac.html", null ]
     ] ],
     [ "embed::duty_cycle", "structembed_1_1duty__cycle.html", null ],
+    [ "std::false_type", null, [
+      [ "embed::error::invalid_option_t< options >", "structembed_1_1error_1_1invalid__option__t.html", null ]
+    ] ],
     [ "embed::serial::frame_error", "structembed_1_1serial_1_1frame__error.html", null ],
     [ "embed::frequency", "classembed_1_1frequency.html", null ],
     [ "embed::i2c", "classembed_1_1i2c.html", null ],
@@ -27,6 +30,7 @@ var hierarchy =
     [ "embed::interrupt_pin", "classembed_1_1interrupt__pin.html", [
       [ "embed::mock::interrupt_pin", "structembed_1_1mock_1_1interrupt__pin.html", null ]
     ] ],
+    [ "embed::error::invalid_settings", "structembed_1_1error_1_1invalid__settings.html", null ],
     [ "embed::linear_encoder", "classembed_1_1linear__encoder.html", null ],
     [ "embed::linear_potentiometer", "classembed_1_1linear__potentiometer.html", null ],
     [ "std::pmr::memory_resource", null, [

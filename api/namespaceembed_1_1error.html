@@ -93,17 +93,63 @@ $(document).ready(function(){initNavTree('namespaceembed_1_1error.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">embed::error Namespace Reference<div class="ingroups"><a class="el" href="group__utility.html">Utility</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1error_1_1invalid__option__t.html">invalid_option_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for defining static_asserts that should always fail, but only if the static_assert line is hit via <code>if constexpr</code> control block. Prefer to NOT use this directly but to use <code>invalid_option</code> instead.  <a href="structembed_1_1error_1_1invalid__option__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1error_1_1invalid__settings.html">invalid_settings</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1error_1_1timeout.html">timeout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error indicating a timeout event.  <a href="structembed_1_1error_1_1timeout.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a71a08cca302a9a8914cbf3c11e23153a"><td class="memTemplParams" colspan="2">template&lt;auto... options&gt; </td></tr>
+<tr class="memitem:a71a08cca302a9a8914cbf3c11e23153a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed_1_1error.html#a71a08cca302a9a8914cbf3c11e23153a">invalid_option</a> = <a class="el" href="structembed_1_1error_1_1invalid__option__t.html">invalid_option_t</a>&lt;options...&gt;<a class="el" href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">::value</a></td></tr>
+<tr class="memdesc:a71a08cca302a9a8914cbf3c11e23153a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper definition to simplify the usage of <a class="el" href="structembed_1_1error_1_1invalid__option__t.html" title="Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...">invalid_option_t</a>.  <a href="namespaceembed_1_1error.html#a71a08cca302a9a8914cbf3c11e23153a">More...</a><br /></td></tr>
+<tr class="separator:a71a08cca302a9a8914cbf3c11e23153a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a71a08cca302a9a8914cbf3c11e23153a" name="a71a08cca302a9a8914cbf3c11e23153a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a08cca302a9a8914cbf3c11e23153a">&#9670;&nbsp;</a></span>invalid_option</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto... options&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool embed::error::invalid_option = <a class="el" href="structembed_1_1error_1_1invalid__option__t.html">invalid_option_t</a>&lt;options...&gt;<a class="el" href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper definition to simplify the usage of <a class="el" href="structembed_1_1error_1_1invalid__option__t.html" title="Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...">invalid_option_t</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">options</td><td>ignored by the application but needed to create a non-trivial specialization of this class which allows its usage in static_assert. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
