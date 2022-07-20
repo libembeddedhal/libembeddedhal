@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <ul>
 <li>In cases where the program is scanning for available addresses, this error is expected behaviour. This is less of an error to handle but an expected return status.</li>
 <li>If a driver has a set of possible addresses that it can use, and for that driver it makes sense to attempt to search for the valid address, then a handler can keep performing transactions until a valid address is found and then store that address.</li>
-<li>In the case where the address is consistently NACK'ed but the driver expects a specific address, this is typically not handleable and indicates that the application or driver is incorrect in the device address.</li>
+<li>In the case where the address is consistently NACK'ed but the driver expects a specific address, this is typically not something that can be handled and indicates that the application or driver is incorrect in the device address.</li>
 <li>In the case where NACK's are spurious, then this may indicate that the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> line is faulty or the device is misbehaving. This is not fixable in the application. But in some cases, if a software solution is required, the driver or application can simply retry again until a valid response is returned, but results may vary and are very specific to the devices and context of the situation. </li>
 </ul>
 </td></tr>

@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4bf0b00fba6ab98ddddbe35aa2613b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure spi to match the settings supplied.  <a href="classembed_1_1spi.html#a4bf0b00fba6ab98ddddbe35aa2613b34">More...</a><br /></td></tr>
 <tr class="separator:a4bf0b00fba6ab98ddddbe35aa2613b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c8496025bee3c20b2e6167aac14b34"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1spi.html#aa1c8496025bee3c20b2e6167aac14b34">transfer</a> (std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classembed_1_1spi.html#a6efdb2425adcb00811b99e88cf8893bf">default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:aa1c8496025bee3c20b2e6167aac14b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receieve data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classembed_1_1spi.html#aa1c8496025bee3c20b2e6167aac14b34">More...</a><br /></td></tr>
+<tr class="memdesc:aa1c8496025bee3c20b2e6167aac14b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classembed_1_1spi.html#aa1c8496025bee3c20b2e6167aac14b34">More...</a><br /></td></tr>
 <tr class="separator:aa1c8496025bee3c20b2e6167aac14b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -210,7 +210,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Send and receieve data between a selected device on the spi bus. This function will block until the entire transfer is finished. </p>
+<p>Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_data_out</td><td>- buffer to write data to the bus. If this is set to null/empty then writing is ignored and the p_filler will be written to the bus. If the length is less than p_data_in, then p_filler will be written to the bus after this buffer has been sent. </td></tr>

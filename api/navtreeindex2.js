@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"structembed_1_1mock_1_1write__only__spi.html#a2ca6c4db1e84cb5990266c236d9a0a69":[1,13,1,1],
 "structembed_1_1mock_1_1write__only__spi.html#a668ae8bd2effa6d165a9c87ce89ddb3a":[1,13,1,0],
 "structembed_1_1mock_1_1write__only__spi.html#ac9f8c8c2053b9f9b025ce1b0a73fba29":[1,13,1,2],
 "structembed_1_1output__pin_1_1settings.html":[1,9,0,0],

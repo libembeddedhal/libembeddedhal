@@ -83,6 +83,6 @@ var hierarchy =
     [ "embed::timer", "classembed_1_1timer.html", [
       [ "embed::mock::timer", "structembed_1_1mock_1_1timer.html", null ]
     ] ],
-    [ "embed::uptime_counter", "classembed_1_1uptime__counter.html", null ],
+    [ "embed::experimental::uptime_counter", "classembed_1_1experimental_1_1uptime__counter.html", null ],
     [ "embed::counter::uptime_t", "structembed_1_1counter_1_1uptime__t.html", null ]
 ];

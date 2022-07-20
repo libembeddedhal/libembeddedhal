@@ -196,17 +196,17 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="classembed_1_1uptime__counter.html#a2681752c4655bc02bd0f4446d120623e" target="_top" xlink:title="Calculates the number of nanoseconds since the counter has started.">
-<polygon fill="white" stroke="black" points="223.5,-71 223.5,-101 340.5,-101 340.5,-71 223.5,-71"/>
-<text text-anchor="start" x="231.5" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">embed::uptime_counter</text>
-<text text-anchor="middle" x="282" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">::uptime</text>
+<g id="a_node11"><a xlink:href="classembed_1_1experimental_1_1uptime__counter.html#a71b8a2ddf4ce000823b2966b825e24fe" target="_top" xlink:title="Calculates the number of nanoseconds since the counter has started.">
+<polygon fill="white" stroke="black" points="221,-71 221,-101 343,-101 343,-71 221,-71"/>
+<text text-anchor="start" x="229" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">embed::experimental</text>
+<text text-anchor="middle" x="282" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">::uptime_counter::uptime</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M383.11,-89.43C368.94,-88.95 354.31,-88.44 340.76,-87.98"/>
+<path fill="none" stroke="midnightblue" d="M383.18,-89.43C369.78,-88.98 355.97,-88.5 343.05,-88.06"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="383.22,-92.94 393.33,-89.78 383.46,-85.94 383.22,-92.94"/>
 </g>
 </g>

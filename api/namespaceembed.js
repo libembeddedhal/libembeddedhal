@@ -2,6 +2,7 @@ var namespaceembed =
 [
     [ "config", "namespaceembed_1_1config.html", "namespaceembed_1_1config" ],
     [ "error", "namespaceembed_1_1error.html", "namespaceembed_1_1error" ],
+    [ "experimental", "namespaceembed_1_1experimental.html", "namespaceembed_1_1experimental" ],
     [ "literals", "namespaceembed_1_1literals.html", [
       [ "operator\"\"_Hz", "namespaceembed_1_1literals.html#a4e06f7b325e8136473f1ddbd85c29122", null ],
       [ "operator\"\"_kHz", "namespaceembed_1_1literals.html#a8ff30f018521a0365e263942785e2877", null ],
@@ -38,7 +39,6 @@ var namespaceembed =
     [ "static_memory_resource", "classembed_1_1static__memory__resource.html", "classembed_1_1static__memory__resource" ],
     [ "temperature_sensor", "classembed_1_1temperature__sensor.html", "classembed_1_1temperature__sensor" ],
     [ "timer", "classembed_1_1timer.html", "classembed_1_1timer" ],
-    [ "uptime_counter", "classembed_1_1uptime__counter.html", "classembed_1_1uptime__counter" ],
     [ "enumeration", "conceptembed_1_1enumeration.html", null ],
     [ "microgravity", "namespaceembed.html#aa29e3f87bfd14a811b6bbf1b29950b80", null ],
     [ "microkelvin", "namespaceembed.html#a70b643f59e2cc0014a084ee2c7715ad4", null ],

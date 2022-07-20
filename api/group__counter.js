@@ -18,9 +18,9 @@ var group__counter =
       [ "operator=", "classembed_1_1counter__timeout.html#a1cccc3d8146a60c994b323ebb220568b", null ],
       [ "operator=", "classembed_1_1counter__timeout.html#a431c021bb2be9b400933e2936e39cb49", null ]
     ] ],
-    [ "embed::uptime_counter", "classembed_1_1uptime__counter.html", [
-      [ "uptime_counter", "classembed_1_1uptime__counter.html#a610927cbd994ea4c69edeaab6e4b57ed", null ],
-      [ "uptime", "classembed_1_1uptime__counter.html#a2681752c4655bc02bd0f4446d120623e", null ]
+    [ "embed::experimental::uptime_counter", "classembed_1_1experimental_1_1uptime__counter.html", [
+      [ "uptime_counter", "classembed_1_1experimental_1_1uptime__counter.html#a3c08da81ae8b94163a0986ecc626600f", null ],
+      [ "uptime", "classembed_1_1experimental_1_1uptime__counter.html#a71b8a2ddf4ce000823b2966b825e24fe", null ]
     ] ],
     [ "embed::create_timeout", "group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6", null ],
     [ "embed::delay", "group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e", null ]

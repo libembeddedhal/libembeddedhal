@@ -6,6 +6,9 @@ var annotated_dup =
         [ "invalid_settings", "structembed_1_1error_1_1invalid__settings.html", null ],
         [ "timeout", "structembed_1_1error_1_1timeout.html", null ]
       ] ],
+      [ "experimental", "namespaceembed_1_1experimental.html", [
+        [ "uptime_counter", "classembed_1_1experimental_1_1uptime__counter.html", "classembed_1_1experimental_1_1uptime__counter" ]
+      ] ],
       [ "mock", "namespaceembed_1_1mock.html", [
         [ "accelerometer", "structembed_1_1mock_1_1accelerometer.html", "structembed_1_1mock_1_1accelerometer" ],
         [ "adc", "structembed_1_1mock_1_1adc.html", "structembed_1_1mock_1_1adc" ],
@@ -50,7 +53,6 @@ var annotated_dup =
       [ "static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4" ],
       [ "static_memory_resource", "classembed_1_1static__memory__resource.html", "classembed_1_1static__memory__resource" ],
       [ "temperature_sensor", "classembed_1_1temperature__sensor.html", "classembed_1_1temperature__sensor" ],
-      [ "timer", "classembed_1_1timer.html", "classembed_1_1timer" ],
-      [ "uptime_counter", "classembed_1_1uptime__counter.html", "classembed_1_1uptime__counter" ]
+      [ "timer", "classembed_1_1timer.html", "classembed_1_1timer" ]
     ] ]
 ];
