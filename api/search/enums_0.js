@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errors_0',['errors',['../classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cc',1,'embed::i2c']]]
+  ['divider_5frule_0',['divider_rule',['../group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39',1,'embed']]]
 ];

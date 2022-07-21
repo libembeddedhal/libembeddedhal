@@ -1,6 +1,0 @@
-<map id="embed::frequency::wavelength" name="embed::frequency::wavelength">
-<area shape="rect" id="node1" title="Calculates and returns the wavelength of the frequency in seconds." alt="" coords="5,42,200,69"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="248,5,415,47"/>
-<area shape="rect" id="node3" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="248,71,415,98"/>
-<area shape="rect" id="node4" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="463,71,617,98"/>
-</map>

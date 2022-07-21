@@ -1,0 +1,5 @@
+<map id="embed::operator/" name="embed::operator/">
+<area shape="rect" id="node1" title="Calculate the divider required to reach the target frequency from the source frequency." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="172,5,339,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="387,5,541,32"/>
+</map>

@@ -1,7 +1,0 @@
-<map id="embed::frequency::cycles_per" name="embed::frequency::cycles_per">
-<area shape="rect" id="node1" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="520,42,711,69"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf" title="Calculate a duty cycle based on a time duration, the percent and this driving frequency...." alt="" coords="291,5,472,47"/>
-<area shape="rect" id="node3" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="305,71,458,98"/>
-<area shape="rect" id="node4" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,71,243,98"/>
-<area shape="rect" id="node5" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,71,97,98"/>
-</map>

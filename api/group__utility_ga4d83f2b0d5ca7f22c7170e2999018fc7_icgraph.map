@@ -1,0 +1,4 @@
+<map id="embed::multiply" name="embed::multiply">
+<area shape="rect" id="node1" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="172,5,283,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581" title="Scale up a frequency by an integer factor." alt="" coords="5,5,124,32"/>
+</map>

@@ -1,4 +1,0 @@
-<map id="embed::frequency::calculate_duty_cycle" name="embed::frequency::calculate_duty_cycle">
-<area shape="rect" id="node1" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="235,5,416,47"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a6ba09620a9c2d43071e7f486d8c7fbdf" title="Calculate a duty cycle based on a time duration, the percent and this driving frequency...." alt="" coords="5,5,187,47"/>
-</map>

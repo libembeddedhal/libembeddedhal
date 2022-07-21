@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('group__utility.html',''); initResizabl
 <a href="#concepts">Concepts</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Utility</div></div>
 </div><!--header-->
 <div class="contents">
@@ -124,8 +124,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1duty__cycle.html">embed::duty_cycle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing cycle count for the high and low side of a signal duty cycle.  <a href="structembed_1_1duty__cycle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1frequency.html">embed::frequency</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the integer representation of a signal frequency.  <a href="classembed_1_1frequency.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1frequency.html">embed::frequency</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the integer representation of a signal frequency.  <a href="structembed_1_1frequency.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1overflow__counter.html">embed::overflow_counter&lt; CountBitWidth &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend a counter's count from an arbitrary bit width to 64-bits by detecting overflows in the count. Each detected overflow is added to an overflow counter which is combined with the current count in order create a count up to 64-bits in length.  <a href="classembed_1_1overflow__counter.html#details">More...</a><br /></td></tr>
@@ -151,6 +151,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga702bc5c739d1887d639f6d61ba2addba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
 <tr class="separator:ga702bc5c739d1887d639f6d61ba2addba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gabc9a8424e1c83c594e6a3799a36b2d39"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39">embed::divider_rule</a> { <a class="el" href="group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39afa2ec87a2e6783b2193f71bfdf0f9cc8">embed::divider_rule::higher</a>
+, <a class="el" href="group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a">embed::divider_rule::lower</a>
+, <a class="el" href="group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a95eb60add4a468892d9be1ba83b2c946">embed::divider_rule::closest</a>
+ }</td></tr>
+<tr class="memdesc:gabc9a8424e1c83c594e6a3799a36b2d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divider selection mode for achieving a target frequency.  <a href="group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39">More...</a><br /></td></tr>
+<tr class="separator:gabc9a8424e1c83c594e6a3799a36b2d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga4575cf18cb2a0127d46580d0be41c74a"><td class="memTemplParams" colspan="2">template&lt;size_t BitWidth, std::integral T&gt; </td></tr>
@@ -160,10 +169,40 @@ Functions</h2></td></tr>
 <tr class="memitem:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">embed::value</a> (enumeration auto p_enum_value) noexcept</td></tr>
 <tr class="memdesc:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert an enum to its integral value.  <a href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">More...</a><br /></td></tr>
 <tr class="separator:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8247dabb8510ab188063a0695f62266"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gaa8247dabb8510ab188063a0695f62266"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa8247dabb8510ab188063a0695f62266">embed::multiply_with_overflow_detection</a> (T p_lhs, T p_rhs)</td></tr>
-<tr class="memdesc:gaa8247dabb8510ab188063a0695f62266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value.  <a href="group__utility.html#gaa8247dabb8510ab188063a0695f62266">More...</a><br /></td></tr>
-<tr class="separator:gaa8247dabb8510ab188063a0695f62266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structembed_1_1frequency.html">frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372">embed::operator/</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_lhs, std::uint32_t p_rhs) noexcept</td></tr>
+<tr class="memdesc:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale down a frequency by an integer factor.  <a href="group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372">More...</a><br /></td></tr>
+<tr class="separator:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9bc7388bf0424bc41cf69ced37ef3df"><td class="memItemLeft" align="right" valign="top">constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gac9bc7388bf0424bc41cf69ced37ef3df">embed::operator/</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source, const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_target) noexcept</td></tr>
+<tr class="memdesc:gac9bc7388bf0424bc41cf69ced37ef3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the divider required to reach the target frequency from the source frequency.  <a href="group__utility.html#gac9bc7388bf0424bc41cf69ced37ef3df">More...</a><br /></td></tr>
+<tr class="separator:gac9bc7388bf0424bc41cf69ced37ef3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa024ea76ffc0034560ac1548c1b7e581"><td class="memTemplParams" colspan="2">template&lt;std::unsigned_integral Integer&gt; </td></tr>
+<tr class="memitem:gaa024ea76ffc0034560ac1548c1b7e581"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structembed_1_1frequency.html">frequency</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581">embed::operator*</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source, Integer p_scalar) noexcept</td></tr>
+<tr class="memdesc:gaa024ea76ffc0034560ac1548c1b7e581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale up a frequency by an integer factor.  <a href="group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581">More...</a><br /></td></tr>
+<tr class="separator:gaa024ea76ffc0034560ac1548c1b7e581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac197fc46936b832a6e9219b248e2f9bb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gac197fc46936b832a6e9219b248e2f9bb">embed::calculate_duty_cycle</a> (std::uint32_t p_cycles, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) noexcept</td></tr>
+<tr class="memdesc:gac197fc46936b832a6e9219b248e2f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a <a class="el" href="structembed_1_1duty__cycle.html" title="Structure containing cycle count for the high and low side of a signal duty cycle.">duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent.  <a href="group__utility.html#gac197fc46936b832a6e9219b248e2f9bb">More...</a><br /></td></tr>
+<tr class="separator:gac197fc46936b832a6e9219b248e2f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61711bf3d8c25b82fb37db4f53426ef0"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0">embed::cycles_per</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source, <a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration) noexcept</td></tr>
+<tr class="memdesc:ga61711bf3d8c25b82fb37db4f53426ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency.  <a href="group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0">More...</a><br /></td></tr>
+<tr class="separator:ga61711bf3d8c25b82fb37db4f53426ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga595b4275cff4d56d9d6226568c7c9809"><td class="memTemplParams" colspan="2">template&lt;typename Period  = std::femto&gt; </td></tr>
+<tr class="memitem:ga595b4275cff4d56d9d6226568c7c9809"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::chrono::duration&lt; int64_t, Period &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga595b4275cff4d56d9d6226568c7c9809">embed::wavelength</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source)</td></tr>
+<tr class="memdesc:ga595b4275cff4d56d9d6226568c7c9809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the wavelength in seconds.  <a href="group__utility.html#ga595b4275cff4d56d9d6226568c7c9809">More...</a><br /></td></tr>
+<tr class="separator:ga595b4275cff4d56d9d6226568c7c9809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19bf555b8e14f12184073b07791fd56b"><td class="memItemLeft" align="right" valign="top">constexpr std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga19bf555b8e14f12184073b07791fd56b">embed::duration_from_cycles</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source, std::int32_t p_cycles) noexcept</td></tr>
+<tr class="memdesc:ga19bf555b8e14f12184073b07791fd56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the amount of time it takes a frequency to oscillate a number of cycles.  <a href="group__utility.html#ga19bf555b8e14f12184073b07791fd56b">More...</a><br /></td></tr>
+<tr class="separator:ga19bf555b8e14f12184073b07791fd56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1a076554c019239de0fb3e3fb4edcf2"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2">embed::calculate_duty_cycle</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source_clock, <a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration, <a class="el" href="classembed_1_1percent.html">percent</a> p_percent) noexcept</td></tr>
+<tr class="memdesc:gaa1a076554c019239de0fb3e3fb4edcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a duty cycle based on a source frequency, target wavelength and a percentage.  <a href="group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2">More...</a><br /></td></tr>
+<tr class="separator:gaa1a076554c019239de0fb3e3fb4edcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c61114c56c371ced7e50428411220db"><td class="memTemplParams" colspan="2">template&lt;typename InputIt &gt; </td></tr>
+<tr class="memitem:ga7c61114c56c371ced7e50428411220db"><td class="memTemplItemLeft" align="right" valign="top">constexpr InputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga7c61114c56c371ced7e50428411220db">embed::closest</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_source, InputIt p_first, InputIt p_last, <a class="el" href="structembed_1_1frequency.html">frequency</a> p_target, <a class="el" href="group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39">divider_rule</a> p_divider_rule)</td></tr>
+<tr class="memdesc:ga7c61114c56c371ced7e50428411220db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate divider for the closest resulting frequency to target.  <a href="group__utility.html#ga7c61114c56c371ced7e50428411220db">More...</a><br /></td></tr>
+<tr class="separator:ga7c61114c56c371ced7e50428411220db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7">embed::multiply</a> (T p_lhs, T p_rhs) noexcept</td></tr>
+<tr class="memdesc:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value.  <a href="group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7">More...</a><br /></td></tr>
+<tr class="separator:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f0922a28ac81378eb689b2ab4bc299a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga6f0922a28ac81378eb689b2ab4bc299a"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a">embed::absolute_value</a> (T p_value) noexcept</td></tr>
 <tr class="memdesc:ga6f0922a28ac81378eb689b2ab4bc299a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic absolute value function that works for integer types.  <a href="group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a">More...</a><br /></td></tr>
@@ -188,12 +227,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gac641e1b47740fd62de5f427f7559c804"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::array&lt; char, N+1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">embed::to_array</a> (std::string_view p_view) noexcept</td></tr>
 <tr class="memdesc:gac641e1b47740fd62de5f427f7559c804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string_view into a std::array of N number of characters.  <a href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">More...</a><br /></td></tr>
 <tr class="separator:gac641e1b47740fd62de5f427f7559c804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga5553c6d952a7c2964ba1e8ebb3eb7aa0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classembed_1_1frequency.html">frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga5553c6d952a7c2964ba1e8ebb3eb7aa0">embed::default_clock_rate</a> = <a class="el" href="classembed_1_1frequency.html">frequency</a>(100'000)</td></tr>
-<tr class="memdesc:ga5553c6d952a7c2964ba1e8ebb3eb7aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default clock rate for serial communication protocols.  <a href="group__utility.html#ga5553c6d952a7c2964ba1e8ebb3eb7aa0">More...</a><br /></td></tr>
-<tr class="separator:ga5553c6d952a7c2964ba1e8ebb3eb7aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Available utilities for libembeddedhal </p>
@@ -233,6 +266,39 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - sets error flag set when timeout condition has been met, otherwise returns success. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gabc9a8424e1c83c594e6a3799a36b2d39" name="gabc9a8424e1c83c594e6a3799a36b2d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc9a8424e1c83c594e6a3799a36b2d39">&#9670;&nbsp;</a></span>divider_rule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39">embed::divider_rule</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Divider selection mode for achieving a target frequency. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabc9a8424e1c83c594e6a3799a36b2d39afa2ec87a2e6783b2193f71bfdf0f9cc8" name="ggabc9a8424e1c83c594e6a3799a36b2d39afa2ec87a2e6783b2193f71bfdf0f9cc8"></a>higher&#160;</td><td class="fielddoc"><p >Restrict dividers to achieve frequencies above target frequency. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a" name="ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a"></a>lower&#160;</td><td class="fielddoc"><p >Restrict dividers to achieve frequencies below target frequency. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabc9a8424e1c83c594e6a3799a36b2d39a95eb60add4a468892d9be1ba83b2c946" name="ggabc9a8424e1c83c594e6a3799a36b2d39a95eb60add4a468892d9be1ba83b2c946"></a>closest&#160;</td><td class="fielddoc"><p >Do not restrict dividers. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -282,7 +348,257 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga6f0922a28ac81378eb689b2ab4bc299a_icgraph.svg" width="1138" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga6f0922a28ac81378eb689b2ab4bc299a_icgraph.svg" width="1062" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="gaa1a076554c019239de0fb3e3fb4edcf2" name="gaa1a076554c019239de0fb3e3fb4edcf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1a076554c019239de0fb3e3fb4edcf2">&#9670;&nbsp;</a></span>calculate_duty_cycle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::leaf::result&lt; <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> &gt; embed::calculate_duty_cycle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source_clock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
+          <td class="paramname"><em>p_duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td>
+          <td class="paramname"><em>p_percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate a duty cycle based on a source frequency, target wavelength and a percentage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source_clock</td><td>- clock frequency controlling the duty cycle </td></tr>
+    <tr><td class="paramname">p_duration</td><td>- target wavelength to reach </td></tr>
+    <tr><td class="paramname">p_percent</td><td>- ratio of the duty cycle high time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr <a class="el" href="structembed_1_1duty__cycle.html" title="Structure containing cycle count for the high and low side of a signal duty cycle.">duty_cycle</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gaa1a076554c019239de0fb3e3fb4edcf2_cgraph.svg" width="778" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="gac197fc46936b832a6e9219b248e2f9bb" name="gac197fc46936b832a6e9219b248e2f9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac197fc46936b832a6e9219b248e2f9bb">&#9670;&nbsp;</a></span>calculate_duty_cycle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structembed_1_1duty__cycle.html">duty_cycle</a> embed::calculate_duty_cycle </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>p_cycles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td>
+          <td class="paramname"><em>p_percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a <a class="el" href="structembed_1_1duty__cycle.html" title="Structure containing cycle count for the high and low side of a signal duty cycle.">duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_cycles</td><td>- the number of cycles to be split into a duty cycle </td></tr>
+    <tr><td class="paramname">p_percent</td><td>- the target duty cycle percentage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr <a class="el" href="structembed_1_1duty__cycle.html" title="Structure containing cycle count for the high and low side of a signal duty cycle.">duty_cycle</a> - the duty cycle cycle counts </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gac197fc46936b832a6e9219b248e2f9bb_icgraph.svg" width="360" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga7c61114c56c371ced7e50428411220db" name="ga7c61114c56c371ced7e50428411220db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c61114c56c371ced7e50428411220db">&#9670;&nbsp;</a></span>closest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr InputIt embed::closest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>p_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>p_last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structembed_1_1frequency.html">frequency</a>&#160;</td>
+          <td class="paramname"><em>p_target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39">divider_rule</a>&#160;</td>
+          <td class="paramname"><em>p_divider_rule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate divider for the closest resulting frequency to target. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">InputIt</td><td>- iterator type from the container. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- the source frequency . </td></tr>
+    <tr><td class="paramname">p_first</td><td>- iterator to the first item in the search space of available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_last</td><td>- iterator after the last item in search space of available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_target</td><td>- the ideal frequency to be achieved by selecting one of the available frequency dividers. </td></tr>
+    <tr><td class="paramname">p_divider_rule</td><td>- the selection mode for dividers. This can restrict the dividers to result in a frequency less than or equal to the target, higher than or equal to the target or not restrict the dividers at all and get the closest value to the target. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>InputIt - an iterator pointing to the resulting best divider if a solution is found. If no solution is found, p_last is returned. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga7c61114c56c371ced7e50428411220db_cgraph.svg" width="284" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga61711bf3d8c25b82fb37db4f53426ef0" name="ga61711bf3d8c25b82fb37db4f53426ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61711bf3d8c25b82fb37db4f53426ef0">&#9670;&nbsp;</a></span>cycles_per()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::int64_t embed::cycles_per </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
+          <td class="paramname"><em>p_duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- source frequency </td></tr>
+    <tr><td class="paramname">p_duration</td><td>- the amount of time to convert to cycles </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::int64_t - number of cycles </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga61711bf3d8c25b82fb37db4f53426ef0_cgraph.svg" width="558" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga61711bf3d8c25b82fb37db4f53426ef0_icgraph.svg" width="627" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -385,7 +701,59 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0abcbcb6d4ed9f8dc86ca404255d36d1_icgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0abcbcb6d4ed9f8dc86ca404255d36d1_icgraph.svg" width="284" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga19bf555b8e14f12184073b07791fd56b" name="ga19bf555b8e14f12184073b07791fd56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19bf555b8e14f12184073b07791fd56b">&#9670;&nbsp;</a></span>duration_from_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::chrono::nanoseconds embed::duration_from_cycles </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::int32_t&#160;</td>
+          <td class="paramname"><em>p_cycles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the amount of time it takes a frequency to oscillate a number of cycles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- the frequency to compute the cycles from </td></tr>
+    <tr><td class="paramname">p_cycles</td><td>- number of cycles within the time duration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::chrono::nanoseconds - time duration based on this frequency and the number of cycles </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga19bf555b8e14f12184073b07791fd56b_cgraph.svg" width="575" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -428,16 +796,19 @@ template&lt;size_t BitWidth, std::integral T&gt; </div>
 
 </div>
 </div>
-<a id="gaa8247dabb8510ab188063a0695f62266" name="gaa8247dabb8510ab188063a0695f62266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa8247dabb8510ab188063a0695f62266">&#9670;&nbsp;</a></span>multiply_with_overflow_detection()</h2>
+<a id="ga4d83f2b0d5ca7f22c7170e2999018fc7" name="ga4d83f2b0d5ca7f22c7170e2999018fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d83f2b0d5ca7f22c7170e2999018fc7">&#9670;&nbsp;</a></span>multiply()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; T &gt; embed::multiply_with_overflow_detection </td>
+          <td class="memname">boost::leaf::result&lt; T &gt; embed::multiply </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>p_lhs</em>, </td>
@@ -454,6 +825,11 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value. </p>
@@ -474,7 +850,171 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gaa8247dabb8510ab188063a0695f62266_icgraph.svg" width="362" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga4d83f2b0d5ca7f22c7170e2999018fc7_icgraph.svg" width="288" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="gaa024ea76ffc0034560ac1548c1b7e581" name="gaa024ea76ffc0034560ac1548c1b7e581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa024ea76ffc0034560ac1548c1b7e581">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::unsigned_integral Integer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::leaf::result&lt; <a class="el" href="structembed_1_1frequency.html">frequency</a> &gt; embed::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>p_scalar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale up a frequency by an integer factor. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Integer</td><td>- type of unsigned integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- frequency to scale </td></tr>
+    <tr><td class="paramname">p_scalar</td><td>- the value to scale the frequency up to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr frequency </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gaa024ea76ffc0034560ac1548c1b7e581_cgraph.svg" width="288" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="gaae7b07b6a4aaa1b6342b676f9b864372" name="gaae7b07b6a4aaa1b6342b676f9b864372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae7b07b6a4aaa1b6342b676f9b864372">&#9670;&nbsp;</a></span>operator/() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structembed_1_1frequency.html">frequency</a> embed::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>p_rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale down a frequency by an integer factor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_lhs</td><td>- the frequency to be scaled </td></tr>
+    <tr><td class="paramname">p_rhs</td><td>- the integer value to scale the frequency by </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr frequency </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gaae7b07b6a4aaa1b6342b676f9b864372_cgraph.svg" width="547" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="gac9bc7388bf0424bc41cf69ced37ef3df" name="gac9bc7388bf0424bc41cf69ced37ef3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9bc7388bf0424bc41cf69ced37ef3df">&#9670;&nbsp;</a></span>operator/() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::uint32_t embed::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the divider required to reach the target frequency from the source frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- the input frequency to be divided down to the target frequency with an integer divide </td></tr>
+    <tr><td class="paramname">p_target</td><td>- the target frequency to reach via an integer divide </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr std::uint32_t - frequency divide value representing the number of cycles in the input that constitute one cycle in the target frequency. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gac9bc7388bf0424bc41cf69ced37ef3df_cgraph.svg" width="547" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -540,7 +1080,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga84ea33bb969785c47247cfe0da9aa98e_icgraph.svg" width="935" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga84ea33bb969785c47247cfe0da9aa98e_icgraph.svg" width="859" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -688,18 +1228,23 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ga5553c6d952a7c2964ba1e8ebb3eb7aa0" name="ga5553c6d952a7c2964ba1e8ebb3eb7aa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5553c6d952a7c2964ba1e8ebb3eb7aa0">&#9670;&nbsp;</a></span>default_clock_rate</h2>
+<a id="ga595b4275cff4d56d9d6226568c7c9809" name="ga595b4275cff4d56d9d6226568c7c9809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga595b4275cff4d56d9d6226568c7c9809">&#9670;&nbsp;</a></span>wavelength()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Period  = std::femto&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classembed_1_1frequency.html">frequency</a> embed::default_clock_rate = <a class="el" href="classembed_1_1frequency.html">frequency</a>(100'000)</td>
+          <td class="memname">constexpr std::chrono::duration&lt; int64_t, Period &gt; embed::wavelength </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_source</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -709,7 +1254,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Default clock rate for serial communication protocols. </p>
+<p>Calculates and returns the wavelength in seconds. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Period</td><td>- desired period (defaults to std::femto for femtoseconds). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_source</td><td>- source frequency to convert to wavelength </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::chrono::duration&lt;int64_t, Period&gt; - time based wavelength of the frequency. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga595b4275cff4d56d9d6226568c7c9809_cgraph.svg" width="562" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

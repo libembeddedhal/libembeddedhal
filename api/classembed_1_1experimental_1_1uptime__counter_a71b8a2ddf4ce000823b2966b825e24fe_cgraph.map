@@ -1,7 +1,0 @@
-<map id="embed::experimental::uptime_counter::uptime" name="embed::experimental::uptime_counter::uptime">
-<area shape="rect" id="node1" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="5,35,168,76"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a383cdc3d72a91dedffcd92d3b0e73d8a" title="Calculate time duration based on the frequency and a number of cycles." alt="" coords="216,35,391,76"/>
-<area shape="rect" id="node3" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="439,5,605,47"/>
-<area shape="rect" id="node4" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="439,71,605,98"/>
-<area shape="rect" id="node5" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="653,71,808,98"/>
-</map>

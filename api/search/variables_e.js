@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../structembed_1_1accelerometer_1_1axis__t.html#ab03636d33f11a6ce7935654e05987c8a',1,'embed::accelerometer::axis_t']]]
+  ['write_5frecord_0',['write_record',['../structembed_1_1mock_1_1write__only__spi.html#ac9f8c8c2053b9f9b025ce1b0a73fba29',1,'embed::mock::write_only_spi']]]
 ];

@@ -1,10 +1,9 @@
 <map id="embed::read" name="embed::read">
-<area shape="rect" id="node1" title="Read bytes from a serial port and return an array." alt="" coords="5,58,97,84"/>
-<area shape="rect" id="node2" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,58,243,84"/>
-<area shape="rect" id="node3" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="291,58,444,84"/>
-<area shape="rect" id="node4" href="$classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="492,32,683,59"/>
-<area shape="rect" id="node8" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="510,83,665,110"/>
-<area shape="rect" id="node5" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="945,32,1100,59"/>
-<area shape="rect" id="node6" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="731,25,897,66"/>
-<area shape="rect" id="node7" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="731,91,897,118"/>
+<area shape="rect" id="node1" title="Read bytes from a serial port and return an array." alt="" coords="5,31,97,57"/>
+<area shape="rect" id="node2" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,31,243,57"/>
+<area shape="rect" id="node3" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="291,31,444,57"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="505,5,634,32"/>
+<area shape="rect" id="node7" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="492,56,647,83"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="909,5,1064,32"/>
+<area shape="rect" id="node6" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="695,31,861,57"/>
 </map>

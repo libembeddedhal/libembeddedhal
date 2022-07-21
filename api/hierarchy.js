@@ -22,7 +22,7 @@ var hierarchy =
       [ "embed::error::invalid_option_t< options >", "structembed_1_1error_1_1invalid__option__t.html", null ]
     ] ],
     [ "embed::serial::frame_error", "structembed_1_1serial_1_1frame__error.html", null ],
-    [ "embed::frequency", "classembed_1_1frequency.html", null ],
+    [ "embed::frequency", "structembed_1_1frequency.html", null ],
     [ "embed::i2c", "classembed_1_1i2c.html", null ],
     [ "embed::input_pin", "classembed_1_1input__pin.html", [
       [ "embed::mock::input_pin", "structembed_1_1mock_1_1input__pin.html", null ]

@@ -1,0 +1,4 @@
+<map id="embed::calculate_duty_cycle" name="embed::calculate_duty_cycle">
+<area shape="rect" id="node1" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="204,5,355,47"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="5,5,156,47"/>
+</map>

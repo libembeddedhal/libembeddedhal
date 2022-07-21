@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wavelength_0',['wavelength',['../classembed_1_1frequency.html#a7c8cfde28a6f6869694c509934c764ef',1,'embed::frequency']]],
+  ['wavelength_0',['wavelength',['../group__utility.html#ga595b4275cff4d56d9d6226568c7c9809',1,'embed']]],
   ['write_1',['write',['../classembed_1_1dac.html#a2ccfb1e40854992e01bc02d43b2b1d42',1,'embed::dac::write()'],['../classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f',1,'embed::serial::write()'],['../group__i2c.html#gab3da8ebe957f4f6042eadd908039bb19',1,'embed::write(i2c &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out) noexcept'],['../group__serial.html#gad9edbc22ad0172285561e457ac3b7e44',1,'embed::write(serial &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out) noexcept'],['../group__spi.html#ga08cb65267b0814b8ca7215f7efc5a2e3',1,'embed::write(spi &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out) noexcept']]],
   ['write_5fonly_5fspi_2',['write_only_spi',['../structembed_1_1mock_1_1write__only__spi.html',1,'embed::mock']]],
   ['write_5frecord_3',['write_record',['../structembed_1_1mock_1_1write__only__spi.html#ac9f8c8c2053b9f9b025ce1b0a73fba29',1,'embed::mock::write_only_spi']]],

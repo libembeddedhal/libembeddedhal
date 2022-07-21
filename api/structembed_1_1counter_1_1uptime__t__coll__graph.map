@@ -1,4 +1,4 @@
 <map id="embed::counter::uptime_t" name="embed::counter::uptime_t">
 <area shape="rect" id="node1" title="Representation of a counter&#39;s uptime." alt="" coords="5,95,172,121"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html" title="Represents the frequency of a signal. It consists of a single integer 64&#45;bit number that presents the..." alt="" coords="27,5,150,32"/>
+<area shape="rect" id="node2" href="$structembed_1_1frequency.html" title="Represents the frequency of a signal. It consists of a single integer 64&#45;bit number that presents the..." alt="" coords="27,5,150,32"/>
 </map>

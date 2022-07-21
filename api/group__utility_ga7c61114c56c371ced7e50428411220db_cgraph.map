@@ -1,0 +1,4 @@
+<map id="embed::closest" name="embed::closest">
+<area shape="rect" id="node1" title="Calculate divider for the closest resulting frequency to target." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="163,5,279,32"/>
+</map>

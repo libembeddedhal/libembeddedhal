@@ -33,7 +33,7 @@ var annotated_dup =
       [ "counter_timeout", "classembed_1_1counter__timeout.html", "classembed_1_1counter__timeout" ],
       [ "dac", "classembed_1_1dac.html", "classembed_1_1dac" ],
       [ "duty_cycle", "structembed_1_1duty__cycle.html", "structembed_1_1duty__cycle" ],
-      [ "frequency", "classembed_1_1frequency.html", "classembed_1_1frequency" ],
+      [ "frequency", "structembed_1_1frequency.html", "structembed_1_1frequency" ],
       [ "i2c", "classembed_1_1i2c.html", "classembed_1_1i2c" ],
       [ "input_pin", "classembed_1_1input__pin.html", "classembed_1_1input__pin" ],
       [ "interrupt_pin", "classembed_1_1interrupt__pin.html", "classembed_1_1interrupt__pin" ],

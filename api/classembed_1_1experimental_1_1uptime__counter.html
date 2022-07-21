@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >uptime counter takes a hardware counter and calculates the uptime in nanoseconds. </p>
-<p >This class should be used over calling <a class="el" href="classembed_1_1frequency.html#a383cdc3d72a91dedffcd92d3b0e73d8a" title="Calculate time duration based on the frequency and a number of cycles.">frequency::duration_from_cycles()</a> to calculate uptime because that function will overflow when 9223372 seconds or around 15 weeks have elapsed. This has to do with how the integer arithmetic is handled for converting from frequency to duration using a cycle count.</p>
+<p >This class should be used over calling <a class="el" href="group__utility.html#ga19bf555b8e14f12184073b07791fd56b" title="Calculate the amount of time it takes a frequency to oscillate a number of cycles.">frequency::duration_from_cycles()</a> to calculate uptime because that function will overflow when 9223372 seconds or around 15 weeks have elapsed. This has to do with how the integer arithmetic is handled for converting from frequency to duration using a cycle count.</p>
 <p >So long as this class's <a class="el" href="classembed_1_1experimental_1_1uptime__counter.html#a71b8a2ddf4ce000823b2966b825e24fe" title="Calculates the number of nanoseconds since the counter has started.">uptime()</a> is at least once every 15 weeks, the uptime will be accurate up to ~292 years. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c08da81ae8b94163a0986ecc626600f" name="a3c08da81ae8b94163a0986ecc626600f"></a>
@@ -179,12 +179,6 @@ Public Member Functions</h2></td></tr>
 <p>Calculates the number of nanoseconds since the counter has started. </p>
 <p >To get the correct uptime, this function must be called within a 15 week time period to hold accuracy.</p>
 <dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::chrono::nanoseconds&gt; - returns the </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1experimental_1_1uptime__counter_a71b8a2ddf4ce000823b2966b825e24fe_cgraph.svg" width="814" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 
 </div>
 </div>

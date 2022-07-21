@@ -6,5 +6,5 @@ var searchData=
   ['linear_5fpotentiometer_3',['linear_potentiometer',['../classembed_1_1linear__potentiometer.html',1,'embed::linear_potentiometer'],['../classembed_1_1linear__potentiometer.html#aedba8ae34d0e12cef53d8d946506b623',1,'embed::linear_potentiometer::linear_potentiometer()']]],
   ['linear_5fpotentiometer_2ehpp_4',['linear_potentiometer.hpp',['../linear__potentiometer_8hpp.html',1,'']]],
   ['low_5',['low',['../structembed_1_1duty__cycle.html#a1662bb9f0f66c15c62f909db7041c8b8',1,'embed::duty_cycle']]],
-  ['lower_6',['lower',['../classembed_1_1frequency.html#a6435115961f0dd82f04eb1247f4ea44ca81e073b428b50247daba38531dcf412a',1,'embed::frequency']]]
+  ['lower_6',['lower',['../group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a',1,'embed']]]
 ];

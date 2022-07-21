@@ -1,0 +1,5 @@
+<map id="embed::cycles_per" name="embed::cycles_per">
+<area shape="rect" id="node1" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="397,5,552,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="183,31,349,57"/>
+</map>

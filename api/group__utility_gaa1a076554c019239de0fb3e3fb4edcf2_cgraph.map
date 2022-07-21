@@ -1,0 +1,7 @@
+<map id="embed::calculate_duty_cycle" name="embed::calculate_duty_cycle">
+<area shape="rect" id="node1" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="5,35,156,76"/>
+<area shape="rect" id="node2" href="$group__utility.html#gac197fc46936b832a6e9219b248e2f9bb" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="204,5,355,47"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="215,71,344,98"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="617,71,772,98"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="403,97,569,123"/>
+</map>

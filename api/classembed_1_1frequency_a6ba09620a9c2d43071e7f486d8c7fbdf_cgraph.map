@@ -1,8 +1,0 @@
-<map id="embed::frequency::calculate_duty_cycle" name="embed::frequency::calculate_duty_cycle">
-<area shape="rect" id="node1" title="Calculate a duty cycle based on a time duration, the percent and this driving frequency...." alt="" coords="5,35,187,76"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#ac5e0ec1ff02f4253db3778da5773ff63" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="239,5,421,47"/>
-<area shape="rect" id="node3" href="$classembed_1_1frequency.html#aa67b1e2379926c43c248b98207ff95a0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="235,71,425,98"/>
-<area shape="rect" id="node4" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="688,71,843,98"/>
-<area shape="rect" id="node5" href="$classembed_1_1frequency.html#ae253d42390060843082b1ef6c2b300ec" title="Get the frequency as an integer." alt="" coords="473,64,640,105"/>
-<area shape="rect" id="node6" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="473,130,640,157"/>
-</map>

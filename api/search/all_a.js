@@ -16,5 +16,5 @@ var searchData=
   ['mock_2ehpp_13',['mock.hpp',['../motor_2mock_8hpp.html',1,'(Global Namespace)'],['../adc_2mock_8hpp.html',1,'(Global Namespace)'],['../counter_2mock_8hpp.html',1,'(Global Namespace)'],['../dac_2mock_8hpp.html',1,'(Global Namespace)'],['../experimental_2accelerometer_2mock_8hpp.html',1,'(Global Namespace)'],['../experimental_2temperature_2mock_8hpp.html',1,'(Global Namespace)'],['../input__pin_2mock_8hpp.html',1,'(Global Namespace)'],['../timer_2mock_8hpp.html',1,'(Global Namespace)'],['../spi_2mock_8hpp.html',1,'(Global Namespace)'],['../servo_2mock_8hpp.html',1,'(Global Namespace)'],['../pwm_2mock_8hpp.html',1,'(Global Namespace)'],['../output__pin_2mock_8hpp.html',1,'(Global Namespace)'],['../interrupt__pin_2mock_8hpp.html',1,'(Global Namespace)']]],
   ['motor_14',['motor',['../structembed_1_1mock_1_1motor.html',1,'embed::mock::motor'],['../classembed_1_1motor.html',1,'embed::motor']]],
   ['motor_15',['Motor',['../group__motor.html',1,'']]],
-  ['multiply_5fwith_5foverflow_5fdetection_16',['multiply_with_overflow_detection',['../group__utility.html#gaa8247dabb8510ab188063a0695f62266',1,'embed']]]
+  ['multiply_16',['multiply',['../group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7',1,'embed']]]
 ];

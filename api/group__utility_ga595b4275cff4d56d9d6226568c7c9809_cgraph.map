@@ -1,0 +1,5 @@
+<map id="embed::wavelength" name="embed::wavelength">
+<area shape="rect" id="node1" title="Calculates and returns the wavelength in seconds." alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="187,5,353,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="401,5,556,32"/>
+</map>

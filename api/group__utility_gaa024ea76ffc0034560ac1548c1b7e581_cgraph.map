@@ -1,0 +1,4 @@
+<map id="embed::operator*" name="embed::operator*">
+<area shape="rect" id="node1" title="Scale up a frequency by an integer factor." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="172,5,283,32"/>
+</map>

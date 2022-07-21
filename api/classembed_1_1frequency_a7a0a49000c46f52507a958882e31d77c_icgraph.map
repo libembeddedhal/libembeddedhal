@@ -1,4 +1,0 @@
-<map id="embed::frequency::divide" name="embed::frequency::divide">
-<area shape="rect" id="node1" title="Calculate the frequency divide required to generate the output frequency provided." alt="" coords="235,13,397,39"/>
-<area shape="rect" id="node2" href="$classembed_1_1frequency.html#a2063d8976c488b5dd47ad13791b47aa0" title="Calculate a duty cycle based on a target, the percent and this driving frequency. Typically used for ..." alt="" coords="5,5,187,47"/>
-</map>
