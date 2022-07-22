@@ -172,32 +172,34 @@ $(document).ready(function(){initNavTree('math_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  }</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">int</span>egral T&gt;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="namespaceembed.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">  147</a></span>[[nodiscard]] <span class="keyword">constexpr</span> std::make_unsigned_t&lt;T&gt; <a class="code hl_function" href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">distance</a>(T p_left,</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                                                         T p_right) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keyword">using </span>unsigned_t = std::make_unsigned_t&lt;T&gt;;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="comment">// Put left and right values into 64-bit containers to prevent overflow</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  int64_t left{ p_left };</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  int64_t right{ p_right };</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordflow">if</span> (right &gt; left) {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">// Subtraction operation on right to left in this order can never overflow</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="comment">// because the maximum resultant of left and right being INT32_MAX and</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="comment">// INT32_MIN, will equal UINT32_MAX which can be stored within an int64_t</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="comment">// value.</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    int64_t difference = right - left;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// Casting this value to the unsigned variant will always fit as the</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// distance between any 32-bit signed numbers can always fit in a 32-bit</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// unsigned number.</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="comment">// Same logic as the if statement block above.</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    int64_t difference = left - right;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  }</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>}  <span class="comment">// namespace embed</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">int</span>egral T&gt;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="namespaceembed.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">  148</a></span>[[nodiscard]] <span class="keyword">constexpr</span> std::make_unsigned_t&lt;T&gt; <a class="code hl_function" href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">distance</a>(T p_left,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                                                         T p_right) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>{</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(T) &lt;= <span class="keyword">sizeof</span>(int32_t));</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">using </span>unsigned_t = std::make_unsigned_t&lt;T&gt;;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="comment">// Put left and right values into 64-bit containers to prevent overflow</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  int64_t left{ p_left };</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  int64_t right{ p_right };</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordflow">if</span> (right &gt; left) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="comment">// Subtraction operation on right to left in this order can never overflow</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// because the maximum resultant of left and right being INT32_MAX and</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// INT32_MIN, will equal UINT32_MAX which can be stored within an int64_t</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// value.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    int64_t difference = right - left;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">// Casting this value to the unsigned variant will always fit as the</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="comment">// distance between any 32-bit signed numbers can always fit in a 32-bit</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="comment">// unsigned number.</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// Same logic as the if statement block above.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    int64_t difference = left - right;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}  <span class="comment">// namespace embed</span></div>
 <div class="ttc" id="aerror_8hpp_html"><div class="ttname"><a href="error_8hpp.html">error.hpp</a></div></div>
 <div class="ttc" id="agroup__utility_html_ga0abcbcb6d4ed9f8dc86ca404255d36d1"><div class="ttname"><a href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">embed::distance</a></div><div class="ttdeci">constexpr T distance(T p_left, T p_right) noexcept</div><div class="ttdoc">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the...</div><div class="ttdef"><b>Definition:</b> math.hpp:126</div></div>
 <div class="ttc" id="agroup__utility_html_ga4d83f2b0d5ca7f22c7170e2999018fc7"><div class="ttname"><a href="group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7">embed::multiply</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; multiply(T p_lhs, T p_rhs) noexcept</div><div class="ttdoc">Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ...</div><div class="ttdef"><b>Definition:</b> math.hpp:28</div></div>
