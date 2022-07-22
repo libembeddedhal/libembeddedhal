@@ -1,6 +1,0 @@
-<map id="embed::percent::to_string" name="embed::percent::to_string">
-<area shape="rect" id="node1" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="5,49,132,90"/>
-<area shape="rect" id="node2" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="180,5,348,32"/>
-<area shape="rect" id="node3" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="181,56,347,83"/>
-<area shape="rect" id="node4" href="$classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773" title="Get raw integral value." alt="" coords="195,107,333,149"/>
-</map>

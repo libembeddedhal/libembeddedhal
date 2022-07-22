@@ -9,5 +9,6 @@ var searchData=
   ['frequency_6',['frequency',['../structembed_1_1frequency.html',1,'embed::frequency'],['../structembed_1_1counter_1_1uptime__t.html#a8f6af3c2690dae7979573c06cf4bf7c5',1,'embed::counter::uptime_t::frequency()'],['../structembed_1_1pwm_1_1settings.html#a77b5d570a8eb4892098f1eb3f479398f',1,'embed::pwm::settings::frequency()']]],
   ['frequency_2ehpp_7',['frequency.hpp',['../frequency_8hpp.html',1,'']]],
   ['from_5fratio_8',['from_ratio',['../classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27',1,'embed::percent']]],
-  ['full_5fscale_9',['full_scale',['../structembed_1_1accelerometer_1_1sample.html#ab04a96c93d03b85831eb46b96739a322',1,'embed::accelerometer::sample']]]
+  ['from_5fraw_9',['from_raw',['../classembed_1_1percent.html#a4a2ae6a33c1dbbefc292c791b325d5ad',1,'embed::percent']]],
+  ['full_5fscale_10',['full_scale',['../structembed_1_1accelerometer_1_1sample.html#ab04a96c93d03b85831eb46b96739a322',1,'embed::accelerometer::sample']]]
 ];

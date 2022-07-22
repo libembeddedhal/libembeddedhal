@@ -333,10 +333,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">distance</a> (T p_left, T p_right) noexcept</td></tr>
 <tr class="memdesc:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of their difference.  <a href="group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">More...</a><br /></td></tr>
 <tr class="separator:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
+<tr class="memitem:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::make_unsigned_t&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">distance</a> (T p_left, T p_right) noexcept</td></tr>
+<tr class="memdesc:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of their difference.  <a href="namespaceembed.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1">More...</a><br /></td></tr>
+<tr class="separator:ga0abcbcb6d4ed9f8dc86ca404255d36d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memTemplParams" colspan="2">template&lt;std::integral T, size_t SourceWidth, std::integral U&gt; </td></tr>
 <tr class="memitem:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">upscale_integer</a> (U p_value) noexcept</td></tr>
 <tr class="memdesc:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.  <a href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">More...</a><br /></td></tr>
 <tr class="separator:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga860cfe310c0207e449c3b382cc49794b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">to_string</a> (const <a class="el" href="classembed_1_1percent.html">percent</a> &amp;p_percent) noexcept</td></tr>
+<tr class="memdesc:ga860cfe310c0207e449c3b382cc49794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert this percentage value into a string from -1.0 to +1.0  <a href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">More...</a><br /></td></tr>
+<tr class="separator:ga860cfe310c0207e449c3b382cc49794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3955013d1c787672eb624ce83e2ab9f9"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9">delay</a> (<a class="el" href="classembed_1_1serial.html">serial</a> &amp;p_serial, size_t p_length) noexcept</td></tr>
 <tr class="memdesc:ga3955013d1c787672eb624ce83e2ab9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay execution until the serial buffer has reached a specific number of buffered bytes.  <a href="group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9">More...</a><br /></td></tr>
 <tr class="separator:ga3955013d1c787672eb624ce83e2ab9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +454,60 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga0abcbcb6d4ed9f8dc86ca404255d36d1" name="ga0abcbcb6d4ed9f8dc86ca404255d36d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0abcbcb6d4ed9f8dc86ca404255d36d1">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::make_unsigned_t&lt; T &gt; embed::distance </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>p_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>p_right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of their difference. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- integral type of the two values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_left</td><td>- the first point of the distance calculation </td></tr>
+    <tr><td class="paramname">p_right</td><td>- the second point of the distance calculation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr T - absolute value of the difference between the two points. </dd></dl>
+
+</div>
+</div>
 <a id="a211adbeffac02bf2b2a99dea8b4747f1" name="a211adbeffac02bf2b2a99dea8b4747f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a211adbeffac02bf2b2a99dea8b4747f1">&#9670;&nbsp;</a></span>is_a_test()</h2>
 

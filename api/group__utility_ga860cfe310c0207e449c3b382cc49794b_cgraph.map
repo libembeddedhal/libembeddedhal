@@ -1,0 +1,9 @@
+<map id="embed::to_string" name="embed::to_string">
+<area shape="rect" id="node1" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="5,81,123,108"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f" title="Get +100% percentage." alt="" coords="171,31,311,57"/>
+<area shape="rect" id="node5" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="172,81,309,108"/>
+<area shape="rect" id="node7" href="$classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773" title="Get raw integral value." alt="" coords="172,133,309,174"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1" title="Construct 0% percent object." alt="" coords="363,56,522,83"/>
+<area shape="rect" id="node4" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="359,5,527,32"/>
+<area shape="rect" id="node6" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="360,107,525,133"/>
+</map>

@@ -219,6 +219,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">embed::upscale_integer</a> (U p_value) noexcept</td></tr>
 <tr class="memdesc:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upscale an integer value of arbitrary bit resolution to a new fixed with integer value.  <a href="group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69">More...</a><br /></td></tr>
 <tr class="separator:gab88ee85bff9e886fd97d1a5c47a87a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga860cfe310c0207e449c3b382cc49794b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">embed::to_string</a> (const <a class="el" href="classembed_1_1percent.html">percent</a> &amp;p_percent) noexcept</td></tr>
+<tr class="memdesc:ga860cfe310c0207e449c3b382cc49794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert this percentage value into a string from -1.0 to +1.0  <a href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">More...</a><br /></td></tr>
+<tr class="separator:ga860cfe310c0207e449c3b382cc49794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </td></tr>
 <tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">embed::delay</a> (Timeout p_timeout_function) noexcept</td></tr>
 <tr class="memdesc:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">More...</a><br /></td></tr>
@@ -701,7 +704,7 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0abcbcb6d4ed9f8dc86ca404255d36d1_icgraph.svg" width="284" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0abcbcb6d4ed9f8dc86ca404255d36d1_icgraph.svg" width="354" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1127,6 +1130,56 @@ template&lt;size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>constexpr std::array&lt;char, N + 1&gt; - the char array object </dd></dl>
+
+</div>
+</div>
+<a id="ga860cfe310c0207e449c3b382cc49794b" name="ga860cfe310c0207e449c3b382cc49794b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga860cfe310c0207e449c3b382cc49794b">&#9670;&nbsp;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto embed::to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classembed_1_1percent.html">percent</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert this percentage value into a string from -1.0 to +1.0 </p>
+<p >Strings are computed using integer arithmetic only.</p>
+<p >The format of the string will follow these rules:</p><ul>
+<li>Will always have a leading + or - sign</li>
+<li>Will always be 13 characters where the last character is the '\0'</li>
+<li>Will start with either a '1' or a '0' character</li>
+</ul>
+<p >Example string:</p>
+<ul>
+<li>+1.000000000</li>
+<li>+0.250000000</li>
+<li>+0.125000000</li>
+<li>-0.333333333</li>
+<li>-0.111111111</li>
+<li>-0.666666667</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>auto - string representation of the percent. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga860cfe310c0207e449c3b382cc49794b_cgraph.svg" width="532" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

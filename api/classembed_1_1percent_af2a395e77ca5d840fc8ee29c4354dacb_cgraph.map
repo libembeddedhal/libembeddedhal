@@ -1,4 +1,8 @@
 <map id="embed::percent::operator=" name="embed::percent::operator=">
-<area shape="rect" id="node1" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node2" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="224,5,392,32"/>
+<area shape="rect" id="node1" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f" title="Get +100% percentage." alt="" coords="224,56,364,83"/>
+<area shape="rect" id="node4" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="412,5,580,32"/>
+<area shape="rect" id="node5" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="225,107,363,133"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1" title="Construct 0% percent object." alt="" coords="417,56,575,83"/>
+<area shape="rect" id="node6" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="413,107,579,133"/>
 </map>

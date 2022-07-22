@@ -1,0 +1,6 @@
+<map id="embed::percent::max" name="embed::percent::max">
+<area shape="rect" id="node1" title="Get +100% percentage." alt="" coords="224,56,364,83"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="17,56,164,83"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga860cfe310c0207e449c3b382cc49794b" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="32,107,149,133"/>
+</map>

@@ -117,13 +117,6 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b">scale</a> (<a class="el" href="classembed_1_1percent.html">percent</a> p_value1, <a class="el" href="classembed_1_1percent.html">percent</a> p_value2)</td></tr>
-<tr class="memdesc:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the percent after it is scaled to a range. The output percent is bound within the given range. If the percent is greater than or equal to the maximum bounds of the range, then 100 percent is returned. Likewise, if the percent is less than or equal to the minimum bounds of the range, then 0 percent is returned.  <a href="classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b">More...</a><br /></td></tr>
-<tr class="separator:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
-<tr class="memitem:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a4d715bd03b1ad7d7920d3300cb0f7763">scale</a> (T p_value1, T p_value2)</td></tr>
-<tr class="memdesc:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the percent after it is scaled to a range. The output value is bound within the given range. If the percent is greater than or equal to 100 percent, then the maximum value of the range is returned. Likewise, if the value is less than or equal to 0 percent, then the minimum value of the range is returned.  <a href="classembed_1_1percent.html#a4d715bd03b1ad7d7920d3300cb0f7763">More...</a><br /></td></tr>
-<tr class="separator:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3635a4d8e47f6a65226ee6391509f3a1"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1">percent</a> () noexcept</td></tr>
 <tr class="memdesc:a3635a4d8e47f6a65226ee6391509f3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct 0% percent object.  <a href="classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1">More...</a><br /></td></tr>
 <tr class="separator:a3635a4d8e47f6a65226ee6391509f3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,9 +126,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2a395e77ca5d840fc8ee29c4354dacb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classembed_1_1percent.html">percent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb">operator=</a> (std::floating_point auto p_ratio) noexcept</td></tr>
 <tr class="memdesc:af2a395e77ca5d840fc8ee29c4354dacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator for a percent object based on a floating point value.  <a href="classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb">More...</a><br /></td></tr>
 <tr class="separator:af2a395e77ca5d840fc8ee29c4354dacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad776812c80964b900f3d1644bea1d773"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773">raw_value</a> () const noexcept</td></tr>
-<tr class="memdesc:ad776812c80964b900f3d1644bea1d773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get raw integral value.  <a href="classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773">More...</a><br /></td></tr>
-<tr class="separator:ad776812c80964b900f3d1644bea1d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642dbcdfc12e1844ab286d524f4c45d7"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
 <tr class="memitem:a642dbcdfc12e1844ab286d524f4c45d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a642dbcdfc12e1844ab286d524f4c45d7">to</a> () const noexcept</td></tr>
 <tr class="memdesc:a642dbcdfc12e1844ab286d524f4c45d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert percent to a floating point representation.  <a href="classembed_1_1percent.html#a642dbcdfc12e1844ab286d524f4c45d7">More...</a><br /></td></tr>
@@ -146,9 +136,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c97fe3a6e1f7d57f0f486d6bd9c7afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a0c97fe3a6e1f7d57f0f486d6bd9c7afa">operator double</a> () const noexcept</td></tr>
 <tr class="memdesc:a0c97fe3a6e1f7d57f0f486d6bd9c7afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">explicit cast to double.  <a href="classembed_1_1percent.html#a0c97fe3a6e1f7d57f0f486d6bd9c7afa">More...</a><br /></td></tr>
 <tr class="separator:a0c97fe3a6e1f7d57f0f486d6bd9c7afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e98c88a9266480216893984aa65affb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a5e98c88a9266480216893984aa65affb">to_string</a> () const noexcept</td></tr>
-<tr class="memdesc:a5e98c88a9266480216893984aa65affb"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert this percentage value into a string from -1.0 to +1.0  <a href="classembed_1_1percent.html#a5e98c88a9266480216893984aa65affb">More...</a><br /></td></tr>
-<tr class="separator:a5e98c88a9266480216893984aa65affb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495727f30b8c3c67e8f1e5c809800017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a495727f30b8c3c67e8f1e5c809800017">operator-</a> () const</td></tr>
+<tr class="separator:a495727f30b8c3c67e8f1e5c809800017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b">scale</a> (<a class="el" href="classembed_1_1percent.html">percent</a> p_value1, <a class="el" href="classembed_1_1percent.html">percent</a> p_value2)</td></tr>
+<tr class="memdesc:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the percent after it is scaled to a range. The output percent is bound within the given range. If the percent is greater than or equal to the maximum bounds of the range, then 100 percent is returned. Likewise, if the percent is less than or equal to the minimum bounds of the range, then 0 percent is returned.  <a href="classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b">More...</a><br /></td></tr>
+<tr class="separator:afa379fbbb92bc5dc22f0dce8bcf7ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
+<tr class="memitem:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a4d715bd03b1ad7d7920d3300cb0f7763">scale</a> (T p_value1, T p_value2)</td></tr>
+<tr class="memdesc:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the percent after it is scaled to a range. The output value is bound within the given range. If the percent is greater than or equal to 100 percent, then the maximum value of the range is returned. Likewise, if the value is less than or equal to 0 percent, then the minimum value of the range is returned.  <a href="classembed_1_1percent.html#a4d715bd03b1ad7d7920d3300cb0f7763">More...</a><br /></td></tr>
+<tr class="separator:a4d715bd03b1ad7d7920d3300cb0f7763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad776812c80964b900f3d1644bea1d773"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773">raw_value</a> () const noexcept</td></tr>
+<tr class="memdesc:ad776812c80964b900f3d1644bea1d773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get raw integral value.  <a href="classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773">More...</a><br /></td></tr>
+<tr class="separator:ad776812c80964b900f3d1644bea1d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e21e0b275fe464d37f11f1abf6803d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a03e21e0b275fe464d37f11f1abf6803d">operator&lt;=&gt;</a> (const <a class="el" href="classembed_1_1percent.html">percent</a> &amp;) const noexcept=default</td></tr>
 <tr class="memdesc:a03e21e0b275fe464d37f11f1abf6803d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default operators for &lt;, &lt;=, &gt;, &gt;= and ==.  <a href="classembed_1_1percent.html#a03e21e0b275fe464d37f11f1abf6803d">More...</a><br /></td></tr>
 <tr class="separator:a03e21e0b275fe464d37f11f1abf6803d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +166,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad205fdaffa0fc8a9b7c227b704571b74"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html#a0b8494924dac5f6c1a8cc6fd0528cb69">overflow_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#ad205fdaffa0fc8a9b7c227b704571b74">raw_zero</a> () noexcept</td></tr>
 <tr class="memdesc:ad205fdaffa0fc8a9b7c227b704571b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 0% value in its raw representation.  <a href="classembed_1_1percent.html#ad205fdaffa0fc8a9b7c227b704571b74">More...</a><br /></td></tr>
 <tr class="separator:ad205fdaffa0fc8a9b7c227b704571b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9fc596e3daa1948d0112b98544ef4f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f">max</a> () noexcept</td></tr>
+<tr class="memdesc:a0f9fc596e3daa1948d0112b98544ef4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get +100% percentage.  <a href="classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f">More...</a><br /></td></tr>
+<tr class="separator:a0f9fc596e3daa1948d0112b98544ef4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d4dc647320164d22dc480723c9671b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b">min</a> () noexcept</td></tr>
+<tr class="memdesc:a82d4dc647320164d22dc480723c9671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get -100% percentage.  <a href="classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b">More...</a><br /></td></tr>
+<tr class="separator:a82d4dc647320164d22dc480723c9671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb80870920c804148abc13cd7c1a38cc"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#acb80870920c804148abc13cd7c1a38cc">zero</a> () noexcept</td></tr>
+<tr class="memdesc:acb80870920c804148abc13cd7c1a38cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get 0% percentage.  <a href="classembed_1_1percent.html#acb80870920c804148abc13cd7c1a38cc">More...</a><br /></td></tr>
+<tr class="separator:acb80870920c804148abc13cd7c1a38cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac103b96ed873d2d7500795d98e9aa666"><td class="memTemplParams" colspan="2">template&lt;size_t BitWidth, std::integral T&gt; </td></tr>
 <tr class="memitem:ac103b96ed873d2d7500795d98e9aa666"><td class="memTemplItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666">convert</a> (T p_value) noexcept</td></tr>
 <tr class="memdesc:ac103b96ed873d2d7500795d98e9aa666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a fixed width integer value into a percentage based on its distance to the end of its bit width.  <a href="classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666">More...</a><br /></td></tr>
@@ -175,6 +183,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3031fcd41ebdbc14fe77114d239c0b27"><td class="memTemplItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27">from_ratio</a> (T p_progress, T p_maximum) noexcept</td></tr>
 <tr class="memdesc:a3031fcd41ebdbc14fe77114d239c0b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a percentage based on input relative to the maximum possible value.  <a href="classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27">More...</a><br /></td></tr>
 <tr class="separator:a3031fcd41ebdbc14fe77114d239c0b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2ae6a33c1dbbefc292c791b325d5ad"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1percent.html#a4a2ae6a33c1dbbefc292c791b325d5ad">from_raw</a> (<a class="el" href="classembed_1_1percent.html#acc66ace6b069d01dc4ed5b241a41e8cc">int_t</a> p_raw_value)</td></tr>
+<tr class="separator:a4a2ae6a33c1dbbefc292c791b325d5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -251,7 +261,7 @@ Friends</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a3635a4d8e47f6a65226ee6391509f3a1_icgraph.svg" width="571" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a3635a4d8e47f6a65226ee6391509f3a1_icgraph.svg" width="607" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -411,6 +421,118 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a4a2ae6a33c1dbbefc292c791b325d5ad" name="a4a2ae6a33c1dbbefc292c791b325d5ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2ae6a33c1dbbefc292c791b325d5ad">&#9670;&nbsp;</a></span>from_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a> embed::percent::from_raw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classembed_1_1percent.html#acc66ace6b069d01dc4ed5b241a41e8cc">int_t</a>&#160;</td>
+          <td class="paramname"><em>p_raw_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a4a2ae6a33c1dbbefc292c791b325d5ad_cgraph.svg" width="388" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0f9fc596e3daa1948d0112b98544ef4f" name="a0f9fc596e3daa1948d0112b98544ef4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9fc596e3daa1948d0112b98544ef4f">&#9670;&nbsp;</a></span>max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a> embed::percent::max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get +100% percentage. </p>
+<dl class="section return"><dt>Returns</dt><dd>constexpr percent - maximum positive percentage </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a0f9fc596e3daa1948d0112b98544ef4f_cgraph.svg" width="367" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a0f9fc596e3daa1948d0112b98544ef4f_icgraph.svg" width="370" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a82d4dc647320164d22dc480723c9671b" name="a82d4dc647320164d22dc480723c9671b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d4dc647320164d22dc480723c9671b">&#9670;&nbsp;</a></span>min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a> embed::percent::min </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get -100% percentage. </p>
+<dl class="section return"><dt>Returns</dt><dd>constexpr percent - maximum negative percentage </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a82d4dc647320164d22dc480723c9671b_cgraph.svg" width="362" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a82d4dc647320164d22dc480723c9671b_icgraph.svg" width="367" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a0c97fe3a6e1f7d57f0f486d6bd9c7afa" name="a0c97fe3a6e1f7d57f0f486d6bd9c7afa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c97fe3a6e1f7d57f0f486d6bd9c7afa">&#9670;&nbsp;</a></span>operator double()</h2>
 
@@ -464,6 +586,31 @@ Here is the caller graph for this function:</div>
 
 <p>explicit cast to float. </p>
 <dl class="section return"><dt>Returns</dt><dd>float - float representation of the percentage between 0.0f and 1.0f. </dd></dl>
+
+</div>
+</div>
+<a id="a495727f30b8c3c67e8f1e5c809800017" name="a495727f30b8c3c67e8f1e5c809800017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495727f30b8c3c67e8f1e5c809800017">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classembed_1_1percent.html">percent</a> embed::percent::operator- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -531,7 +678,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_af2a395e77ca5d840fc8ee29c4354dacb_cgraph.svg" width="398" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_af2a395e77ca5d840fc8ee29c4354dacb_cgraph.svg" width="586" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -573,7 +720,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a706fa1b17fbcb4ccdd8cc6b037b224ee_cgraph.svg" width="375" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a706fa1b17fbcb4ccdd8cc6b037b224ee_cgraph.svg" width="375" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -607,7 +754,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a18867853ebb7f7101932f298ef9ac059_icgraph.svg" width="592" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a18867853ebb7f7101932f298ef9ac059_icgraph.svg" width="588" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -641,7 +788,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_addd3062c4b442314f9b135b532367c44_icgraph.svg" width="562" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_addd3062c4b442314f9b135b532367c44_icgraph.svg" width="586" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -675,7 +822,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_ad776812c80964b900f3d1644bea1d773_icgraph.svg" width="375" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_ad776812c80964b900f3d1644bea1d773_icgraph.svg" width="375" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -762,7 +909,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_afa379fbbb92bc5dc22f0dce8bcf7ea1b_cgraph.svg" width="767" height="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_afa379fbbb92bc5dc22f0dce8bcf7ea1b_cgraph.svg" width="767" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -823,7 +970,7 @@ template&lt;std::integral T&gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a4d715bd03b1ad7d7920d3300cb0f7763_cgraph.svg" width="374" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a4d715bd03b1ad7d7920d3300cb0f7763_cgraph.svg" width="590" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -871,8 +1018,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a5e98c88a9266480216893984aa65affb" name="a5e98c88a9266480216893984aa65affb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e98c88a9266480216893984aa65affb">&#9670;&nbsp;</a></span>to_string()</h2>
+<a id="acb80870920c804148abc13cd7c1a38cc" name="acb80870920c804148abc13cd7c1a38cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb80870920c804148abc13cd7c1a38cc">&#9670;&nbsp;</a></span>zero()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,42 +1028,21 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto embed::percent::to_string </td>
+          <td class="memname">static constexpr <a class="el" href="classembed_1_1percent.html">percent</a> embed::percent::zero </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>convert this percentage value into a string from -1.0 to +1.0 </p>
-<p >Strings are computed using integer arithmetic only.</p>
-<p >The format of the string will follow these rules:</p><ul>
-<li>Will always have a leading + or - sign</li>
-<li>Will always be 13 characters where the last character is the '\0'</li>
-<li>Will start with either a '1' or a '0' character</li>
-</ul>
-<p >Example string:</p>
-<ul>
-<li>+1.000000000</li>
-<li>+0.250000000</li>
-<li>+0.125000000</li>
-<li>-0.333333333</li>
-<li>-0.111111111</li>
-<li>-0.666666667</li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>auto - string representation of the percent. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1percent_a5e98c88a9266480216893984aa65affb_cgraph.svg" width="354" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>Get 0% percentage. </p>
+<dl class="section return"><dt>Returns</dt><dd>constexpr percent - zero percentage </dd></dl>
 
 </div>
 </div>

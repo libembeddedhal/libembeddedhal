@@ -1,4 +1,5 @@
 <map id="embed::distance" name="embed::distance">
-<area shape="rect" id="node1" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="163,5,279,32"/>
-<area shape="rect" id="node2" href="$group__utility.html#ga7c61114c56c371ced7e50428411220db" title="Calculate divider for the closest resulting frequency to target." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node1" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="232,31,348,57"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga7c61114c56c371ced7e50428411220db" title="Calculate divider for the closest resulting frequency to target." alt="" coords="40,5,149,32"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a706fa1b17fbcb4ccdd8cc6b037b224ee" title="Comparison operator." alt="" coords="5,56,184,83"/>
 </map>
