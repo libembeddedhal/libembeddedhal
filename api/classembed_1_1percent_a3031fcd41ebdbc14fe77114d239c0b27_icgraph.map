@@ -1,5 +1,6 @@
 <map id="embed::percent::from_ratio" name="embed::percent::from_ratio">
-<area shape="rect" id="node1" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="200,35,343,76"/>
-<area shape="rect" id="node2" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="11,5,146,47"/>
-<area shape="rect" id="node3" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="5,71,152,98"/>
+<area shape="rect" id="node1" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="200,57,343,98"/>
+<area shape="rect" id="node2" href="$namespaceembed.html#afa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="33,5,125,32"/>
+<area shape="rect" id="node3" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="11,57,146,98"/>
+<area shape="rect" id="node4" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="5,123,152,149"/>
 </map>

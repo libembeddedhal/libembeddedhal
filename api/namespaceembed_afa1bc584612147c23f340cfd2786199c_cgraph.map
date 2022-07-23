@@ -1,0 +1,9 @@
+<map id="embed::map" name="embed::map">
+<area shape="rect" id="node1" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="5,81,97,108"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="145,74,288,115"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1" title="Construct 0% percent object." alt="" coords="341,5,499,32"/>
+<area shape="rect" id="node4" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="336,56,504,83"/>
+<area shape="rect" id="node5" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="337,107,503,133"/>
+<area shape="rect" id="node6" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="337,157,503,184"/>
+<area shape="rect" id="node7" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="552,157,707,184"/>
+</map>

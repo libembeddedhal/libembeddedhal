@@ -163,6 +163,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1linear__potentiometer.html">linear_potentiometer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear potentiometer driver that takes an <a class="el" href="classembed_1_1adc.html" title="Analog to Digital Converter (ADC) hardware abstraction interface.">embed::adc</a> and a settings struct, and reads the distance the linear potentiometer has traveled in micrometer.  <a href="classembed_1_1linear__potentiometer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1map__range.html">map_range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that contains a range from x to y or y to x.  <a href="structembed_1_1map__range.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1motor.html">motor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware abstraction for open loop continuous rotary and linear actuators.  <a href="classembed_1_1motor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +320,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gad0c4289b83626fe23439ae4dd09e38f1"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__i2c.html#gad0c4289b83626fe23439ae4dd09e38f1">write_then_read</a> (<a class="el" href="classembed_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
 <tr class="memdesc:gad0c4289b83626fe23439ae4dd09e38f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">write and then return an array of read bytes from target device on <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#gad0c4289b83626fe23439ae4dd09e38f1">More...</a><br /></td></tr>
 <tr class="separator:gad0c4289b83626fe23439ae4dd09e38f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1bc584612147c23f340cfd2786199c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afa1bc584612147c23f340cfd2786199c"><td class="memTemplItemLeft" align="right" valign="top">constexpr boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#afa1bc584612147c23f340cfd2786199c">map</a> (T p_target, <a class="el" href="structembed_1_1map__range.html">map_range</a>&lt; T &gt; p_input_range, <a class="el" href="structembed_1_1map__range.html">map_range</a>&lt; T &gt; p_output_range) noexcept</td></tr>
+<tr class="memdesc:afa1bc584612147c23f340cfd2786199c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map an target value [x] from an input range [a,b] to an output range [c,d].  <a href="namespaceembed.html#afa1bc584612147c23f340cfd2786199c">More...</a><br /></td></tr>
+<tr class="separator:afa1bc584612147c23f340cfd2786199c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7">multiply</a> (T p_lhs, T p_rhs) noexcept</td></tr>
 <tr class="memdesc:ga4d83f2b0d5ca7f22c7170e2999018fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value.  <a href="group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7">More...</a><br /></td></tr>
@@ -576,6 +583,84 @@ false - this application is not a test </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true - matches the platform string </dd>
 <dd>
 false - does not matches the platform string </dd></dl>
+
+</div>
+</div>
+<a id="afa1bc584612147c23f340cfd2786199c" name="afa1bc584612147c23f340cfd2786199c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1bc584612147c23f340cfd2786199c">&#9670;&nbsp;</a></span>map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr boost::leaf::result&lt; T &gt; embed::map </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>p_target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structembed_1_1map__range.html">map_range</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>p_input_range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structembed_1_1map__range.html">map_range</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>p_output_range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map an target value [x] from an input range [a,b] to an output range [c,d]. </p>
+<p >Another term for this is an affine transformation which follows this equation: </p><pre class="fragment">                  / d - c \
+   y = (x - a) * | --------| + c
+                  \ b - a /
+</pre><p> For example:</p>
+<p >let x = 5 let input_range = [0,10] let output_range = [100, 200] The result will be 150.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- integral type equal to or below 32-bits </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_target</td><td>- target value within p_input_range to be mapped to the output range. </td></tr>
+    <tr><td class="paramname">p_input_range</td><td>- the input range of p_target </td></tr>
+    <tr><td class="paramname">p_output_range</td><td>- the output range to map p_target to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr boost::leaf::result&lt;T&gt; - value mapped from input range to the output range. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::invalid_argument</td><td>if input_range has a distance of zero. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceembed_afa1bc584612147c23f340cfd2786199c_cgraph.svg" width="712" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

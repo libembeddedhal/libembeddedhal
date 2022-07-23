@@ -39,6 +39,7 @@ var annotated_dup =
       [ "interrupt_pin", "classembed_1_1interrupt__pin.html", "classembed_1_1interrupt__pin" ],
       [ "linear_encoder", "classembed_1_1linear__encoder.html", "classembed_1_1linear__encoder" ],
       [ "linear_potentiometer", "classembed_1_1linear__potentiometer.html", "classembed_1_1linear__potentiometer" ],
+      [ "map_range", "structembed_1_1map__range.html", "structembed_1_1map__range" ],
       [ "motor", "classembed_1_1motor.html", "classembed_1_1motor" ],
       [ "output_pin", "classembed_1_1output__pin.html", "classembed_1_1output__pin" ],
       [ "overflow_counter", "classembed_1_1overflow__counter.html", "classembed_1_1overflow__counter" ],

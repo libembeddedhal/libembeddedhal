@@ -1,12 +1,13 @@
 <map id="embed::percent::percent" name="embed::percent::percent">
-<area shape="rect" id="node1" title="Construct 0% percent object." alt="" coords="443,148,601,175"/>
-<area shape="rect" id="node2" href="$classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666" title="Convert a fixed width integer value into a percentage based on its distance to the end of its bit wid..." alt="" coords="230,5,389,32"/>
-<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="238,57,381,98"/>
-<area shape="rect" id="node5" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="17,123,164,149"/>
-<area shape="rect" id="node6" href="$classembed_1_1percent.html#a4a2ae6a33c1dbbefc292c791b325d5ad" title=" " alt="" coords="224,275,395,301"/>
-<area shape="rect" id="node7" href="$classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f" title="Get +100% percentage." alt="" coords="239,173,379,200"/>
-<area shape="rect" id="node10" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="241,224,378,251"/>
-<area shape="rect" id="node4" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="23,57,158,98"/>
-<area shape="rect" id="node8" href="$classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,173,176,200"/>
-<area shape="rect" id="node9" href="$group__utility.html#ga860cfe310c0207e449c3b382cc49794b" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="32,224,149,251"/>
+<area shape="rect" id="node1" title="Construct 0% percent object." alt="" coords="443,151,601,178"/>
+<area shape="rect" id="node2" href="$classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666" title="Convert a fixed width integer value into a percentage based on its distance to the end of its bit wid..." alt="" coords="230,9,389,35"/>
+<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="238,60,381,101"/>
+<area shape="rect" id="node6" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="17,126,164,153"/>
+<area shape="rect" id="node7" href="$classembed_1_1percent.html#a4a2ae6a33c1dbbefc292c791b325d5ad" title=" " alt="" coords="224,278,395,305"/>
+<area shape="rect" id="node8" href="$classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f" title="Get +100% percentage." alt="" coords="239,177,379,203"/>
+<area shape="rect" id="node11" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="241,227,378,254"/>
+<area shape="rect" id="node4" href="$namespaceembed.html#afa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="45,71,137,98"/>
+<area shape="rect" id="node5" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="23,5,158,47"/>
+<area shape="rect" id="node9" href="$classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,227,176,254"/>
+<area shape="rect" id="node10" href="$group__utility.html#ga860cfe310c0207e449c3b382cc49794b" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="32,177,149,203"/>
 </map>

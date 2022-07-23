@@ -20,6 +20,7 @@ var dir_d44e2fde02e0e8a6a790ae54b19f7024 =
     [ "enum.hpp", "enum_8hpp.html", "enum_8hpp" ],
     [ "error.hpp", "error_8hpp.html", "error_8hpp" ],
     [ "frequency.hpp", "frequency_8hpp.html", "frequency_8hpp" ],
+    [ "map.hpp", "map_8hpp.html", "map_8hpp" ],
     [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
     [ "overflow_counter.hpp", "overflow__counter_8hpp.html", null ],
     [ "percent.hpp", "percent_8hpp.html", "percent_8hpp" ],

@@ -33,6 +33,7 @@ var hierarchy =
     [ "embed::error::invalid_settings", "structembed_1_1error_1_1invalid__settings.html", null ],
     [ "embed::linear_encoder", "classembed_1_1linear__encoder.html", null ],
     [ "embed::linear_potentiometer", "classembed_1_1linear__potentiometer.html", null ],
+    [ "embed::map_range< T >", "structembed_1_1map__range.html", null ],
     [ "std::pmr::memory_resource", null, [
       [ "embed::static_memory_resource< BufferSize >", "classembed_1_1static__memory__resource.html", null ]
     ] ],

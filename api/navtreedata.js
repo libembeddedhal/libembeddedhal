@@ -63,7 +63,7 @@ var NAVTREEINDEX =
 [
 "accelerometer_2unit_8hpp.html",
 "group__i2c.html#gab3da8ebe957f4f6042eadd908039bb19",
-"structembed_1_1mock_1_1timer.html#a6f12fd38291d5ac3f3370aaef857d8e2"
+"structembed_1_1mock_1_1output__pin.html#acb10c9f888e4fa0f9cc130171028ea59"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
