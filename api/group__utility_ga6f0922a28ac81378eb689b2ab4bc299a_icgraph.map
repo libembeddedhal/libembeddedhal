@@ -11,6 +11,6 @@
 <area shape="rect" id="node12" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="294,246,441,273"/>
 <area shape="rect" id="node13" href="$group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372" title="Scale down a frequency by an integer factor." alt="" coords="506,297,625,323"/>
 <area shape="rect" id="node14" href="$group__utility.html#ga595b4275cff4d56d9d6226568c7c9809" title="Calculates and returns the wavelength in seconds." alt="" coords="499,347,632,374"/>
-<area shape="rect" id="node10" href="$namespaceembed.html#afa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="321,129,413,155"/>
+<area shape="rect" id="node10" href="$group__utility.html#gafa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="321,129,413,155"/>
 <area shape="rect" id="node11" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="300,180,435,221"/>
 </map>

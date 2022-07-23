@@ -10,6 +10,6 @@
 <area shape="rect" id="node4" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="291,71,444,98"/>
 <area shape="rect" id="node5" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,71,243,98"/>
 <area shape="rect" id="node6" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,71,97,98"/>
-<area shape="rect" id="node9" href="$namespaceembed.html#afa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="321,129,413,155"/>
+<area shape="rect" id="node9" href="$group__utility.html#gafa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="321,129,413,155"/>
 <area shape="rect" id="node10" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="300,180,435,221"/>
 </map>

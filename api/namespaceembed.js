@@ -72,7 +72,7 @@ var namespaceembed =
     [ "generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
     [ "is_a_test", "namespaceembed.html#a211adbeffac02bf2b2a99dea8b4747f1", null ],
     [ "is_platform", "namespaceembed.html#ac417a8389f38767cd28f8ae422fdb0f2", null ],
-    [ "map", "namespaceembed.html#afa1bc584612147c23f340cfd2786199c", null ],
+    [ "map", "group__utility.html#gafa1bc584612147c23f340cfd2786199c", null ],
     [ "multiply", "group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7", null ],
     [ "operator*", "group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581", null ],
     [ "operator/", "group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372", null ],

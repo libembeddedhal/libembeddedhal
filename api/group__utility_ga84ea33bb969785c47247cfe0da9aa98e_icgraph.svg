@@ -180,7 +180,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="namespaceembed.html#afa1bc584612147c23f340cfd2786199c" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
+<g id="a_node9"><a xlink:href="group__utility.html#gafa1bc584612147c23f340cfd2786199c" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
 <polygon fill="white" stroke="black" points="237,-164.5 237,-183.5 306,-183.5 306,-164.5 237,-164.5"/>
 <text text-anchor="middle" x="271.5" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::map</text>
 </a>

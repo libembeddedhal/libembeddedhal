@@ -1,16 +1,9 @@
 var NAVTREEINDEX2 =
 {
-"structembed_1_1mock_1_1output__pin.html#acb10c9f888e4fa0f9cc130171028ea59":[1,9,1,1],
-"structembed_1_1mock_1_1output__pin.html#acd5bf6f217722d71b181b94ca6da5cca":[1,9,1,0],
-"structembed_1_1mock_1_1pwm.html":[1,10,1],
-"structembed_1_1mock_1_1pwm.html#a01ff1b835b0d56cb84bc0c176ee99cac":[1,10,1,2],
-"structembed_1_1mock_1_1pwm.html#a8114258c054ca72c39bb8dcd0a695b05":[1,10,1,0],
-"structembed_1_1mock_1_1pwm.html#abfdd52e0ff5b33f94cdb667bd4dbac90":[1,10,1,1],
-"structembed_1_1mock_1_1servo.html":[1,12,1],
 "structembed_1_1mock_1_1servo.html#a23a049f510c93c52a0f2784c0d10d7fa":[1,12,1,0],
 "structembed_1_1mock_1_1servo.html#a9cf5d1ffd18b57285edccfe29f7900be":[1,12,1,1],
-"structembed_1_1mock_1_1temperature__sensor.html":[2,0,0,4,10],
 "structembed_1_1mock_1_1temperature__sensor.html":[4,0,0,2,10],
+"structembed_1_1mock_1_1temperature__sensor.html":[2,0,0,4,10],
 "structembed_1_1mock_1_1temperature__sensor.html#aa4df82f63a63f0363eb514f907e1fb1c":[4,0,0,2,10,0],
 "structembed_1_1mock_1_1temperature__sensor.html#aa4df82f63a63f0363eb514f907e1fb1c":[2,0,0,4,10,0],
 "structembed_1_1mock_1_1timer.html":[1,15,1],

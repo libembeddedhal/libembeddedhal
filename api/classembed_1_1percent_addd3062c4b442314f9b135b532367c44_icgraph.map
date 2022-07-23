@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="224,57,367,98"/>
 <area shape="rect" id="node5" href="$classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="17,123,164,149"/>
 <area shape="rect" id="node6" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="227,173,364,200"/>
-<area shape="rect" id="node3" href="$namespaceembed.html#afa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="45,5,137,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#gafa1bc584612147c23f340cfd2786199c" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="45,5,137,32"/>
 <area shape="rect" id="node4" href="$structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183" title="Conversion from duty cycle to percentage." alt="" coords="23,57,158,98"/>
 <area shape="rect" id="node7" href="$classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb" title="Assignment operator for a percent object based on a floating point value." alt="" coords="5,173,176,200"/>
 <area shape="rect" id="node8" href="$group__utility.html#ga860cfe310c0207e449c3b382cc49794b" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="32,224,149,251"/>

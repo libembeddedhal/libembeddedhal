@@ -17,6 +17,13 @@ var group__utility =
       [ "operator<=>", "structembed_1_1frequency.html#ac4fe319cedfab09cd4d71a41d73a5048", null ],
       [ "value_hz", "structembed_1_1frequency.html#a46e216809cc6b203668069cd15c94180", null ]
     ] ],
+    [ "embed::map_range< T >", "structembed_1_1map__range.html", [
+      [ "distance", "structembed_1_1map__range.html#a1358d673be561b9550aaa727ce65085c", null ],
+      [ "max", "structembed_1_1map__range.html#aae9877884770482918f3e5a1238d99e6", null ],
+      [ "min", "structembed_1_1map__range.html#a62a05133e6a24e7a6aac51018f35e47a", null ],
+      [ "x", "structembed_1_1map__range.html#adbdb43c8b6398d3926d2d9f204604766", null ],
+      [ "y", "structembed_1_1map__range.html#ab31c8e0f197505963fef2cdc6dfcea91", null ]
+    ] ],
     [ "embed::overflow_counter< CountBitWidth >", "classembed_1_1overflow__counter.html", [
       [ "reset", "classembed_1_1overflow__counter.html#ad8b678431adb27963d8a18266b7c813c", null ],
       [ "update", "classembed_1_1overflow__counter.html#a0e0bde69bb3acba1b7415e8c80b59990", null ]
@@ -78,6 +85,7 @@ var group__utility =
     [ "embed::distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "embed::duration_from_cycles", "group__utility.html#ga19bf555b8e14f12184073b07791fd56b", null ],
     [ "embed::generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
+    [ "embed::map", "group__utility.html#gafa1bc584612147c23f340cfd2786199c", null ],
     [ "embed::multiply", "group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7", null ],
     [ "embed::operator*", "group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581", null ],
     [ "embed::operator/", "group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372", null ],
