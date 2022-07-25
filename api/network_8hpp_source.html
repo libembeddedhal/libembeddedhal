@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('network_8hpp_source.html',''); initRes
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classembed_1_1can__network_1_1node__t.html#a06d855273423fc965c733671e6937afe">   88</a></span>    [[nodiscard]] <a class="code hl_struct" href="structembed_1_1can_1_1message__t.html">can::message_t</a> <a class="code hl_function" href="classembed_1_1can__network_1_1node__t.html#a06d855273423fc965c733671e6937afe">secure_get</a>() noexcept</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="comment">// Continuously check if the received CAN message is valid. NOTE: that, in</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="comment">// Continuously check if the received can message is valid. NOTE: that, in</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="comment">// general, the looping logic for this function almost never occurs as</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="comment">// copies from RAM/cache are fast between receive_handler and GetMessage()</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
@@ -191,65 +191,69 @@ $(document).ready(function(){initNavTree('network_8hpp_source.html',''); initRes
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  }</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">  192</a></span>  [[nodiscard]] boost::leaf::result&lt;node_t*&gt; <a class="code hl_function" href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">register_message_id</a>(</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_typedef" href="classembed_1_1can.html#a526ae12b76dffd3dda0891247da12b55">can::id_t</a> p_id) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <a class="code hl_class" href="classembed_1_1can__network_1_1node__t.html">node_t</a> empty_node;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="comment">// Insert an empty node_t into the map with the following ID as</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// the key. This is how each ID is remembered when calls to</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// receive_handler() and GetMessage() are performed. receive_handler()</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">// will ignore messages with IDs that are not already keys within the map.</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// GetMessage() will throw an exception.</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    m_messages.emplace(std::make_pair(p_id, empty_node));</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="comment">// Return reference to the newly made node_t.</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> &amp;m_messages[p_id];</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">  216</a></span>  [[nodiscard]] <a class="code hl_class" href="classembed_1_1can.html">can</a>&amp; <a class="code hl_function" href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">bus</a>() noexcept</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">return</span> *m_can;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">  229</a></span>  [[nodiscard]] <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_function" href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">get_internal_map</a>() noexcept</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span> m_messages;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">void</span> receive_handler(<span class="keyword">const</span> <a class="code hl_struct" href="structembed_1_1can_1_1message__t.html">can::message_t</a>&amp; p_message) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="comment">// Check if the map already has a value for this ID. This acts as the last</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// stage of the CAN filter for the CANBUS Network module. If the key</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// does NOT exist in the map, then this message will not be saved.</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment">// Typically, this only happens when the hardware filter has not been setup</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="comment">// properly to eliminate CAN messages that should be ignored.</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="comment">// Map lookups can be costly, especially in a interrupt context, so only</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="comment">// needing to hash/lookup the ID once is preferred. To prevent multiple</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// lookups, an iterator is stored into the message_node variable.</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keyword">auto</span> message_node = m_messages.find(p_message.id);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// If the ID has an associated value in the map, then the node std::pair&lt;&gt;</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="comment">// is returned, otherwise, the ::end() node is returned.</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">if</span> (message_node != m_messages.end()) {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      message_node-&gt;second.update(p_message);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  }</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  can* m_can{};</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  std::pmr::unordered_map&lt;uint32_t, node_t&gt; m_messages{};</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>};</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}  <span class="comment">// namespace embed</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">  193</a></span>  [[nodiscard]] boost::leaf::result&lt;node_t*&gt; <a class="code hl_function" href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">register_message_id</a>(</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_typedef" href="classembed_1_1can.html#a526ae12b76dffd3dda0891247da12b55">can::id_t</a> p_id) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <a class="code hl_class" href="classembed_1_1can__network_1_1node__t.html">node_t</a> empty_node;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// Insert an empty node_t into the map with the following ID as the key.</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// This is how each ID is remembered when calls to receive_handler() are</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">// performed. The receive_handler will ignore messages with IDs that are not</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// already keys within the map.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">auto</span> result = m_messages.emplace(std::make_pair(p_id, empty_node));</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">auto</span> was_successful = result.second;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">if</span> (!was_successful) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <span class="keywordflow">return</span> boost::leaf::new_error(std::errc::not_enough_memory);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">// Return reference to the newly made node_t.</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">return</span> &amp;m_messages[p_id];</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">  221</a></span>  [[nodiscard]] <a class="code hl_class" href="classembed_1_1can.html">can</a>&amp; <a class="code hl_function" href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">bus</a>() noexcept</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordflow">return</span> *m_can;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">  234</a></span>  [[nodiscard]] <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_function" href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">get_internal_map</a>() noexcept</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">return</span> m_messages;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordtype">void</span> receive_handler(<span class="keyword">const</span> <a class="code hl_struct" href="structembed_1_1can_1_1message__t.html">can::message_t</a>&amp; p_message) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="comment">// Check if the map already has a value for this ID. This acts as the last</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="comment">// stage of the can filter for the can bus network module. If the key</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="comment">// does NOT exist in the map, then this message will not be saved.</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// Typically, this only happens when the hardware filter has not been setup</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// properly to eliminate can messages that should be ignored.</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// Map lookups can be costly, especially in a interrupt context, so only</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="comment">// needing to hash/lookup the ID once is preferred. To prevent multiple</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="comment">// lookups, an iterator is stored into the message_node variable.</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">auto</span> message_node = m_messages.find(p_message.id);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">// If the ID has an associated value in the map, then the node std::pair&lt;&gt;</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="comment">// is returned, otherwise, the ::end() node is returned.</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">if</span> (message_node != m_messages.end()) {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      message_node-&gt;second.update(p_message);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  can* m_can{};</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  std::pmr::unordered_map&lt;uint32_t, node_t&gt; m_messages{};</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>};</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}  <span class="comment">// namespace embed</span></div>
 <div class="ttc" id="aclassembed_1_1can__network_1_1node__t_html"><div class="ttname"><a href="classembed_1_1can__network_1_1node__t.html">embed::can_network::node_t</a></div><div class="ttdoc">A can network node stores the can messages in a lock free way.</div><div class="ttdef"><b>Definition:</b> network.hpp:52</div></div>
 <div class="ttc" id="aclassembed_1_1can__network_1_1node__t_html_a06d855273423fc965c733671e6937afe"><div class="ttname"><a href="classembed_1_1can__network_1_1node__t.html#a06d855273423fc965c733671e6937afe">embed::can_network::node_t::secure_get</a></div><div class="ttdeci">can::message_t secure_get() noexcept</div><div class="ttdoc">Get this node's can message.</div><div class="ttdef"><b>Definition:</b> network.hpp:88</div></div>
 <div class="ttc" id="aclassembed_1_1can__network_1_1node__t_html_a19fd167a465fa79826a6c9c63a2c52bc"><div class="ttname"><a href="classembed_1_1can__network_1_1node__t.html#a19fd167a465fa79826a6c9c63a2c52bc">embed::can_network::node_t::node_t</a></div><div class="ttdeci">node_t(const node_t &amp;p_node) noexcept</div><div class="ttdoc">Construct a new node t object.</div><div class="ttdef"><b>Definition:</b> network.hpp:78</div></div>
 <div class="ttc" id="aclassembed_1_1can__network_1_1node__t_html_a773f9265156beb3a144f12a28e086300"><div class="ttname"><a href="classembed_1_1can__network_1_1node__t.html#a773f9265156beb3a144f12a28e086300">embed::can_network::node_t::node_t</a></div><div class="ttdeci">node_t() noexcept=default</div><div class="ttdoc">Construct a new node t object.</div></div>
 <div class="ttc" id="aclassembed_1_1can__network_html"><div class="ttname"><a href="classembed_1_1can__network.html">embed::can_network</a></div><div class="ttdoc">Manage, store, and organize messages received on the can bus.</div><div class="ttdef"><b>Definition:</b> network.hpp:39</div></div>
-<div class="ttc" id="aclassembed_1_1can__network_html_a3f2befcc28d123bb84135e6b0f89a5aa"><div class="ttname"><a href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">embed::can_network::register_message_id</a></div><div class="ttdeci">boost::leaf::result&lt; node_t * &gt; register_message_id(can::id_t p_id) noexcept</div><div class="ttdoc">Associate a can id with a node in the can network.</div><div class="ttdef"><b>Definition:</b> network.hpp:192</div></div>
-<div class="ttc" id="aclassembed_1_1can__network_html_a5fb560c77706b17c86ba6ecb9239ee20"><div class="ttname"><a href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">embed::can_network::get_internal_map</a></div><div class="ttdeci">const auto &amp; get_internal_map() noexcept</div><div class="ttdoc">Get the Internal Map object.</div><div class="ttdef"><b>Definition:</b> network.hpp:229</div></div>
-<div class="ttc" id="aclassembed_1_1can__network_html_a96a92b6dd1ccf34a0deb2ea82395e646"><div class="ttname"><a href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">embed::can_network::bus</a></div><div class="ttdeci">can &amp; bus() noexcept</div><div class="ttdoc">get a reference to the can peripheral driver</div><div class="ttdef"><b>Definition:</b> network.hpp:216</div></div>
+<div class="ttc" id="aclassembed_1_1can__network_html_a3f2befcc28d123bb84135e6b0f89a5aa"><div class="ttname"><a href="classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa">embed::can_network::register_message_id</a></div><div class="ttdeci">boost::leaf::result&lt; node_t * &gt; register_message_id(can::id_t p_id) noexcept</div><div class="ttdoc">Associate a can id with a node in the can network.</div><div class="ttdef"><b>Definition:</b> network.hpp:193</div></div>
+<div class="ttc" id="aclassembed_1_1can__network_html_a5fb560c77706b17c86ba6ecb9239ee20"><div class="ttname"><a href="classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20">embed::can_network::get_internal_map</a></div><div class="ttdeci">const auto &amp; get_internal_map() noexcept</div><div class="ttdoc">Get the Internal Map object.</div><div class="ttdef"><b>Definition:</b> network.hpp:234</div></div>
+<div class="ttc" id="aclassembed_1_1can__network_html_a96a92b6dd1ccf34a0deb2ea82395e646"><div class="ttname"><a href="classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646">embed::can_network::bus</a></div><div class="ttdeci">can &amp; bus() noexcept</div><div class="ttdoc">get a reference to the can peripheral driver</div><div class="ttdef"><b>Definition:</b> network.hpp:221</div></div>
 <div class="ttc" id="aclassembed_1_1can__network_html_ab753d9f66866c86c81acb75558d6f105"><div class="ttname"><a href="classembed_1_1can__network.html#ab753d9f66866c86c81acb75558d6f105">embed::can_network::can_network</a></div><div class="ttdeci">can_network(can &amp;p_can, std::pmr::memory_resource &amp;p_memory_resource) noexcept</div><div class="ttdoc">Construct a new can network object.</div><div class="ttdef"><b>Definition:</b> network.hpp:158</div></div>
 <div class="ttc" id="aclassembed_1_1can_html"><div class="ttname"><a href="classembed_1_1can.html">embed::can</a></div><div class="ttdoc">Controller Area Network (CAN bus) hardware abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:23</div></div>
 <div class="ttc" id="aclassembed_1_1can_html_a526ae12b76dffd3dda0891247da12b55"><div class="ttname"><a href="classembed_1_1can.html#a526ae12b76dffd3dda0891247da12b55">embed::can::id_t</a></div><div class="ttdeci">uint32_t id_t</div><div class="ttdoc">Can message ID type trait.</div><div class="ttdef"><b>Definition:</b> interface.hpp:33</div></div>
