@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('classembed_1_1counter__timeout.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classembed_1_1counter__timeout-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">embed::counter_timeout Class Reference<div class="ingroups"><a class="el" href="group__counter.html">Counter</a></div></div></div>
 </div><!--header-->
@@ -106,9 +107,6 @@ $(document).ready(function(){initNavTree('classembed_1_1counter__timeout.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0cdc5852d1a9d6529b4dc52f05238f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1counter__timeout.html#ae0cdc5852d1a9d6529b4dc52f05238f9">counter_timeout</a> (<a class="el" href="classembed_1_1counter.html">embed::counter</a> &amp;p_counter, std::int64_t p_cycles_until_timeout) noexcept</td></tr>
-<tr class="memdesc:ae0cdc5852d1a9d6529b4dc52f05238f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new counter timeout object.  <a href="classembed_1_1counter__timeout.html#ae0cdc5852d1a9d6529b4dc52f05238f9">More...</a><br /></td></tr>
-<tr class="separator:ae0cdc5852d1a9d6529b4dc52f05238f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ca298194b92fa5ab316610c3b4df22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22">counter_timeout</a> (const <a class="el" href="classembed_1_1counter__timeout.html">counter_timeout</a> &amp;p_timeout) noexcept=default</td></tr>
 <tr class="memdesc:a78ca298194b92fa5ab316610c3b4df22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new counter timeout object.  <a href="classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22">More...</a><br /></td></tr>
 <tr class="separator:a78ca298194b92fa5ab316610c3b4df22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,58 +122,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e0ca951312cdae3cd016e8984eff74b"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1counter__timeout.html#a0e0ca951312cdae3cd016e8984eff74b">operator()</a> () noexcept</td></tr>
 <tr class="memdesc:a0e0ca951312cdae3cd016e8984eff74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this object to check if it has timed out.  <a href="classembed_1_1counter__timeout.html#a0e0ca951312cdae3cd016e8984eff74b">More...</a><br /></td></tr>
 <tr class="separator:a0e0ca951312cdae3cd016e8984eff74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa5741370521bba1742b8d4080f26ac0d"><td class="memItemLeft" align="right" valign="top">static boost::leaf::result&lt; <a class="el" href="classembed_1_1counter__timeout.html">counter_timeout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d">create</a> (<a class="el" href="classembed_1_1counter.html">embed::counter</a> &amp;p_counter, <a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration)</td></tr>
+<tr class="memdesc:aa5741370521bba1742b8d4080f26ac0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classembed_1_1counter__timeout.html" title="Timeout object based on embed::counter.">counter_timeout</a>.  <a href="classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d">More...</a><br /></td></tr>
+<tr class="separator:aa5741370521bba1742b8d4080f26ac0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Timeout object based on <a class="el" href="classembed_1_1counter.html" title="Hardware Counter abstraction interface.">embed::counter</a>. </p>
 <p >Prefer to use <code>embed::create_timeout(embed::counter&amp;)</code> instead of instantiating this class directly. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae0cdc5852d1a9d6529b4dc52f05238f9" name="ae0cdc5852d1a9d6529b4dc52f05238f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0cdc5852d1a9d6529b4dc52f05238f9">&#9670;&nbsp;</a></span>counter_timeout() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">embed::counter_timeout::counter_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classembed_1_1counter.html">embed::counter</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_counter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::int64_t&#160;</td>
-          <td class="paramname"><em>p_cycles_until_timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a new counter timeout object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_counter</td><td>- counter driver </td></tr>
-    <tr><td class="paramname">p_cycles_until_timeout</td><td>- number of cycles until timeout </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a78ca298194b92fa5ab316610c3b4df22" name="a78ca298194b92fa5ab316610c3b4df22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ca298194b92fa5ab316610c3b4df22">&#9670;&nbsp;</a></span>counter_timeout() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ca298194b92fa5ab316610c3b4df22">&#9670;&nbsp;</a></span>counter_timeout() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,11 +164,17 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1counter__timeout_a78ca298194b92fa5ab316610c3b4df22_icgraph.svg" width="866" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
 <a id="ab7801df9a89377195d4329dfb2447f4d" name="ab7801df9a89377195d4329dfb2447f4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7801df9a89377195d4329dfb2447f4d">&#9670;&nbsp;</a></span>counter_timeout() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7801df9a89377195d4329dfb2447f4d">&#9670;&nbsp;</a></span>counter_timeout() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,6 +208,63 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa5741370521bba1742b8d4080f26ac0d" name="aa5741370521bba1742b8d4080f26ac0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5741370521bba1742b8d4080f26ac0d">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static boost::leaf::result&lt; <a class="el" href="classembed_1_1counter__timeout.html">counter_timeout</a> &gt; embed::counter_timeout::create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classembed_1_1counter.html">embed::counter</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>&#160;</td>
+          <td class="paramname"><em>p_duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="classembed_1_1counter__timeout.html" title="Timeout object based on embed::counter.">counter_timeout</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;counter_timeout&gt; - <a class="el" href="classembed_1_1counter__timeout.html" title="Timeout object based on embed::counter.">counter_timeout</a> object </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::result_out_of_range</td><td>if time duration is negative </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1counter__timeout_aa5741370521bba1742b8d4080f26ac0d_cgraph.svg" width="796" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1counter__timeout_aa5741370521bba1742b8d4080f26ac0d_icgraph.svg" width="658" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a0e0ca951312cdae3cd016e8984eff74b" name="a0e0ca951312cdae3cd016e8984eff74b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e0ca951312cdae3cd016e8984eff74b">&#9670;&nbsp;</a></span>operator()()</h2>
 

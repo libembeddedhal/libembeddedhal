@@ -1,7 +1,8 @@
 <map id="embed::cycles_per" name="embed::cycles_per">
-<area shape="rect" id="node1" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="492,42,621,69"/>
-<area shape="rect" id="node2" href="$group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="292,5,443,47"/>
-<area shape="rect" id="node3" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="291,71,444,98"/>
-<area shape="rect" id="node4" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,71,243,98"/>
-<area shape="rect" id="node5" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,71,97,98"/>
+<area shape="rect" id="node1" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="700,46,829,73"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="497,5,647,47"/>
+<area shape="rect" id="node3" href="$classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d" title="Create a counter_timeout." alt="" coords="492,71,652,112"/>
+<area shape="rect" id="node4" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="291,78,444,105"/>
+<area shape="rect" id="node5" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="145,78,243,105"/>
+<area shape="rect" id="node6" href="$group__serial.html#ga56439487351e68f734fdf9b6330da4d2" title="Read bytes from a serial port." alt="" coords="5,78,97,105"/>
 </map>

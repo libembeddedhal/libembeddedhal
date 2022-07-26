@@ -1,7 +1,9 @@
 <map id="embed::create_timeout" name="embed::create_timeout">
-<area shape="rect" id="node1" title="Create a timeout object based on embed::counter." alt="" coords="5,31,159,57"/>
-<area shape="rect" id="node2" href="$group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="219,5,349,32"/>
-<area shape="rect" id="node5" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="207,56,361,83"/>
-<area shape="rect" id="node3" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="624,5,779,32"/>
-<area shape="rect" id="node4" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="409,31,576,57"/>
+<area shape="rect" id="node1" title="Create a timeout object based on embed::counter." alt="" coords="5,71,159,98"/>
+<area shape="rect" id="node2" href="$classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d" title="Create a counter_timeout." alt="" coords="207,64,367,105"/>
+<area shape="rect" id="node3" href="$classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22" title="Construct a new counter timeout object." alt="" coords="415,5,575,47"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="430,71,559,98"/>
+<area shape="rect" id="node7" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="417,122,572,149"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a" title="Generic absolute value function that works for integer types." alt="" coords="837,71,992,98"/>
+<area shape="rect" id="node6" href="$group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="623,97,789,123"/>
 </map>

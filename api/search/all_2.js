@@ -16,7 +16,8 @@ var searchData=
   ['count_13',['count',['../structembed_1_1counter_1_1uptime__t.html#ac9f19ce720d40a00bc96a94b95eb7398',1,'embed::counter::uptime_t']]],
   ['counter_14',['Counter',['../group__counter.html',1,'']]],
   ['counter_15',['counter',['../classembed_1_1counter.html',1,'embed::counter'],['../structembed_1_1mock_1_1counter.html',1,'embed::mock::counter']]],
-  ['counter_5ftimeout_16',['counter_timeout',['../classembed_1_1counter__timeout.html#ae0cdc5852d1a9d6529b4dc52f05238f9',1,'embed::counter_timeout::counter_timeout(embed::counter &amp;p_counter, std::int64_t p_cycles_until_timeout) noexcept'],['../classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22',1,'embed::counter_timeout::counter_timeout(const counter_timeout &amp;p_timeout) noexcept=default'],['../classembed_1_1counter__timeout.html#ab7801df9a89377195d4329dfb2447f4d',1,'embed::counter_timeout::counter_timeout(counter_timeout &amp;&amp;p_timeout) noexcept=default'],['../classembed_1_1counter__timeout.html',1,'embed::counter_timeout']]],
-  ['create_5ftimeout_17',['create_timeout',['../group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6',1,'embed']]],
-  ['cycles_5fper_18',['cycles_per',['../group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0',1,'embed']]]
+  ['counter_5ftimeout_16',['counter_timeout',['../classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22',1,'embed::counter_timeout::counter_timeout(const counter_timeout &amp;p_timeout) noexcept=default'],['../classembed_1_1counter__timeout.html#ab7801df9a89377195d4329dfb2447f4d',1,'embed::counter_timeout::counter_timeout(counter_timeout &amp;&amp;p_timeout) noexcept=default'],['../classembed_1_1counter__timeout.html',1,'embed::counter_timeout']]],
+  ['create_17',['create',['../classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d',1,'embed::counter_timeout']]],
+  ['create_5ftimeout_18',['create_timeout',['../group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6',1,'embed']]],
+  ['cycles_5fper_19',['cycles_per',['../group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0',1,'embed']]]
 ];
