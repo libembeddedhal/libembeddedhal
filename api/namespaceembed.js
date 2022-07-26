@@ -65,7 +65,7 @@ var namespaceembed =
     [ "cycles_per", "group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0", null ],
     [ "delay", "group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e", null ],
     [ "delay", "group__serial.html#ga3955013d1c787672eb624ce83e2ab9f9", null ],
-    [ "delay", "group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3", null ],
+    [ "delay", "group__utility.html#ga51d5d0a622c078bcb065454cac2a5688", null ],
     [ "distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "distance", "namespaceembed.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "duration_from_cycles", "group__utility.html#ga19bf555b8e14f12184073b07791fd56b", null ],

@@ -107,8 +107,6 @@ $(document).ready(function(){initNavTree('group__utility.html',''); initResizabl
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceembed_1_1literals"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed_1_1literals.html">embed::literals</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceembed_1_1error"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed_1_1error.html">embed::error</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
@@ -229,10 +227,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga860cfe310c0207e449c3b382cc49794b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">embed::to_string</a> (const <a class="el" href="classembed_1_1percent.html">percent</a> &amp;p_percent) noexcept</td></tr>
 <tr class="memdesc:ga860cfe310c0207e449c3b382cc49794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert this percentage value into a string from -1.0 to +1.0  <a href="group__utility.html#ga860cfe310c0207e449c3b382cc49794b">More...</a><br /></td></tr>
 <tr class="separator:ga860cfe310c0207e449c3b382cc49794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </td></tr>
-<tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">embed::delay</a> (Timeout p_timeout_function) noexcept</td></tr>
-<tr class="memdesc:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">More...</a><br /></td></tr>
-<tr class="separator:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51d5d0a622c078bcb065454cac2a5688"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </td></tr>
+<tr class="memitem:ga51d5d0a622c078bcb065454cac2a5688"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">embed::delay</a> (Timeout p_timeout) noexcept</td></tr>
+<tr class="memdesc:ga51d5d0a622c078bcb065454cac2a5688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">More...</a><br /></td></tr>
+<tr class="separator:ga51d5d0a622c078bcb065454cac2a5688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac641e1b47740fd62de5f427f7559c804"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:gac641e1b47740fd62de5f427f7559c804"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::array&lt; char, N+1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">embed::to_array</a> (std::string_view p_view) noexcept</td></tr>
 <tr class="memdesc:gac641e1b47740fd62de5f427f7559c804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string_view into a std::array of N number of characters.  <a href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">More...</a><br /></td></tr>
@@ -614,8 +612,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ga97875bb7b670ec00ce39b28244c9b6c3" name="ga97875bb7b670ec00ce39b28244c9b6c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97875bb7b670ec00ce39b28244c9b6c3">&#9670;&nbsp;</a></span>delay()</h2>
+<a id="ga51d5d0a622c078bcb065454cac2a5688" name="ga51d5d0a622c078bcb065454cac2a5688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51d5d0a622c078bcb065454cac2a5688">&#9670;&nbsp;</a></span>delay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +627,7 @@ template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </div>
           <td class="memname">boost::leaf::result&lt; void &gt; embed::delay </td>
           <td>(</td>
           <td class="paramtype">Timeout&#160;</td>
-          <td class="paramname"><em>p_timeout_function</em></td><td>)</td>
+          <td class="paramname"><em>p_timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -649,11 +647,11 @@ template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_timeout_function</td><td>- timeout callable </td></tr>
+    <tr><td class="paramname">p_timeout</td><td>- callable timeout object </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - returns an error if an error other than <a class="el" href="structembed_1_1error_1_1timeout.html" title="An error indicating a timeout event.">embed::error::timeout</a> is returned, otherwise returns success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - success </dd></dl>
 
 </div>
 </div>

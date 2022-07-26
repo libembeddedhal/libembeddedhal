@@ -161,7 +161,13 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. Will return <a class="el" href="structembed_1_1error_1_1invalid__settings.html">embed::error::invalid_settings</a> if the settings could not be achieved. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -2,9 +2,7 @@ var annotated_dup =
 [
     [ "embed", "namespaceembed.html", [
       [ "error", "namespaceembed_1_1error.html", [
-        [ "invalid_option_t", "structembed_1_1error_1_1invalid__option__t.html", null ],
-        [ "invalid_settings", "structembed_1_1error_1_1invalid__settings.html", null ],
-        [ "timeout", "structembed_1_1error_1_1timeout.html", null ]
+        [ "invalid_option_t", "structembed_1_1error_1_1invalid__option__t.html", null ]
       ] ],
       [ "experimental", "namespaceembed_1_1experimental.html", [
         [ "uptime_counter", "classembed_1_1experimental_1_1uptime__counter.html", "classembed_1_1experimental_1_1uptime__counter" ]

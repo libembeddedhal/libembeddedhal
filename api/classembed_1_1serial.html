@@ -203,7 +203,13 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. Will return <a class="el" href="structembed_1_1error_1_1invalid__settings.html">embed::error::invalid_settings</a> if the settings could not be achieved. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -231,7 +237,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a> to zero and clear any received data stored in hardware registers. </p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
 
 </div>
 </div>
@@ -310,7 +316,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
 
 </div>
 </div>

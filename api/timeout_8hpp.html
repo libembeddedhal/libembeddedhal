@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('timeout_8hpp.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -104,21 +103,14 @@ $(document).ready(function(){initNavTree('timeout_8hpp.html',''); initResizable(
 <p>Provides the <a class="el" href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">embed::timeout</a> type and utility functions that use that type.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;system_error&gt;</code><br />
 <code>#include &quot;<a class="el" href="error_8hpp_source.html">error.hpp</a>&quot;</code><br />
 </div>
 <p><a href="timeout_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structembed_1_1error_1_1timeout.html">embed::error::timeout</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error indicating a timeout event.  <a href="structembed_1_1error_1_1timeout.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceembed"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed.html">embed</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceembed_1_1error"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed_1_1error.html">embed::error</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -129,10 +121,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </td></tr>
-<tr class="memitem:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">embed::delay</a> (Timeout p_timeout_function) noexcept</td></tr>
-<tr class="memdesc:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3">More...</a><br /></td></tr>
-<tr class="separator:ga97875bb7b670ec00ce39b28244c9b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51d5d0a622c078bcb065454cac2a5688"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;embed::timeout&gt;&gt; </td></tr>
+<tr class="memitem:ga51d5d0a622c078bcb065454cac2a5688"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">embed::delay</a> (Timeout p_timeout) noexcept</td></tr>
+<tr class="memdesc:ga51d5d0a622c078bcb065454cac2a5688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">More...</a><br /></td></tr>
+<tr class="separator:ga51d5d0a622c078bcb065454cac2a5688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides the <a class="el" href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">embed::timeout</a> type and utility functions that use that type. </p>

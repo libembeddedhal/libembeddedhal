@@ -30,7 +30,6 @@ var hierarchy =
     [ "embed::interrupt_pin", "classembed_1_1interrupt__pin.html", [
       [ "embed::mock::interrupt_pin", "structembed_1_1mock_1_1interrupt__pin.html", null ]
     ] ],
-    [ "embed::error::invalid_settings", "structembed_1_1error_1_1invalid__settings.html", null ],
     [ "embed::linear_encoder", "classembed_1_1linear__encoder.html", null ],
     [ "embed::linear_potentiometer", "classembed_1_1linear__potentiometer.html", null ],
     [ "embed::map_range< T >", "structembed_1_1map__range.html", null ],
@@ -80,7 +79,6 @@ var hierarchy =
     [ "embed::temperature_sensor", "classembed_1_1temperature__sensor.html", [
       [ "embed::mock::temperature_sensor", "structembed_1_1mock_1_1temperature__sensor.html", null ]
     ] ],
-    [ "embed::error::timeout", "structembed_1_1error_1_1timeout.html", null ],
     [ "embed::timer", "classembed_1_1timer.html", [
       [ "embed::mock::timer", "structembed_1_1mock_1_1timer.html", null ]
     ] ],

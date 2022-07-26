@@ -1,7 +1,6 @@
 var group__utility =
 [
     [ "embed::literals", "namespaceembed_1_1literals.html", null ],
-    [ "embed::error", "namespaceembed_1_1error.html", null ],
     [ "embed::enumeration", "conceptembed_1_1enumeration.html", null ],
     [ "embed::bit_limits< BitWidth, int_t >", "structembed_1_1bit__limits.html", [
       [ "max", "structembed_1_1bit__limits.html#a8ba7dc27637b79c4d529ef1ecc78757f", null ],
@@ -81,7 +80,7 @@ var group__utility =
     [ "embed::calculate_duty_cycle", "group__utility.html#gac197fc46936b832a6e9219b248e2f9bb", null ],
     [ "embed::closest", "group__utility.html#ga7c61114c56c371ced7e50428411220db", null ],
     [ "embed::cycles_per", "group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0", null ],
-    [ "embed::delay", "group__utility.html#ga97875bb7b670ec00ce39b28244c9b6c3", null ],
+    [ "embed::delay", "group__utility.html#ga51d5d0a622c078bcb065454cac2a5688", null ],
     [ "embed::distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
     [ "embed::duration_from_cycles", "group__utility.html#ga19bf555b8e14f12184073b07791fd56b", null ],
     [ "embed::generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],

@@ -4,7 +4,7 @@ var searchData=
   ['testing_1',['Testing',['../group__testing.html',1,'']]],
   ['testing_2ehpp_2',['testing.hpp',['../testing_8hpp.html',1,'']]],
   ['time_5fduration_3',['time_duration',['../group__utility.html#ga702bc5c739d1887d639f6d61ba2addba',1,'embed']]],
-  ['timeout_4',['timeout',['../structembed_1_1error_1_1timeout.html',1,'embed::error::timeout'],['../group__utility.html#ga14bf1de1f69079a66e89a1534066c06f',1,'embed::timeout()']]],
+  ['timeout_4',['timeout',['../group__utility.html#ga14bf1de1f69079a66e89a1534066c06f',1,'embed']]],
   ['timeout_2ehpp_5',['timeout.hpp',['../counter_2timeout_8hpp.html',1,'(Global Namespace)'],['../timeout_8hpp.html',1,'(Global Namespace)']]],
   ['timer_6',['timer',['../structembed_1_1mock_1_1timer.html',1,'embed::mock::timer'],['../classembed_1_1timer.html',1,'embed::timer']]],
   ['timer_7',['Timer',['../group__timer.html',1,'']]],
