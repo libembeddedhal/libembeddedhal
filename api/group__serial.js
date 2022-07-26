@@ -1,16 +1,6 @@
 var group__serial =
 [
     [ "embed::serial", "classembed_1_1serial.html", [
-      [ "frame_error", "structembed_1_1serial_1_1frame__error.html", [
-        [ "bytes_available", "structembed_1_1serial_1_1frame__error.html#a1a381c1a25bb77b8c1468f41c1e72ebc", null ]
-      ] ],
-      [ "packets_lost", "structembed_1_1serial_1_1packets__lost.html", [
-        [ "bytes_available", "structembed_1_1serial_1_1packets__lost.html#a61a36eb4254ecacba05aa6efd95c7394", null ],
-        [ "packets_dropped", "structembed_1_1serial_1_1packets__lost.html#a038cdade7d4f1d164c267f5d34a949bc", null ]
-      ] ],
-      [ "parity_error", "structembed_1_1serial_1_1parity__error.html", [
-        [ "bytes_available", "structembed_1_1serial_1_1parity__error.html#a0e262e333b83c8a6ea1d447ec6615f8f", null ]
-      ] ],
       [ "settings", "structembed_1_1serial_1_1settings.html", [
         [ "parity", "structembed_1_1serial_1_1settings.html#af35b67c353fc6025082cc4e2469a4bae", [
           [ "none", "structembed_1_1serial_1_1settings.html#af35b67c353fc6025082cc4e2469a4baea334c4a4c42fdb79d7ebc3e73b517e6f8", null ],

@@ -21,7 +21,6 @@ var hierarchy =
     [ "std::false_type", null, [
       [ "embed::error::invalid_option_t< options >", "structembed_1_1error_1_1invalid__option__t.html", null ]
     ] ],
-    [ "embed::serial::frame_error", "structembed_1_1serial_1_1frame__error.html", null ],
     [ "embed::frequency", "structembed_1_1frequency.html", null ],
     [ "embed::i2c", "classembed_1_1i2c.html", null ],
     [ "embed::input_pin", "classembed_1_1input__pin.html", [
@@ -46,8 +45,6 @@ var hierarchy =
       [ "embed::mock::output_pin", "structembed_1_1mock_1_1output__pin.html", null ]
     ] ],
     [ "embed::overflow_counter< CountBitWidth >", "classembed_1_1overflow__counter.html", null ],
-    [ "embed::serial::packets_lost", "structembed_1_1serial_1_1packets__lost.html", null ],
-    [ "embed::serial::parity_error", "structembed_1_1serial_1_1parity__error.html", null ],
     [ "embed::percent", "classembed_1_1percent.html", null ],
     [ "embed::pwm", "classembed_1_1pwm.html", [
       [ "embed::mock::pwm", "structembed_1_1mock_1_1pwm.html", null ]
