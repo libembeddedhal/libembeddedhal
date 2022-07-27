@@ -1,0 +1,4 @@
+<map id="embed::rc_servo" name="embed::rc_servo">
+<area shape="rect" id="node1" title="Generic RC servo driver." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node2" href="$classembed_1_1servo.html" title="Hardware abstraction for closed loop positional rotary and linear actuators." alt="" coords="15,5,113,32"/>
+</map>

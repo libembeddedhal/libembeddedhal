@@ -53,7 +53,8 @@ var hierarchy =
     [ "embed::accelerometer::sample", "structembed_1_1accelerometer_1_1sample.html", null ],
     [ "embed::serial", "classembed_1_1serial.html", null ],
     [ "embed::servo", "classembed_1_1servo.html", [
-      [ "embed::mock::servo", "structembed_1_1mock_1_1servo.html", null ]
+      [ "embed::mock::servo", "structembed_1_1mock_1_1servo.html", null ],
+      [ "embed::rc_servo", "classembed_1_1rc__servo.html", null ]
     ] ],
     [ "embed::can::settings", "structembed_1_1can_1_1settings.html", null ],
     [ "embed::i2c::settings", "structembed_1_1i2c_1_1settings.html", null ],

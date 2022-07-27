@@ -1,0 +1,4 @@
+<map id="embed::pwm::configure" name="embed::pwm::configure">
+<area shape="rect" id="node1" title="Configure pwm to match the settings supplied." alt="" coords="212,5,365,32"/>
+<area shape="rect" id="node2" href="$classembed_1_1rc__servo.html#a026639b8cea2066eb30b175a5bb4c3d0" title="Factory function to create a rc_servo object." alt="" coords="5,5,164,32"/>
+</map>
