@@ -94,7 +94,6 @@ $(document).ready(function(){initNavTree('classembed_1_1i2c.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classembed_1_1i2c-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">embed::i2c Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__i2c.html">I2c</a></div></div></div>
@@ -112,68 +111,18 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic settings for a standard I2C device.  <a href="structembed_1_1i2c_1_1settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a8e06f4d3fb25d53f22e35e966759c7cc"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cc">errors</a> { <a class="el" href="classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cca60b6a4fd29d8c69edbfa9088667a3889">address_not_acknowledged</a>
-, <a class="el" href="classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cca76721a72561b5b05b9f3fe74f2fb2f06">bus_error</a>
- }</td></tr>
-<tr class="memdesc:a8e06f4d3fb25d53f22e35e966759c7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">General errors associated with I2C communication failures.  <a href="classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cc">More...</a><br /></td></tr>
-<tr class="separator:a8e06f4d3fb25d53f22e35e966759c7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a802971db176ab92aac9d73da22963be4"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1i2c.html#a802971db176ab92aac9d73da22963be4">configure</a> (const <a class="el" href="structembed_1_1i2c_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
 <tr class="memdesc:a802971db176ab92aac9d73da22963be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> to match the settings supplied.  <a href="classembed_1_1i2c.html#a802971db176ab92aac9d73da22963be4">More...</a><br /></td></tr>
 <tr class="separator:a802971db176ab92aac9d73da22963be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedde1f6dba8a0f49d3410f0e3e917a7e"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1i2c.html#aedde1f6dba8a0f49d3410f0e3e917a7e">transaction</a> (std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in) noexcept</td></tr>
-<tr class="memdesc:aedde1f6dba8a0f49d3410f0e3e917a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform an <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> transaction with another device on the bus. The type of transaction depends on values of input parameters. This function will block until the entire transfer is finished.  <a href="classembed_1_1i2c.html#aedde1f6dba8a0f49d3410f0e3e917a7e">More...</a><br /></td></tr>
-<tr class="separator:aedde1f6dba8a0f49d3410f0e3e917a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb87faac04a2d098572c50f106f7183"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1i2c.html#a9bb87faac04a2d098572c50f106f7183">transaction</a> (std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569">embed::timeout</a> &gt; p_timeout) noexcept</td></tr>
+<tr class="memdesc:a9bb87faac04a2d098572c50f106f7183"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform an <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> transaction with another device on the bus. The type of transaction depends on values of input parameters. This function will block until the entire transfer is finished.  <a href="classembed_1_1i2c.html#a9bb87faac04a2d098572c50f106f7183">More...</a><br /></td></tr>
+<tr class="separator:a9bb87faac04a2d098572c50f106f7183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a8e06f4d3fb25d53f22e35e966759c7cc" name="a8e06f4d3fb25d53f22e35e966759c7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e06f4d3fb25d53f22e35e966759c7cc">&#9670;&nbsp;</a></span>errors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cc">embed::i2c::errors</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>General errors associated with I2C communication failures. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8e06f4d3fb25d53f22e35e966759c7cca60b6a4fd29d8c69edbfa9088667a3889" name="a8e06f4d3fb25d53f22e35e966759c7cca60b6a4fd29d8c69edbfa9088667a3889"></a>address_not_acknowledged&#160;</td><td class="fielddoc"><p >Error type indicating that the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> transaction resulted in a NACK, meaning "not acknowledge". NACKs occur when an address has been placed on the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus and no device connected to the bus returned an acknowledge signal. </p>
-<p ><b>How to handle these errors:</b></p>
-<ul>
-<li>In cases where the program is scanning for available addresses, this error is expected behaviour. This is less of an error to handle but an expected return status.</li>
-<li>If a driver has a set of possible addresses that it can use, and for that driver it makes sense to attempt to search for the valid address, then a handler can keep performing transactions until a valid address is found and then store that address.</li>
-<li>In the case where the address is consistently NACK'ed but the driver expects a specific address, this is typically not something that can be handled and indicates that the application or driver is incorrect in the device address.</li>
-<li>In the case where NACK's are spurious, then this may indicate that the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> line is faulty or the device is misbehaving. This is not fixable in the application. But in some cases, if a software solution is required, the driver or application can simply retry again until a valid response is returned, but results may vary and are very specific to the devices and context of the situation. </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a8e06f4d3fb25d53f22e35e966759c7cca76721a72561b5b05b9f3fe74f2fb2f06" name="a8e06f4d3fb25d53f22e35e966759c7cca76721a72561b5b05b9f3fe74f2fb2f06"></a>bus_error&#160;</td><td class="fielddoc"><p >Error type indicating that the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> lines were put into an invalid state during the transaction due to interference, misconfiguration of the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> peripheral or the addressed device or something else. </p>
-<p ><b>How to handle these errors:</b></p>
-<ul>
-<li>In the event of this type of error, state the addressed device undefined. In the case of data reception, the data coming from the addressed device should be considered invalid. Any deeper handling will require deep context regarding the addressed device the transaction taking place. </li>
-</ul>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a802971db176ab92aac9d73da22963be4" name="a802971db176ab92aac9d73da22963be4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a802971db176ab92aac9d73da22963be4">&#9670;&nbsp;</a></span>configure()</h2>
 
@@ -205,12 +154,18 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. Will return std::errc::invalid_argument if the settings could not be achieved. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aedde1f6dba8a0f49d3410f0e3e917a7e" name="aedde1f6dba8a0f49d3410f0e3e917a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedde1f6dba8a0f49d3410f0e3e917a7e">&#9670;&nbsp;</a></span>transaction()</h2>
+<a id="a9bb87faac04a2d098572c50f106f7183" name="a9bb87faac04a2d098572c50f106f7183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb87faac04a2d098572c50f106f7183">&#9670;&nbsp;</a></span>transaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +189,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::span&lt; std::byte &gt;&#160;</td>
-          <td class="paramname"><em>p_data_in</em>&#160;</td>
+          <td class="paramname"><em>p_data_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569">embed::timeout</a> &gt;&#160;</td>
+          <td class="paramname"><em>p_timeout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,10 +223,25 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">p_address</td><td>7-bit address of the device you want to communicate with. To perform a transaction with a 10-bit address, this parameter must be the address upper byte of the 10-bit address OR'd with 0b1111'0000 (the 10-bit address indicator). The lower byte of the address must be contained in the first byte of the p_data_out span. </td></tr>
     <tr><td class="paramname">p_data_out</td><td>data to be written to the addressed device. Set to nullptr with length zero in order to skip writing. </td></tr>
     <tr><td class="paramname">p_data_in</td><td>buffer to store read data from the addressed device. Set to nullptr with length 0 in order to skip reading. </td></tr>
+    <tr><td class="paramname">p_timeout</td><td>callable which notifies the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> driver that it has run out of time to perform the transaction and must stop and return control to the caller. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::errc::io_error</td><td>indicates that the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> lines were put into an invalid state during the transaction due to interference, misconfiguration of the <a class="el" href="classembed_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> peripheral or the addressed device or something else. </td></tr>
+    <tr><td class="paramname">std::errc::no_such_device_or_address</td><td>indicates that no devices on the bus acknowledge the address in this transaction, which could mean that the device is not connected to the bus, is not powered, not available to respond, broken or many other possible outcomes. </td></tr>
+    <tr><td class="paramname">std::errc::timed_out</td><td>if the transaction exceeded its time allotment indicated by p_timeout. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classembed_1_1i2c_a9bb87faac04a2d098572c50f106f7183_icgraph.svg" width="579" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

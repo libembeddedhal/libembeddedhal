@@ -1,0 +1,4 @@
+<map id="embed::write_then_read" name="embed::write_then_read">
+<area shape="rect" id="node1" title="write and then read bytes from target device on i2c bus" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$classembed_1_1i2c.html#a9bb87faac04a2d098572c50f106f7183" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="212,5,367,32"/>
+</map>

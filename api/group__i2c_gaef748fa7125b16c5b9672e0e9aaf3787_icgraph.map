@@ -1,5 +1,5 @@
 <map id="embed::read" name="embed::read">
 <area shape="rect" id="node1" title="read bytes from target device on i2c bus" alt="" coords="212,31,304,57"/>
-<area shape="rect" id="node2" href="$group__i2c.html#gad4e2c76676690b172290d55345829ab4" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,131,32"/>
+<area shape="rect" id="node2" href="$group__i2c.html#ga91b1991656f7b94b2412c709b12bb530" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,131,32"/>
 <area shape="rect" id="node3" href="$group__serial.html#ga5321e41f41aa9aa1f64454f3534fa581" title="Perform a write then read transaction over serial." alt="" coords="5,56,164,83"/>
 </map>

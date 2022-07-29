@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['address_5fnot_5facknowledged_0',['address_not_acknowledged',['../classembed_1_1i2c.html#a8e06f4d3fb25d53f22e35e966759c7cca60b6a4fd29d8c69edbfa9088667a3889',1,'embed::i2c']]]
+  ['both_0',['both',['../classembed_1_1interrupt__pin.html#a07c33ec3b21b40346a0b765bb14627e9af6cb3e816496528d4187db53bc66567f',1,'embed::interrupt_pin']]]
 ];

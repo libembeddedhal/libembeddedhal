@@ -69,7 +69,7 @@ var group__utility =
       [ "memory_used", "classembed_1_1static__memory__resource.html#af461b8e05b7f1e0f064a17d51016a3e3", null ]
     ] ],
     [ "embed::time_duration", "group__utility.html#ga702bc5c739d1887d639f6d61ba2addba", null ],
-    [ "embed::timeout", "group__utility.html#ga14bf1de1f69079a66e89a1534066c06f", null ],
+    [ "embed::timeout", "group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569", null ],
     [ "embed::divider_rule", "group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39", [
       [ "embed::divider_rule::higher", "group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39afa2ec87a2e6783b2193f71bfdf0f9cc8", null ],
       [ "embed::divider_rule::lower", "group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a", null ],
@@ -86,6 +86,7 @@ var group__utility =
     [ "embed::generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
     [ "embed::map", "group__utility.html#gafa1bc584612147c23f340cfd2786199c", null ],
     [ "embed::multiply", "group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7", null ],
+    [ "embed::never_timeout", "group__utility.html#ga4ae62d3ea26b0599c574c0181a202529", null ],
     [ "embed::operator*", "group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581", null ],
     [ "embed::operator/", "group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372", null ],
     [ "embed::operator/", "group__utility.html#gac9bc7388bf0424bc41cf69ced37ef3df", null ],

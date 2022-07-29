@@ -1,0 +1,4 @@
+<map id="embed::write" name="embed::write">
+<area shape="rect" id="node1" title="write data to a target device on the i2c bus" alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$classembed_1_1i2c.html#a9bb87faac04a2d098572c50f106f7183" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="148,5,303,32"/>
+</map>

@@ -1,5 +1,6 @@
 <map id="embed::write_then_read" name="embed::write_then_read">
 <area shape="rect" id="node1" title="Perform a write then read transaction over serial." alt="" coords="5,31,164,57"/>
-<area shape="rect" id="node2" href="$group__i2c.html#ga0c8123d63fc4021f7c05c91db66cde59" title="read bytes from target device on i2c bus" alt="" coords="213,5,305,32"/>
-<area shape="rect" id="node3" href="$group__i2c.html#gab3da8ebe957f4f6042eadd908039bb19" title="write data to a target device on the i2c bus" alt="" coords="212,56,307,83"/>
+<area shape="rect" id="node2" href="$group__i2c.html#gaef748fa7125b16c5b9672e0e9aaf3787" title="read bytes from target device on i2c bus" alt="" coords="213,5,305,32"/>
+<area shape="rect" id="node4" href="$group__i2c.html#gad98774e04252c5c5568a11b94b0282ac" title="write data to a target device on the i2c bus" alt="" coords="212,56,307,83"/>
+<area shape="rect" id="node3" href="$classembed_1_1i2c.html#a9bb87faac04a2d098572c50f106f7183" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="355,31,509,57"/>
 </map>

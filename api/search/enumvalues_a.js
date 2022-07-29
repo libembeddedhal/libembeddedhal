@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rising_0',['rising',['../classembed_1_1interrupt__pin.html#a07c33ec3b21b40346a0b765bb14627e9a637aa1a3f3fe939460e3e6126a3cb76a',1,'embed::interrupt_pin']]]
+  ['two_0',['two',['../structembed_1_1serial_1_1settings.html#a2afddd189434768feeb31c8ac2a52eb3ab8a9f715dbb64fd5c56e7783c6820a61',1,'embed::serial::settings']]]
 ];

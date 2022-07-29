@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="group__i2c.html#gad0c4289b83626fe23439ae4dd09e38f1" target="_top" xlink:title="write and then return an array of read bytes from target device on i2c bus">
+<g id="a_node2"><a xlink:href="group__i2c.html#ga7866586194c3dc419a59d5f91631e57f" target="_top" xlink:title="write and then return an array of read bytes from target device on i2c bus">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 119,-19.5 119,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="59.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::write_then_read</text>
 </a>

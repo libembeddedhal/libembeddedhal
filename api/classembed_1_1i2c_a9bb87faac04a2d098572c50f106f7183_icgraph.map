@@ -1,0 +1,9 @@
+<map id="embed::i2c::transaction" name="embed::i2c::transaction">
+<area shape="rect" id="node1" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="419,56,573,83"/>
+<area shape="rect" id="node2" href="$group__i2c.html#gaef748fa7125b16c5b9672e0e9aaf3787" title="read bytes from target device on i2c bus" alt="" coords="245,5,337,32"/>
+<area shape="rect" id="node5" href="$group__i2c.html#gad98774e04252c5c5568a11b94b0282ac" title="write data to a target device on the i2c bus" alt="" coords="244,56,339,83"/>
+<area shape="rect" id="node6" href="$group__i2c.html#gaaacac7f062beb4f4835ddefc305ca640" title="write and then read bytes from target device on i2c bus" alt="" coords="212,107,371,133"/>
+<area shape="rect" id="node3" href="$group__i2c.html#ga91b1991656f7b94b2412c709b12bb530" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,131,32"/>
+<area shape="rect" id="node4" href="$group__serial.html#ga5321e41f41aa9aa1f64454f3534fa581" title="Perform a write then read transaction over serial." alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node7" href="$group__i2c.html#ga7866586194c3dc419a59d5f91631e57f" title="write and then return an array of read bytes from target device on i2c bus" alt="" coords="5,107,164,133"/>
+</map>

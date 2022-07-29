@@ -146,9 +146,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga14bf1de1f69079a66e89a1534066c06f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f">embed::timeout</a> = boost::leaf::result&lt; void &gt;(void) noexcept</td></tr>
-<tr class="memdesc:ga14bf1de1f69079a66e89a1534066c06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f">More...</a><br /></td></tr>
-<tr class="separator:ga14bf1de1f69079a66e89a1534066c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa382c9191c7e30f24ba3753cc8e87569"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569">embed::timeout</a> = boost::leaf::result&lt; void &gt;(void)</td></tr>
+<tr class="memdesc:gaa382c9191c7e30f24ba3753cc8e87569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569">More...</a><br /></td></tr>
+<tr class="separator:gaa382c9191c7e30f24ba3753cc8e87569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga702bc5c739d1887d639f6d61ba2addba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
 <tr class="separator:ga702bc5c739d1887d639f6d61ba2addba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -231,6 +231,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga51d5d0a622c078bcb065454cac2a5688"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">embed::delay</a> (Timeout p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga51d5d0a622c078bcb065454cac2a5688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga51d5d0a622c078bcb065454cac2a5688">More...</a><br /></td></tr>
 <tr class="separator:ga51d5d0a622c078bcb065454cac2a5688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ae62d3ea26b0599c574c0181a202529"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4ae62d3ea26b0599c574c0181a202529">embed::never_timeout</a> () noexcept</td></tr>
+<tr class="memdesc:ga4ae62d3ea26b0599c574c0181a202529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a timeout that will never time out.  <a href="group__utility.html#ga4ae62d3ea26b0599c574c0181a202529">More...</a><br /></td></tr>
+<tr class="separator:ga4ae62d3ea26b0599c574c0181a202529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac641e1b47740fd62de5f427f7559c804"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:gac641e1b47740fd62de5f427f7559c804"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::array&lt; char, N+1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">embed::to_array</a> (std::string_view p_view) noexcept</td></tr>
 <tr class="memdesc:gac641e1b47740fd62de5f427f7559c804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string_view into a std::array of N number of characters.  <a href="group__utility.html#gac641e1b47740fd62de5f427f7559c804">More...</a><br /></td></tr>
@@ -254,14 +257,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga14bf1de1f69079a66e89a1534066c06f" name="ga14bf1de1f69079a66e89a1534066c06f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14bf1de1f69079a66e89a1534066c06f">&#9670;&nbsp;</a></span>timeout</h2>
+<a id="gaa382c9191c7e30f24ba3753cc8e87569" name="gaa382c9191c7e30f24ba3753cc8e87569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa382c9191c7e30f24ba3753cc8e87569">&#9670;&nbsp;</a></span>timeout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f">embed::timeout</a> = typedef boost::leaf::result&lt;void&gt;(void) noexcept</td>
+          <td class="memname">using <a class="el" href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569">embed::timeout</a> = typedef boost::leaf::result&lt;void&gt;(void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,7 +272,7 @@ Functions</h2></td></tr>
 <p>Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="group__utility.html#ga14bf1de1f69079a66e89a1534066c06f" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">embed::timeout</a></td><td>- when the timeout condition has been met. </td></tr>
+    <tr><td class="paramname"><a class="el" href="group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">embed::timeout</a></td><td>- when the timeout condition has been met. </td></tr>
   </table>
   </dd>
 </dl>
@@ -939,6 +942,34 @@ Here is the caller graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga4d83f2b0d5ca7f22c7170e2999018fc7_icgraph.svg" width="288" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="ga4ae62d3ea26b0599c574c0181a202529" name="ga4ae62d3ea26b0599c574c0181a202529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ae62d3ea26b0599c574c0181a202529">&#9670;&nbsp;</a></span>never_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto embed::never_timeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a timeout that will never time out. </p>
+<dl class="section return"><dt>Returns</dt><dd>auto - callable that will never return timeout </dd></dl>
 
 </div>
 </div>

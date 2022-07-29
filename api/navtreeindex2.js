@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structembed_1_1mock_1_1adc.html#a66797ca7c32f56d76168395fd79ec130":[1,0,1,1],
-"structembed_1_1mock_1_1adc.html#ac1788863c884041303da43b8134f4414":[1,0,1,0],
 "structembed_1_1mock_1_1counter.html":[1,3,1],
 "structembed_1_1mock_1_1counter.html#abe7650e522e97f7d40dff444e923c4ca":[1,3,1,0],
 "structembed_1_1mock_1_1dac.html":[1,4,1],
