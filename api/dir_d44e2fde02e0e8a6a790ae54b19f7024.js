@@ -24,6 +24,7 @@ var dir_d44e2fde02e0e8a6a790ae54b19f7024 =
     [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
     [ "overflow_counter.hpp", "overflow__counter_8hpp.html", null ],
     [ "percent.hpp", "percent_8hpp.html", "percent_8hpp" ],
+    [ "percentage.hpp", "percentage_8hpp.html", "percentage_8hpp" ],
     [ "static_callable.hpp", "static__callable_8hpp.html", null ],
     [ "static_memory_resource.hpp", "static__memory__resource_8hpp.html", null ],
     [ "testing.hpp", "testing_8hpp.html", null ],

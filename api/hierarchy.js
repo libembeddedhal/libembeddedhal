@@ -46,6 +46,7 @@ var hierarchy =
     ] ],
     [ "embed::overflow_counter< CountBitWidth >", "classembed_1_1overflow__counter.html", null ],
     [ "embed::percent", "classembed_1_1percent.html", null ],
+    [ "embed::percentage< float_t >", "classembed_1_1percentage.html", null ],
     [ "embed::pwm", "classembed_1_1pwm.html", [
       [ "embed::mock::pwm", "structembed_1_1mock_1_1pwm.html", null ]
     ] ],

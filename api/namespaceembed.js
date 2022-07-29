@@ -29,6 +29,7 @@ var namespaceembed =
     [ "output_pin", "classembed_1_1output__pin.html", "classembed_1_1output__pin" ],
     [ "overflow_counter", "classembed_1_1overflow__counter.html", "classembed_1_1overflow__counter" ],
     [ "percent", "classembed_1_1percent.html", "classembed_1_1percent" ],
+    [ "percentage", "classembed_1_1percentage.html", "classembed_1_1percentage" ],
     [ "pwm", "classembed_1_1pwm.html", "classembed_1_1pwm" ],
     [ "rc_servo", "classembed_1_1rc__servo.html", "classembed_1_1rc__servo" ],
     [ "rotary_encoder", "classembed_1_1rotary__encoder.html", "classembed_1_1rotary__encoder" ],
