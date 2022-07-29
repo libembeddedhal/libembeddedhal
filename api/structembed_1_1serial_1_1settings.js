@@ -12,7 +12,6 @@ var structembed_1_1serial_1_1settings =
       [ "two", "structembed_1_1serial_1_1settings.html#a2afddd189434768feeb31c8ac2a52eb3ab8a9f715dbb64fd5c56e7783c6820a61", null ]
     ] ],
     [ "baud_rate", "structembed_1_1serial_1_1settings.html#af18aac6fd4111716199156b31c017ac1", null ],
-    [ "frame_size", "structembed_1_1serial_1_1settings.html#a267a514268cbcc4e8380699fd27211db", null ],
     [ "parity", "structembed_1_1serial_1_1settings.html#a32ceb7ff79367cebc532fd4446fbeb63", null ],
     [ "stop", "structembed_1_1serial_1_1settings.html#ad50dc8bf1dbac00a8cadc610b1478c45", null ]
 ];

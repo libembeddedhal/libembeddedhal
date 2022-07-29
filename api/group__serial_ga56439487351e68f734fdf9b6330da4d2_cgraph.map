@@ -1,7 +1,7 @@
 <map id="embed::read" name="embed::read">
 <area shape="rect" id="node1" title="Read bytes from a serial port." alt="" coords="5,97,97,123"/>
 <area shape="rect" id="node2" href="$group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter." alt="" coords="161,71,259,98"/>
-<area shape="rect" id="node10" href="$classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer...." alt="" coords="145,122,275,149"/>
+<area shape="rect" id="node10" href="$classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the receiver line into buffer." alt="" coords="145,122,275,149"/>
 <area shape="rect" id="node3" href="$group__counter.html#ga4f1edcd06bf52209d5293e54d0d1beb6" title="Create a timeout object based on embed::counter." alt="" coords="323,71,476,98"/>
 <area shape="rect" id="node4" href="$classembed_1_1counter__timeout.html#aa5741370521bba1742b8d4080f26ac0d" title="Create a counter_timeout." alt="" coords="524,64,684,105"/>
 <area shape="rect" id="node5" href="$classembed_1_1counter__timeout.html#a78ca298194b92fa5ab316610c3b4df22" title="Construct a new counter timeout object." alt="" coords="732,5,892,47"/>

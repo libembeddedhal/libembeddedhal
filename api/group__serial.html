@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('group__serial.html',''); initResizable
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1serial.html">embed::serial</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial communication protocol hardware abstract interface.  <a href="classembed_1_1serial.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware abstract interface for the serial communication protocol.  <a href="classembed_1_1serial.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">serial::bytes_available</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered.">serial::bytes_available</a> returns an error from the serial port. </dd></dl>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer....">serial::read</a> or <a class="el" href="group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -270,7 +270,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::span&lt;const std::byte&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer....">serial::read</a> or <a class="el" href="group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::span&lt;const std::byte&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga53e2d568aa13881c4213fe89a2e1c42e" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -322,7 +322,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port. This function will block until the entire transfer is...">serial::write</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port.">serial::write</a> returns an error from the serial port. </dd></dl>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer....">serial::read</a> or <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port. This function will block until the entire transfer is...">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -437,7 +437,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer....">serial::read</a> or <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port. This function will block until the entire transfer is...">serial::write()</a> returns an error from the serial port or success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or success. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

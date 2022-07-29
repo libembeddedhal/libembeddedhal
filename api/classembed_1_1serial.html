@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classembed_1_1serial.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>Serial communication protocol hardware abstract interface.  
+<p>Hardware abstract interface for the serial communication protocol.  
  <a href="classembed_1_1serial.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="serial_2interface_8hpp_source.html">interface.hpp</a>&gt;</code></p>
@@ -117,23 +117,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7c3fcd7185c98bbd6ef934e2638f9e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure serial to match the settings supplied.  <a href="classembed_1_1serial.html#a7c3fcd7185c98bbd6ef934e2638f9e80">More...</a><br /></td></tr>
 <tr class="separator:a7c3fcd7185c98bbd6ef934e2638f9e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad037aca3e698124acc5159e595a092f"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f">write</a> (std::span&lt; const std::byte &gt; p_data) noexcept</td></tr>
-<tr class="memdesc:aad037aca3e698124acc5159e595a092f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data on the transmitter line of the port. This function will block until the entire transfer is finished.  <a href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f">More...</a><br /></td></tr>
+<tr class="memdesc:aad037aca3e698124acc5159e595a092f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data on the transmitter line of the port.  <a href="classembed_1_1serial.html#aad037aca3e698124acc5159e595a092f">More...</a><br /></td></tr>
 <tr class="separator:aad037aca3e698124acc5159e595a092f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf121268dffc6f020251c430b04cf477"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477">bytes_available</a> () noexcept</td></tr>
-<tr class="memdesc:aaf121268dffc6f020251c430b04cf477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame. For frames above 8-bits the number of bytes returned indicates the number of bytes a buffer needs to be to return all of the data held in the buffer.  <a href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477">More...</a><br /></td></tr>
+<tr class="memdesc:aaf121268dffc6f020251c430b04cf477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes that have been buffered.  <a href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477">More...</a><br /></td></tr>
 <tr class="separator:aaf121268dffc6f020251c430b04cf477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802629f3a40ce507d6d99c1e41ab57df"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; std::span&lt; const std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df">read</a> (std::span&lt; std::byte &gt; p_data) noexcept</td></tr>
-<tr class="memdesc:a802629f3a40ce507d6d99c1e41ab57df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bytes received over the ports receiver line and stored in the serial implementations buffer. The number of bytes read will subtract the number of bytes available until it reaches zero.  <a href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df">More...</a><br /></td></tr>
+<tr class="memdesc:a802629f3a40ce507d6d99c1e41ab57df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bytes received over the receiver line into buffer.  <a href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df">More...</a><br /></td></tr>
 <tr class="separator:a802629f3a40ce507d6d99c1e41ab57df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372cbb7d2fafad6208ef12f70de0a8a1"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classembed_1_1serial.html#a372cbb7d2fafad6208ef12f70de0a8a1">flush</a> () noexcept</td></tr>
-<tr class="memdesc:a372cbb7d2fafad6208ef12f70de0a8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a> to zero and clear any received data stored in hardware registers.  <a href="classembed_1_1serial.html#a372cbb7d2fafad6208ef12f70de0a8a1">More...</a><br /></td></tr>
+<tr class="memdesc:a372cbb7d2fafad6208ef12f70de0a8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered.">bytes_available()</a> to zero and clear any received data stored in hardware registers.  <a href="classembed_1_1serial.html#a372cbb7d2fafad6208ef12f70de0a8a1">More...</a><br /></td></tr>
 <tr class="separator:a372cbb7d2fafad6208ef12f70de0a8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Serial communication protocol hardware abstract interface. </p>
-<p >Use this interface for hardware that implements a serial protocol like UART, RS232, RS485 and many others that use a similar communication protocol but may use different voltage schemes.</p>
-<p >Due to the asynchronous nature of serial communication protocols, all implementations of serial devices MUST buffer received bytes using DMA or interrupts. A thread should not be used as this generally greatly increases the ROM and RAM cost of using library.</p>
-<p >All implementations MUST allow the user to supply their own buffer of arbitrary size, such that the amount of buffered data can be tailored to the needs of the application. </p>
+<div class="textblock"><p >Hardware abstract interface for the serial communication protocol. </p>
+<p >Use this interface for hardware that implements a serial protocol like UART, RS232, RS485 and others that use a similar communication protocol but may use different voltage schemes.</p>
+<p >This interface only works 8-bit serial data frames.</p>
+<p >Due to the asynchronous nature of serial communication protocols, all implementations of serial devices must be buffered. Buffered, in this case, is defined as automatic storage of received bytes without direct application intervention.</p>
+<p >All implementations MUST allow the user to supply their own buffer of arbitrary size up to the limits of what hardware can support. This allows a developer the ability to tailored the buffer size to the needs of the application.</p>
+<p >Examples of buffering schemes are:</p>
+<ul>
+<li>Using DMA to copy data from a serial peripheral to a region of memory</li>
+<li>Using interrupts when a serial peripheral's queue has filled to a point </li>
+</ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaf121268dffc6f020251c430b04cf477" name="aaf121268dffc6f020251c430b04cf477"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf121268dffc6f020251c430b04cf477">&#9670;&nbsp;</a></span>bytes_available()</h2>
@@ -158,12 +164,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame. For frames above 8-bits the number of bytes returned indicates the number of bytes a buffer needs to be to return all of the data held in the buffer. </p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;size_t&gt; - number of buffered by the serial driver and are available to be read by the <a class="el" href="classembed_1_1serial.html#a802629f3a40ce507d6d99c1e41ab57df" title="Read the bytes received over the ports receiver line and stored in the serial implementations buffer....">read()</a> function. </dd></dl>
+<p>The number of bytes that have been buffered. </p>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;size_t&gt; - number of bytes that can be read out of this serial port. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">protocol_error</td><td>indicates that a parity error occurred during reception. </td></tr>
-    <tr><td class="paramname">io_error</td><td>indicates that a frame error occurred during reception. This error is returned when calling <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a>. </td></tr>
+    <tr><td class="paramname">std::errc::protocol_error</td><td>indicates that a parity error occurred during reception. </td></tr>
+    <tr><td class="paramname">std::errc::io_error</td><td>indicates that a frame error occurred during reception. </td></tr>
   </table>
   </dd>
 </dl>
@@ -195,6 +201,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure serial to match the settings supplied. </p>
+<p >Implementing drivers must verify if the settings can be applied to hardware before modifying the hardware. This will ensure that if this operation fails, the state of the serial device has not changed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_settings</td><td>- settings to apply to serial driver </td></tr>
@@ -204,7 +211,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
+    <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved </td></tr>
   </table>
   </dd>
 </dl>
@@ -234,7 +241,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a> to zero and clear any received data stored in hardware registers. </p>
+<p>Set <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered.">bytes_available()</a> to zero and clear any received data stored in hardware registers. </p>
 <dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
 
 </div>
@@ -263,14 +270,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read the bytes received over the ports receiver line and stored in the serial implementations buffer. The number of bytes read will subtract the number of bytes available until it reaches zero. </p>
+<p>Read the bytes received over the receiver line into buffer. </p>
+<p >This operation copies the bytes from the serial driver's internal buffer to the buffer supplied. This call will subtract from the number returned from <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered.">bytes_available()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_data</td><td>- Buffer to read bytes back from. If the length of this buffer is greater than the value returned by <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a> then buffer is filled up to the length returned by <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered. For frames less than 8-bits, each byte holds a frame....">bytes_available()</a>. The rest of the buffer is left untouched. </td></tr>
+    <tr><td class="paramname">p_data</td><td>- Buffer to read bytes back from. If the length of this buffer is greater than bytes available, then the buffer is filled up to the length returned by <a class="el" href="classembed_1_1serial.html#aaf121268dffc6f020251c430b04cf477" title="The number of bytes that have been buffered.">bytes_available()</a>. The rest of the buffer is left untouched. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::span&lt;const std::byte&gt;&gt; - provides a means to get the length of bytes read into the buffer p_data. The address will ALWAYS be the same as p_data and the length will be equal to the number of bytes read from the buffer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::span&lt;const std::byte&gt;&gt; - The address will ALWAYS be the same as p_data and the length will be equal to the number of bytes read from the buffer. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -304,13 +312,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Write data on the transmitter line of the port. This function will block until the entire transfer is finished. </p>
-<p >Data frames are not compact when frame size is less than 8 bits. Meaning that, if you want to send three 5-bit frames, then you will need to use a span of at least 3 bytes to hold each value.</p>
-<p >When writing data with frame size greater than 8 is in little endian order. Meaning that the first byte in the sequence is the lower byte and the next is the greater byte. If you wanted to send a 9-bit frame with value 0x14A, the first byte must be 0x4A and the next 0x01.</p>
-<p >serial ports will report <code>transmit_error</code> will an error occurs. Any other reported error will bubble up come from</p>
+<p>Write data on the transmitter line of the port. </p>
+<p >This function will block until the entire transfer is finished.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_data</td><td>- data to be transmitted over the serial port transmitter line </td></tr>
+    <tr><td class="paramname">p_data</td><td>- data to be transmitted over the serial port </td></tr>
   </table>
   </dd>
 </dl>
