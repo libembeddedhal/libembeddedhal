@@ -1,0 +1,4 @@
+<map id="hal::can_network::register_message_id" name="hal::can_network::register_message_id">
+<area shape="rect" id="node1" title="Associate a can id with a node in the can network." alt="" coords="5,22,173,63"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="221,29,324,56"/>
+</map>

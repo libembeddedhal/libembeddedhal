@@ -1,0 +1,5 @@
+<map id="hal::wavelength" name="hal::wavelength">
+<area shape="rect" id="node1" title="Calculates and returns the wavelength in seconds." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga58a3550a3236310f20b92eacf593c2f0" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="164,5,309,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="357,5,489,32"/>
+</map>

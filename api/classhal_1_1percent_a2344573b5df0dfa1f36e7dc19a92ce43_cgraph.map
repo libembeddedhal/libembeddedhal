@@ -1,0 +1,9 @@
+<map id="hal::percent::scale" name="hal::percent::scale">
+<area shape="rect" id="node1" title="Get the value of the percent after it is scaled to a range. The output value is bound within the give..." alt="" coords="5,81,131,108"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9" title="Get +100% percentage." alt="" coords="193,56,311,83"/>
+<area shape="rect" id="node4" href="$classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0" title="Get the 100% value in its raw representation." alt="" coords="373,5,520,32"/>
+<area shape="rect" id="node5" href="$classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252" title="Get &#45;100% percentage." alt="" coords="195,107,309,133"/>
+<area shape="rect" id="node7" href="$classhal_1_1percent.html#a630093c754626820c0c64ef151146939" title="Get the 0% value in its raw representation." alt="" coords="179,157,325,184"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d" title="Construct 0% percent object." alt="" coords="378,56,515,83"/>
+<area shape="rect" id="node6" href="$classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1" title="Get the &#45;100% value in its raw representation." alt="" coords="375,107,518,133"/>
+</map>

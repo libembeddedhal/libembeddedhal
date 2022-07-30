@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['value_0',['value',['../classembed_1_1percentage.html#a6502eae6fa0edb1ff602de8133cdfe66',1,'embed::percentage::value()'],['../group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd',1,'embed::value()']]],
-  ['value_5fhz_1',['value_hz',['../structembed_1_1frequency.html#a46e216809cc6b203668069cd15c94180',1,'embed::frequency']]]
+  ['value_0',['value',['../classhal_1_1percentage.html#a155d9060d4476974af866ed2d0be71e4',1,'hal::percentage::value()'],['../group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18',1,'hal::value()']]],
+  ['value_5fhz_1',['value_hz',['../structhal_1_1frequency.html#aaa3bd50b4483e2017c7cda91b24a9f6e',1,'hal::frequency']]]
 ];

@@ -1,0 +1,9 @@
+<map id="hal::duty_cycle::operator percent" name="hal::duty_cycle::operator percent">
+<area shape="rect" id="node1" title="Conversion from duty cycle to percentage." alt="" coords="5,74,164,115"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#a4fece281bfb4ec0f48f86b14168194ce" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="212,74,332,115"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d" title="Construct 0% percent object." alt="" coords="385,5,522,32"/>
+<area shape="rect" id="node4" href="$classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0" title="Get the 100% value in its raw representation." alt="" coords="380,56,527,83"/>
+<area shape="rect" id="node5" href="$classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1" title="Get the &#45;100% value in its raw representation." alt="" coords="382,107,525,133"/>
+<area shape="rect" id="node6" href="$group__utility.html#ga58a3550a3236310f20b92eacf593c2f0" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="381,157,526,184"/>
+<area shape="rect" id="node7" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="575,157,707,184"/>
+</map>

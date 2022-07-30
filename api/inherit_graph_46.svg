@@ -12,9 +12,9 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classembed_1_1static__callable.html" target="_top" xlink:title="General class which will be used to allow for signature to be used and then split by the below class.">
+<g id="a_node1"><a xlink:href="classhal_1_1static__callable.html" target="_top" xlink:title="General class which will be used to allow for signature to be used and then split by the below class.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-41.5 125,-41.5 125,-0.5 0,-0.5"/>
-<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::static_callable</text>
+<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::static_callable</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; owner_class, reference</text>
 <text text-anchor="middle" x="62.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_designator, signature &gt;</text>
 </a>

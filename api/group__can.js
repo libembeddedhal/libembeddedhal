@@ -1,30 +1,30 @@
 var group__can =
 [
-    [ "embed::can", "classembed_1_1can.html", [
-      [ "message_t", "structembed_1_1can_1_1message__t.html", [
-        [ "id", "structembed_1_1can_1_1message__t.html#a15354cd19883024c6a84248585ce219e", null ],
-        [ "is_remote_request", "structembed_1_1can_1_1message__t.html#ae776e993d158b81e0276ea328006066c", null ],
-        [ "length", "structembed_1_1can_1_1message__t.html#a10af3d52291a016b9d2e1dd30689428e", null ],
-        [ "payload", "structembed_1_1can_1_1message__t.html#a32fdc4e2198eb9b2fe400a273b22f081", null ]
+    [ "hal::can", "classhal_1_1can.html", [
+      [ "message_t", "structhal_1_1can_1_1message__t.html", [
+        [ "id", "structhal_1_1can_1_1message__t.html#a7d33139d3c5f9b10d31ee7c809b0d6cf", null ],
+        [ "is_remote_request", "structhal_1_1can_1_1message__t.html#acb62ec09361d220eb9de285498298baf", null ],
+        [ "length", "structhal_1_1can_1_1message__t.html#a2c66f4827afe85cb1db5d9894666e70a", null ],
+        [ "payload", "structhal_1_1can_1_1message__t.html#a9db33b6bd7162a02bb9a8bfea659d5aa", null ]
       ] ],
-      [ "settings", "structembed_1_1can_1_1settings.html", [
-        [ "clock_rate", "structembed_1_1can_1_1settings.html#ad5b81b58747fe48677f8f26ce00c34c4", null ]
+      [ "settings", "structhal_1_1can_1_1settings.html", [
+        [ "clock_rate", "structhal_1_1can_1_1settings.html#a2cdaf1b39a92f56cb1f9a23455222663", null ]
       ] ],
-      [ "id_t", "classembed_1_1can.html#a526ae12b76dffd3dda0891247da12b55", null ],
-      [ "attach_interrupt", "classembed_1_1can.html#a756c443b46b839c437af2a59e4b5a47f", null ],
-      [ "configure", "classembed_1_1can.html#ae7f93c26cb939ab5b4f8d205a965bbb9", null ],
-      [ "send", "classembed_1_1can.html#a271f6c472db95e7f97a10cda3ed0d39b", null ]
+      [ "id_t", "classhal_1_1can.html#ae85571b4f7aac93fca8503aafcb32a47", null ],
+      [ "attach_interrupt", "classhal_1_1can.html#a47990153617bc89602d94057dbc42f0f", null ],
+      [ "configure", "classhal_1_1can.html#a4c077b03b6d5dd657fcd4e170d43b27c", null ],
+      [ "send", "classhal_1_1can.html#af797c3651d4882a9d161e8ccdd9a1a5e", null ]
     ] ],
-    [ "embed::can_network", "classembed_1_1can__network.html", [
-      [ "node_t", "classembed_1_1can__network_1_1node__t.html", [
-        [ "node_t", "classembed_1_1can__network_1_1node__t.html#a773f9265156beb3a144f12a28e086300", null ],
-        [ "node_t", "classembed_1_1can__network_1_1node__t.html#a19fd167a465fa79826a6c9c63a2c52bc", null ],
-        [ "operator=", "classembed_1_1can__network_1_1node__t.html#a255ae26ed3010595c9949a75b5a50772", null ],
-        [ "secure_get", "classembed_1_1can__network_1_1node__t.html#a06d855273423fc965c733671e6937afe", null ]
+    [ "hal::can_network", "classhal_1_1can__network.html", [
+      [ "node_t", "classhal_1_1can__network_1_1node__t.html", [
+        [ "node_t", "classhal_1_1can__network_1_1node__t.html#abd30bd6d722b5aa5a2043f964896caf2", null ],
+        [ "node_t", "classhal_1_1can__network_1_1node__t.html#a3d6c2ca95a5c43dd2d4651e6db9c9e3a", null ],
+        [ "operator=", "classhal_1_1can__network_1_1node__t.html#ae6c837daed3a036ba0c497d585481ac6", null ],
+        [ "secure_get", "classhal_1_1can__network_1_1node__t.html#a6104f7774a8cea81a15eff3e8d7bcda8", null ]
       ] ],
-      [ "can_network", "classembed_1_1can__network.html#ab753d9f66866c86c81acb75558d6f105", null ],
-      [ "bus", "classembed_1_1can__network.html#a96a92b6dd1ccf34a0deb2ea82395e646", null ],
-      [ "get_internal_map", "classembed_1_1can__network.html#a5fb560c77706b17c86ba6ecb9239ee20", null ],
-      [ "register_message_id", "classembed_1_1can__network.html#a3f2befcc28d123bb84135e6b0f89a5aa", null ]
+      [ "can_network", "classhal_1_1can__network.html#a1c86b0af2504b9e5424d80361b1313e9", null ],
+      [ "bus", "classhal_1_1can__network.html#ae51b72d8afe14e76016d18c76255eb0e", null ],
+      [ "get_internal_map", "classhal_1_1can__network.html#ad54bd5adc96beefdbf7b92c83091522b", null ],
+      [ "register_message_id", "classhal_1_1can__network.html#a13691b16cb49b9fb2317cbc0f57058a2", null ]
     ] ]
 ];

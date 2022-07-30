@@ -1,0 +1,6 @@
+<map id="hal::distance" name="hal::distance">
+<area shape="rect" id="node1" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="217,56,312,83"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga9e1226abcb21d4e0913fcf78bad9f1c8" title="Calculate divider for the closest resulting frequency to target." alt="" coords="44,5,131,32"/>
+<area shape="rect" id="node3" href="$structhal_1_1map__range.html#a6c1b791227339a4dd70aeb54b979b0a9" title=" " alt="" coords="5,56,169,83"/>
+<area shape="rect" id="node4" href="$classhal_1_1percent.html#ac5595537118024b5502ab6b8891a7be4" title="Comparison operator." alt="" coords="9,107,166,133"/>
+</map>

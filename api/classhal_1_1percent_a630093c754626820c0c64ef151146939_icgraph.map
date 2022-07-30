@@ -1,0 +1,4 @@
+<map id="hal::percent::raw_zero" name="hal::percent::raw_zero">
+<area shape="rect" id="node1" title="Get the 0% value in its raw representation." alt="" coords="179,5,325,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#a2344573b5df0dfa1f36e7dc19a92ce43" title="Get the value of the percent after it is scaled to a range. The output value is bound within the give..." alt="" coords="5,5,131,32"/>
+</map>

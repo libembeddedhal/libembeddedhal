@@ -1,24 +1,24 @@
 var group__spi =
 [
-    [ "embed::spi", "classembed_1_1spi.html", [
-      [ "settings", "structembed_1_1spi_1_1settings.html", [
-        [ "operator<=>", "structembed_1_1spi_1_1settings.html#a189f0009ea48978a23a7d92bb859cf03", null ],
-        [ "clock_idles_high", "structembed_1_1spi_1_1settings.html#a2b3845d86664bea377bbe433941794cc", null ],
-        [ "clock_rate", "structembed_1_1spi_1_1settings.html#a13deaf3625a0cf88ed7318ce14e3e621", null ],
-        [ "data_valid_on_trailing_edge", "structembed_1_1spi_1_1settings.html#a2cec84fe74817aa81e077d19153a1f91", null ]
+    [ "hal::spi", "classhal_1_1spi.html", [
+      [ "settings", "structhal_1_1spi_1_1settings.html", [
+        [ "operator<=>", "structhal_1_1spi_1_1settings.html#a649544c3c46d0bd8479a2e33c0afee92", null ],
+        [ "clock_idles_high", "structhal_1_1spi_1_1settings.html#aa659b50bafd1b39eee163d1c6de58e70", null ],
+        [ "clock_rate", "structhal_1_1spi_1_1settings.html#a8c62dd9ac3dfe4e0b724a04ee5c8aafa", null ],
+        [ "data_valid_on_trailing_edge", "structhal_1_1spi_1_1settings.html#a6e3608114ad53b46d2ab1da82a6caf42", null ]
       ] ],
-      [ "configure", "classembed_1_1spi.html#a4bf0b00fba6ab98ddddbe35aa2613b34", null ],
-      [ "transfer", "classembed_1_1spi.html#aa1c8496025bee3c20b2e6167aac14b34", null ],
-      [ "default_filler", "classembed_1_1spi.html#a6efdb2425adcb00811b99e88cf8893bf", null ]
+      [ "configure", "classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5", null ],
+      [ "transfer", "classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef", null ],
+      [ "default_filler", "classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc", null ]
     ] ],
-    [ "embed::mock::write_only_spi", "structembed_1_1mock_1_1write__only__spi.html", [
-      [ "reset", "structembed_1_1mock_1_1write__only__spi.html#a668ae8bd2effa6d165a9c87ce89ddb3a", null ],
-      [ "spy_configure", "structembed_1_1mock_1_1write__only__spi.html#a2ca6c4db1e84cb5990266c236d9a0a69", null ],
-      [ "write_record", "structembed_1_1mock_1_1write__only__spi.html#ac9f8c8c2053b9f9b025ce1b0a73fba29", null ]
+    [ "hal::mock::write_only_spi", "structhal_1_1mock_1_1write__only__spi.html", [
+      [ "reset", "structhal_1_1mock_1_1write__only__spi.html#a9be71a9e85a7fc15eef00839781eef73", null ],
+      [ "spy_configure", "structhal_1_1mock_1_1write__only__spi.html#aa63519def3ad3da7d4b2a5d28dda396e", null ],
+      [ "write_record", "structhal_1_1mock_1_1write__only__spi.html#aae3d83ebe62005a835949fd5951b938f", null ]
     ] ],
-    [ "embed::read", "group__spi.html#ga607a4ee40654d534bbceca31c0fb4cda", null ],
-    [ "embed::read", "group__spi.html#gafc3ba828668c22d0f6c5e3a2349e2671", null ],
-    [ "embed::write", "group__spi.html#ga08cb65267b0814b8ca7215f7efc5a2e3", null ],
-    [ "embed::write_then_read", "group__spi.html#ga1bca4125f1f3e8c96cc7449883d1c515", null ],
-    [ "embed::write_then_read", "group__spi.html#gae9ae311fd79b085710fca67dcb4ff2a0", null ]
+    [ "hal::read", "group__spi.html#gaa4131f2d460c43fc001204cf483b3abc", null ],
+    [ "hal::read", "group__spi.html#gab36771a8bce314418fbb65e304ae070f", null ],
+    [ "hal::write", "group__spi.html#ga5cd8da4cfef182b29e14ad2434910b5d", null ],
+    [ "hal::write_then_read", "group__spi.html#ga6168b9537bd5fdb0cb96818934728fd7", null ],
+    [ "hal::write_then_read", "group__spi.html#ga548fe2eba26aa5fb4519691f5c45a1bb", null ]
 ];

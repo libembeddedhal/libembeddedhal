@@ -1,0 +1,4 @@
+<map id="hal::pwm::configure" name="hal::pwm::configure">
+<area shape="rect" id="node1" title="Configure pwm to match the settings supplied." alt="" coords="191,5,321,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918" title="Factory function to create a rc_servo object." alt="" coords="5,5,143,32"/>
+</map>

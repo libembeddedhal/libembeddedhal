@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['percent_0',['percent',['../classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1',1,'embed::percent::percent() noexcept'],['../classembed_1_1percent.html#af3128c9e5132b2d4d6f75db9bec498ae',1,'embed::percent::percent(std::floating_point auto p_ratio) noexcept']]],
-  ['percentage_1',['percentage',['../classembed_1_1percentage.html#ada30f7831ab03b905b53d4bc4998b7a0',1,'embed::percentage::percentage(float_t p_value)'],['../classembed_1_1percentage.html#af8a0005927d64ae3aad62be7bdce9d7c',1,'embed::percentage::percentage(percentage &amp;p_percent)'],['../classembed_1_1percentage.html#a15e9b5d05d655503cfb9770f4615f0fe',1,'embed::percentage::percentage(percentage &amp;&amp;p_percent)']]],
-  ['position_2',['position',['../classembed_1_1servo.html#afbba28684df0d0af4ffb691514de7c44',1,'embed::servo']]],
-  ['power_3',['power',['../classembed_1_1motor.html#a833ed03bc2fa159716dac0a39254e1a4',1,'embed::motor']]]
+  ['percent_0',['percent',['../classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d',1,'hal::percent::percent() noexcept'],['../classhal_1_1percent.html#a873b8463cbe90c21eba808fe4ca122b7',1,'hal::percent::percent(std::floating_point auto p_ratio) noexcept']]],
+  ['percentage_1',['percentage',['../classhal_1_1percentage.html#a819f040ba52e89f13045e1be14248a6b',1,'hal::percentage::percentage(float_t p_value)'],['../classhal_1_1percentage.html#a1ba2f2b2dfc161533e8923e945c91fa8',1,'hal::percentage::percentage(percentage &amp;p_percent)'],['../classhal_1_1percentage.html#a7342f379ee626ab2abd57589c028c4b4',1,'hal::percentage::percentage(percentage &amp;&amp;p_percent)']]],
+  ['position_2',['position',['../classhal_1_1servo.html#a174a1a393f8c4148ab0b14f3d6e45595',1,'hal::servo']]],
+  ['power_3',['power',['../classhal_1_1motor.html#a8a27c0032f7b7ff00247ec80921d36f2',1,'hal::motor']]]
 ];

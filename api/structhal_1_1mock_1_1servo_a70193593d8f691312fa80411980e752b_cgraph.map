@@ -1,0 +1,4 @@
+<map id="hal::mock::servo::reset" name="hal::mock::servo::reset">
+<area shape="rect" id="node1" title="Reset spy information for position()" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816" title="Reset call recordings and turns off error trigger." alt="" coords="204,5,353,32"/>
+</map>

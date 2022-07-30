@@ -1,0 +1,4 @@
+<map id="hal::can::attach_interrupt" name="hal::can::attach_interrupt">
+<area shape="rect" id="node1" title="Setup driver to execute callback when a can message is received." alt="" coords="200,13,363,39"/>
+<area shape="rect" id="node2" href="$classhal_1_1can__network.html#a1c86b0af2504b9e5424d80361b1313e9" title="Construct a new can network object." alt="" coords="5,5,152,47"/>
+</map>

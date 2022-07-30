@@ -1,8 +1,8 @@
 var config_8hpp =
 [
-    [ "is_a_test", "config_8hpp.html#a211adbeffac02bf2b2a99dea8b4747f1", null ],
-    [ "is_platform", "config_8hpp.html#ac417a8389f38767cd28f8ae422fdb0f2", null ],
-    [ "on_error_callback", "config_8hpp.html#af60456f5cba8b81a7b27af69119f0f0e", null ],
-    [ "on_error_callback_enabled", "config_8hpp.html#ac12527f33da03c8cde18a7071a4c7144", null ],
-    [ "platform", "config_8hpp.html#a715dc3fbafb72da4851a23304c0354b3", null ]
+    [ "is_a_test", "config_8hpp.html#a455862d0a10293e15661ca3cd780673d", null ],
+    [ "is_platform", "config_8hpp.html#aab7c25782659b75f580a03723f361cce", null ],
+    [ "on_error_callback", "config_8hpp.html#a815bbdd45f300456394468217f50439f", null ],
+    [ "on_error_callback_enabled", "config_8hpp.html#a6bd6aeab8ce0f19b2d6ed4bc6d67354f", null ],
+    [ "platform", "config_8hpp.html#a7f6c805aacf8e9584ab484f9429e7f0b", null ]
 ];

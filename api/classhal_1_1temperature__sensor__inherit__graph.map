@@ -1,0 +1,4 @@
+<map id="hal::temperature_sensor" name="hal::temperature_sensor">
+<area shape="rect" id="node1" title="Hardware abstraction interface for temperature sensing devices." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node2" href="$structhal_1_1mock_1_1temperature__sensor.html" title="Mock temperature sensor implementation for use in unit tests and simulations." alt="" coords="9,80,161,121"/>
+</map>

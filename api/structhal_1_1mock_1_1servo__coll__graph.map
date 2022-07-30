@@ -1,0 +1,5 @@
+<map id="hal::mock::servo" name="hal::mock::servo">
+<area shape="rect" id="node1" title="mock servo implementation for use in unit tests and simulations." alt="" coords="53,109,168,136"/>
+<area shape="rect" id="node2" href="$classhal_1_1servo.html" title="Hardware abstraction for closed loop positional rotary and linear actuators." alt="" coords="5,13,83,39"/>
+<area shape="rect" id="node3" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="106,5,249,47"/>
+</map>

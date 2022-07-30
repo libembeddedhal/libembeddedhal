@@ -1,0 +1,7 @@
+<map id="hal::counter_timeout::counter_timeout" name="hal::counter_timeout::counter_timeout">
+<area shape="rect" id="node1" title="Construct a new counter timeout object." alt="" coords="612,22,751,63"/>
+<area shape="rect" id="node2" href="$classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" title="Create a counter_timeout." alt="" coords="425,22,564,63"/>
+<area shape="rect" id="node3" href="$group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" title="Create a timeout object based on hal::counter." alt="" coords="247,29,377,56"/>
+<area shape="rect" id="node4" href="$group__counter.html#gad6b2dea2bf157a3df06253aac6354586" title="Delay execution for a duration of time using a hardware counter." alt="" coords="124,29,199,56"/>
+<area shape="rect" id="node5" href="$group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" title="Read bytes from a serial port." alt="" coords="5,29,76,56"/>
+</map>

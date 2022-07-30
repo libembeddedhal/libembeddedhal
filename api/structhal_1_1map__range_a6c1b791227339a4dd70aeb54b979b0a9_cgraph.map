@@ -1,0 +1,4 @@
+<map id="hal::map_range::distance" name="hal::map_range::distance">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="217,5,312,32"/>
+</map>

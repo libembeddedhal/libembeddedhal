@@ -1,0 +1,4 @@
+<map id="hal::multiply" name="hal::multiply">
+<area shape="rect" id="node1" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="5,29,95,56"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="143,29,245,56"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="hal::mock::write_only_spi::reset" name="hal::mock::write_only_spi::reset">
+<area shape="rect" id="node1" title="Reset spy information for both configure() and transfer()" alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node2" href="$classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816" title="Reset call recordings and turns off error trigger." alt="" coords="195,13,344,39"/>
+</map>

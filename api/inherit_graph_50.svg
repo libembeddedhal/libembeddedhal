@@ -21,9 +21,9 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="structembed_1_1error_1_1invalid__option__t.html" target="_top" xlink:title="Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...">
+<g id="a_node2"><a xlink:href="structhal_1_1error_1_1invalid__option__t.html" target="_top" xlink:title="Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...">
 <polygon fill="white" stroke="black" points="115,-0.5 115,-30.5 219,-30.5 219,-0.5 115,-0.5"/>
-<text text-anchor="start" x="123" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">embed::error::invalid</text>
+<text text-anchor="start" x="123" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::error::invalid</text>
 <text text-anchor="middle" x="167" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_option_t&lt; options &gt;</text>
 </a>
 </g>

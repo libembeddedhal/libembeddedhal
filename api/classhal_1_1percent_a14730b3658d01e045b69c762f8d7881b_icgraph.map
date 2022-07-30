@@ -1,0 +1,5 @@
+<map id="hal::percent::raw_value" name="hal::percent::raw_value">
+<area shape="rect" id="node1" title="Get raw integral value." alt="" coords="211,31,364,57"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#ac5595537118024b5502ab6b8891a7be4" title="Comparison operator." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="37,56,131,83"/>
+</map>

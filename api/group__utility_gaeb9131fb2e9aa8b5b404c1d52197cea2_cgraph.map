@@ -1,0 +1,9 @@
+<map id="hal::to_string" name="hal::to_string">
+<area shape="rect" id="node1" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="5,81,100,108"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9" title="Get +100% percentage." alt="" coords="165,31,284,57"/>
+<area shape="rect" id="node5" href="$classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252" title="Get &#45;100% percentage." alt="" coords="167,81,282,108"/>
+<area shape="rect" id="node7" href="$classhal_1_1percent.html#a14730b3658d01e045b69c762f8d7881b" title="Get raw integral value." alt="" coords="148,132,301,159"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d" title="Construct 0% percent object." alt="" coords="354,56,491,83"/>
+<area shape="rect" id="node4" href="$classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0" title="Get the 100% value in its raw representation." alt="" coords="349,5,496,32"/>
+<area shape="rect" id="node6" href="$classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1" title="Get the &#45;100% value in its raw representation." alt="" coords="351,107,494,133"/>
+</map>

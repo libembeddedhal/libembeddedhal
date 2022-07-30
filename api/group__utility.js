@@ -1,99 +1,99 @@
 var group__utility =
 [
-    [ "embed::literals", "namespaceembed_1_1literals.html", null ],
-    [ "embed::enumeration", "conceptembed_1_1enumeration.html", null ],
-    [ "embed::bit_limits< BitWidth, int_t >", "structembed_1_1bit__limits.html", [
-      [ "max", "structembed_1_1bit__limits.html#a8ba7dc27637b79c4d529ef1ecc78757f", null ],
-      [ "min", "structembed_1_1bit__limits.html#a97b15cc422bc81eaad24d89a4143f3f9", null ]
+    [ "hal::literals", "namespacehal_1_1literals.html", null ],
+    [ "hal::enumeration", "concepthal_1_1enumeration.html", null ],
+    [ "hal::bit_limits< BitWidth, int_t >", "structhal_1_1bit__limits.html", [
+      [ "max", "structhal_1_1bit__limits.html#acbcfdcedcfd6f38e19cee2cb9fe971a9", null ],
+      [ "min", "structhal_1_1bit__limits.html#a5718b2fab69b767de540d0b9a4171879", null ]
     ] ],
-    [ "embed::duty_cycle", "structembed_1_1duty__cycle.html", [
-      [ "operator percent", "structembed_1_1duty__cycle.html#ae3211da17ad871387109a5d901a18183", null ],
-      [ "operator==", "structembed_1_1duty__cycle.html#ae1fb049954ac270476347780db600f0d", null ],
-      [ "high", "structembed_1_1duty__cycle.html#a36907616e9a2b7bcb572f0536146daca", null ],
-      [ "low", "structembed_1_1duty__cycle.html#a1662bb9f0f66c15c62f909db7041c8b8", null ]
+    [ "hal::duty_cycle", "structhal_1_1duty__cycle.html", [
+      [ "operator percent", "structhal_1_1duty__cycle.html#a5f5bad1e9e0cd329eeecd5c0db0e0a32", null ],
+      [ "operator==", "structhal_1_1duty__cycle.html#a6182350d7787ee625a2866373fc1cb0b", null ],
+      [ "high", "structhal_1_1duty__cycle.html#a7ce7b309ac102c8bd4955ed6347bf90d", null ],
+      [ "low", "structhal_1_1duty__cycle.html#ad33521398c99f3b592a82a6cf1cffe07", null ]
     ] ],
-    [ "embed::frequency", "structembed_1_1frequency.html", [
-      [ "operator<=>", "structembed_1_1frequency.html#ac4fe319cedfab09cd4d71a41d73a5048", null ],
-      [ "value_hz", "structembed_1_1frequency.html#a46e216809cc6b203668069cd15c94180", null ]
+    [ "hal::frequency", "structhal_1_1frequency.html", [
+      [ "operator<=>", "structhal_1_1frequency.html#a01786484a248d576eac18f820e9c8ceb", null ],
+      [ "value_hz", "structhal_1_1frequency.html#aaa3bd50b4483e2017c7cda91b24a9f6e", null ]
     ] ],
-    [ "embed::map_range< T >", "structembed_1_1map__range.html", [
-      [ "distance", "structembed_1_1map__range.html#a1358d673be561b9550aaa727ce65085c", null ],
-      [ "max", "structembed_1_1map__range.html#aae9877884770482918f3e5a1238d99e6", null ],
-      [ "min", "structembed_1_1map__range.html#a62a05133e6a24e7a6aac51018f35e47a", null ],
-      [ "x", "structembed_1_1map__range.html#adbdb43c8b6398d3926d2d9f204604766", null ],
-      [ "y", "structembed_1_1map__range.html#ab31c8e0f197505963fef2cdc6dfcea91", null ]
+    [ "hal::map_range< T >", "structhal_1_1map__range.html", [
+      [ "distance", "structhal_1_1map__range.html#a6c1b791227339a4dd70aeb54b979b0a9", null ],
+      [ "max", "structhal_1_1map__range.html#a6e5a2db6f0d7657a543efc3113215727", null ],
+      [ "min", "structhal_1_1map__range.html#a2ea94c0936b7826580c81b46de2c62ec", null ],
+      [ "x", "structhal_1_1map__range.html#a35e31dfeacfd7c25ffd7a5872cdd9356", null ],
+      [ "y", "structhal_1_1map__range.html#af86ee2b137742cb81f489bb23d68beee", null ]
     ] ],
-    [ "embed::overflow_counter< CountBitWidth >", "classembed_1_1overflow__counter.html", [
-      [ "reset", "classembed_1_1overflow__counter.html#ad8b678431adb27963d8a18266b7c813c", null ],
-      [ "update", "classembed_1_1overflow__counter.html#a0e0bde69bb3acba1b7415e8c80b59990", null ]
+    [ "hal::overflow_counter< CountBitWidth >", "classhal_1_1overflow__counter.html", [
+      [ "reset", "classhal_1_1overflow__counter.html#a5ac34f7f5fdfb9716c251aec402aab2b", null ],
+      [ "update", "classhal_1_1overflow__counter.html#aa22cd8f00c0e073469412b82d3f0ba3f", null ]
     ] ],
-    [ "embed::percent", "classembed_1_1percent.html", [
-      [ "int_t", "classembed_1_1percent.html#acc66ace6b069d01dc4ed5b241a41e8cc", null ],
-      [ "overflow_t", "classembed_1_1percent.html#a0b8494924dac5f6c1a8cc6fd0528cb69", null ],
-      [ "percent", "classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1", null ],
-      [ "percent", "classembed_1_1percent.html#af3128c9e5132b2d4d6f75db9bec498ae", null ],
-      [ "convert", "classembed_1_1percent.html#ac103b96ed873d2d7500795d98e9aa666", null ],
-      [ "from_ratio", "classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27", null ],
-      [ "from_raw", "classembed_1_1percent.html#a4a2ae6a33c1dbbefc292c791b325d5ad", null ],
-      [ "max", "classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f", null ],
-      [ "min", "classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b", null ],
-      [ "operator double", "classembed_1_1percent.html#a0c97fe3a6e1f7d57f0f486d6bd9c7afa", null ],
-      [ "operator float", "classembed_1_1percent.html#a6753fedf7c0608ac00eb0f2c1b2ac1e7", null ],
-      [ "operator-", "classembed_1_1percent.html#a495727f30b8c3c67e8f1e5c809800017", null ],
-      [ "operator<=>", "classembed_1_1percent.html#a03e21e0b275fe464d37f11f1abf6803d", null ],
-      [ "operator=", "classembed_1_1percent.html#af2a395e77ca5d840fc8ee29c4354dacb", null ],
-      [ "operator==", "classembed_1_1percent.html#a706fa1b17fbcb4ccdd8cc6b037b224ee", null ],
-      [ "raw_max", "classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059", null ],
-      [ "raw_min", "classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44", null ],
-      [ "raw_value", "classembed_1_1percent.html#ad776812c80964b900f3d1644bea1d773", null ],
-      [ "raw_zero", "classembed_1_1percent.html#ad205fdaffa0fc8a9b7c227b704571b74", null ],
-      [ "scale", "classembed_1_1percent.html#afa379fbbb92bc5dc22f0dce8bcf7ea1b", null ],
-      [ "scale", "classembed_1_1percent.html#a4d715bd03b1ad7d7920d3300cb0f7763", null ],
-      [ "to", "classembed_1_1percent.html#a642dbcdfc12e1844ab286d524f4c45d7", null ],
-      [ "zero", "classembed_1_1percent.html#acb80870920c804148abc13cd7c1a38cc", null ],
-      [ "operator*", "classembed_1_1percent.html#aaf06f5281e71987861e11614c3364cf8", null ],
-      [ "operator*", "classembed_1_1percent.html#a6a76b1f478c0be41233f2d0a8357c90e", null ]
+    [ "hal::percent", "classhal_1_1percent.html", [
+      [ "int_t", "classhal_1_1percent.html#ad44888dcbdf13a1673a21e211f5e8fc9", null ],
+      [ "overflow_t", "classhal_1_1percent.html#aa4509f26b03020b813f85e395e3bb9c8", null ],
+      [ "percent", "classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d", null ],
+      [ "percent", "classhal_1_1percent.html#a873b8463cbe90c21eba808fe4ca122b7", null ],
+      [ "convert", "classhal_1_1percent.html#aebec716685a74957920c15d903512ab8", null ],
+      [ "from_ratio", "classhal_1_1percent.html#a4fece281bfb4ec0f48f86b14168194ce", null ],
+      [ "from_raw", "classhal_1_1percent.html#af31fb73a5d9b8abf34b2eb111cfeaf26", null ],
+      [ "max", "classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9", null ],
+      [ "min", "classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252", null ],
+      [ "operator double", "classhal_1_1percent.html#a5eead4f5932fe9c2caf9332ce27858c4", null ],
+      [ "operator float", "classhal_1_1percent.html#a610e6eac3a4c22d77b31fe14feac9120", null ],
+      [ "operator-", "classhal_1_1percent.html#a3838cdc9d33d279c8cbee157aa6dbc85", null ],
+      [ "operator<=>", "classhal_1_1percent.html#a4e9be8577ad3c15ac81ce1758f07174a", null ],
+      [ "operator=", "classhal_1_1percent.html#ad5ed3b476e65e3b5aec2408f76865500", null ],
+      [ "operator==", "classhal_1_1percent.html#ac5595537118024b5502ab6b8891a7be4", null ],
+      [ "raw_max", "classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0", null ],
+      [ "raw_min", "classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1", null ],
+      [ "raw_value", "classhal_1_1percent.html#a14730b3658d01e045b69c762f8d7881b", null ],
+      [ "raw_zero", "classhal_1_1percent.html#a630093c754626820c0c64ef151146939", null ],
+      [ "scale", "classhal_1_1percent.html#a1bf2e7369a19e7795c2e68c643e8d06b", null ],
+      [ "scale", "classhal_1_1percent.html#a2344573b5df0dfa1f36e7dc19a92ce43", null ],
+      [ "to", "classhal_1_1percent.html#ae750d1cac1cb2cae531d00b8738cddf2", null ],
+      [ "zero", "classhal_1_1percent.html#ad2bcc1d0733514aef3dfdae326b8cfa7", null ],
+      [ "operator*", "classhal_1_1percent.html#aaf06f5281e71987861e11614c3364cf8", null ],
+      [ "operator*", "classhal_1_1percent.html#a6a76b1f478c0be41233f2d0a8357c90e", null ]
     ] ],
-    [ "embed::static_callable< owner_class, reference_designator, signature >", "classembed_1_1static__callable.html", null ],
-    [ "embed::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", [
-      [ "static_callable", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a2d64ea7683d62e8cd33c96f83fc41514", null ],
-      [ "get_handler", "classembed_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a4b3a26ad0784abf11d217b43a19084d8", null ]
+    [ "hal::static_callable< owner_class, reference_designator, signature >", "classhal_1_1static__callable.html", null ],
+    [ "hal::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", [
+      [ "static_callable", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2", null ],
+      [ "get_handler", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0", null ]
     ] ],
-    [ "embed::static_memory_resource< BufferSize >", "classembed_1_1static__memory__resource.html", [
-      [ "static_memory_resource", "classembed_1_1static__memory__resource.html#accc5d3c63b39f659edf8fc3cd068f6a8", null ],
-      [ "capacity", "classembed_1_1static__memory__resource.html#acf992d62f5ef925856fda6efd9b8ba9d", null ],
-      [ "do_allocate", "classembed_1_1static__memory__resource.html#adfc8bbd5da7738dee4ba596a347f3b60", null ],
-      [ "do_deallocate", "classembed_1_1static__memory__resource.html#a1dae5e35fc8ff4d6a17f05ec0b204031", null ],
-      [ "do_is_equal", "classembed_1_1static__memory__resource.html#a3f20076cc811216692c34e9ae2af66db", null ],
-      [ "memory_available", "classembed_1_1static__memory__resource.html#acc91749099ae5ac54d2d5cf3761340c6", null ],
-      [ "memory_used", "classembed_1_1static__memory__resource.html#af461b8e05b7f1e0f064a17d51016a3e3", null ]
+    [ "hal::static_memory_resource< BufferSize >", "classhal_1_1static__memory__resource.html", [
+      [ "static_memory_resource", "classhal_1_1static__memory__resource.html#a4b92d15f9b57574f5b5c258e3b577dc2", null ],
+      [ "capacity", "classhal_1_1static__memory__resource.html#a0f79a926cf04a60f7abedf4417bf7e7a", null ],
+      [ "do_allocate", "classhal_1_1static__memory__resource.html#a3957b6cf483ec0e5051be83b33faf13b", null ],
+      [ "do_deallocate", "classhal_1_1static__memory__resource.html#a449c0ee134cfc4566ede0dba18f070ed", null ],
+      [ "do_is_equal", "classhal_1_1static__memory__resource.html#a4473de893b2d00d7bafff4ca94394a99", null ],
+      [ "memory_available", "classhal_1_1static__memory__resource.html#a3779c08f77a57a00006817c00be5721d", null ],
+      [ "memory_used", "classhal_1_1static__memory__resource.html#ad15b310d86e3c3c0ac7ed73cf785ec26", null ]
     ] ],
-    [ "embed::time_duration", "group__utility.html#ga702bc5c739d1887d639f6d61ba2addba", null ],
-    [ "embed::timeout", "group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569", null ],
-    [ "embed::divider_rule", "group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39", [
-      [ "embed::divider_rule::higher", "group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39afa2ec87a2e6783b2193f71bfdf0f9cc8", null ],
-      [ "embed::divider_rule::lower", "group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a81e073b428b50247daba38531dcf412a", null ],
-      [ "embed::divider_rule::closest", "group__utility.html#ggabc9a8424e1c83c594e6a3799a36b2d39a95eb60add4a468892d9be1ba83b2c946", null ]
+    [ "hal::time_duration", "group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77", null ],
+    [ "hal::timeout", "group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac", null ],
+    [ "hal::divider_rule", "group__utility.html#ga8c6e5bc32ff2e164fb70d1531fc4d355", [
+      [ "hal::divider_rule::higher", "group__utility.html#gga8c6e5bc32ff2e164fb70d1531fc4d355afa2ec87a2e6783b2193f71bfdf0f9cc8", null ],
+      [ "hal::divider_rule::lower", "group__utility.html#gga8c6e5bc32ff2e164fb70d1531fc4d355a81e073b428b50247daba38531dcf412a", null ],
+      [ "hal::divider_rule::closest", "group__utility.html#gga8c6e5bc32ff2e164fb70d1531fc4d355a95eb60add4a468892d9be1ba83b2c946", null ]
     ] ],
-    [ "embed::absolute_value", "group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a", null ],
-    [ "embed::calculate_duty_cycle", "group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2", null ],
-    [ "embed::calculate_duty_cycle", "group__utility.html#gac197fc46936b832a6e9219b248e2f9bb", null ],
-    [ "embed::closest", "group__utility.html#ga7c61114c56c371ced7e50428411220db", null ],
-    [ "embed::cycles_per", "group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0", null ],
-    [ "embed::delay", "group__utility.html#ga51d5d0a622c078bcb065454cac2a5688", null ],
-    [ "embed::distance", "group__utility.html#ga0abcbcb6d4ed9f8dc86ca404255d36d1", null ],
-    [ "embed::duration_from_cycles", "group__utility.html#ga19bf555b8e14f12184073b07791fd56b", null ],
-    [ "embed::generate_field_of_ones", "group__utility.html#ga4575cf18cb2a0127d46580d0be41c74a", null ],
-    [ "embed::map", "group__utility.html#gafa1bc584612147c23f340cfd2786199c", null ],
-    [ "embed::multiply", "group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7", null ],
-    [ "embed::never_timeout", "group__utility.html#ga4ae62d3ea26b0599c574c0181a202529", null ],
-    [ "embed::operator*", "group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581", null ],
-    [ "embed::operator/", "group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372", null ],
-    [ "embed::operator/", "group__utility.html#gac9bc7388bf0424bc41cf69ced37ef3df", null ],
-    [ "embed::rounding_division", "group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e", null ],
-    [ "embed::to_array", "group__utility.html#gac641e1b47740fd62de5f427f7559c804", null ],
-    [ "embed::to_string", "group__utility.html#ga860cfe310c0207e449c3b382cc49794b", null ],
-    [ "embed::upscale_integer", "group__utility.html#gab88ee85bff9e886fd97d1a5c47a87a69", null ],
-    [ "embed::value", "group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd", null ],
-    [ "embed::wavelength", "group__utility.html#ga595b4275cff4d56d9d6226568c7c9809", null ]
+    [ "hal::absolute_value", "group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9", null ],
+    [ "hal::calculate_duty_cycle", "group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1", null ],
+    [ "hal::calculate_duty_cycle", "group__utility.html#gaae8926027334510d6e08aa55f923ef77", null ],
+    [ "hal::closest", "group__utility.html#ga9e1226abcb21d4e0913fcf78bad9f1c8", null ],
+    [ "hal::cycles_per", "group__utility.html#ga9f67c4dbb94efa24f2d8852bf6e424cc", null ],
+    [ "hal::delay", "group__utility.html#ga02e12f5656618c61208a06871fcf03f5", null ],
+    [ "hal::distance", "group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15", null ],
+    [ "hal::duration_from_cycles", "group__utility.html#gaeb8013ca607e5e7de71637e85a45e809", null ],
+    [ "hal::generate_field_of_ones", "group__utility.html#ga3dfaa496cc1c025b4bb28abc39e451e2", null ],
+    [ "hal::map", "group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e", null ],
+    [ "hal::multiply", "group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a", null ],
+    [ "hal::never_timeout", "group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1", null ],
+    [ "hal::operator*", "group__utility.html#gafa189898df75a983e57b4dab591a7746", null ],
+    [ "hal::operator/", "group__utility.html#ga7497d9f06c28fb7064e96eb4b8b2653b", null ],
+    [ "hal::operator/", "group__utility.html#ga7215b15d0eaa1d57d526f4490686f549", null ],
+    [ "hal::rounding_division", "group__utility.html#ga58a3550a3236310f20b92eacf593c2f0", null ],
+    [ "hal::to_array", "group__utility.html#ga9e8c4111664297ec9a8af392a3ee03a4", null ],
+    [ "hal::to_string", "group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2", null ],
+    [ "hal::upscale_integer", "group__utility.html#ga581f40e2d3bae0a2451a7f2ba114e778", null ],
+    [ "hal::value", "group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18", null ],
+    [ "hal::wavelength", "group__utility.html#ga73d442b99558a8adf71fd377c6f7c60e", null ]
 ];

@@ -1,0 +1,6 @@
+<map id="hal::mock::timer" name="hal::mock::timer">
+<area shape="rect" id="node1" title="Mock timer implementation for use in unit tests and simulations with spy functions for schedule(),..." alt="" coords="335,71,447,97"/>
+<area shape="rect" id="node2" href="$classhal_1_1timer.html" title="Timer hardware abstraction interface." alt="" coords="65,5,140,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,56,200,112"/>
+<area shape="rect" id="node4" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="23,136,183,163"/>
+</map>

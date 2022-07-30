@@ -1,0 +1,4 @@
+<map id="hal::counter" name="hal::counter">
+<area shape="rect" id="node1" title="Hardware Counter abstraction interface." alt="" coords="25,5,113,32"/>
+<area shape="rect" id="node2" href="$structhal_1_1mock_1_1counter.html" title="mock counter implementation for use in unit tests and simulations." alt="" coords="5,80,132,107"/>
+</map>

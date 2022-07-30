@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['z_0',['z',['../structembed_1_1accelerometer_1_1axis__t.html#a257a91f75b20326e8375881b5efa49cc',1,'embed::accelerometer::axis_t']]],
-  ['zero_1',['zero',['../classembed_1_1percentage.html#a52ccb3a295835c9c749370b95ba0c144',1,'embed::percentage']]]
+  ['z_0',['z',['../structhal_1_1accelerometer_1_1axis__t.html#a8b0ee12dbcd8ca306b756e7af4d8376e',1,'hal::accelerometer::axis_t']]],
+  ['zero_1',['zero',['../classhal_1_1percentage.html#a5176fc76b42751db1c5e344824d52ab7',1,'hal::percentage']]]
 ];

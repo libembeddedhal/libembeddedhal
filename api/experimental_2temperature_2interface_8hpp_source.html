@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('experimental_2temperature_2interface_8
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../error.hpp&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="temperature_2unit_8hpp.html">unit.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceembed.html">embed</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classembed_1_1temperature__sensor.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classembed_1_1temperature__sensor.html">temperature_sensor</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classhal_1_1temperature__sensor.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classhal_1_1temperature__sensor.html">temperature_sensor</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classembed_1_1temperature__sensor.html#af3df4d6ce1237aa2a8900f1797ead13d">   22</a></span>  [[nodiscard]] boost::leaf::result&lt;microkelvin&gt; <a class="code hl_function" href="classembed_1_1temperature__sensor.html#af3df4d6ce1237aa2a8900f1797ead13d">read</a>() noexcept</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classhal_1_1temperature__sensor.html#a895f74a62fd9671315396bdb70c490bf">   22</a></span>  [[nodiscard]] boost::leaf::result&lt;microkelvin&gt; <a class="code hl_function" href="classhal_1_1temperature__sensor.html#a895f74a62fd9671315396bdb70c490bf">read</a>() noexcept</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> driver_read();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
@@ -114,10 +114,10 @@ $(document).ready(function(){initNavTree('experimental_2temperature_2interface_8
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">virtual</span> boost::leaf::result&lt;microkelvin&gt; driver_read() noexcept = 0;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}  <span class="comment">// namespace embed</span></div>
-<div class="ttc" id="aclassembed_1_1temperature__sensor_html"><div class="ttname"><a href="classembed_1_1temperature__sensor.html">embed::temperature_sensor</a></div><div class="ttdoc">Hardware abstraction interface for temperature sensing devices.</div><div class="ttdef"><b>Definition:</b> interface.hpp:14</div></div>
-<div class="ttc" id="aclassembed_1_1temperature__sensor_html_af3df4d6ce1237aa2a8900f1797ead13d"><div class="ttname"><a href="classembed_1_1temperature__sensor.html#af3df4d6ce1237aa2a8900f1797ead13d">embed::temperature_sensor::read</a></div><div class="ttdeci">boost::leaf::result&lt; microkelvin &gt; read() noexcept</div><div class="ttdoc">Read the current temperature from the sensor.</div><div class="ttdef"><b>Definition:</b> interface.hpp:22</div></div>
-<div class="ttc" id="anamespaceembed_html"><div class="ttname"><a href="namespaceembed.html">embed</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}  <span class="comment">// namespace hal</span></div>
+<div class="ttc" id="aclasshal_1_1temperature__sensor_html"><div class="ttname"><a href="classhal_1_1temperature__sensor.html">hal::temperature_sensor</a></div><div class="ttdoc">Hardware abstraction interface for temperature sensing devices.</div><div class="ttdef"><b>Definition:</b> interface.hpp:14</div></div>
+<div class="ttc" id="aclasshal_1_1temperature__sensor_html_a895f74a62fd9671315396bdb70c490bf"><div class="ttname"><a href="classhal_1_1temperature__sensor.html#a895f74a62fd9671315396bdb70c490bf">hal::temperature_sensor::read</a></div><div class="ttdeci">boost::leaf::result&lt; microkelvin &gt; read() noexcept</div><div class="ttdoc">Read the current temperature from the sensor.</div><div class="ttdef"><b>Definition:</b> interface.hpp:22</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="atemperature_2unit_8hpp_html"><div class="ttname"><a href="temperature_2unit_8hpp.html">unit.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

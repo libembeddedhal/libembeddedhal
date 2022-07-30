@@ -1,10 +1,10 @@
 var group__dac =
 [
-    [ "embed::dac", "classembed_1_1dac.html", [
-      [ "write", "classembed_1_1dac.html#a2ccfb1e40854992e01bc02d43b2b1d42", null ]
+    [ "hal::dac", "classhal_1_1dac.html", [
+      [ "write", "classhal_1_1dac.html#a7dbf47d48254522e80831405474d5013", null ]
     ] ],
-    [ "embed::mock::dac", "structembed_1_1mock_1_1dac.html", [
-      [ "reset", "structembed_1_1mock_1_1dac.html#a0f2b08ffb3ffb2328dd19004c118b070", null ],
-      [ "spy_write", "structembed_1_1mock_1_1dac.html#a50b6a7fd8f61a76de17a03e0685bdc92", null ]
+    [ "hal::mock::dac", "structhal_1_1mock_1_1dac.html", [
+      [ "reset", "structhal_1_1mock_1_1dac.html#a895ef11a9f64df6e406fc5fa88efb1e5", null ],
+      [ "spy_write", "structhal_1_1mock_1_1dac.html#a46df76c6a18de6b2c388efe6bf328a40", null ]
     ] ]
 ];

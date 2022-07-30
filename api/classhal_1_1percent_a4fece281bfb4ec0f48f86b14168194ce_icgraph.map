@@ -1,0 +1,7 @@
+<map id="hal::percent::from_ratio" name="hal::percent::from_ratio">
+<area shape="rect" id="node1" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="212,78,332,119"/>
+<area shape="rect" id="node2" href="$classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918" title="Factory function to create a rc_servo object." alt="" coords="16,5,153,32"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="49,56,120,83"/>
+<area shape="rect" id="node4" href="$structhal_1_1duty__cycle.html#a5f5bad1e9e0cd329eeecd5c0db0e0a32" title="Conversion from duty cycle to percentage." alt="" coords="5,107,164,149"/>
+<area shape="rect" id="node5" href="$classhal_1_1percent.html#a1bf2e7369a19e7795c2e68c643e8d06b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="22,173,147,200"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trigger_5fedge_0',['trigger_edge',['../classembed_1_1interrupt__pin.html#a07c33ec3b21b40346a0b765bb14627e9',1,'embed::interrupt_pin']]]
+  ['trigger_5fedge_0',['trigger_edge',['../classhal_1_1interrupt__pin.html#a2e2cf60fe30a8683fb30cec584c7de81',1,'hal::interrupt_pin']]]
 ];

@@ -1,0 +1,14 @@
+<map id="hal::new_error" name="hal::new_error">
+<area shape="rect" id="node1" title=" " alt="" coords="641,213,744,239"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="445,5,573,47"/>
+<area shape="rect" id="node3" href="$classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" title="Create a counter_timeout." alt="" coords="440,71,579,112"/>
+<area shape="rect" id="node5" href="$group__counter.html#gad6b2dea2bf157a3df06253aac6354586" title="Delay execution for a duration of time using a hardware counter." alt="" coords="124,110,199,137"/>
+<area shape="rect" id="node7" href="$group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="474,187,545,214"/>
+<area shape="rect" id="node8" href="$group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="465,238,554,265"/>
+<area shape="rect" id="node10" href="$classhal_1_1counter__timeout.html#a6ff4223b045d65de5bab557c0648c3a3" title="Call this object to check if it has timed out." alt="" coords="440,289,579,331"/>
+<area shape="rect" id="node11" href="$classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da" title="Record the arguments of a function being spied on." alt="" coords="431,355,587,382"/>
+<area shape="rect" id="node12" href="$classhal_1_1can__network.html#a13691b16cb49b9fb2317cbc0f57058a2" title="Associate a can id with a node in the can network." alt="" coords="425,407,593,448"/>
+<area shape="rect" id="node4" href="$group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" title="Create a timeout object based on hal::counter." alt="" coords="247,82,377,109"/>
+<area shape="rect" id="node6" href="$group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" title="Read bytes from a serial port." alt="" coords="5,110,76,137"/>
+<area shape="rect" id="node9" href="$group__utility.html#gafa189898df75a983e57b4dab591a7746" title="Scale up a frequency by an integer factor." alt="" coords="263,238,361,265"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="hal::mock::timer::reset" name="hal::mock::timer::reset">
+<area shape="rect" id="node1" title="Reset spy information for schedule(), clear(), and is_running()" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816" title="Reset call recordings and turns off error trigger." alt="" coords="200,5,349,32"/>
+</map>

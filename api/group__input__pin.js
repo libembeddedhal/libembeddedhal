@@ -1,21 +1,21 @@
 var group__input__pin =
 [
-    [ "embed::input_pin", "classembed_1_1input__pin.html", [
-      [ "settings", "structembed_1_1input__pin_1_1settings.html", [
-        [ "operator<=>", "structembed_1_1input__pin_1_1settings.html#a400c434a32b56529bb33aa1b4a39849b", null ],
-        [ "resistor", "structembed_1_1input__pin_1_1settings.html#a2d8d7d47e0514753b30f0367bd803b49", null ]
+    [ "hal::input_pin", "classhal_1_1input__pin.html", [
+      [ "settings", "structhal_1_1input__pin_1_1settings.html", [
+        [ "operator<=>", "structhal_1_1input__pin_1_1settings.html#a8ee8534fdb41e5311a4445d276e8d71d", null ],
+        [ "resistor", "structhal_1_1input__pin_1_1settings.html#a9cd830f01b3a98a267f766f7ff82c947", null ]
       ] ],
-      [ "configure", "classembed_1_1input__pin.html#a81ab003bbceafbdd7f69bc9949c719f6", null ],
-      [ "level", "classembed_1_1input__pin.html#ad3751e548584f6629ff14469c9337b84", null ]
+      [ "configure", "classhal_1_1input__pin.html#a16b35d9849a9bf805bba19eab6e42e8c", null ],
+      [ "level", "classhal_1_1input__pin.html#a5aecd9e54b0ed65d1a494fd742063a3c", null ]
     ] ],
-    [ "embed::mock::input_pin", "structembed_1_1mock_1_1input__pin.html", [
-      [ "reset", "structembed_1_1mock_1_1input__pin.html#a3e658cb2b6cb764a01dd2a8f3a53e92b", null ],
-      [ "set", "structembed_1_1mock_1_1input__pin.html#aff45aebba437f30b60c3cb3fb135840e", null ],
-      [ "spy_configure", "structembed_1_1mock_1_1input__pin.html#af23fa5300feff2f141b568f7e1eef13e", null ]
+    [ "hal::mock::input_pin", "structhal_1_1mock_1_1input__pin.html", [
+      [ "reset", "structhal_1_1mock_1_1input__pin.html#a3b21009c4c58b20b27e2d2a4cc72947e", null ],
+      [ "set", "structhal_1_1mock_1_1input__pin.html#a92ec14df3e73bbd5564c9e5ccf1aa20f", null ],
+      [ "spy_configure", "structhal_1_1mock_1_1input__pin.html#aa63048c67ea86b0cda9324e8166e56aa", null ]
     ] ],
-    [ "embed::pin_resistor", "group__input__pin.html#ga5ab6b9e7ccdd68ae6b998c8b586a75a6", [
-      [ "embed::pin_resistor::none", "group__input__pin.html#gga5ab6b9e7ccdd68ae6b998c8b586a75a6a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
-      [ "embed::pin_resistor::pull_down", "group__input__pin.html#gga5ab6b9e7ccdd68ae6b998c8b586a75a6a6bd95a5bd1a571a29b57aa0dfda9d77b", null ],
-      [ "embed::pin_resistor::pull_up", "group__input__pin.html#gga5ab6b9e7ccdd68ae6b998c8b586a75a6a5dd40e1f7d5c287d1df85dac013c1c38", null ]
+    [ "hal::pin_resistor", "group__input__pin.html#gaf094ceea0d10800e8281b1014d7b8a1a", [
+      [ "hal::pin_resistor::none", "group__input__pin.html#ggaf094ceea0d10800e8281b1014d7b8a1aa334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
+      [ "hal::pin_resistor::pull_down", "group__input__pin.html#ggaf094ceea0d10800e8281b1014d7b8a1aa6bd95a5bd1a571a29b57aa0dfda9d77b", null ],
+      [ "hal::pin_resistor::pull_up", "group__input__pin.html#ggaf094ceea0d10800e8281b1014d7b8a1aa5dd40e1f7d5c287d1df85dac013c1c38", null ]
     ] ]
 ];

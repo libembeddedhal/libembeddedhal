@@ -1,0 +1,10 @@
+<map id="hal::spy_handler::reset" name="hal::spy_handler::reset">
+<area shape="rect" id="node1" title="Reset call recordings and turns off error trigger." alt="" coords="204,202,353,229"/>
+<area shape="rect" id="node2" href="$structhal_1_1mock_1_1input__pin.html#a3b21009c4c58b20b27e2d2a4cc72947e" title="Reset spy information for configure()" alt="" coords="13,5,148,47"/>
+<area shape="rect" id="node3" href="$structhal_1_1mock_1_1interrupt__pin.html#a2803396fafebececf62276e236a2fd25" title="Reset spy information for configure(), attach_interrupt(), and detach_interrupt()" alt="" coords="15,71,146,112"/>
+<area shape="rect" id="node4" href="$structhal_1_1mock_1_1output__pin.html#a7ca18ce52efdac4c61d8c56a38ee1a93" title="Reset spy information for configure() and level()" alt="" coords="9,136,152,177"/>
+<area shape="rect" id="node5" href="$structhal_1_1mock_1_1pwm.html#ad4c4c645b6698791d34a3f8a78c96b17" title="Reset spy information for both configure() and duty_cycle()" alt="" coords="7,202,154,229"/>
+<area shape="rect" id="node6" href="$structhal_1_1mock_1_1servo.html#a70193593d8f691312fa80411980e752b" title="Reset spy information for position()" alt="" coords="5,253,156,279"/>
+<area shape="rect" id="node7" href="$structhal_1_1mock_1_1write__only__spi.html#a9be71a9e85a7fc15eef00839781eef73" title="Reset spy information for both configure() and transfer()" alt="" coords="10,304,151,345"/>
+<area shape="rect" id="node8" href="$structhal_1_1mock_1_1timer.html#a9d3f61fc844e2939b380e887c4f9bdd4" title="Reset spy information for schedule(), clear(), and is_running()" alt="" coords="7,370,154,397"/>
+</map>

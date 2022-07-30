@@ -1,0 +1,5 @@
+<map id="hal::read" name="hal::read">
+<area shape="rect" id="node1" title="read bytes from target device on i2c bus" alt="" coords="191,31,261,57"/>
+<area shape="rect" id="node2" href="$group__i2c.html#ga708c8a9f534086e5447673c494926d69" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,109,32"/>
+<area shape="rect" id="node3" href="$group__serial.html#ga9f8de5a91baa872dd1923a853c47af0a" title="Perform a write then read transaction over serial." alt="" coords="5,56,143,83"/>
+</map>

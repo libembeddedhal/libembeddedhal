@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['spy_5fattach_5finterrupt_0',['spy_attach_interrupt',['../structembed_1_1mock_1_1interrupt__pin.html#a684d8c4127d57f3c5ec0da2ffe23fa96',1,'embed::mock::interrupt_pin']]],
-  ['spy_5fclear_1',['spy_clear',['../structembed_1_1mock_1_1timer.html#a4dbfbd5a6fe746041d668cd8178e9477',1,'embed::mock::timer']]],
-  ['spy_5fconfigure_2',['spy_configure',['../structembed_1_1mock_1_1input__pin.html#af23fa5300feff2f141b568f7e1eef13e',1,'embed::mock::input_pin::spy_configure()'],['../structembed_1_1mock_1_1interrupt__pin.html#a286d95606cfbdde00bcee1b1d87b9337',1,'embed::mock::interrupt_pin::spy_configure()'],['../structembed_1_1mock_1_1output__pin.html#acb10c9f888e4fa0f9cc130171028ea59',1,'embed::mock::output_pin::spy_configure()'],['../structembed_1_1mock_1_1pwm.html#abfdd52e0ff5b33f94cdb667bd4dbac90',1,'embed::mock::pwm::spy_configure()'],['../structembed_1_1mock_1_1write__only__spi.html#a2ca6c4db1e84cb5990266c236d9a0a69',1,'embed::mock::write_only_spi::spy_configure()']]],
-  ['spy_5fdetach_5finterrupt_3',['spy_detach_interrupt',['../structembed_1_1mock_1_1interrupt__pin.html#a491df76d018281561eb3b06ff047f597',1,'embed::mock::interrupt_pin']]],
-  ['spy_5fduty_5fcycle_4',['spy_duty_cycle',['../structembed_1_1mock_1_1pwm.html#a01ff1b835b0d56cb84bc0c176ee99cac',1,'embed::mock::pwm']]],
-  ['spy_5fis_5frunning_5',['spy_is_running',['../structembed_1_1mock_1_1timer.html#aa37fd54404c115c9fbbb262fc5aee261',1,'embed::mock::timer']]],
-  ['spy_5flevel_6',['spy_level',['../structembed_1_1mock_1_1output__pin.html#a4c3471545959da7ddf995acb8e2b30a9',1,'embed::mock::output_pin']]],
-  ['spy_5fposition_7',['spy_position',['../structembed_1_1mock_1_1servo.html#a9cf5d1ffd18b57285edccfe29f7900be',1,'embed::mock::servo']]],
-  ['spy_5fpower_8',['spy_power',['../structembed_1_1mock_1_1motor.html#aec516e8257cafa6c3c906a91f9046323',1,'embed::mock::motor']]],
-  ['spy_5fschedule_9',['spy_schedule',['../structembed_1_1mock_1_1timer.html#a53003609d248ab452b6a7283e701a987',1,'embed::mock::timer']]],
-  ['spy_5fwrite_10',['spy_write',['../structembed_1_1mock_1_1dac.html#a50b6a7fd8f61a76de17a03e0685bdc92',1,'embed::mock::dac']]],
-  ['starting_5flevel_11',['starting_level',['../structembed_1_1output__pin_1_1settings.html#a903aa9dc9bb4d5ff0bebca12d14fe271',1,'embed::output_pin::settings']]],
-  ['stop_12',['stop',['../structembed_1_1serial_1_1settings.html#ad50dc8bf1dbac00a8cadc610b1478c45',1,'embed::serial::settings']]]
+  ['spy_5fattach_5finterrupt_0',['spy_attach_interrupt',['../structhal_1_1mock_1_1interrupt__pin.html#a489a60269c49a2dd2c584e1223cea2ef',1,'hal::mock::interrupt_pin']]],
+  ['spy_5fclear_1',['spy_clear',['../structhal_1_1mock_1_1timer.html#a714ffae0a24860177180e24ec1a54742',1,'hal::mock::timer']]],
+  ['spy_5fconfigure_2',['spy_configure',['../structhal_1_1mock_1_1input__pin.html#aa63048c67ea86b0cda9324e8166e56aa',1,'hal::mock::input_pin::spy_configure()'],['../structhal_1_1mock_1_1interrupt__pin.html#a4bfdbb3300e908430777ab9f5c07c8b4',1,'hal::mock::interrupt_pin::spy_configure()'],['../structhal_1_1mock_1_1output__pin.html#ab6acf65f313ca42832ecebe073c0fd2e',1,'hal::mock::output_pin::spy_configure()'],['../structhal_1_1mock_1_1pwm.html#a1cddff4af995405fb28cadfa877fe184',1,'hal::mock::pwm::spy_configure()'],['../structhal_1_1mock_1_1write__only__spi.html#aa63519def3ad3da7d4b2a5d28dda396e',1,'hal::mock::write_only_spi::spy_configure()']]],
+  ['spy_5fdetach_5finterrupt_3',['spy_detach_interrupt',['../structhal_1_1mock_1_1interrupt__pin.html#a5209f1f645595f53434718e5a10251ca',1,'hal::mock::interrupt_pin']]],
+  ['spy_5fduty_5fcycle_4',['spy_duty_cycle',['../structhal_1_1mock_1_1pwm.html#a6cd6a9d2dafca57722f983b5cdd464ab',1,'hal::mock::pwm']]],
+  ['spy_5fis_5frunning_5',['spy_is_running',['../structhal_1_1mock_1_1timer.html#a8680004b0a1293f2633246dfbc872a34',1,'hal::mock::timer']]],
+  ['spy_5flevel_6',['spy_level',['../structhal_1_1mock_1_1output__pin.html#a2728a94ef198014f5eafebc87fd53e38',1,'hal::mock::output_pin']]],
+  ['spy_5fposition_7',['spy_position',['../structhal_1_1mock_1_1servo.html#a96c2d452533eb445c30131dd66e51dcb',1,'hal::mock::servo']]],
+  ['spy_5fpower_8',['spy_power',['../structhal_1_1mock_1_1motor.html#a66ff9dc9a4f6689bb382b468e884c028',1,'hal::mock::motor']]],
+  ['spy_5fschedule_9',['spy_schedule',['../structhal_1_1mock_1_1timer.html#a2e1c6b0ef7b623566c2af9777b29f6ea',1,'hal::mock::timer']]],
+  ['spy_5fwrite_10',['spy_write',['../structhal_1_1mock_1_1dac.html#a46df76c6a18de6b2c388efe6bf328a40',1,'hal::mock::dac']]],
+  ['starting_5flevel_11',['starting_level',['../structhal_1_1output__pin_1_1settings.html#a84a854843b8cb88d5550a65c14d2093b',1,'hal::output_pin::settings']]],
+  ['stop_12',['stop',['../structhal_1_1serial_1_1settings.html#ab1962693d243656902829372fdaddd93',1,'hal::serial::settings']]]
 ];

@@ -1,0 +1,8 @@
+<map id="hal::calculate_duty_cycle" name="hal::calculate_duty_cycle">
+<area shape="rect" id="node1" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="5,64,133,105"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaae8926027334510d6e08aa55f923ef77" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="181,5,309,47"/>
+<area shape="rect" id="node3" href="$group__utility.html#ga9f67c4dbb94efa24f2d8852bf6e424cc" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="192,71,299,98"/>
+<area shape="rect" id="node6" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="194,146,297,173"/>
+<area shape="rect" id="node4" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="551,71,683,98"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga58a3550a3236310f20b92eacf593c2f0" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="357,97,503,123"/>
+</map>

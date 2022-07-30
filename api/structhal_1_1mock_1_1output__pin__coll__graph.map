@@ -1,0 +1,6 @@
+<map id="hal::mock::output_pin" name="hal::mock::output_pin">
+<area shape="rect" id="node1" title="mock output pin for use in unit tests and simulations" alt="" coords="155,95,297,121"/>
+<area shape="rect" id="node2" href="$classhal_1_1output__pin.html" title="Digital output pin hardware abstraction." alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="135,5,317,32"/>
+<area shape="rect" id="node4" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="342,5,502,32"/>
+</map>

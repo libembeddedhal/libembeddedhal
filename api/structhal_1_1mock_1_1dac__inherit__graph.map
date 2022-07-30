@@ -1,0 +1,4 @@
+<map id="hal::mock::dac" name="hal::mock::dac">
+<area shape="rect" id="node1" title="Mock dac implementation for use in unit tests and simulations with a spy function for write()" alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node2" href="$classhal_1_1dac.html" title="Digital to Analog Converter (DAC) hardware abstraction interface." alt="" coords="24,5,91,32"/>
+</map>

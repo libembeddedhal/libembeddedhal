@@ -1,0 +1,4 @@
+<map id="hal::rounding_division" name="hal::rounding_division">
+<area shape="rect" id="node1" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="199,5,331,32"/>
+</map>

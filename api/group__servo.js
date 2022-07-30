@@ -1,13 +1,13 @@
 var group__servo =
 [
-    [ "embed::servo", "classembed_1_1servo.html", [
-      [ "position", "classembed_1_1servo.html#afbba28684df0d0af4ffb691514de7c44", null ]
+    [ "hal::servo", "classhal_1_1servo.html", [
+      [ "position", "classhal_1_1servo.html#a174a1a393f8c4148ab0b14f3d6e45595", null ]
     ] ],
-    [ "embed::mock::servo", "structembed_1_1mock_1_1servo.html", [
-      [ "reset", "structembed_1_1mock_1_1servo.html#a23a049f510c93c52a0f2784c0d10d7fa", null ],
-      [ "spy_position", "structembed_1_1mock_1_1servo.html#a9cf5d1ffd18b57285edccfe29f7900be", null ]
+    [ "hal::mock::servo", "structhal_1_1mock_1_1servo.html", [
+      [ "reset", "structhal_1_1mock_1_1servo.html#a70193593d8f691312fa80411980e752b", null ],
+      [ "spy_position", "structhal_1_1mock_1_1servo.html#a96c2d452533eb445c30131dd66e51dcb", null ]
     ] ],
-    [ "embed::rc_servo", "classembed_1_1rc__servo.html", [
-      [ "create", "classembed_1_1rc__servo.html#a026639b8cea2066eb30b175a5bb4c3d0", null ]
+    [ "hal::rc_servo", "classhal_1_1rc__servo.html", [
+      [ "create", "classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918", null ]
     ] ]
 ];

@@ -1,19 +1,19 @@
 var group__output__pin =
 [
-    [ "embed::output_pin", "classembed_1_1output__pin.html", [
-      [ "settings", "structembed_1_1output__pin_1_1settings.html", [
-        [ "operator<=>", "structembed_1_1output__pin_1_1settings.html#a419c87706d63fd817c70beee5aeb999f", null ],
-        [ "open_drain", "structembed_1_1output__pin_1_1settings.html#ad78fb3591ddd2ef74a29d87994c55be7", null ],
-        [ "resistor", "structembed_1_1output__pin_1_1settings.html#a192041fdc0fe584018c2b81064412f4f", null ],
-        [ "starting_level", "structembed_1_1output__pin_1_1settings.html#a903aa9dc9bb4d5ff0bebca12d14fe271", null ]
+    [ "hal::output_pin", "classhal_1_1output__pin.html", [
+      [ "settings", "structhal_1_1output__pin_1_1settings.html", [
+        [ "operator<=>", "structhal_1_1output__pin_1_1settings.html#a0ee9c3f737a4929c51d8638454487686", null ],
+        [ "open_drain", "structhal_1_1output__pin_1_1settings.html#aeafd423c4fedfc75c08e136e64baf2f1", null ],
+        [ "resistor", "structhal_1_1output__pin_1_1settings.html#acc0286364894f7c74c2380aa25825cab", null ],
+        [ "starting_level", "structhal_1_1output__pin_1_1settings.html#a84a854843b8cb88d5550a65c14d2093b", null ]
       ] ],
-      [ "configure", "classembed_1_1output__pin.html#a08f9da8d79f0d5aa7f096f35049a442c", null ],
-      [ "level", "classembed_1_1output__pin.html#a9bc45b061abc1c7e08526d5a79c73f67", null ],
-      [ "level", "classembed_1_1output__pin.html#afbcf06a44f70060d9606341c2d7239bd", null ]
+      [ "configure", "classhal_1_1output__pin.html#a247ce91046b56c6c076d326601536892", null ],
+      [ "level", "classhal_1_1output__pin.html#a3d7683b26756a734fcaee7ab0c604cc0", null ],
+      [ "level", "classhal_1_1output__pin.html#ae2df2a80eb22e37a1c66a8cc1fbe41c9", null ]
     ] ],
-    [ "embed::mock::output_pin", "structembed_1_1mock_1_1output__pin.html", [
-      [ "reset", "structembed_1_1mock_1_1output__pin.html#acd5bf6f217722d71b181b94ca6da5cca", null ],
-      [ "spy_configure", "structembed_1_1mock_1_1output__pin.html#acb10c9f888e4fa0f9cc130171028ea59", null ],
-      [ "spy_level", "structembed_1_1mock_1_1output__pin.html#a4c3471545959da7ddf995acb8e2b30a9", null ]
+    [ "hal::mock::output_pin", "structhal_1_1mock_1_1output__pin.html", [
+      [ "reset", "structhal_1_1mock_1_1output__pin.html#a7ca18ce52efdac4c61d8c56a38ee1a93", null ],
+      [ "spy_configure", "structhal_1_1mock_1_1output__pin.html#ab6acf65f313ca42832ecebe073c0fd2e", null ],
+      [ "spy_level", "structhal_1_1mock_1_1output__pin.html#a2728a94ef198014f5eafebc87fd53e38", null ]
     ] ]
 ];

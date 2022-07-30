@@ -1,4 +1,0 @@
-<map id="embed::spi::settings" name="embed::spi::settings">
-<area shape="rect" id="node1" title="Generic settings for a standard SPI device." alt="" coords="5,95,141,121"/>
-<area shape="rect" id="node2" href="$structembed_1_1frequency.html" title="Represents the frequency of a signal. It consists of a single integer 64&#45;bit number that presents the..." alt="" coords="12,5,135,32"/>
-</map>

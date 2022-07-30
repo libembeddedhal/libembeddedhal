@@ -1,0 +1,5 @@
+<map id="hal::servo" name="hal::servo">
+<area shape="rect" id="node1" title="Hardware abstraction for closed loop positional rotary and linear actuators." alt="" coords="88,5,165,32"/>
+<area shape="rect" id="node2" href="$structhal_1_1mock_1_1servo.html" title="mock servo implementation for use in unit tests and simulations." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$classhal_1_1rc__servo.html" title="Generic RC servo driver." alt="" coords="145,80,239,107"/>
+</map>

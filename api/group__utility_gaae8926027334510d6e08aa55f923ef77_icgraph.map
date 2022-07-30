@@ -1,0 +1,4 @@
+<map id="hal::calculate_duty_cycle" name="hal::calculate_duty_cycle">
+<area shape="rect" id="node1" title="Generate a duty_cycle object based on the percent value and the input count value...." alt="" coords="181,5,309,47"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="5,5,133,47"/>
+</map>

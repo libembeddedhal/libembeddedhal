@@ -1,0 +1,3 @@
+<map id="hal::bit_limits::min" name="hal::bit_limits::min">
+<area shape="rect" id="node1" title="Get the minimum value available for an integer of BitWidth size and that can be stored within int_t." alt="" coords="5,29,129,56"/>
+</map>

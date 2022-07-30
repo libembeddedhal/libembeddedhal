@@ -1,0 +1,7 @@
+<map id="hal::mock::interrupt_pin" name="hal::mock::interrupt_pin">
+<area shape="rect" id="node1" title="mock interrupt_pin implementation for use in unit tests and simulations." alt="" coords="360,89,515,116"/>
+<area shape="rect" id="node2" href="$classhal_1_1interrupt__pin.html" title="Digital interrupt pin hardware abstraction." alt="" coords="39,5,155,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="5,56,188,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="25,107,168,163"/>
+<area shape="rect" id="node5" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="17,187,177,213"/>
+</map>

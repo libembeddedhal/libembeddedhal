@@ -1,0 +1,4 @@
+<map id="hal::literals::operator&quot;&quot;_kHz" name="hal::literals::operator&quot;&quot;_kHz">
+<area shape="rect" id="node1" title="user defined literals for making frequencies in the kilohertz." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18" title="Helper function to convert an enum to its integral value." alt="" coords="228,5,304,32"/>
+</map>

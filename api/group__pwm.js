@@ -1,16 +1,16 @@
 var group__pwm =
 [
-    [ "embed::pwm", "classembed_1_1pwm.html", [
-      [ "settings", "structembed_1_1pwm_1_1settings.html", [
-        [ "operator<=>", "structembed_1_1pwm_1_1settings.html#aaa323d919eb51a768466add267adbb64", null ],
-        [ "frequency", "structembed_1_1pwm_1_1settings.html#a77b5d570a8eb4892098f1eb3f479398f", null ]
+    [ "hal::pwm", "classhal_1_1pwm.html", [
+      [ "settings", "structhal_1_1pwm_1_1settings.html", [
+        [ "operator<=>", "structhal_1_1pwm_1_1settings.html#a4bb7fe57ad778412af57407e820e9a7d", null ],
+        [ "frequency", "structhal_1_1pwm_1_1settings.html#af47ee267217c7f570a7122234610f53f", null ]
       ] ],
-      [ "configure", "classembed_1_1pwm.html#aa1d32008d56245740502bab1e0d2e18b", null ],
-      [ "duty_cycle", "classembed_1_1pwm.html#a4130beb61f37288c552562d105124fbf", null ]
+      [ "configure", "classhal_1_1pwm.html#a487f453ad3ad818e9b0d9f0df9c139ab", null ],
+      [ "duty_cycle", "classhal_1_1pwm.html#a82c4eb99c7da821cd4f583a3399398fa", null ]
     ] ],
-    [ "embed::mock::pwm", "structembed_1_1mock_1_1pwm.html", [
-      [ "reset", "structembed_1_1mock_1_1pwm.html#a8114258c054ca72c39bb8dcd0a695b05", null ],
-      [ "spy_configure", "structembed_1_1mock_1_1pwm.html#abfdd52e0ff5b33f94cdb667bd4dbac90", null ],
-      [ "spy_duty_cycle", "structembed_1_1mock_1_1pwm.html#a01ff1b835b0d56cb84bc0c176ee99cac", null ]
+    [ "hal::mock::pwm", "structhal_1_1mock_1_1pwm.html", [
+      [ "reset", "structhal_1_1mock_1_1pwm.html#ad4c4c645b6698791d34a3f8a78c96b17", null ],
+      [ "spy_configure", "structhal_1_1mock_1_1pwm.html#a1cddff4af995405fb28cadfa877fe184", null ],
+      [ "spy_duty_cycle", "structhal_1_1mock_1_1pwm.html#a6cd6a9d2dafca57722f983b5cdd464ab", null ]
     ] ]
 ];

@@ -1,0 +1,4 @@
+<map id="hal::mock::input_pin::reset" name="hal::mock::input_pin::reset">
+<area shape="rect" id="node1" title="Reset spy information for configure()" alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node2" href="$classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816" title="Reset call recordings and turns off error trigger." alt="" coords="188,13,337,39"/>
+</map>

@@ -101,10 +101,10 @@ $(document).ready(function(){initNavTree('counter_2mock_8hpp_source.html',''); i
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="timer_2interface_8hpp.html">interface.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceembed_1_1mock.html">embed::mock</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structembed_1_1mock_1_1counter.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structembed_1_1mock_1_1counter.html">counter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classembed_1_1counter.html">embed::counter</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal_1_1mock.html">hal::mock</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structhal_1_1mock_1_1counter.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhal_1_1mock_1_1counter.html">counter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classhal_1_1counter.html">hal::counter</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structembed_1_1mock_1_1counter.html#abe7650e522e97f7d40dff444e923c4ca">   24</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structembed_1_1mock_1_1counter.html#abe7650e522e97f7d40dff444e923c4ca">set</a>(std::queue&lt;uptime_t&gt;&amp; p_uptimes)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structhal_1_1mock_1_1counter.html#ad2f083998d090328f8608298c0b862e7">   24</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structhal_1_1mock_1_1counter.html#ad2f083998d090328f8608298c0b862e7">set</a>(std::queue&lt;uptime_t&gt;&amp; p_uptimes)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    m_uptimes = p_uptimes;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('counter_2mock_8hpp_source.html',''); i
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  boost::leaf::result&lt;uptime_t&gt; driver_uptime() noexcept</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (m_uptimes.size() == 0) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">boost::leaf::new_error</a>(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">boost::leaf::new_error</a>(</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        std::out_of_range(<span class="stringliteral">&quot;uptimes queue is empty!&quot;</span>));</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    uptime_t m_current_value = m_uptimes.front();</div>
@@ -123,12 +123,12 @@ $(document).ready(function(){initNavTree('counter_2mock_8hpp_source.html',''); i
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  std::queue&lt;uptime_t&gt; m_uptimes{};</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}  <span class="comment">// namespace embed::mock</span></div>
-<div class="ttc" id="aclassembed_1_1counter_html"><div class="ttname"><a href="classembed_1_1counter.html">embed::counter</a></div><div class="ttdoc">Hardware Counter abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:27</div></div>
-<div class="ttc" id="anamespaceembed_1_1mock_html"><div class="ttname"><a href="namespaceembed_1_1mock.html">embed::mock</a></div><div class="ttdef"><b>Definition:</b> mock.hpp:4</div></div>
-<div class="ttc" id="anamespaceembed_html_a87973d938f95cc08d58ae8d55707043a"><div class="ttname"><a href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">embed::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
-<div class="ttc" id="astructembed_1_1mock_1_1counter_html"><div class="ttname"><a href="structembed_1_1mock_1_1counter.html">embed::mock::counter</a></div><div class="ttdoc">mock counter implementation for use in unit tests and simulations.</div><div class="ttdef"><b>Definition:</b> mock.hpp:18</div></div>
-<div class="ttc" id="astructembed_1_1mock_1_1counter_html_abe7650e522e97f7d40dff444e923c4ca"><div class="ttname"><a href="structembed_1_1mock_1_1counter.html#abe7650e522e97f7d40dff444e923c4ca">embed::mock::counter::set</a></div><div class="ttdeci">void set(std::queue&lt; uptime_t &gt; &amp;p_uptimes)</div><div class="ttdoc">Queues the uptimes to be returned for uptime()</div><div class="ttdef"><b>Definition:</b> mock.hpp:24</div></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}  <span class="comment">// namespace hal::mock</span></div>
+<div class="ttc" id="aclasshal_1_1counter_html"><div class="ttname"><a href="classhal_1_1counter.html">hal::counter</a></div><div class="ttdoc">Hardware Counter abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:27</div></div>
+<div class="ttc" id="anamespacehal_1_1mock_html"><div class="ttname"><a href="namespacehal_1_1mock.html">hal::mock</a></div><div class="ttdef"><b>Definition:</b> mock.hpp:4</div></div>
+<div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
+<div class="ttc" id="astructhal_1_1mock_1_1counter_html"><div class="ttname"><a href="structhal_1_1mock_1_1counter.html">hal::mock::counter</a></div><div class="ttdoc">mock counter implementation for use in unit tests and simulations.</div><div class="ttdef"><b>Definition:</b> mock.hpp:18</div></div>
+<div class="ttc" id="astructhal_1_1mock_1_1counter_html_ad2f083998d090328f8608298c0b862e7"><div class="ttname"><a href="structhal_1_1mock_1_1counter.html#ad2f083998d090328f8608298c0b862e7">hal::mock::counter::set</a></div><div class="ttdeci">void set(std::queue&lt; uptime_t &gt; &amp;p_uptimes)</div><div class="ttdoc">Queues the uptimes to be returned for uptime()</div><div class="ttdef"><b>Definition:</b> mock.hpp:24</div></div>
 <div class="ttc" id="atimer_2interface_8hpp_html"><div class="ttname"><a href="timer_2interface_8hpp.html">interface.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

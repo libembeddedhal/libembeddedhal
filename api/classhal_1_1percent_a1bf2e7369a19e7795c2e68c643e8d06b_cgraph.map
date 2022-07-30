@@ -1,0 +1,11 @@
+<map id="hal::percent::scale" name="hal::percent::scale">
+<area shape="rect" id="node1" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="5,134,131,161"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#a4fece281bfb4ec0f48f86b14168194ce" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="179,185,299,227"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d" title="Construct 0% percent object." alt="" coords="351,33,489,59"/>
+<area shape="rect" id="node4" href="$classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0" title="Get the 100% value in its raw representation." alt="" coords="347,83,493,110"/>
+<area shape="rect" id="node5" href="$classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1" title="Get the &#45;100% value in its raw representation." alt="" coords="349,193,491,219"/>
+<area shape="rect" id="node6" href="$group__utility.html#ga58a3550a3236310f20b92eacf593c2f0" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="347,273,493,299"/>
+<area shape="rect" id="node8" href="$classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9" title="Get +100% percentage." alt="" coords="179,33,298,59"/>
+<area shape="rect" id="node9" href="$classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252" title="Get &#45;100% percentage." alt="" coords="181,134,296,161"/>
+<area shape="rect" id="node7" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="541,273,673,299"/>
+</map>

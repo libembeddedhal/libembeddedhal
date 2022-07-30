@@ -1,0 +1,5 @@
+<map id="hal::percent::min" name="hal::percent::min">
+<area shape="rect" id="node1" title="Get &#45;100% percentage." alt="" coords="5,31,120,57"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d" title="Construct 0% percent object." alt="" coords="171,5,308,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1" title="Get the &#45;100% value in its raw representation." alt="" coords="168,56,311,83"/>
+</map>

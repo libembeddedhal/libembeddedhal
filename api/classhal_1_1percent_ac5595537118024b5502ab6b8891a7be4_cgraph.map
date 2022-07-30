@@ -1,0 +1,5 @@
+<map id="hal::percent::operator==" name="hal::percent::operator==">
+<area shape="rect" id="node1" title="Comparison operator." alt="" coords="5,31,163,57"/>
+<area shape="rect" id="node2" href="$group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15" title="Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the..." alt="" coords="240,5,335,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1percent.html#a14730b3658d01e045b69c762f8d7881b" title="Get raw integral value." alt="" coords="211,56,364,83"/>
+</map>

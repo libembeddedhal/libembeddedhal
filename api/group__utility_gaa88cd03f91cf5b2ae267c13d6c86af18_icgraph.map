@@ -1,0 +1,5 @@
+<map id="hal::value" name="hal::value">
+<area shape="rect" id="node1" title="Helper function to convert an enum to its integral value." alt="" coords="232,31,308,57"/>
+<area shape="rect" id="node2" href="$namespacehal_1_1literals.html#a0cd2b0073f765aaef870f8526c9b18b0" title="user defined literals for making frequencies in the kilohertz." alt="" coords="7,5,182,32"/>
+<area shape="rect" id="node3" href="$namespacehal_1_1literals.html#afb29b822263b6eb3066c0eb5037e3df3" title="user defined literals for making frequencies in the megahertz." alt="" coords="5,56,184,83"/>
+</map>

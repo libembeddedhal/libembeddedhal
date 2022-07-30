@@ -1,0 +1,4 @@
+<map id="hal::output_pin" name="hal::output_pin">
+<area shape="rect" id="node1" title="Digital output pin hardware abstraction." alt="" coords="24,5,129,32"/>
+<area shape="rect" id="node2" href="$structhal_1_1mock_1_1output__pin.html" title="mock output pin for use in unit tests and simulations" alt="" coords="5,80,148,107"/>
+</map>

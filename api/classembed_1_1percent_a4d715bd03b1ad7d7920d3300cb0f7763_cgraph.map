@@ -1,9 +1,0 @@
-<map id="embed::percent::scale" name="embed::percent::scale">
-<area shape="rect" id="node1" title="Get the value of the percent after it is scaled to a range. The output value is bound within the give..." alt="" coords="5,81,152,108"/>
-<area shape="rect" id="node2" href="$classembed_1_1percent.html#a0f9fc596e3daa1948d0112b98544ef4f" title="Get +100% percentage." alt="" coords="214,56,354,83"/>
-<area shape="rect" id="node4" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="416,5,584,32"/>
-<area shape="rect" id="node5" href="$classembed_1_1percent.html#a82d4dc647320164d22dc480723c9671b" title="Get &#45;100% percentage." alt="" coords="215,107,353,133"/>
-<area shape="rect" id="node7" href="$classembed_1_1percent.html#ad205fdaffa0fc8a9b7c227b704571b74" title="Get the 0% value in its raw representation." alt="" coords="200,157,368,184"/>
-<area shape="rect" id="node3" href="$classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1" title="Construct 0% percent object." alt="" coords="421,56,579,83"/>
-<area shape="rect" id="node6" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="417,107,583,133"/>
-</map>

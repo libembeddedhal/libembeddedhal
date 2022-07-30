@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['two_0',['two',['../structembed_1_1serial_1_1settings.html#a2afddd189434768feeb31c8ac2a52eb3ab8a9f715dbb64fd5c56e7783c6820a61',1,'embed::serial::settings']]]
+  ['two_0',['two',['../structhal_1_1serial_1_1settings.html#a27192674670505b197411273de941c03ab8a9f715dbb64fd5c56e7783c6820a61',1,'hal::serial::settings']]]
 ];

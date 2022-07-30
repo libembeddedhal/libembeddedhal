@@ -1,0 +1,4 @@
+<map id="hal::mock::input_pin" name="hal::mock::input_pin">
+<area shape="rect" id="node1" title="mock input_pin implementation for use in unit tests and simulations." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node2" href="$classhal_1_1input__pin.html" title="Digital input pin hardware abstraction interface." alt="" coords="24,5,121,32"/>
+</map>

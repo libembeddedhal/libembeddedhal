@@ -1,0 +1,28 @@
+var classhal_1_1percent =
+[
+    [ "int_t", "classhal_1_1percent.html#ad44888dcbdf13a1673a21e211f5e8fc9", null ],
+    [ "overflow_t", "classhal_1_1percent.html#aa4509f26b03020b813f85e395e3bb9c8", null ],
+    [ "percent", "classhal_1_1percent.html#ac47af31e37f0680bdefe136ee619ef9d", null ],
+    [ "percent", "classhal_1_1percent.html#a873b8463cbe90c21eba808fe4ca122b7", null ],
+    [ "convert", "classhal_1_1percent.html#aebec716685a74957920c15d903512ab8", null ],
+    [ "from_ratio", "classhal_1_1percent.html#a4fece281bfb4ec0f48f86b14168194ce", null ],
+    [ "from_raw", "classhal_1_1percent.html#af31fb73a5d9b8abf34b2eb111cfeaf26", null ],
+    [ "max", "classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9", null ],
+    [ "min", "classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252", null ],
+    [ "operator double", "classhal_1_1percent.html#a5eead4f5932fe9c2caf9332ce27858c4", null ],
+    [ "operator float", "classhal_1_1percent.html#a610e6eac3a4c22d77b31fe14feac9120", null ],
+    [ "operator-", "classhal_1_1percent.html#a3838cdc9d33d279c8cbee157aa6dbc85", null ],
+    [ "operator<=>", "classhal_1_1percent.html#a4e9be8577ad3c15ac81ce1758f07174a", null ],
+    [ "operator=", "classhal_1_1percent.html#ad5ed3b476e65e3b5aec2408f76865500", null ],
+    [ "operator==", "classhal_1_1percent.html#ac5595537118024b5502ab6b8891a7be4", null ],
+    [ "raw_max", "classhal_1_1percent.html#a3ba7db7f6ed4a72c9b5014f4b193fed0", null ],
+    [ "raw_min", "classhal_1_1percent.html#a36a2265034230d77794566fe966df7e1", null ],
+    [ "raw_value", "classhal_1_1percent.html#a14730b3658d01e045b69c762f8d7881b", null ],
+    [ "raw_zero", "classhal_1_1percent.html#a630093c754626820c0c64ef151146939", null ],
+    [ "scale", "classhal_1_1percent.html#a1bf2e7369a19e7795c2e68c643e8d06b", null ],
+    [ "scale", "classhal_1_1percent.html#a2344573b5df0dfa1f36e7dc19a92ce43", null ],
+    [ "to", "classhal_1_1percent.html#ae750d1cac1cb2cae531d00b8738cddf2", null ],
+    [ "zero", "classhal_1_1percent.html#ad2bcc1d0733514aef3dfdae326b8cfa7", null ],
+    [ "operator*", "classhal_1_1percent.html#aaf06f5281e71987861e11614c3364cf8", null ],
+    [ "operator*", "classhal_1_1percent.html#a6a76b1f478c0be41233f2d0a8357c90e", null ]
+];

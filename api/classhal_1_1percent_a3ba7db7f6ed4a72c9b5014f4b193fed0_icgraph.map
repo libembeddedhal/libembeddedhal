@@ -1,0 +1,12 @@
+<map id="hal::percent::raw_max" name="hal::percent::raw_max">
+<area shape="rect" id="node1" title="Get the 100% value in its raw representation." alt="" coords="380,224,527,251"/>
+<area shape="rect" id="node2" href="$classhal_1_1percent.html#a4fece281bfb4ec0f48f86b14168194ce" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="212,107,332,149"/>
+<area shape="rect" id="node6" href="$classhal_1_1percent.html#a1bf2e7369a19e7795c2e68c643e8d06b" title="Get the percent after it is scaled to a range. The output percent is bound within the given range...." alt="" coords="22,173,147,200"/>
+<area shape="rect" id="node7" href="$classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9" title="Get +100% percentage." alt="" coords="213,224,331,251"/>
+<area shape="rect" id="node8" href="$classhal_1_1percent.html#ad5ed3b476e65e3b5aec2408f76865500" title="Assignment operator for a percent object based on a floating point value." alt="" coords="10,275,159,301"/>
+<area shape="rect" id="node10" href="$classhal_1_1percent.html#ae750d1cac1cb2cae531d00b8738cddf2" title="Convert percent to a floating point representation." alt="" coords="219,325,325,352"/>
+<area shape="rect" id="node3" href="$classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918" title="Factory function to create a rc_servo object." alt="" coords="16,5,153,32"/>
+<area shape="rect" id="node4" href="$group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="49,56,120,83"/>
+<area shape="rect" id="node5" href="$structhal_1_1duty__cycle.html#a5f5bad1e9e0cd329eeecd5c0db0e0a32" title="Conversion from duty cycle to percentage." alt="" coords="5,107,164,149"/>
+<area shape="rect" id="node9" href="$group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="37,224,132,251"/>
+</map>

@@ -1,19 +1,19 @@
 var group__timer =
 [
-    [ "embed::timer", "classembed_1_1timer.html", [
-      [ "out_of_bounds", "structembed_1_1timer_1_1out__of__bounds.html", [
-        [ "invalid", "structembed_1_1timer_1_1out__of__bounds.html#a7a2cbcc8d91405402c0c3f20e6f431dc", null ],
-        [ "maximum", "structembed_1_1timer_1_1out__of__bounds.html#a4da2640f83df541b26625bdb9c525c30", null ],
-        [ "minimum", "structembed_1_1timer_1_1out__of__bounds.html#a73c6404cc7e6382abb01cc98b61c2df2", null ]
+    [ "hal::timer", "classhal_1_1timer.html", [
+      [ "out_of_bounds", "structhal_1_1timer_1_1out__of__bounds.html", [
+        [ "invalid", "structhal_1_1timer_1_1out__of__bounds.html#af2ff59c4e280b0c50f49a3ed1c24533d", null ],
+        [ "maximum", "structhal_1_1timer_1_1out__of__bounds.html#a885746cf84b96da464891b89d46155cf", null ],
+        [ "minimum", "structhal_1_1timer_1_1out__of__bounds.html#af0e3babd469fd53931ef375fc943430b", null ]
       ] ],
-      [ "clear", "classembed_1_1timer.html#a25de57cfbb770763b32155ebd3733f4b", null ],
-      [ "is_running", "classembed_1_1timer.html#a4e0f6991ff1870a18c7968a7d29faf50", null ],
-      [ "schedule", "classembed_1_1timer.html#a12d9f5aa9bb6af19c966a5c820c3a37f", null ]
+      [ "clear", "classhal_1_1timer.html#a0098ad1731d4e88a95f8a7a99a12adcf", null ],
+      [ "is_running", "classhal_1_1timer.html#a2e6737385beb72513e469f302e404803", null ],
+      [ "schedule", "classhal_1_1timer.html#a8cedf2efba4cd8da56e1ba3d4a0db2fc", null ]
     ] ],
-    [ "embed::mock::timer", "structembed_1_1mock_1_1timer.html", [
-      [ "reset", "structembed_1_1mock_1_1timer.html#a6f12fd38291d5ac3f3370aaef857d8e2", null ],
-      [ "spy_clear", "structembed_1_1mock_1_1timer.html#a4dbfbd5a6fe746041d668cd8178e9477", null ],
-      [ "spy_is_running", "structembed_1_1mock_1_1timer.html#aa37fd54404c115c9fbbb262fc5aee261", null ],
-      [ "spy_schedule", "structembed_1_1mock_1_1timer.html#a53003609d248ab452b6a7283e701a987", null ]
+    [ "hal::mock::timer", "structhal_1_1mock_1_1timer.html", [
+      [ "reset", "structhal_1_1mock_1_1timer.html#a9d3f61fc844e2939b380e887c4f9bdd4", null ],
+      [ "spy_clear", "structhal_1_1mock_1_1timer.html#a714ffae0a24860177180e24ec1a54742", null ],
+      [ "spy_is_running", "structhal_1_1mock_1_1timer.html#a8680004b0a1293f2633246dfbc872a34", null ],
+      [ "spy_schedule", "structhal_1_1mock_1_1timer.html#a2e1c6b0ef7b623566c2af9777b29f6ea", null ]
     ] ]
 ];

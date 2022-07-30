@@ -1,0 +1,5 @@
+var classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4 =
+[
+    [ "static_callable", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2", null ],
+    [ "get_handler", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0", null ]
+];
