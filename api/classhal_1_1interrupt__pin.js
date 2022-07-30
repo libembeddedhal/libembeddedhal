@@ -6,8 +6,8 @@ var classhal_1_1interrupt__pin =
       [ "rising", "classhal_1_1interrupt__pin.html#a2e2cf60fe30a8683fb30cec584c7de81a637aa1a3f3fe939460e3e6126a3cb76a", null ],
       [ "both", "classhal_1_1interrupt__pin.html#a2e2cf60fe30a8683fb30cec584c7de81af6cb3e816496528d4187db53bc66567f", null ]
     ] ],
-    [ "attach_interrupt", "classhal_1_1interrupt__pin.html#a835281187964e7fc3f8265deddb17e85", null ],
-    [ "configure", "classhal_1_1interrupt__pin.html#a91e5479f0a21151cc7d28ba4adeee3fc", null ],
-    [ "detach_interrupt", "classhal_1_1interrupt__pin.html#a64de264ed4d62c2022e3077d17202c46", null ],
-    [ "level", "classhal_1_1interrupt__pin.html#ae6ac75749bf89ac8b7cbc7a10ced69bd", null ]
+    [ "attach_interrupt", "classhal_1_1interrupt__pin.html#af13963b5bdeae5f3efde45937c6c540f", null ],
+    [ "configure", "classhal_1_1interrupt__pin.html#aad7b6dab52e970b1c6906721b9a68a59", null ],
+    [ "detach_interrupt", "classhal_1_1interrupt__pin.html#ad6679629e056a86fd5ee8ac3ea296f9f", null ],
+    [ "level", "classhal_1_1interrupt__pin.html#a7cca0fecf2bf0afb1dbc029fefb1658f", null ]
 ];

@@ -109,14 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acec987c7df59d118c8cbc424a7331e35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1experimental_1_1uptime__counter.html#acec987c7df59d118c8cbc424a7331e35">uptime_counter</a> (<a class="el" href="classhal_1_1counter.html">counter</a> &amp;p_counter)</td></tr>
 <tr class="memdesc:acec987c7df59d118c8cbc424a7331e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new uptime counter object.  <a href="classhal_1_1experimental_1_1uptime__counter.html#acec987c7df59d118c8cbc424a7331e35">More...</a><br /></td></tr>
 <tr class="separator:acec987c7df59d118c8cbc424a7331e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d50819c9f960ecef10c400fce92f376"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; std::chrono::nanoseconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1experimental_1_1uptime__counter.html#a1d50819c9f960ecef10c400fce92f376">uptime</a> ()</td></tr>
-<tr class="memdesc:a1d50819c9f960ecef10c400fce92f376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the number of nanoseconds since the counter has started.  <a href="classhal_1_1experimental_1_1uptime__counter.html#a1d50819c9f960ecef10c400fce92f376">More...</a><br /></td></tr>
-<tr class="separator:a1d50819c9f960ecef10c400fce92f376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a717e244c15e291e292e1314153c4d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::chrono::nanoseconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1experimental_1_1uptime__counter.html#a4a717e244c15e291e292e1314153c4d7">uptime</a> ()</td></tr>
+<tr class="memdesc:a4a717e244c15e291e292e1314153c4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the number of nanoseconds since the counter has started.  <a href="classhal_1_1experimental_1_1uptime__counter.html#a4a717e244c15e291e292e1314153c4d7">More...</a><br /></td></tr>
+<tr class="separator:a4a717e244c15e291e292e1314153c4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >uptime counter takes a hardware counter and calculates the uptime in nanoseconds. </p>
 <p >This class should be used over calling <a class="el" href="group__utility.html#gaeb8013ca607e5e7de71637e85a45e809" title="Calculate the amount of time it takes a frequency to oscillate a number of cycles.">frequency::duration_from_cycles()</a> to calculate uptime because that function will overflow when 9223372 seconds or around 15 weeks have elapsed. This has to do with how the integer arithmetic is handled for converting from frequency to duration using a cycle count.</p>
-<p >So long as this class's <a class="el" href="classhal_1_1experimental_1_1uptime__counter.html#a1d50819c9f960ecef10c400fce92f376" title="Calculates the number of nanoseconds since the counter has started.">uptime()</a> is at least once every 15 weeks, the uptime will be accurate up to ~292 years. </p>
+<p >So long as this class's <a class="el" href="classhal_1_1experimental_1_1uptime__counter.html#a4a717e244c15e291e292e1314153c4d7" title="Calculates the number of nanoseconds since the counter has started.">uptime()</a> is at least once every 15 weeks, the uptime will be accurate up to ~292 years. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acec987c7df59d118c8cbc424a7331e35" name="acec987c7df59d118c8cbc424a7331e35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acec987c7df59d118c8cbc424a7331e35">&#9670;&nbsp;</a></span>uptime_counter()</h2>
@@ -153,8 +153,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1d50819c9f960ecef10c400fce92f376" name="a1d50819c9f960ecef10c400fce92f376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d50819c9f960ecef10c400fce92f376">&#9670;&nbsp;</a></span>uptime()</h2>
+<a id="a4a717e244c15e291e292e1314153c4d7" name="a4a717e244c15e291e292e1314153c4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a717e244c15e291e292e1314153c4d7">&#9670;&nbsp;</a></span>uptime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::chrono::nanoseconds &gt; hal::experimental::uptime_counter::uptime </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::chrono::nanoseconds &gt; hal::experimental::uptime_counter::uptime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Calculates the number of nanoseconds since the counter has started. </p>
 <p >To get the correct uptime, this function must be called within a 15 week time period to hold accuracy.</p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::chrono::nanoseconds&gt; - returns the </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::chrono::nanoseconds&gt;</a> - returns the </dd></dl>
 
 </div>
 </div>

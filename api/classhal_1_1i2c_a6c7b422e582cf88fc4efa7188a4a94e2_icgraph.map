@@ -1,0 +1,9 @@
+<map id="hal::i2c::transaction" name="hal::i2c::transaction">
+<area shape="rect" id="node1" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="376,56,508,83"/>
+<area shape="rect" id="node2" href="$group__i2c.html#ga1488346026180e28801ed5431ca3d889" title="read bytes from target device on i2c bus" alt="" coords="224,5,295,32"/>
+<area shape="rect" id="node5" href="$group__i2c.html#ga5401a79aa513b69592eb15fc6200d613" title="write data to a target device on the i2c bus" alt="" coords="223,56,296,83"/>
+<area shape="rect" id="node6" href="$group__i2c.html#gad9ed182667ec4112ba11b6d0307f1a03" title="write and then read bytes from target device on i2c bus" alt="" coords="191,107,328,133"/>
+<area shape="rect" id="node3" href="$group__i2c.html#gaf70168e2eb137378516fd97cd4508159" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,109,32"/>
+<area shape="rect" id="node4" href="$group__serial.html#ga7ca7c1d8697dec7717668fad6b8ac324" title="Perform a write then read transaction over serial." alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node7" href="$group__i2c.html#ga43d46c92ac8c36ddddb17f927fad6674" title="write and then return an array of read bytes from target device on i2c bus" alt="" coords="5,107,143,133"/>
+</map>

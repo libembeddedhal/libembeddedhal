@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('structhal_1_1mock_1_1write__only__spi.
 </div><!--header-->
 <div class="contents">
 
-<p>Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later.  
+<p>Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later.  
  <a href="structhal_1_1mock_1_1write__only__spi.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="spi_2mock_8hpp_source.html">mock.hpp</a>&gt;</code></p>
@@ -120,23 +120,23 @@ Collaboration diagram for hal::mock::write_only_spi:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9be71a9e85a7fc15eef00839781eef73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1write__only__spi.html#a9be71a9e85a7fc15eef00839781eef73">reset</a> ()</td></tr>
-<tr class="memdesc:a9be71a9e85a7fc15eef00839781eef73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset spy information for both <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">configure()</a> and <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#a9be71a9e85a7fc15eef00839781eef73">More...</a><br /></td></tr>
+<tr class="memdesc:a9be71a9e85a7fc15eef00839781eef73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset spy information for both <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">configure()</a> and <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#a9be71a9e85a7fc15eef00839781eef73">More...</a><br /></td></tr>
 <tr class="separator:a9be71a9e85a7fc15eef00839781eef73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1spi"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1spi')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1spi.html">hal::spi</a></td></tr>
-<tr class="memitem:afa6c507e75eb541788a3e809d6a8b2d5 inherit pub_methods_classhal_1_1spi"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5">configure</a> (const <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
-<tr class="memdesc:afa6c507e75eb541788a3e809d6a8b2d5 inherit pub_methods_classhal_1_1spi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure spi to match the settings supplied.  <a href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5">More...</a><br /></td></tr>
-<tr class="separator:afa6c507e75eb541788a3e809d6a8b2d5 inherit pub_methods_classhal_1_1spi"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01dcd9e730d8c3cd6dee2ed80d6d94ef inherit pub_methods_classhal_1_1spi"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef">transfer</a> (std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:a01dcd9e730d8c3cd6dee2ed80d6d94ef inherit pub_methods_classhal_1_1spi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef">More...</a><br /></td></tr>
-<tr class="separator:a01dcd9e730d8c3cd6dee2ed80d6d94ef inherit pub_methods_classhal_1_1spi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad760b829c1b680db63db635a2d0892ea inherit pub_methods_classhal_1_1spi"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea">configure</a> (const <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
+<tr class="memdesc:ad760b829c1b680db63db635a2d0892ea inherit pub_methods_classhal_1_1spi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure spi to match the settings supplied.  <a href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea">More...</a><br /></td></tr>
+<tr class="separator:ad760b829c1b680db63db635a2d0892ea inherit pub_methods_classhal_1_1spi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ecd84e485646e4a2c3b1aef97d2b3 inherit pub_methods_classhal_1_1spi"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3">transfer</a> (std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:a323ecd84e485646e4a2c3b1aef97d2b3 inherit pub_methods_classhal_1_1spi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3">More...</a><br /></td></tr>
+<tr class="separator:a323ecd84e485646e4a2c3b1aef97d2b3 inherit pub_methods_classhal_1_1spi"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa63519def3ad3da7d4b2a5d28dda396e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhal_1_1spy__handler.html">spy_handler</a>&lt; <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1write__only__spi.html#aa63519def3ad3da7d4b2a5d28dda396e">spy_configure</a></td></tr>
-<tr class="memdesc:aa63519def3ad3da7d4b2a5d28dda396e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spy handler for <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">hal::spi::configure()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#aa63519def3ad3da7d4b2a5d28dda396e">More...</a><br /></td></tr>
+<tr class="memdesc:aa63519def3ad3da7d4b2a5d28dda396e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spy handler for <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">hal::spi::configure()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#aa63519def3ad3da7d4b2a5d28dda396e">More...</a><br /></td></tr>
 <tr class="separator:aa63519def3ad3da7d4b2a5d28dda396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3d83ebe62005a835949fd5951b938f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1write__only__spi.html#aae3d83ebe62005a835949fd5951b938f">write_record</a></td></tr>
-<tr class="memdesc:aae3d83ebe62005a835949fd5951b938f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record of the out data from <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">hal::spi::transfer()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#aae3d83ebe62005a835949fd5951b938f">More...</a><br /></td></tr>
+<tr class="memdesc:aae3d83ebe62005a835949fd5951b938f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record of the out data from <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">hal::spi::transfer()</a>  <a href="structhal_1_1mock_1_1write__only__spi.html#aae3d83ebe62005a835949fd5951b938f">More...</a><br /></td></tr>
 <tr class="separator:aae3d83ebe62005a835949fd5951b938f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -146,7 +146,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a197acbbeecc376bdfd94266c20246cfc inherit pub_static_attribs_classhal_1_1spi"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later. </p>
+<div class="textblock"><p >Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9be71a9e85a7fc15eef00839781eef73" name="a9be71a9e85a7fc15eef00839781eef73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9be71a9e85a7fc15eef00839781eef73">&#9670;&nbsp;</a></span>reset()</h2>
@@ -171,7 +171,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reset spy information for both <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">configure()</a> and <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> </p>
+<p>Reset spy information for both <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">configure()</a> and <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -194,7 +194,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Spy handler for <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">hal::spi::configure()</a> </p>
+<p>Spy handler for <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">hal::spi::configure()</a> </p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Record of the out data from <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">hal::spi::transfer()</a> </p>
+<p>Record of the out data from <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">hal::spi::transfer()</a> </p>
 
 </div>
 </div>

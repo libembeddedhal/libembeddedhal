@@ -119,33 +119,34 @@ $(document).ready(function(){initNavTree('input__pin_2mock_8hpp_source.html','')
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  boost::leaf::result&lt;void&gt; driver_configure(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> settings&amp; p_settings) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structhal_1_1mock_1_1input__pin.html#aa63048c67ea86b0cda9324e8166e56aa">spy_configure</a>.<a class="code hl_function" href="classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da">record</a>(p_settings);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  boost::leaf::result&lt;bool&gt; driver_level() noexcept</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// This comparison performs bounds checking because front() and pop() do</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// not bounds check and results in undefined behavior if the queue is empty.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">if</span> (m_levels.size() == 0) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">boost::leaf::new_error</a>(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        std::out_of_range(<span class="stringliteral">&quot;input_pin level queue is empty!&quot;</span>));</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> m_current_value = m_levels.front();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    m_levels.pop();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> m_current_value;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::queue&lt;bool&gt; m_levels{};</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace hal::mock</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_configure(<span class="keyword">const</span> settings&amp; p_settings) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structhal_1_1mock_1_1input__pin.html#aa63048c67ea86b0cda9324e8166e56aa">spy_configure</a>.<a class="code hl_function" href="classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a">record</a>(p_settings);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;bool&gt;</a> driver_level() noexcept</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// This comparison performs bounds checking because front() and pop() do</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// not bounds check and results in undefined behavior if the queue is empty.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (m_levels.size() == 0) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">boost::leaf::new_error</a>(</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::out_of_range(<span class="stringliteral">&quot;input_pin level queue is empty!&quot;</span>));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">bool</span> m_current_value = m_levels.front();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    m_levels.pop();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> m_current_value;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::queue&lt;bool&gt; m_levels{};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace hal::mock</span></div>
 <div class="ttc" id="aclasshal_1_1input__pin_html"><div class="ttname"><a href="classhal_1_1input__pin.html">hal::input_pin</a></div><div class="ttdoc">Digital input pin hardware abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:19</div></div>
 <div class="ttc" id="aclasshal_1_1spy__handler_html"><div class="ttname"><a href="classhal_1_1spy__handler.html">hal::spy_handler&lt; settings &gt;</a></div></div>
-<div class="ttc" id="aclasshal_1_1spy__handler_html_a2150472616eb67010951cfc7a4fbe9da"><div class="ttname"><a href="classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da">hal::spy_handler::record</a></div><div class="ttdeci">boost::leaf::result&lt; void &gt; record(args_t... p_args)</div><div class="ttdoc">Record the arguments of a function being spied on.</div><div class="ttdef"><b>Definition:</b> testing.hpp:50</div></div>
+<div class="ttc" id="aclasshal_1_1spy__handler_html_ab2ed5f0197c8aa76f896815225779b0a"><div class="ttname"><a href="classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a">hal::spy_handler::record</a></div><div class="ttdeci">status record(args_t... p_args)</div><div class="ttdoc">Record the arguments of a function being spied on.</div><div class="ttdef"><b>Definition:</b> testing.hpp:50</div></div>
 <div class="ttc" id="aclasshal_1_1spy__handler_html_ad4dbc00ce7c0dece6cde8dffe3ac8816"><div class="ttname"><a href="classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816">hal::spy_handler::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdoc">Reset call recordings and turns off error trigger.</div><div class="ttdef"><b>Definition:</b> testing.hpp:78</div></div>
 <div class="ttc" id="anamespacehal_1_1mock_html"><div class="ttname"><a href="namespacehal_1_1mock.html">hal::mock</a></div><div class="ttdef"><b>Definition:</b> mock.hpp:4</div></div>
-<div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
+<div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:30</div></div>
+<div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:14</div></div>
+<div class="ttc" id="anamespacehal_html_a22b1708df761b2dc40dd4afa2ac0c401"><div class="ttname"><a href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">hal::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:13</div></div>
 <div class="ttc" id="astructhal_1_1mock_1_1input__pin_html"><div class="ttname"><a href="structhal_1_1mock_1_1input__pin.html">hal::mock::input_pin</a></div><div class="ttdoc">mock input_pin implementation for use in unit tests and simulations.</div><div class="ttdef"><b>Definition:</b> mock.hpp:19</div></div>
 <div class="ttc" id="astructhal_1_1mock_1_1input__pin_html_a3b21009c4c58b20b27e2d2a4cc72947e"><div class="ttname"><a href="structhal_1_1mock_1_1input__pin.html#a3b21009c4c58b20b27e2d2a4cc72947e">hal::mock::input_pin::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Reset spy information for configure()</div><div class="ttdef"><b>Definition:</b> mock.hpp:24</div></div>
 <div class="ttc" id="astructhal_1_1mock_1_1input__pin_html_a92ec14df3e73bbd5564c9e5ccf1aa20f"><div class="ttname"><a href="structhal_1_1mock_1_1input__pin.html#a92ec14df3e73bbd5564c9e5ccf1aa20f">hal::mock::input_pin::set</a></div><div class="ttdeci">void set(std::queue&lt; bool &gt; &amp;p_levels)</div><div class="ttdoc">Queues the active levels to be returned for levels()</div><div class="ttdef"><b>Definition:</b> mock.hpp:37</div></div>

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classhal_1_1spy__handler.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>Helper utility for making mocks for class functions that return boost::leaf::result&lt;void&gt;.  
+<p>Helper utility for making mocks for class functions that return status.  
  <a href="classhal_1_1spy__handler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="testing_8hpp_source.html">testing.hpp</a>&gt;</code></p>
@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab619347ec065bb16ba99c0b7dce48214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#ab619347ec065bb16ba99c0b7dce48214">trigger_error_on_call</a> (int p_call_count_before_trigger)</td></tr>
 <tr class="memdesc:ab619347ec065bb16ba99c0b7dce48214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the record function to return an error after a specified number of recordings.  <a href="classhal_1_1spy__handler.html#ab619347ec065bb16ba99c0b7dce48214">More...</a><br /></td></tr>
 <tr class="separator:ab619347ec065bb16ba99c0b7dce48214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2150472616eb67010951cfc7a4fbe9da"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da">record</a> (args_t... p_args)</td></tr>
-<tr class="memdesc:a2150472616eb67010951cfc7a4fbe9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the arguments of a function being spied on.  <a href="classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da">More...</a><br /></td></tr>
-<tr class="separator:a2150472616eb67010951cfc7a4fbe9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ed5f0197c8aa76f896815225779b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a">record</a> (args_t... p_args)</td></tr>
+<tr class="memdesc:ab2ed5f0197c8aa76f896815225779b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the arguments of a function being spied on.  <a href="classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a">More...</a><br /></td></tr>
+<tr class="separator:ab2ed5f0197c8aa76f896815225779b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b464b771143e4910919bf2bbed93344"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#a0b464b771143e4910919bf2bbed93344">call_history</a> () const noexcept</td></tr>
 <tr class="memdesc:a0b464b771143e4910919bf2bbed93344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the call history of the save function.  <a href="classhal_1_1spy__handler.html#a0b464b771143e4910919bf2bbed93344">More...</a><br /></td></tr>
 <tr class="separator:a0b464b771143e4910919bf2bbed93344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... args_t&gt;<br />
-class hal::spy_handler&lt; args_t &gt;</div><p >Helper utility for making mocks for class functions that return boost::leaf::result&lt;void&gt;. </p>
+class hal::spy_handler&lt; args_t &gt;</div><p >Helper utility for making mocks for class functions that return status. </p>
 <p >This class stores records of a functions call history in order to be recovered later for inspection in tests and simulations.</p>
 <p >See pwm_mock.hpp and tests/pwm_mock.test.cpp as an example of how this is done in practice.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -161,8 +161,8 @@ template&lt;typename... args_t&gt; </div>
 
 </div>
 </div>
-<a id="a2150472616eb67010951cfc7a4fbe9da" name="a2150472616eb67010951cfc7a4fbe9da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2150472616eb67010951cfc7a4fbe9da">&#9670;&nbsp;</a></span>record()</h2>
+<a id="ab2ed5f0197c8aa76f896815225779b0a" name="ab2ed5f0197c8aa76f896815225779b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ed5f0197c8aa76f896815225779b0a">&#9670;&nbsp;</a></span>record()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +173,7 @@ template&lt;typename... args_t&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; <a class="el" href="classhal_1_1spy__handler.html">hal::spy_handler</a>&lt; args_t &gt;::record </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="el" href="classhal_1_1spy__handler.html">hal::spy_handler</a>&lt; args_t &gt;::record </td>
           <td>(</td>
           <td class="paramtype">args_t...&#160;</td>
           <td class="paramname"><em>p_args</em></td><td>)</td>
@@ -194,11 +194,11 @@ template&lt;typename... args_t&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - returns success or an error if the error trigger has been reached. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - returns success or an error if the error trigger has been reached. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1spy__handler_a2150472616eb67010951cfc7a4fbe9da_cgraph.svg" width="318" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1spy__handler_ab2ed5f0197c8aa76f896815225779b0a_cgraph.svg" width="318" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

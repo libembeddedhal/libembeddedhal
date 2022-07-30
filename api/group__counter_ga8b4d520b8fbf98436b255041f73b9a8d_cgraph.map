@@ -1,0 +1,11 @@
+<map id="hal::delay" name="hal::delay">
+<area shape="rect" id="node1" title="Delay execution for a duration of time using a hardware counter." alt="" coords="5,163,80,190"/>
+<area shape="rect" id="node2" href="$group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" title="Create a timeout object based on hal::counter." alt="" coords="128,134,259,161"/>
+<area shape="rect" id="node8" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="511,197,614,223"/>
+<area shape="rect" id="node3" href="$classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" title="Create a counter_timeout." alt="" coords="307,115,445,156"/>
+<area shape="rect" id="node4" href="$classhal_1_1counter__timeout.html#ae543adb6965def1209baf5a2f91cd692" title="Construct a new counter timeout object." alt="" coords="493,5,632,47"/>
+<area shape="rect" id="node5" href="$group__utility.html#ga9f67c4dbb94efa24f2d8852bf6e424cc" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="509,71,616,98"/>
+<area shape="rect" id="node9" href="$classhal_1_1counter.html#a1b99ef1f3847e5f24e2cb69e5988e54f" title="Get the uptime of the counter since it has started." alt="" coords="496,122,629,149"/>
+<area shape="rect" id="node6" href="$group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9" title="Generic absolute value function that works for integer types." alt="" coords="873,71,1005,98"/>
+<area shape="rect" id="node7" href="$group__utility.html#ga58a3550a3236310f20b92eacf593c2f0" title="Perform integer division and round the value up if the next decimal place is greater than or equal to..." alt="" coords="680,97,825,123"/>
+</map>

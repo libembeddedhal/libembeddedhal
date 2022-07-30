@@ -107,29 +107,29 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4b83ff15180248ce8d58cc464c51d032"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga4b83ff15180248ce8d58cc464c51d032">hal::write</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
-<tr class="memdesc:ga4b83ff15180248ce8d58cc464c51d032"><td class="mdescLeft">&#160;</td><td class="mdescRight">write data to a target device on the <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga4b83ff15180248ce8d58cc464c51d032">More...</a><br /></td></tr>
-<tr class="separator:ga4b83ff15180248ce8d58cc464c51d032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac59c00f9a17dc3607b80517ff5e6651d"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#gac59c00f9a17dc3607b80517ff5e6651d">hal::read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
-<tr class="memdesc:gac59c00f9a17dc3607b80517ff5e6651d"><td class="mdescLeft">&#160;</td><td class="mdescRight">read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#gac59c00f9a17dc3607b80517ff5e6651d">More...</a><br /></td></tr>
-<tr class="separator:gac59c00f9a17dc3607b80517ff5e6651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga708c8a9f534086e5447673c494926d69"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:ga708c8a9f534086e5447673c494926d69"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga708c8a9f534086e5447673c494926d69">hal::read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
-<tr class="memdesc:ga708c8a9f534086e5447673c494926d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">return array of read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga708c8a9f534086e5447673c494926d69">More...</a><br /></td></tr>
-<tr class="separator:ga708c8a9f534086e5447673c494926d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a9c74d8fb59833ddbf9184d92279d65"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga4a9c74d8fb59833ddbf9184d92279d65">hal::write_then_read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
-<tr class="memdesc:ga4a9c74d8fb59833ddbf9184d92279d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">write and then read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga4a9c74d8fb59833ddbf9184d92279d65">More...</a><br /></td></tr>
-<tr class="separator:ga4a9c74d8fb59833ddbf9184d92279d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga761a28d33838cddba2b5b591cac487bd"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:ga761a28d33838cddba2b5b591cac487bd"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga761a28d33838cddba2b5b591cac487bd">hal::write_then_read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
-<tr class="memdesc:ga761a28d33838cddba2b5b591cac487bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">write and then return an array of read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga761a28d33838cddba2b5b591cac487bd">More...</a><br /></td></tr>
-<tr class="separator:ga761a28d33838cddba2b5b591cac487bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5401a79aa513b69592eb15fc6200d613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga5401a79aa513b69592eb15fc6200d613">hal::write</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
+<tr class="memdesc:ga5401a79aa513b69592eb15fc6200d613"><td class="mdescLeft">&#160;</td><td class="mdescRight">write data to a target device on the <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga5401a79aa513b69592eb15fc6200d613">More...</a><br /></td></tr>
+<tr class="separator:ga5401a79aa513b69592eb15fc6200d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1488346026180e28801ed5431ca3d889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga1488346026180e28801ed5431ca3d889">hal::read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
+<tr class="memdesc:ga1488346026180e28801ed5431ca3d889"><td class="mdescLeft">&#160;</td><td class="mdescRight">read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga1488346026180e28801ed5431ca3d889">More...</a><br /></td></tr>
+<tr class="separator:ga1488346026180e28801ed5431ca3d889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf70168e2eb137378516fd97cd4508159"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:gaf70168e2eb137378516fd97cd4508159"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__i2c.html#gaf70168e2eb137378516fd97cd4508159">hal::read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
+<tr class="memdesc:gaf70168e2eb137378516fd97cd4508159"><td class="mdescLeft">&#160;</td><td class="mdescRight">return array of read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#gaf70168e2eb137378516fd97cd4508159">More...</a><br /></td></tr>
+<tr class="separator:gaf70168e2eb137378516fd97cd4508159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9ed182667ec4112ba11b6d0307f1a03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#gad9ed182667ec4112ba11b6d0307f1a03">hal::write_then_read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
+<tr class="memdesc:gad9ed182667ec4112ba11b6d0307f1a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">write and then read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#gad9ed182667ec4112ba11b6d0307f1a03">More...</a><br /></td></tr>
+<tr class="separator:gad9ed182667ec4112ba11b6d0307f1a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43d46c92ac8c36ddddb17f927fad6674"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:ga43d46c92ac8c36ddddb17f927fad6674"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga43d46c92ac8c36ddddb17f927fad6674">hal::write_then_read</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
+<tr class="memdesc:ga43d46c92ac8c36ddddb17f927fad6674"><td class="mdescLeft">&#160;</td><td class="mdescRight">write and then return an array of read bytes from target device on <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> bus  <a href="group__i2c.html#ga43d46c92ac8c36ddddb17f927fad6674">More...</a><br /></td></tr>
+<tr class="separator:ga43d46c92ac8c36ddddb17f927fad6674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Available Inter-integrated Circuit (I2C) APIs </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga708c8a9f534086e5447673c494926d69" name="ga708c8a9f534086e5447673c494926d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga708c8a9f534086e5447673c494926d69">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<a id="gaf70168e2eb137378516fd97cd4508159" name="gaf70168e2eb137378516fd97cd4508159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf70168e2eb137378516fd97cd4508159">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +140,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;&#160;</td>
           <td class="paramname"><em>p_i2c</em>, </td>
@@ -154,7 +154,7 @@ template&lt;size_t BytesToRead&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em> = <code><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -186,18 +186,18 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - array of bytes from target device or an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> - array of bytes from target device or an error. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga708c8a9f534086e5447673c494926d69_cgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_gaf70168e2eb137378516fd97cd4508159_cgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="gac59c00f9a17dc3607b80517ff5e6651d" name="gac59c00f9a17dc3607b80517ff5e6651d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac59c00f9a17dc3607b80517ff5e6651d">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<a id="ga1488346026180e28801ed5431ca3d889" name="ga1488346026180e28801ed5431ca3d889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1488346026180e28801ed5431ca3d889">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +206,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;&#160;</td>
           <td class="paramname"><em>p_i2c</em>, </td>
@@ -226,7 +226,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em> = <code><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -253,24 +253,24 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any errors associated with the read call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any errors associated with the read call </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_gac59c00f9a17dc3607b80517ff5e6651d_cgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga1488346026180e28801ed5431ca3d889_cgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_gac59c00f9a17dc3607b80517ff5e6651d_icgraph.svg" width="267" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga1488346026180e28801ed5431ca3d889_icgraph.svg" width="267" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga4b83ff15180248ce8d58cc464c51d032" name="ga4b83ff15180248ce8d58cc464c51d032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4b83ff15180248ce8d58cc464c51d032">&#9670;&nbsp;</a></span>write()</h2>
+<a id="ga5401a79aa513b69592eb15fc6200d613" name="ga5401a79aa513b69592eb15fc6200d613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5401a79aa513b69592eb15fc6200d613">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;&#160;</td>
           <td class="paramname"><em>p_i2c</em>, </td>
@@ -299,7 +299,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em> = <code><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -326,24 +326,24 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any errors associated with the read call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any errors associated with the read call </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga4b83ff15180248ce8d58cc464c51d032_cgraph.svg" width="264" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga5401a79aa513b69592eb15fc6200d613_cgraph.svg" width="264" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga4b83ff15180248ce8d58cc464c51d032_icgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga5401a79aa513b69592eb15fc6200d613_icgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga761a28d33838cddba2b5b591cac487bd" name="ga761a28d33838cddba2b5b591cac487bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga761a28d33838cddba2b5b591cac487bd">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
+<a id="ga43d46c92ac8c36ddddb17f927fad6674" name="ga43d46c92ac8c36ddddb17f927fad6674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43d46c92ac8c36ddddb17f927fad6674">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,7 +354,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;&#160;</td>
           <td class="paramname"><em>p_i2c</em>, </td>
@@ -374,7 +374,7 @@ template&lt;size_t BytesToRead&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em> = <code><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -407,18 +407,18 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga761a28d33838cddba2b5b591cac487bd_cgraph.svg" width="514" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga43d46c92ac8c36ddddb17f927fad6674_cgraph.svg" width="514" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga4a9c74d8fb59833ddbf9184d92279d65" name="ga4a9c74d8fb59833ddbf9184d92279d65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a9c74d8fb59833ddbf9184d92279d65">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
+<a id="gad9ed182667ec4112ba11b6d0307f1a03" name="gad9ed182667ec4112ba11b6d0307f1a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9ed182667ec4112ba11b6d0307f1a03">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +427,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;&#160;</td>
           <td class="paramname"><em>p_i2c</em>, </td>
@@ -453,7 +453,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em> = <code><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -481,17 +481,17 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any errors associated with the read call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any errors associated with the read call </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga4a9c74d8fb59833ddbf9184d92279d65_cgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_gad9ed182667ec4112ba11b6d0307f1a03_cgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_ga4a9c74d8fb59833ddbf9184d92279d65_icgraph.svg" width="334" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__i2c_gad9ed182667ec4112ba11b6d0307f1a03_icgraph.svg" width="334" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

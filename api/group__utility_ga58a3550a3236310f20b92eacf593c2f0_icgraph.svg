@@ -113,7 +113,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
+<g id="a_node3"><a xlink:href="group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
 <polygon fill="white" stroke="black" points="326.5,-274 326.5,-304 422.5,-304 422.5,-274 326.5,-274"/>
 <text text-anchor="start" x="334.5" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00">hal::calculate_duty</text>
 <text text-anchor="middle" x="374.5" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">_cycle</text>
@@ -129,7 +129,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" target="_top" xlink:title="Create a counter_timeout.">
+<g id="a_node4"><a xlink:href="classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" target="_top" xlink:title="Create a counter_timeout.">
 <polygon fill="white" stroke="black" points="322.5,-225 322.5,-255 426.5,-255 426.5,-225 322.5,-225"/>
 <text text-anchor="start" x="330.5" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">hal::counter_timeout</text>
 <text text-anchor="middle" x="374.5" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">::create</text>
@@ -145,7 +145,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" target="_top" xlink:title="Create a timeout object based on hal::counter.">
+<g id="a_node5"><a xlink:href="group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" target="_top" xlink:title="Create a timeout object based on hal::counter.">
 <polygon fill="white" stroke="black" points="181,-230.5 181,-249.5 279,-249.5 279,-230.5 181,-230.5"/>
 <text text-anchor="middle" x="230" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::create_timeout</text>
 </a>
@@ -160,7 +160,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
+<g id="a_node6"><a xlink:href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
 <polygon fill="white" stroke="black" points="89,-230.5 89,-249.5 145,-249.5 145,-230.5 89,-230.5"/>
 <text text-anchor="middle" x="117" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::delay</text>
 </a>
@@ -181,7 +181,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" target="_top" xlink:title="Read bytes from a serial port.">
+<g id="a_node7"><a xlink:href="group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4" target="_top" xlink:title="Read bytes from a serial port.">
 <polygon fill="white" stroke="black" points="0,-230.5 0,-249.5 53,-249.5 53,-230.5 0,-230.5"/>
 <text text-anchor="middle" x="26.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::read</text>
 </a>
@@ -196,7 +196,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918" target="_top" xlink:title="Factory function to create a rc_servo object.">
+<g id="a_node10"><a xlink:href="classhal_1_1rc__servo.html#a4b6b2863a7ea2f9e426f32c89a29c8c5" target="_top" xlink:title="Factory function to create a rc_servo object.">
 <polygon fill="white" stroke="black" points="323,-186.5 323,-205.5 426,-205.5 426,-186.5 323,-186.5"/>
 <text text-anchor="middle" x="374.5" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::rc_servo::create</text>
 </a>
@@ -211,7 +211,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
+<g id="a_node11"><a xlink:href="group__utility.html#gacf35495e951216c5f4765dbe9f256fdd" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
 <polygon fill="white" stroke="black" points="348,-148.5 348,-167.5 401,-167.5 401,-148.5 348,-148.5"/>
 <text text-anchor="middle" x="374.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::map</text>
 </a>

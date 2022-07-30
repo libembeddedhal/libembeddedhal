@@ -107,32 +107,32 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gace28fd2dcb329e8d803125762231e2f0"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#gace28fd2dcb329e8d803125762231e2f0">hal::delay</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, size_t p_length) noexcept</td></tr>
-<tr class="memdesc:gace28fd2dcb329e8d803125762231e2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay execution until the serial buffer has reached a specific number of buffered bytes.  <a href="group__serial.html#gace28fd2dcb329e8d803125762231e2f0">More...</a><br /></td></tr>
-<tr class="separator:gace28fd2dcb329e8d803125762231e2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09ca4983aa7da2f05b0fa86222481ef5"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga09ca4983aa7da2f05b0fa86222481ef5">hal::write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
-<tr class="memdesc:ga09ca4983aa7da2f05b0fa86222481ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga09ca4983aa7da2f05b0fa86222481ef5">More...</a><br /></td></tr>
-<tr class="separator:ga09ca4983aa7da2f05b0fa86222481ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62a11b4820816132ad98cc6cbdc97725"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; std::span&lt; const std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga62a11b4820816132ad98cc6cbdc97725">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; std::byte &gt; p_data_in)</td></tr>
-<tr class="memdesc:ga62a11b4820816132ad98cc6cbdc97725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga62a11b4820816132ad98cc6cbdc97725">More...</a><br /></td></tr>
-<tr class="separator:ga62a11b4820816132ad98cc6cbdc97725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55dd43756d7f6609758b5fd7628e54b0"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:ga55dd43756d7f6609758b5fd7628e54b0"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__serial.html#ga55dd43756d7f6609758b5fd7628e54b0">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial) noexcept</td></tr>
-<tr class="memdesc:ga55dd43756d7f6609758b5fd7628e54b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port and return an array.  <a href="group__serial.html#ga55dd43756d7f6609758b5fd7628e54b0">More...</a><br /></td></tr>
-<tr class="separator:ga55dd43756d7f6609758b5fd7628e54b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f8de5a91baa872dd1923a853c47af0a"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9f8de5a91baa872dd1923a853c47af0a">hal::write_then_read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in) noexcept</td></tr>
-<tr class="memdesc:ga9f8de5a91baa872dd1923a853c47af0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a write then read transaction over serial.  <a href="group__serial.html#ga9f8de5a91baa872dd1923a853c47af0a">More...</a><br /></td></tr>
-<tr class="separator:ga9f8de5a91baa872dd1923a853c47af0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga365a32a0a3eb2468e027ce94151fc143"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:ga365a32a0a3eb2468e027ce94151fc143"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__serial.html#ga365a32a0a3eb2468e027ce94151fc143">hal::write_then_read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
-<tr class="memdesc:ga365a32a0a3eb2468e027ce94151fc143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a write then read transaction over serial.  <a href="group__serial.html#ga365a32a0a3eb2468e027ce94151fc143">More...</a><br /></td></tr>
-<tr class="separator:ga365a32a0a3eb2468e027ce94151fc143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7604a2ab8ef22fd0cddfbf49ccd9a9c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga7604a2ab8ef22fd0cddfbf49ccd9a9c7">hal::delay</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, size_t p_length) noexcept</td></tr>
+<tr class="memdesc:ga7604a2ab8ef22fd0cddfbf49ccd9a9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay execution until the serial buffer has reached a specific number of buffered bytes.  <a href="group__serial.html#ga7604a2ab8ef22fd0cddfbf49ccd9a9c7">More...</a><br /></td></tr>
+<tr class="separator:ga7604a2ab8ef22fd0cddfbf49ccd9a9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8912c0dad0fbcc890aa367fdd6e79aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga8912c0dad0fbcc890aa367fdd6e79aae">hal::write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga8912c0dad0fbcc890aa367fdd6e79aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga8912c0dad0fbcc890aa367fdd6e79aae">More...</a><br /></td></tr>
+<tr class="separator:ga8912c0dad0fbcc890aa367fdd6e79aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56a1548bd7b5f4b6f1dfa9e616b126e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; const std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; std::byte &gt; p_data_in)</td></tr>
+<tr class="memdesc:ga56a1548bd7b5f4b6f1dfa9e616b126e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4">More...</a><br /></td></tr>
+<tr class="separator:ga56a1548bd7b5f4b6f1dfa9e616b126e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ed792677c8ac3953a538a377d973053"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:ga2ed792677c8ac3953a538a377d973053"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__serial.html#ga2ed792677c8ac3953a538a377d973053">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial) noexcept</td></tr>
+<tr class="memdesc:ga2ed792677c8ac3953a538a377d973053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port and return an array.  <a href="group__serial.html#ga2ed792677c8ac3953a538a377d973053">More...</a><br /></td></tr>
+<tr class="separator:ga2ed792677c8ac3953a538a377d973053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ca7c1d8697dec7717668fad6b8ac324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga7ca7c1d8697dec7717668fad6b8ac324">hal::write_then_read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in) noexcept</td></tr>
+<tr class="memdesc:ga7ca7c1d8697dec7717668fad6b8ac324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a write then read transaction over serial.  <a href="group__serial.html#ga7ca7c1d8697dec7717668fad6b8ac324">More...</a><br /></td></tr>
+<tr class="separator:ga7ca7c1d8697dec7717668fad6b8ac324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab57246217d882a566c7d8e3f8fe27abc"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:gab57246217d882a566c7d8e3f8fe27abc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__serial.html#gab57246217d882a566c7d8e3f8fe27abc">hal::write_then_read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:gab57246217d882a566c7d8e3f8fe27abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a write then read transaction over serial.  <a href="group__serial.html#gab57246217d882a566c7d8e3f8fe27abc">More...</a><br /></td></tr>
+<tr class="separator:gab57246217d882a566c7d8e3f8fe27abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Available serial APIs </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gace28fd2dcb329e8d803125762231e2f0" name="gace28fd2dcb329e8d803125762231e2f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace28fd2dcb329e8d803125762231e2f0">&#9670;&nbsp;</a></span>delay()</h2>
+<a id="ga7604a2ab8ef22fd0cddfbf49ccd9a9c7" name="ga7604a2ab8ef22fd0cddfbf49ccd9a9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7604a2ab8ef22fd0cddfbf49ccd9a9c7">&#9670;&nbsp;</a></span>delay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::delay </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::delay </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -174,12 +174,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#a534250ddfcf16d9c1f70f80b5d681328" title="The number of bytes that have been buffered.">serial::bytes_available</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - return an error if a call to <a class="el" href="classhal_1_1serial.html#a4396089965fb9870d7862cd79edfed5c" title="The number of bytes that have been buffered.">serial::bytes_available</a> returns an error from the serial port. </dd></dl>
 
 </div>
 </div>
-<a id="ga55dd43756d7f6609758b5fd7628e54b0" name="ga55dd43756d7f6609758b5fd7628e54b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55dd43756d7f6609758b5fd7628e54b0">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<a id="ga2ed792677c8ac3953a538a377d973053" name="ga2ed792677c8ac3953a538a377d973053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ed792677c8ac3953a538a377d973053">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em></td><td>)</td>
@@ -218,18 +218,18 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#a62c5725e8eeee9aa6f6815dbb54c6e6c" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#aac1c941f689f8825be0f699e371e3c51" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga55dd43756d7f6609758b5fd7628e54b0_cgraph.svg" width="1130" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga2ed792677c8ac3953a538a377d973053_cgraph.svg" width="1130" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga62a11b4820816132ad98cc6cbdc97725" name="ga62a11b4820816132ad98cc6cbdc97725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga62a11b4820816132ad98cc6cbdc97725">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<a id="ga56a1548bd7b5f4b6f1dfa9e616b126e4" name="ga56a1548bd7b5f4b6f1dfa9e616b126e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56a1548bd7b5f4b6f1dfa9e616b126e4">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +238,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::span&lt; const std::byte &gt; &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; const std::byte &gt; &gt; hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -270,18 +270,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::span&lt;const std::byte&gt;&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#a62c5725e8eeee9aa6f6815dbb54c6e6c" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;const std::byte&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#aac1c941f689f8825be0f699e371e3c51" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga62a11b4820816132ad98cc6cbdc97725_cgraph.svg" width="1162" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga56a1548bd7b5f4b6f1dfa9e616b126e4_cgraph.svg" width="1162" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga09ca4983aa7da2f05b0fa86222481ef5" name="ga09ca4983aa7da2f05b0fa86222481ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga09ca4983aa7da2f05b0fa86222481ef5">&#9670;&nbsp;</a></span>write()</h2>
+<a id="ga8912c0dad0fbcc890aa367fdd6e79aae" name="ga8912c0dad0fbcc890aa367fdd6e79aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8912c0dad0fbcc890aa367fdd6e79aae">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +290,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -322,12 +322,12 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#aaee00c483713d135ba8238c7e79ca2f2" title="Write data on the transmitter line of the port.">serial::write</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - return an error if a call to <a class="el" href="classhal_1_1serial.html#a6e7d62bd7dcddc296b6a26021b906066" title="Write data on the transmitter line of the port.">serial::write</a> returns an error from the serial port. </dd></dl>
 
 </div>
 </div>
-<a id="ga365a32a0a3eb2468e027ce94151fc143" name="ga365a32a0a3eb2468e027ce94151fc143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga365a32a0a3eb2468e027ce94151fc143">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
+<a id="gab57246217d882a566c7d8e3f8fe27abc" name="gab57246217d882a566c7d8e3f8fe27abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab57246217d882a566c7d8e3f8fe27abc">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +338,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -377,18 +377,18 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#a62c5725e8eeee9aa6f6815dbb54c6e6c" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#aaee00c483713d135ba8238c7e79ca2f2" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#aac1c941f689f8825be0f699e371e3c51" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#a6e7d62bd7dcddc296b6a26021b906066" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga365a32a0a3eb2468e027ce94151fc143_cgraph.svg" width="514" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_gab57246217d882a566c7d8e3f8fe27abc_cgraph.svg" width="514" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga9f8de5a91baa872dd1923a853c47af0a" name="ga9f8de5a91baa872dd1923a853c47af0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f8de5a91baa872dd1923a853c47af0a">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
+<a id="ga7ca7c1d8697dec7717668fad6b8ac324" name="ga7ca7c1d8697dec7717668fad6b8ac324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ca7c1d8697dec7717668fad6b8ac324">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +397,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -437,11 +437,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - return an error if a call to <a class="el" href="classhal_1_1serial.html#a62c5725e8eeee9aa6f6815dbb54c6e6c" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#aaee00c483713d135ba8238c7e79ca2f2" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - return an error if a call to <a class="el" href="classhal_1_1serial.html#aac1c941f689f8825be0f699e371e3c51" title="Read the bytes received over the receiver line into buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#a6e7d62bd7dcddc296b6a26021b906066" title="Write data on the transmitter line of the port.">serial::write()</a> returns an error from the serial port or success. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga9f8de5a91baa872dd1923a853c47af0a_cgraph.svg" width="450" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga7ca7c1d8697dec7717668fad6b8ac324_cgraph.svg" width="450" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

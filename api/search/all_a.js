@@ -1,7 +1,7 @@
 var searchData=
 [
   ['mainpage_2emd_0',['mainpage.md',['../mainpage_8md.html',1,'']]],
-  ['map_1',['map',['../group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e',1,'hal']]],
+  ['map_1',['map',['../group__utility.html#gacf35495e951216c5f4765dbe9f256fdd',1,'hal']]],
   ['map_2ehpp_2',['map.hpp',['../map_8hpp.html',1,'']]],
   ['map_5frange_3',['map_range',['../structhal_1_1map__range.html',1,'hal']]],
   ['math_2ehpp_4',['math.hpp',['../math_8hpp.html',1,'']]],
@@ -19,5 +19,5 @@ var searchData=
   ['mock_2ehpp_16',['mock.hpp',['../adc_2mock_8hpp.html',1,'(Global Namespace)'],['../interrupt__pin_2mock_8hpp.html',1,'(Global Namespace)'],['../counter_2mock_8hpp.html',1,'(Global Namespace)'],['../dac_2mock_8hpp.html',1,'(Global Namespace)'],['../experimental_2accelerometer_2mock_8hpp.html',1,'(Global Namespace)'],['../experimental_2temperature_2mock_8hpp.html',1,'(Global Namespace)'],['../input__pin_2mock_8hpp.html',1,'(Global Namespace)'],['../timer_2mock_8hpp.html',1,'(Global Namespace)'],['../spi_2mock_8hpp.html',1,'(Global Namespace)'],['../servo_2mock_8hpp.html',1,'(Global Namespace)'],['../pwm_2mock_8hpp.html',1,'(Global Namespace)'],['../output__pin_2mock_8hpp.html',1,'(Global Namespace)'],['../motor_2mock_8hpp.html',1,'(Global Namespace)']]],
   ['motor_17',['motor',['../structhal_1_1mock_1_1motor.html',1,'hal::mock::motor'],['../classhal_1_1motor.html',1,'hal::motor']]],
   ['motor_18',['Motor',['../group__motor.html',1,'']]],
-  ['multiply_19',['multiply',['../group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a',1,'hal']]]
+  ['multiply_19',['multiply',['../group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90',1,'hal']]]
 ];

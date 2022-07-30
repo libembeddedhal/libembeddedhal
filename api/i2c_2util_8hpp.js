@@ -1,8 +1,8 @@
 var i2c_2util_8hpp =
 [
-    [ "read", "i2c_2util_8hpp.html#ga708c8a9f534086e5447673c494926d69", null ],
-    [ "read", "i2c_2util_8hpp.html#gac59c00f9a17dc3607b80517ff5e6651d", null ],
-    [ "write", "i2c_2util_8hpp.html#ga4b83ff15180248ce8d58cc464c51d032", null ],
-    [ "write_then_read", "i2c_2util_8hpp.html#ga761a28d33838cddba2b5b591cac487bd", null ],
-    [ "write_then_read", "i2c_2util_8hpp.html#ga4a9c74d8fb59833ddbf9184d92279d65", null ]
+    [ "read", "i2c_2util_8hpp.html#gaf70168e2eb137378516fd97cd4508159", null ],
+    [ "read", "i2c_2util_8hpp.html#ga1488346026180e28801ed5431ca3d889", null ],
+    [ "write", "i2c_2util_8hpp.html#ga5401a79aa513b69592eb15fc6200d613", null ],
+    [ "write_then_read", "i2c_2util_8hpp.html#ga43d46c92ac8c36ddddb17f927fad6674", null ],
+    [ "write_then_read", "i2c_2util_8hpp.html#gad9ed182667ec4112ba11b6d0307f1a03", null ]
 ];

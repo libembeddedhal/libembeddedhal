@@ -1,6 +1,0 @@
-<map id="hal::write_then_read" name="hal::write_then_read">
-<area shape="rect" id="node1" title="Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SP..." alt="" coords="5,31,143,57"/>
-<area shape="rect" id="node2" href="$group__i2c.html#gac59c00f9a17dc3607b80517ff5e6651d" title="read bytes from target device on i2c bus" alt="" coords="192,5,263,32"/>
-<area shape="rect" id="node4" href="$group__i2c.html#ga4b83ff15180248ce8d58cc464c51d032" title="write data to a target device on the i2c bus" alt="" coords="191,56,264,83"/>
-<area shape="rect" id="node3" href="$classhal_1_1i2c.html#af8bfeb02eab15513b3a713c1d94cbf06" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="312,31,444,57"/>
-</map>

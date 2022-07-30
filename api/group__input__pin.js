@@ -5,8 +5,8 @@ var group__input__pin =
         [ "operator<=>", "structhal_1_1input__pin_1_1settings.html#a8ee8534fdb41e5311a4445d276e8d71d", null ],
         [ "resistor", "structhal_1_1input__pin_1_1settings.html#a9cd830f01b3a98a267f766f7ff82c947", null ]
       ] ],
-      [ "configure", "classhal_1_1input__pin.html#a16b35d9849a9bf805bba19eab6e42e8c", null ],
-      [ "level", "classhal_1_1input__pin.html#a5aecd9e54b0ed65d1a494fd742063a3c", null ]
+      [ "configure", "classhal_1_1input__pin.html#a5d37be1ca1f9dcac778ca7ff6e5306d0", null ],
+      [ "level", "classhal_1_1input__pin.html#a55fab94b912a03bfc58ce953c46847a2", null ]
     ] ],
     [ "hal::mock::input_pin", "structhal_1_1mock_1_1input__pin.html", [
       [ "reset", "structhal_1_1mock_1_1input__pin.html#a3b21009c4c58b20b27e2d2a4cc72947e", null ],

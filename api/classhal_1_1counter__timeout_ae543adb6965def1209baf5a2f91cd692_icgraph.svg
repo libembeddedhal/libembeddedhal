@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" target="_top" xlink:title="Create a counter_timeout.">
+<g id="a_node2"><a xlink:href="classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" target="_top" xlink:title="Create a counter_timeout.">
 <polygon fill="white" stroke="black" points="315,-0.5 315,-30.5 419,-30.5 419,-0.5 315,-0.5"/>
 <text text-anchor="start" x="323" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::counter_timeout</text>
 <text text-anchor="middle" x="367" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::create</text>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" target="_top" xlink:title="Create a timeout object based on hal::counter.">
+<g id="a_node3"><a xlink:href="group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" target="_top" xlink:title="Create a timeout object based on hal::counter.">
 <polygon fill="white" stroke="black" points="181,-6 181,-25 279,-25 279,-6 181,-6"/>
 <text text-anchor="middle" x="230" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">hal::create_timeout</text>
 </a>
@@ -53,7 +53,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
+<g id="a_node4"><a xlink:href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
 <polygon fill="white" stroke="black" points="89,-6 89,-25 145,-25 145,-6 89,-6"/>
 <text text-anchor="middle" x="117" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">hal::delay</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" target="_top" xlink:title="Read bytes from a serial port.">
+<g id="a_node5"><a xlink:href="group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4" target="_top" xlink:title="Read bytes from a serial port.">
 <polygon fill="white" stroke="black" points="0,-6 0,-25 53,-25 53,-6 0,-6"/>
 <text text-anchor="middle" x="26.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">hal::read</text>
 </a>

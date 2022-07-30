@@ -1,0 +1,4 @@
+<map id="hal::write" name="hal::write">
+<area shape="rect" id="node1" title="write data to a target device on the i2c bus" alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1i2c.html#a6c7b422e582cf88fc4efa7188a4a94e2" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="127,5,259,32"/>
+</map>

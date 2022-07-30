@@ -6,9 +6,9 @@ var group__timer =
         [ "maximum", "structhal_1_1timer_1_1out__of__bounds.html#a885746cf84b96da464891b89d46155cf", null ],
         [ "minimum", "structhal_1_1timer_1_1out__of__bounds.html#af0e3babd469fd53931ef375fc943430b", null ]
       ] ],
-      [ "clear", "classhal_1_1timer.html#a0098ad1731d4e88a95f8a7a99a12adcf", null ],
-      [ "is_running", "classhal_1_1timer.html#a2e6737385beb72513e469f302e404803", null ],
-      [ "schedule", "classhal_1_1timer.html#a8cedf2efba4cd8da56e1ba3d4a0db2fc", null ]
+      [ "clear", "classhal_1_1timer.html#abf8a4681cd268134c41d420b1c777101", null ],
+      [ "is_running", "classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224", null ],
+      [ "schedule", "classhal_1_1timer.html#a6ef34e20e30547e377e6c061fad79f07", null ]
     ] ],
     [ "hal::mock::timer", "structhal_1_1mock_1_1timer.html", [
       [ "reset", "structhal_1_1mock_1_1timer.html#a9d3f61fc844e2939b380e887c4f9bdd4", null ],

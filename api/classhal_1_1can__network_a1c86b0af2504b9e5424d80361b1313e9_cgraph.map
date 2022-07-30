@@ -1,4 +1,4 @@
 <map id="hal::can_network::can_network" name="hal::can_network::can_network">
 <area shape="rect" id="node1" title="Construct a new can network object." alt="" coords="5,5,152,47"/>
-<area shape="rect" id="node2" href="$classhal_1_1can.html#a47990153617bc89602d94057dbc42f0f" title="Setup driver to execute callback when a can message is received." alt="" coords="200,13,363,39"/>
+<area shape="rect" id="node2" href="$classhal_1_1can.html#a9410c459a90e95e68a27f629342e8c35" title="Setup driver to execute callback when a can message is received." alt="" coords="200,13,363,39"/>
 </map>

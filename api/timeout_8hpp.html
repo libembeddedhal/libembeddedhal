@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('timeout_8hpp.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Provides the <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a> type and utility functions that use that type.  
+<p>Provides the <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a> type and utility functions that use that type.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;system_error&gt;</code><br />
@@ -115,22 +115,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> = boost::leaf::result&lt; void &gt;(void)</td></tr>
-<tr class="memdesc:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">More...</a><br /></td></tr>
-<tr class="separator:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> = status(void)</td></tr>
+<tr class="memdesc:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">More...</a><br /></td></tr>
+<tr class="separator:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga02e12f5656618c61208a06871fcf03f5"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </td></tr>
-<tr class="memitem:ga02e12f5656618c61208a06871fcf03f5"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga02e12f5656618c61208a06871fcf03f5">hal::delay</a> (Timeout p_timeout) noexcept</td></tr>
-<tr class="memdesc:ga02e12f5656618c61208a06871fcf03f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga02e12f5656618c61208a06871fcf03f5">More...</a><br /></td></tr>
-<tr class="separator:ga02e12f5656618c61208a06871fcf03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </td></tr>
+<tr class="memitem:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memTemplItemLeft" align="right" valign="top">status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e">hal::delay</a> (Timeout p_timeout) noexcept</td></tr>
+<tr class="memdesc:gae8e0b178beff788e3c20e32ad9485a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e">More...</a><br /></td></tr>
+<tr class="separator:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e5fce5746218cedfd72c642a417ef1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a> () noexcept</td></tr>
 <tr class="memdesc:gaa9e5fce5746218cedfd72c642a417ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a timeout that will never time out.  <a href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">More...</a><br /></td></tr>
 <tr class="separator:gaa9e5fce5746218cedfd72c642a417ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Provides the <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a> type and utility functions that use that type. </p>
+<div class="textblock"><p >Provides the <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a> type and utility functions that use that type. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

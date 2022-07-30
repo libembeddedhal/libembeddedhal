@@ -146,9 +146,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> = boost::leaf::result&lt; void &gt;(void)</td></tr>
-<tr class="memdesc:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">More...</a><br /></td></tr>
-<tr class="separator:gadb85ab32f09e0b853fb02bcf25d779ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> = <a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>(void)</td></tr>
+<tr class="memdesc:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">More...</a><br /></td></tr>
+<tr class="separator:gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
 <tr class="separator:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -176,10 +176,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7215b15d0eaa1d57d526f4490686f549"><td class="memItemLeft" align="right" valign="top">constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga7215b15d0eaa1d57d526f4490686f549">hal::operator/</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source, const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_target) noexcept</td></tr>
 <tr class="memdesc:ga7215b15d0eaa1d57d526f4490686f549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the divider required to reach the target frequency from the source frequency.  <a href="group__utility.html#ga7215b15d0eaa1d57d526f4490686f549">More...</a><br /></td></tr>
 <tr class="separator:ga7215b15d0eaa1d57d526f4490686f549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa189898df75a983e57b4dab591a7746"><td class="memTemplParams" colspan="2">template&lt;std::unsigned_integral Integer&gt; </td></tr>
-<tr class="memitem:gafa189898df75a983e57b4dab591a7746"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structhal_1_1frequency.html">frequency</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gafa189898df75a983e57b4dab591a7746">hal::operator*</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source, Integer p_scalar) noexcept</td></tr>
-<tr class="memdesc:gafa189898df75a983e57b4dab591a7746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale up a frequency by an integer factor.  <a href="group__utility.html#gafa189898df75a983e57b4dab591a7746">More...</a><br /></td></tr>
-<tr class="separator:gafa189898df75a983e57b4dab591a7746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6be0d0f661a84a69ae8a0768231a6b06"><td class="memTemplParams" colspan="2">template&lt;std::unsigned_integral Integer&gt; </td></tr>
+<tr class="memitem:ga6be0d0f661a84a69ae8a0768231a6b06"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1frequency.html">frequency</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga6be0d0f661a84a69ae8a0768231a6b06">hal::operator*</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source, Integer p_scalar) noexcept</td></tr>
+<tr class="memdesc:ga6be0d0f661a84a69ae8a0768231a6b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale up a frequency by an integer factor.  <a href="group__utility.html#ga6be0d0f661a84a69ae8a0768231a6b06">More...</a><br /></td></tr>
+<tr class="separator:ga6be0d0f661a84a69ae8a0768231a6b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae8926027334510d6e08aa55f923ef77"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhal_1_1duty__cycle.html">duty_cycle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaae8926027334510d6e08aa55f923ef77">hal::calculate_duty_cycle</a> (std::uint32_t p_cycles, <a class="el" href="classhal_1_1percent.html">percent</a> p_percent) noexcept</td></tr>
 <tr class="memdesc:gaae8926027334510d6e08aa55f923ef77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a <a class="el" href="structhal_1_1duty__cycle.html" title="Structure containing cycle count for the high and low side of a signal duty cycle.">duty_cycle</a> object based on the percent value and the input count value. The count value is split based on the ratio within percent.  <a href="group__utility.html#gaae8926027334510d6e08aa55f923ef77">More...</a><br /></td></tr>
 <tr class="separator:gaae8926027334510d6e08aa55f923ef77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,21 +193,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeb8013ca607e5e7de71637e85a45e809"><td class="memItemLeft" align="right" valign="top">constexpr std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaeb8013ca607e5e7de71637e85a45e809">hal::duration_from_cycles</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source, std::int32_t p_cycles) noexcept</td></tr>
 <tr class="memdesc:gaeb8013ca607e5e7de71637e85a45e809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the amount of time it takes a frequency to oscillate a number of cycles.  <a href="group__utility.html#gaeb8013ca607e5e7de71637e85a45e809">More...</a><br /></td></tr>
 <tr class="separator:gaeb8013ca607e5e7de71637e85a45e809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a437ca491b7bb961940ac21da71d2a1"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="structhal_1_1duty__cycle.html">duty_cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1">hal::calculate_duty_cycle</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source_clock, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration, <a class="el" href="classhal_1_1percent.html">percent</a> p_percent) noexcept</td></tr>
-<tr class="memdesc:ga5a437ca491b7bb961940ac21da71d2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a duty cycle based on a source frequency, target wavelength and a percentage.  <a href="group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1">More...</a><br /></td></tr>
-<tr class="separator:ga5a437ca491b7bb961940ac21da71d2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbf6d9dce469abb142fc77e0905d88aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1duty__cycle.html">duty_cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa">hal::calculate_duty_cycle</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source_clock, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration, <a class="el" href="classhal_1_1percent.html">percent</a> p_percent) noexcept</td></tr>
+<tr class="memdesc:gadbf6d9dce469abb142fc77e0905d88aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a duty cycle based on a source frequency, target wavelength and a percentage.  <a href="group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa">More...</a><br /></td></tr>
+<tr class="separator:gadbf6d9dce469abb142fc77e0905d88aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e1226abcb21d4e0913fcf78bad9f1c8"><td class="memTemplParams" colspan="2">template&lt;typename InputIt &gt; </td></tr>
 <tr class="memitem:ga9e1226abcb21d4e0913fcf78bad9f1c8"><td class="memTemplItemLeft" align="right" valign="top">constexpr InputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga9e1226abcb21d4e0913fcf78bad9f1c8">hal::closest</a> (const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;p_source, InputIt p_first, InputIt p_last, <a class="el" href="structhal_1_1frequency.html">frequency</a> p_target, <a class="el" href="group__utility.html#ga8c6e5bc32ff2e164fb70d1531fc4d355">divider_rule</a> p_divider_rule)</td></tr>
 <tr class="memdesc:ga9e1226abcb21d4e0913fcf78bad9f1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate divider for the closest resulting frequency to target.  <a href="group__utility.html#ga9e1226abcb21d4e0913fcf78bad9f1c8">More...</a><br /></td></tr>
 <tr class="separator:ga9e1226abcb21d4e0913fcf78bad9f1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77d31febabe2a57097ff3777f8d0fa9e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga77d31febabe2a57097ff3777f8d0fa9e"><td class="memTemplItemLeft" align="right" valign="top">constexpr boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e">hal::map</a> (T p_target, <a class="el" href="structhal_1_1map__range.html">map_range</a>&lt; T &gt; p_input_range, <a class="el" href="structhal_1_1map__range.html">map_range</a>&lt; T &gt; p_output_range) noexcept</td></tr>
-<tr class="memdesc:ga77d31febabe2a57097ff3777f8d0fa9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map an target value [x] from an input range [a,b] to an output range [c,d].  <a href="group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e">More...</a><br /></td></tr>
-<tr class="separator:ga77d31febabe2a57097ff3777f8d0fa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a1854d7dd6cd69a1f09b4aba350f86a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga1a1854d7dd6cd69a1f09b4aba350f86a"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a">hal::multiply</a> (T p_lhs, T p_rhs) noexcept</td></tr>
-<tr class="memdesc:ga1a1854d7dd6cd69a1f09b4aba350f86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value.  <a href="group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a">More...</a><br /></td></tr>
-<tr class="separator:ga1a1854d7dd6cd69a1f09b4aba350f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf35495e951216c5f4765dbe9f256fdd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gacf35495e951216c5f4765dbe9f256fdd"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gacf35495e951216c5f4765dbe9f256fdd">hal::map</a> (T p_target, <a class="el" href="structhal_1_1map__range.html">map_range</a>&lt; T &gt; p_input_range, <a class="el" href="structhal_1_1map__range.html">map_range</a>&lt; T &gt; p_output_range) noexcept</td></tr>
+<tr class="memdesc:gacf35495e951216c5f4765dbe9f256fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map an target value [x] from an input range [a,b] to an output range [c,d].  <a href="group__utility.html#gacf35495e951216c5f4765dbe9f256fdd">More...</a><br /></td></tr>
+<tr class="separator:gacf35495e951216c5f4765dbe9f256fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43fd2fa3493be5292dc4ea824e944d90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga43fd2fa3493be5292dc4ea824e944d90"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">hal::multiply</a> (T p_lhs, T p_rhs) noexcept</td></tr>
+<tr class="memdesc:ga43fd2fa3493be5292dc4ea824e944d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform multiply operation and return an error code <code>std::errc::result_out_of_range</code> if the two values when multiplied would overflow the containing value.  <a href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">More...</a><br /></td></tr>
+<tr class="separator:ga43fd2fa3493be5292dc4ea824e944d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac86abb9a38f4962ded5507e15dca4b9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gaac86abb9a38f4962ded5507e15dca4b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">hal::absolute_value</a> (T p_value) noexcept</td></tr>
 <tr class="memdesc:gaac86abb9a38f4962ded5507e15dca4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic absolute value function that works for integer types.  <a href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">More...</a><br /></td></tr>
@@ -227,10 +227,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeb9131fb2e9aa8b5b404c1d52197cea2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2">hal::to_string</a> (const <a class="el" href="classhal_1_1percent.html">percent</a> &amp;p_percent) noexcept</td></tr>
 <tr class="memdesc:gaeb9131fb2e9aa8b5b404c1d52197cea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert this percentage value into a string from -1.0 to +1.0  <a href="group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2">More...</a><br /></td></tr>
 <tr class="separator:gaeb9131fb2e9aa8b5b404c1d52197cea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02e12f5656618c61208a06871fcf03f5"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </td></tr>
-<tr class="memitem:ga02e12f5656618c61208a06871fcf03f5"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga02e12f5656618c61208a06871fcf03f5">hal::delay</a> (Timeout p_timeout) noexcept</td></tr>
-<tr class="memdesc:ga02e12f5656618c61208a06871fcf03f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga02e12f5656618c61208a06871fcf03f5">More...</a><br /></td></tr>
-<tr class="separator:ga02e12f5656618c61208a06871fcf03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memTemplParams" colspan="2">template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </td></tr>
+<tr class="memitem:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e">hal::delay</a> (Timeout p_timeout) noexcept</td></tr>
+<tr class="memdesc:gae8e0b178beff788e3c20e32ad9485a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e">More...</a><br /></td></tr>
+<tr class="separator:gae8e0b178beff788e3c20e32ad9485a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e5fce5746218cedfd72c642a417ef1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a> () noexcept</td></tr>
 <tr class="memdesc:gaa9e5fce5746218cedfd72c642a417ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a timeout that will never time out.  <a href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">More...</a><br /></td></tr>
 <tr class="separator:gaa9e5fce5746218cedfd72c642a417ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,14 +257,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gadb85ab32f09e0b853fb02bcf25d779ac" name="gadb85ab32f09e0b853fb02bcf25d779ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb85ab32f09e0b853fb02bcf25d779ac">&#9670;&nbsp;</a></span>timeout</h2>
+<a id="gacf94756c1a4ce0b2fde1f0b6e7ab7ab2" name="gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">&#9670;&nbsp;</a></span>timeout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> = typedef boost::leaf::result&lt;void&gt;(void)</td>
+          <td class="memname">using <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> = typedef <a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>(void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -272,11 +272,11 @@ Functions</h2></td></tr>
 <p>Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a></td><td>- when the timeout condition has been met. </td></tr>
+    <tr><td class="paramname"><a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2" title="Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...">hal::timeout</a></td><td>- when the timeout condition has been met. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - sets error flag set when timeout condition has been met, otherwise returns success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - sets error flag set when timeout condition has been met, otherwise returns success. </dd></dl>
 
 </div>
 </div>
@@ -365,8 +365,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ga5a437ca491b7bb961940ac21da71d2a1" name="ga5a437ca491b7bb961940ac21da71d2a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a437ca491b7bb961940ac21da71d2a1">&#9670;&nbsp;</a></span>calculate_duty_cycle() <span class="overload">[1/2]</span></h2>
+<a id="gadbf6d9dce469abb142fc77e0905d88aa" name="gadbf6d9dce469abb142fc77e0905d88aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbf6d9dce469abb142fc77e0905d88aa">&#9670;&nbsp;</a></span>calculate_duty_cycle() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +375,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; <a class="el" href="structhal_1_1duty__cycle.html">duty_cycle</a> &gt; hal::calculate_duty_cycle </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1duty__cycle.html">duty_cycle</a> &gt; hal::calculate_duty_cycle </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;&#160;</td>
           <td class="paramname"><em>p_source_clock</em>, </td>
@@ -418,7 +418,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga5a437ca491b7bb961940ac21da71d2a1_cgraph.svg" width="688" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gadbf6d9dce469abb142fc77e0905d88aa_cgraph.svg" width="688" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -615,8 +615,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ga02e12f5656618c61208a06871fcf03f5" name="ga02e12f5656618c61208a06871fcf03f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02e12f5656618c61208a06871fcf03f5">&#9670;&nbsp;</a></span>delay()</h2>
+<a id="gae8e0b178beff788e3c20e32ad9485a3e" name="gae8e0b178beff788e3c20e32ad9485a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8e0b178beff788e3c20e32ad9485a3e">&#9670;&nbsp;</a></span>delay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,7 +627,7 @@ template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::delay </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::delay </td>
           <td>(</td>
           <td class="paramtype">Timeout&#160;</td>
           <td class="paramname"><em>p_timeout</em></td><td>)</td>
@@ -654,7 +654,13 @@ template&lt;typename Timeout  = std::function&lt;hal::timeout&gt;&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - success </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gae8e0b178beff788e3c20e32ad9485a3e_cgraph.svg" width="223" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -807,8 +813,8 @@ template&lt;size_t BitWidth, std::integral T&gt; </div>
 
 </div>
 </div>
-<a id="ga77d31febabe2a57097ff3777f8d0fa9e" name="ga77d31febabe2a57097ff3777f8d0fa9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga77d31febabe2a57097ff3777f8d0fa9e">&#9670;&nbsp;</a></span>map()</h2>
+<a id="gacf35495e951216c5f4765dbe9f256fdd" name="gacf35495e951216c5f4765dbe9f256fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf35495e951216c5f4765dbe9f256fdd">&#9670;&nbsp;</a></span>map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -819,7 +825,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr boost::leaf::result&lt; T &gt; hal::map </td>
+          <td class="memname">constexpr <a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; T &gt; hal::map </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>p_target</em>, </td>
@@ -869,7 +875,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>constexpr boost::leaf::result&lt;T&gt; - value mapped from input range to the output range. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>constexpr result&lt;T&gt; - value mapped from input range to the output range. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::invalid_argument</td><td>if input_range has a distance of zero. </td></tr>
@@ -879,14 +885,14 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga77d31febabe2a57097ff3777f8d0fa9e_cgraph.svg" width="624" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gacf35495e951216c5f4765dbe9f256fdd_cgraph.svg" width="624" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga1a1854d7dd6cd69a1f09b4aba350f86a" name="ga1a1854d7dd6cd69a1f09b4aba350f86a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a1854d7dd6cd69a1f09b4aba350f86a">&#9670;&nbsp;</a></span>multiply()</h2>
+<a id="ga43fd2fa3493be5292dc4ea824e944d90" name="ga43fd2fa3493be5292dc4ea824e944d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43fd2fa3493be5292dc4ea824e944d90">&#9670;&nbsp;</a></span>multiply()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -897,7 +903,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; T &gt; hal::multiply </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; T &gt; hal::multiply </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>p_lhs</em>, </td>
@@ -935,17 +941,17 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;T&gt; - either the resultant or an error <code>std::errc::result_out_of_range</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;T&gt; - either the resultant or an error <code>std::errc::result_out_of_range</code> </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga1a1854d7dd6cd69a1f09b4aba350f86a_cgraph.svg" width="251" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga43fd2fa3493be5292dc4ea824e944d90_cgraph.svg" width="251" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga1a1854d7dd6cd69a1f09b4aba350f86a_icgraph.svg" width="246" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga43fd2fa3493be5292dc4ea824e944d90_icgraph.svg" width="246" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -979,8 +985,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="gafa189898df75a983e57b4dab591a7746" name="gafa189898df75a983e57b4dab591a7746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafa189898df75a983e57b4dab591a7746">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="ga6be0d0f661a84a69ae8a0768231a6b06" name="ga6be0d0f661a84a69ae8a0768231a6b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6be0d0f661a84a69ae8a0768231a6b06">&#9670;&nbsp;</a></span>operator*()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -991,7 +997,7 @@ template&lt;std::unsigned_integral Integer&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; <a class="el" href="structhal_1_1frequency.html">frequency</a> &gt; hal::operator* </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1frequency.html">frequency</a> &gt; hal::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structhal_1_1frequency.html">frequency</a> &amp;&#160;</td>
           <td class="paramname"><em>p_source</em>, </td>
@@ -1033,7 +1039,7 @@ template&lt;std::unsigned_integral Integer&gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gafa189898df75a983e57b4dab591a7746_cgraph.svg" width="396" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga6be0d0f661a84a69ae8a0768231a6b06_cgraph.svg" width="396" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

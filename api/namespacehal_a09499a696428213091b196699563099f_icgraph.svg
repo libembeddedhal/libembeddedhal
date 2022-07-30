@@ -27,7 +27,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
+<g id="a_node2"><a xlink:href="group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
 <polygon fill="white" stroke="black" points="330,-301.5 330,-331.5 426,-331.5 426,-301.5 330,-301.5"/>
 <text text-anchor="start" x="338" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::calculate_duty</text>
 <text text-anchor="middle" x="378" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">_cycle</text>
@@ -43,7 +43,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" target="_top" xlink:title="Create a counter_timeout.">
+<g id="a_node3"><a xlink:href="classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" target="_top" xlink:title="Create a counter_timeout.">
 <polygon fill="white" stroke="black" points="326,-252.5 326,-282.5 430,-282.5 430,-252.5 326,-252.5"/>
 <text text-anchor="start" x="334" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::counter_timeout</text>
 <text text-anchor="middle" x="378" y="-259.5" font-family="Helvetica,sans-Serif" font-size="10.00">::create</text>
@@ -59,7 +59,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
+<g id="a_node5"><a xlink:href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" target="_top" xlink:title="Delay execution for a duration of time using a hardware counter.">
 <polygon fill="white" stroke="black" points="89,-234 89,-253 145,-253 145,-234 89,-234"/>
 <text text-anchor="middle" x="117" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">hal::delay</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
+<g id="a_node7"><a xlink:href="group__utility.html#gacf35495e951216c5f4765dbe9f256fdd" target="_top" xlink:title="Map an target value [x] from an input range [a,b] to an output range [c,d].">
 <polygon fill="white" stroke="black" points="351.5,-176 351.5,-195 404.5,-195 404.5,-176 351.5,-176"/>
 <text text-anchor="middle" x="378" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">hal::map</text>
 </a>
@@ -89,7 +89,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a" target="_top" xlink:title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ...">
+<g id="a_node8"><a xlink:href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90" target="_top" xlink:title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ...">
 <polygon fill="white" stroke="black" points="344.5,-138 344.5,-157 411.5,-157 411.5,-138 344.5,-138"/>
 <text text-anchor="middle" x="378" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">hal::multiply</text>
 </a>
@@ -104,7 +104,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="classhal_1_1counter__timeout.html#a6ff4223b045d65de5bab557c0648c3a3" target="_top" xlink:title="Call this object to check if it has timed out.">
+<g id="a_node10"><a xlink:href="classhal_1_1counter__timeout.html#a7f1f5f55749d89dcc65d423cf702de3b" target="_top" xlink:title="Call this object to check if it has timed out.">
 <polygon fill="white" stroke="black" points="326,-88.5 326,-118.5 430,-118.5 430,-88.5 326,-88.5"/>
 <text text-anchor="start" x="334" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::counter_timeout</text>
 <text text-anchor="middle" x="378" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">::operator()</text>
@@ -120,7 +120,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="classhal_1_1spy__handler.html#a2150472616eb67010951cfc7a4fbe9da" target="_top" xlink:title="Record the arguments of a function being spied on.">
+<g id="a_node11"><a xlink:href="classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a" target="_top" xlink:title="Record the arguments of a function being spied on.">
 <polygon fill="white" stroke="black" points="319.5,-50 319.5,-69 436.5,-69 436.5,-50 319.5,-50"/>
 <text text-anchor="middle" x="378" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">hal::spy_handler::record</text>
 </a>
@@ -135,7 +135,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="classhal_1_1can__network.html#a13691b16cb49b9fb2317cbc0f57058a2" target="_top" xlink:title="Associate a can id with a node in the can network.">
+<g id="a_node12"><a xlink:href="classhal_1_1can__network.html#a05e6dc010a762511bb4d459ee55d42ac" target="_top" xlink:title="Associate a can id with a node in the can network.">
 <polygon fill="white" stroke="black" points="315,-0.5 315,-30.5 441,-30.5 441,-0.5 315,-0.5"/>
 <text text-anchor="start" x="323" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::can_network::register</text>
 <text text-anchor="middle" x="378" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_message_id</text>
@@ -151,7 +151,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" target="_top" xlink:title="Create a timeout object based on hal::counter.">
+<g id="a_node4"><a xlink:href="group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" target="_top" xlink:title="Create a timeout object based on hal::counter.">
 <polygon fill="white" stroke="black" points="181,-255 181,-274 279,-274 279,-255 181,-255"/>
 <text text-anchor="middle" x="230" y="-262" font-family="Helvetica,sans-Serif" font-size="10.00">hal::create_timeout</text>
 </a>
@@ -178,7 +178,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" target="_top" xlink:title="Read bytes from a serial port.">
+<g id="a_node6"><a xlink:href="group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4" target="_top" xlink:title="Read bytes from a serial port.">
 <polygon fill="white" stroke="black" points="0,-234 0,-253 53,-253 53,-234 0,-234"/>
 <text text-anchor="middle" x="26.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">hal::read</text>
 </a>
@@ -193,7 +193,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="group__utility.html#gafa189898df75a983e57b4dab591a7746" target="_top" xlink:title="Scale up a frequency by an integer factor.">
+<g id="a_node9"><a xlink:href="group__utility.html#ga6be0d0f661a84a69ae8a0768231a6b06" target="_top" xlink:title="Scale up a frequency by an integer factor.">
 <polygon fill="white" stroke="black" points="193.5,-138 193.5,-157 266.5,-157 266.5,-138 193.5,-138"/>
 <text text-anchor="middle" x="230" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">hal::operator*</text>
 </a>

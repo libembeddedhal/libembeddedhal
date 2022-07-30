@@ -1,4 +1,0 @@
-<map id="hal::multiply" name="hal::multiply">
-<area shape="rect" id="node1" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="151,5,240,32"/>
-<area shape="rect" id="node2" href="$group__utility.html#gafa189898df75a983e57b4dab591a7746" title="Scale up a frequency by an integer factor." alt="" coords="5,5,103,32"/>
-</map>

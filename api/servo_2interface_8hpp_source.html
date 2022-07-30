@@ -104,20 +104,20 @@ $(document).ready(function(){initNavTree('servo_2interface_8hpp_source.html','')
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classhal_1_1servo.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="classhal_1_1servo.html">servo</a></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classhal_1_1servo.html#a174a1a393f8c4148ab0b14f3d6e45595">   91</a></span>  [[nodiscard]] boost::leaf::result&lt;void&gt; <a class="code hl_function" href="classhal_1_1servo.html#a174a1a393f8c4148ab0b14f3d6e45595">position</a>(<a class="code hl_class" href="classhal_1_1percent.html">percent</a> p_position) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classhal_1_1servo.html#a9fb453a188dd8d203c3eabd7678ef1e3">   91</a></span>  [[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="classhal_1_1servo.html#a9fb453a188dd8d203c3eabd7678ef1e3">position</a>(<a class="code hl_class" href="classhal_1_1percent.html">percent</a> p_position) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> driver_position(p_position);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> boost::leaf::result&lt;void&gt; driver_position(</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="classhal_1_1percent.html">percent</a> p_position) <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_position(<a class="code hl_class" href="classhal_1_1percent.html">percent</a> p_position) <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1percent_html"><div class="ttname"><a href="classhal_1_1percent.html">hal::percent</a></div><div class="ttdoc">A integer representation of a percentage.</div><div class="ttdef"><b>Definition:</b> percent.hpp:110</div></div>
 <div class="ttc" id="aclasshal_1_1servo_html"><div class="ttname"><a href="classhal_1_1servo.html">hal::servo</a></div><div class="ttdoc">Hardware abstraction for closed loop positional rotary and linear actuators.</div><div class="ttdef"><b>Definition:</b> interface.hpp:38</div></div>
-<div class="ttc" id="aclasshal_1_1servo_html_a174a1a393f8c4148ab0b14f3d6e45595"><div class="ttname"><a href="classhal_1_1servo.html#a174a1a393f8c4148ab0b14f3d6e45595">hal::servo::position</a></div><div class="ttdeci">boost::leaf::result&lt; void &gt; position(percent p_position) noexcept</div><div class="ttdoc">Set the position of the servo.</div><div class="ttdef"><b>Definition:</b> interface.hpp:91</div></div>
+<div class="ttc" id="aclasshal_1_1servo_html_a9fb453a188dd8d203c3eabd7678ef1e3"><div class="ttname"><a href="classhal_1_1servo.html#a9fb453a188dd8d203c3eabd7678ef1e3">hal::servo::position</a></div><div class="ttdeci">status position(percent p_position) noexcept</div><div class="ttdoc">Set the position of the servo.</div><div class="ttdef"><b>Definition:</b> interface.hpp:91</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

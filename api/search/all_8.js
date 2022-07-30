@@ -16,5 +16,5 @@ var searchData=
   ['is_5fa_5ftest_13',['is_a_test',['../namespacehal.html#a455862d0a10293e15661ca3cd780673d',1,'hal']]],
   ['is_5fplatform_14',['is_platform',['../namespacehal.html#aab7c25782659b75f580a03723f361cce',1,'hal']]],
   ['is_5fremote_5frequest_15',['is_remote_request',['../structhal_1_1can_1_1message__t.html#acb62ec09361d220eb9de285498298baf',1,'hal::can::message_t']]],
-  ['is_5frunning_16',['is_running',['../classhal_1_1timer.html#a2e6737385beb72513e469f302e404803',1,'hal::timer']]]
+  ['is_5frunning_16',['is_running',['../classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224',1,'hal::timer']]]
 ];

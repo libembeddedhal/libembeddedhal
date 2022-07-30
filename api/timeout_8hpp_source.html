@@ -104,18 +104,18 @@ $(document).ready(function(){initNavTree('timeout_8hpp_source.html',''); initRes
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="error_8hpp.html">error.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">   28</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">timeout</a> = boost::leaf::result&lt;void&gt;(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">   28</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">timeout</a> = <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Timeout = std::function&lt;hal::timeout&gt;&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group__utility.html#ga02e12f5656618c61208a06871fcf03f5">   39</a></span>[[nodiscard]] <span class="keyword">inline</span> boost::leaf::result&lt;void&gt; <a class="code hl_function" href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586">delay</a>(Timeout p_timeout) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e">   39</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d">delay</a>(Timeout p_timeout) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">bool</span> waiting = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// This lambda catches a `std::errc::timed_out` handle them by changing</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// `waiting` from true to false in order to break the while loop below.</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">auto</span> timeout_catcher =</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    [&amp;waiting](boost::leaf::match&lt;std::errc, std::errc::timed_out&gt; p_errc)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    -&gt; boost::leaf::result&lt;void&gt; {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    [&amp;waiting](</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      boost::leaf::match&lt;std::errc, std::errc::timed_out&gt; p_errc) -&gt; <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    (void)p_errc;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Simply change the waiting bool</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    waiting = <span class="keyword">false</span>;</div>
@@ -123,24 +123,34 @@ $(document).ready(function(){initNavTree('timeout_8hpp_source.html',''); initRes
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> {};</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  };</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">while</span> (waiting) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Rethrow any error that isn&#39;t `std::errc::timed_out`</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    BOOST_LEAF_CHECK(boost::leaf::try_handle_some(p_timeout, timeout_catcher));</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">   68</a></span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">never_timeout</a>() noexcept</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">return</span> []() -&gt; boost::leaf::result&lt;void&gt; { <span class="keywordflow">return</span> {}; };</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">hal::attempt</a>(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    [&amp;p_timeout]() -&gt; <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="comment">// Continuously call p_callback until it either returns</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="comment">// `std::errc::timeout_out`</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_timeout());</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="comment">// Unreachable!</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    },</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    timeout_catcher));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">   75</a></span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">never_timeout</a>() noexcept</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">return</span> []() -&gt; <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> { <span class="keywordflow">return</span> {}; };</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aerror_8hpp_html"><div class="ttname"><a href="error_8hpp.html">error.hpp</a></div></div>
-<div class="ttc" id="agroup__counter_html_gad6b2dea2bf157a3df06253aac6354586"><div class="ttname"><a href="group__counter.html#gad6b2dea2bf157a3df06253aac6354586">hal::delay</a></div><div class="ttdeci">boost::leaf::result&lt; void &gt; delay(hal::counter &amp;p_counter, hal::time_duration p_duration) noexcept</div><div class="ttdoc">Delay execution for a duration of time using a hardware counter.</div><div class="ttdef"><b>Definition:</b> util.hpp:44</div></div>
-<div class="ttc" id="agroup__utility_html_gaa9e5fce5746218cedfd72c642a417ef1"><div class="ttname"><a href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a></div><div class="ttdeci">auto never_timeout() noexcept</div><div class="ttdoc">Create a timeout that will never time out.</div><div class="ttdef"><b>Definition:</b> timeout.hpp:68</div></div>
-<div class="ttc" id="agroup__utility_html_gadb85ab32f09e0b853fb02bcf25d779ac"><div class="ttname"><a href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a></div><div class="ttdeci">boost::leaf::result&lt; void &gt;(void) timeout</div><div class="ttdoc">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...</div><div class="ttdef"><b>Definition:</b> timeout.hpp:28</div></div>
+<div class="ttc" id="aerror_8hpp_html_ad60839c87ca7f0ad471edf0a5f9f0199"><div class="ttname"><a href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a></div><div class="ttdeci">#define HAL_CHECK</div><div class="ttdef"><b>Definition:</b> error.hpp:8</div></div>
+<div class="ttc" id="agroup__counter_html_ga8b4d520b8fbf98436b255041f73b9a8d"><div class="ttname"><a href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d">hal::delay</a></div><div class="ttdeci">status delay(hal::counter &amp;p_counter, hal::time_duration p_duration) noexcept</div><div class="ttdoc">Delay execution for a duration of time using a hardware counter.</div><div class="ttdef"><b>Definition:</b> util.hpp:44</div></div>
+<div class="ttc" id="agroup__utility_html_gaa9e5fce5746218cedfd72c642a417ef1"><div class="ttname"><a href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a></div><div class="ttdeci">auto never_timeout() noexcept</div><div class="ttdoc">Create a timeout that will never time out.</div><div class="ttdef"><b>Definition:</b> timeout.hpp:75</div></div>
+<div class="ttc" id="agroup__utility_html_gacf94756c1a4ce0b2fde1f0b6e7ab7ab2"><div class="ttname"><a href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a></div><div class="ttdeci">status(void) timeout</div><div class="ttdoc">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded ...</div><div class="ttdef"><b>Definition:</b> timeout.hpp:28</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:14</div></div>
+<div class="ttc" id="anamespacehal_html_a9a7de389180e282529be31044c0e57ae"><div class="ttname"><a href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">hal::attempt</a></div><div class="ttdeci">constexpr auto attempt(TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</div><div class="ttdef"><b>Definition:</b> error.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

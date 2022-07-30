@@ -11,9 +11,9 @@ var group__can =
         [ "clock_rate", "structhal_1_1can_1_1settings.html#a2cdaf1b39a92f56cb1f9a23455222663", null ]
       ] ],
       [ "id_t", "classhal_1_1can.html#ae85571b4f7aac93fca8503aafcb32a47", null ],
-      [ "attach_interrupt", "classhal_1_1can.html#a47990153617bc89602d94057dbc42f0f", null ],
-      [ "configure", "classhal_1_1can.html#a4c077b03b6d5dd657fcd4e170d43b27c", null ],
-      [ "send", "classhal_1_1can.html#af797c3651d4882a9d161e8ccdd9a1a5e", null ]
+      [ "attach_interrupt", "classhal_1_1can.html#a9410c459a90e95e68a27f629342e8c35", null ],
+      [ "configure", "classhal_1_1can.html#a32a3428c7d56ee273d71690bba05bf27", null ],
+      [ "send", "classhal_1_1can.html#a5b338c02faabbdd1ee6ae580e32fa206", null ]
     ] ],
     [ "hal::can_network", "classhal_1_1can__network.html", [
       [ "node_t", "classhal_1_1can__network_1_1node__t.html", [
@@ -25,6 +25,6 @@ var group__can =
       [ "can_network", "classhal_1_1can__network.html#a1c86b0af2504b9e5424d80361b1313e9", null ],
       [ "bus", "classhal_1_1can__network.html#ae51b72d8afe14e76016d18c76255eb0e", null ],
       [ "get_internal_map", "classhal_1_1can__network.html#ad54bd5adc96beefdbf7b92c83091522b", null ],
-      [ "register_message_id", "classhal_1_1can__network.html#a13691b16cb49b9fb2317cbc0f57058a2", null ]
+      [ "register_message_id", "classhal_1_1can__network.html#a05e6dc010a762511bb4d459ee55d42ac", null ]
     ] ]
 ];

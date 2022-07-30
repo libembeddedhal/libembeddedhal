@@ -113,18 +113,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2accb589c49faf0c4d30e421b0516215"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1i2c.html#a2accb589c49faf0c4d30e421b0516215">configure</a> (const <a class="el" href="structhal_1_1i2c_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
-<tr class="memdesc:a2accb589c49faf0c4d30e421b0516215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> to match the settings supplied.  <a href="classhal_1_1i2c.html#a2accb589c49faf0c4d30e421b0516215">More...</a><br /></td></tr>
-<tr class="separator:a2accb589c49faf0c4d30e421b0516215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8bfeb02eab15513b3a713c1d94cbf06"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1i2c.html#af8bfeb02eab15513b3a713c1d94cbf06">transaction</a> (std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt; p_timeout) noexcept</td></tr>
-<tr class="memdesc:af8bfeb02eab15513b3a713c1d94cbf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform an <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> transaction with another device on the bus. The type of transaction depends on values of input parameters. This function will block until the entire transfer is finished.  <a href="classhal_1_1i2c.html#af8bfeb02eab15513b3a713c1d94cbf06">More...</a><br /></td></tr>
-<tr class="separator:af8bfeb02eab15513b3a713c1d94cbf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac33fb7d29ee15ea0297b07948bf8b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1i2c.html#a7ac33fb7d29ee15ea0297b07948bf8b7">configure</a> (const <a class="el" href="structhal_1_1i2c_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
+<tr class="memdesc:a7ac33fb7d29ee15ea0297b07948bf8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> to match the settings supplied.  <a href="classhal_1_1i2c.html#a7ac33fb7d29ee15ea0297b07948bf8b7">More...</a><br /></td></tr>
+<tr class="separator:a7ac33fb7d29ee15ea0297b07948bf8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7b422e582cf88fc4efa7188a4a94e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1i2c.html#a6c7b422e582cf88fc4efa7188a4a94e2">transaction</a> (std::byte p_address, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt; p_timeout) noexcept</td></tr>
+<tr class="memdesc:a6c7b422e582cf88fc4efa7188a4a94e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform an <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> transaction with another device on the bus. The type of transaction depends on values of input parameters. This function will block until the entire transfer is finished.  <a href="classhal_1_1i2c.html#a6c7b422e582cf88fc4efa7188a4a94e2">More...</a><br /></td></tr>
+<tr class="separator:a6c7b422e582cf88fc4efa7188a4a94e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract interface. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2accb589c49faf0c4d30e421b0516215" name="a2accb589c49faf0c4d30e421b0516215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2accb589c49faf0c4d30e421b0516215">&#9670;&nbsp;</a></span>configure()</h2>
+<a id="a7ac33fb7d29ee15ea0297b07948bf8b7" name="a7ac33fb7d29ee15ea0297b07948bf8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac33fb7d29ee15ea0297b07948bf8b7">&#9670;&nbsp;</a></span>configure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::i2c::configure </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::i2c::configure </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structhal_1_1i2c_1_1settings.html">settings</a> &amp;&#160;</td>
           <td class="paramname"><em>p_settings</em></td><td>)</td>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
@@ -164,8 +164,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af8bfeb02eab15513b3a713c1d94cbf06" name="af8bfeb02eab15513b3a713c1d94cbf06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8bfeb02eab15513b3a713c1d94cbf06">&#9670;&nbsp;</a></span>transaction()</h2>
+<a id="a6c7b422e582cf88fc4efa7188a4a94e2" name="a6c7b422e582cf88fc4efa7188a4a94e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7b422e582cf88fc4efa7188a4a94e2">&#9670;&nbsp;</a></span>transaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +174,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::i2c::transaction </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::i2c::transaction </td>
           <td>(</td>
           <td class="paramtype">std::byte&#160;</td>
           <td class="paramname"><em>p_address</em>, </td>
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gadb85ab32f09e0b853fb02bcf25d779ac">hal::timeout</a> &gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__utility.html#gacf94756c1a4ce0b2fde1f0b6e7ab7ab2">hal::timeout</a> &gt;&#160;</td>
           <td class="paramname"><em>p_timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::io_error</td><td>indicates that the <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> lines were put into an invalid state during the transaction due to interference, misconfiguration of the <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) or Two Wire Interface (TWI) communication protocol hardware abstract i...">i2c</a> peripheral or the addressed device or something else. </td></tr>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1i2c_af8bfeb02eab15513b3a713c1d94cbf06_icgraph.svg" width="514" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1i2c_a6c7b422e582cf88fc4efa7188a4a94e2_icgraph.svg" width="514" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -1,0 +1,4 @@
+<map id="hal::serial::read" name="hal::serial::read">
+<area shape="rect" id="node1" title="Read the bytes received over the receiver line into buffer." alt="" coords="124,5,231,32"/>
+<area shape="rect" id="node2" href="$group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4" title="Read bytes from a serial port." alt="" coords="5,5,76,32"/>
+</map>

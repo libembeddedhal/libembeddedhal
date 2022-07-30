@@ -1,0 +1,5 @@
+<map id="hal::counter_timeout::operator()" name="hal::counter_timeout::operator()">
+<area shape="rect" id="node1" title="Call this object to check if it has timed out." alt="" coords="5,47,144,89"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="207,29,310,56"/>
+<area shape="rect" id="node3" href="$classhal_1_1counter.html#a1b99ef1f3847e5f24e2cb69e5988e54f" title="Get the uptime of the counter since it has started." alt="" coords="192,80,325,107"/>
+</map>

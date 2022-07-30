@@ -1,0 +1,4 @@
+<map id="hal::delay" name="hal::delay">
+<area shape="rect" id="node1" title="Delay the execution of the application or thread for a duration of time." alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a9a7de389180e282529be31044c0e57ae" title=" " alt="" coords="128,5,217,32"/>
+</map>

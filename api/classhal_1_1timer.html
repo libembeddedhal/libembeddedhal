@@ -119,22 +119,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e6737385beb72513e469f302e404803"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a2e6737385beb72513e469f302e404803">is_running</a> () noexcept</td></tr>
-<tr class="memdesc:a2e6737385beb72513e469f302e404803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the timer is currently running.  <a href="classhal_1_1timer.html#a2e6737385beb72513e469f302e404803">More...</a><br /></td></tr>
-<tr class="separator:a2e6737385beb72513e469f302e404803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0098ad1731d4e88a95f8a7a99a12adcf"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a0098ad1731d4e88a95f8a7a99a12adcf">clear</a> () noexcept</td></tr>
-<tr class="memdesc:a0098ad1731d4e88a95f8a7a99a12adcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a scheduled event from happening.  <a href="classhal_1_1timer.html#a0098ad1731d4e88a95f8a7a99a12adcf">More...</a><br /></td></tr>
-<tr class="separator:a0098ad1731d4e88a95f8a7a99a12adcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cedf2efba4cd8da56e1ba3d4a0db2fc"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a8cedf2efba4cd8da56e1ba3d4a0db2fc">schedule</a> (std::function&lt; void(void)&gt; p_callback, std::chrono::nanoseconds p_delay) noexcept</td></tr>
-<tr class="memdesc:a8cedf2efba4cd8da56e1ba3d4a0db2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an callback to be called at a designated time/interval.  <a href="classhal_1_1timer.html#a8cedf2efba4cd8da56e1ba3d4a0db2fc">More...</a><br /></td></tr>
-<tr class="separator:a8cedf2efba4cd8da56e1ba3d4a0db2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f93345e114f4a45c70e711d386d1224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224">is_running</a> () noexcept</td></tr>
+<tr class="memdesc:a8f93345e114f4a45c70e711d386d1224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the timer is currently running.  <a href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224">More...</a><br /></td></tr>
+<tr class="separator:a8f93345e114f4a45c70e711d386d1224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8a4681cd268134c41d420b1c777101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#abf8a4681cd268134c41d420b1c777101">clear</a> () noexcept</td></tr>
+<tr class="memdesc:abf8a4681cd268134c41d420b1c777101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a scheduled event from happening.  <a href="classhal_1_1timer.html#abf8a4681cd268134c41d420b1c777101">More...</a><br /></td></tr>
+<tr class="separator:abf8a4681cd268134c41d420b1c777101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef34e20e30547e377e6c061fad79f07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a6ef34e20e30547e377e6c061fad79f07">schedule</a> (std::function&lt; void(void)&gt; p_callback, std::chrono::nanoseconds p_delay) noexcept</td></tr>
+<tr class="memdesc:a6ef34e20e30547e377e6c061fad79f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an callback to be called at a designated time/interval.  <a href="classhal_1_1timer.html#a6ef34e20e30547e377e6c061fad79f07">More...</a><br /></td></tr>
+<tr class="separator:a6ef34e20e30547e377e6c061fad79f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Timer hardware abstraction interface. </p>
 <p >Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer's time has expired, an event/interrupt/signal is generated. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0098ad1731d4e88a95f8a7a99a12adcf" name="a0098ad1731d4e88a95f8a7a99a12adcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0098ad1731d4e88a95f8a7a99a12adcf">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="abf8a4681cd268134c41d420b1c777101" name="abf8a4681cd268134c41d420b1c777101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8a4681cd268134c41d420b1c777101">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::timer::clear </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::timer::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -159,12 +159,12 @@ Public Member Functions</h2></td></tr>
 <p>Stops a scheduled event from happening. </p>
 <p >Does nothing if the timer is not currently running.</p>
 <p >Note that there must be sufficient time between the this call finishing and the scheduled event's termination. If this call is too close to when the schedule event expires, this function may not complete before the hardware calls the callback.</p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - driver specific error, if any. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - driver specific error, if any. </dd></dl>
 
 </div>
 </div>
-<a id="a2e6737385beb72513e469f302e404803" name="a2e6737385beb72513e469f302e404803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e6737385beb72513e469f302e404803">&#9670;&nbsp;</a></span>is_running()</h2>
+<a id="a8f93345e114f4a45c70e711d386d1224" name="a8f93345e114f4a45c70e711d386d1224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f93345e114f4a45c70e711d386d1224">&#9670;&nbsp;</a></span>is_running()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; bool &gt; hal::timer::is_running </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; bool &gt; hal::timer::is_running </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -187,14 +187,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine if the timer is currently running. </p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;bool&gt; - true if timer is currently running </dd>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;bool&gt; - true if timer is currently running </dd>
 <dd>
-boost::leaf::result&lt;bool&gt; - driver specific error, if any. </dd></dl>
+result&lt;bool&gt; - driver specific error, if any. </dd></dl>
 
 </div>
 </div>
-<a id="a8cedf2efba4cd8da56e1ba3d4a0db2fc" name="a8cedf2efba4cd8da56e1ba3d4a0db2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cedf2efba4cd8da56e1ba3d4a0db2fc">&#9670;&nbsp;</a></span>schedule()</h2>
+<a id="a6ef34e20e30547e377e6c061fad79f07" name="a6ef34e20e30547e377e6c061fad79f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef34e20e30547e377e6c061fad79f07">&#9670;&nbsp;</a></span>schedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +203,7 @@ boost::leaf::result&lt;bool&gt; - driver specific error, if any. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::timer::schedule </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::timer::schedule </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
           <td class="paramname"><em>p_callback</em>, </td>
@@ -228,7 +228,7 @@ boost::leaf::result&lt;bool&gt; - driver specific error, if any. </dd></dl>
 </div><div class="memdoc">
 
 <p>Schedule an callback to be called at a designated time/interval. </p>
-<p >If this is called and the timer has already scheduled an event (in other words, <a class="el" href="classhal_1_1timer.html#a2e6737385beb72513e469f302e404803" title="Determine if the timer is currently running.">is_running()</a> returns true), then the previous scheduled event will be cleared and the new scheduled event will be started.</p>
+<p >If this is called and the timer has already scheduled an event (in other words, <a class="el" href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224" title="Determine if the timer is currently running.">is_running()</a> returns true), then the previous scheduled event will be cleared and the new scheduled event will be started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_callback</td><td>- callback function to be called when the timer expires </td></tr>
@@ -236,7 +236,7 @@ boost::leaf::result&lt;bool&gt; - driver specific error, if any. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - returns <code>delay_too_small</code> or <code>delay_too_large</code> if p_interval cannot be reached. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - returns <code>delay_too_small</code> or <code>delay_too_large</code> if p_interval cannot be reached. </dd></dl>
 
 </div>
 </div>

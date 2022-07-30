@@ -1,5 +1,0 @@
-<map id="hal::operator*" name="hal::operator*">
-<area shape="rect" id="node1" title="Scale up a frequency by an integer factor." alt="" coords="5,29,103,56"/>
-<area shape="rect" id="node2" href="$group__utility.html#ga1a1854d7dd6cd69a1f09b4aba350f86a" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="151,29,240,56"/>
-<area shape="rect" id="node3" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="288,29,391,56"/>
-</map>

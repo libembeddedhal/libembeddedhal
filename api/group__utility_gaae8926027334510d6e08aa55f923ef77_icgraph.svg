@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
+<g id="a_node2"><a xlink:href="group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa" target="_top" xlink:title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 96,-30.5 96,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::calculate_duty</text>
 <text text-anchor="middle" x="48" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_cycle</text>

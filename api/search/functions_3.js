@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['delay_0',['delay',['../group__counter.html#gad6b2dea2bf157a3df06253aac6354586',1,'hal::delay(hal::counter &amp;p_counter, hal::time_duration p_duration) noexcept'],['../group__serial.html#gace28fd2dcb329e8d803125762231e2f0',1,'hal::delay(serial &amp;p_serial, size_t p_length) noexcept'],['../group__utility.html#ga02e12f5656618c61208a06871fcf03f5',1,'hal::delay(Timeout p_timeout) noexcept']]],
-  ['detach_5finterrupt_1',['detach_interrupt',['../classhal_1_1interrupt__pin.html#a64de264ed4d62c2022e3077d17202c46',1,'hal::interrupt_pin']]],
+  ['delay_0',['delay',['../group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d',1,'hal::delay(hal::counter &amp;p_counter, hal::time_duration p_duration) noexcept'],['../group__serial.html#ga7604a2ab8ef22fd0cddfbf49ccd9a9c7',1,'hal::delay(serial &amp;p_serial, size_t p_length) noexcept'],['../group__utility.html#gae8e0b178beff788e3c20e32ad9485a3e',1,'hal::delay(Timeout p_timeout) noexcept']]],
+  ['detach_5finterrupt_1',['detach_interrupt',['../classhal_1_1interrupt__pin.html#ad6679629e056a86fd5ee8ac3ea296f9f',1,'hal::interrupt_pin']]],
   ['distance_2',['distance',['../structhal_1_1map__range.html#a6c1b791227339a4dd70aeb54b979b0a9',1,'hal::map_range::distance()'],['../group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15',1,'hal::distance(T p_left, T p_right) noexcept'],['../namespacehal.html#gafcd717bac7dd9983e8027bd45b7c3d15',1,'hal::distance(T p_left, T p_right) noexcept']]],
   ['do_5fallocate_3',['do_allocate',['../classhal_1_1static__memory__resource.html#a3957b6cf483ec0e5051be83b33faf13b',1,'hal::static_memory_resource']]],
   ['do_5fdeallocate_4',['do_deallocate',['../classhal_1_1static__memory__resource.html#a449c0ee134cfc4566ede0dba18f070ed',1,'hal::static_memory_resource']]],
   ['do_5fis_5fequal_5',['do_is_equal',['../classhal_1_1static__memory__resource.html#a4473de893b2d00d7bafff4ca94394a99',1,'hal::static_memory_resource']]],
   ['duration_5ffrom_5fcycles_6',['duration_from_cycles',['../group__utility.html#gaeb8013ca607e5e7de71637e85a45e809',1,'hal']]],
-  ['duty_5fcycle_7',['duty_cycle',['../classhal_1_1pwm.html#a82c4eb99c7da821cd4f583a3399398fa',1,'hal::pwm']]]
+  ['duty_5fcycle_7',['duty_cycle',['../classhal_1_1pwm.html#a711a453c78787f4d410e8eee0f3d5fc3',1,'hal::pwm']]]
 ];

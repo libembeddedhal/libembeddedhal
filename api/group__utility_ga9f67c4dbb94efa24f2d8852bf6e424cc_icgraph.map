@@ -1,8 +1,8 @@
 <map id="hal::cycles_per" name="hal::cycles_per">
 <area shape="rect" id="node1" title="Calculate the number of cycles of this frequency within the time duration. This function is meant for..." alt="" coords="612,46,719,73"/>
-<area shape="rect" id="node2" href="$group__utility.html#ga5a437ca491b7bb961940ac21da71d2a1" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="431,5,559,47"/>
-<area shape="rect" id="node3" href="$classhal_1_1counter__timeout.html#a6ee789453ce4aaddee20f61e835c1bb5" title="Create a counter_timeout." alt="" coords="425,71,564,112"/>
-<area shape="rect" id="node4" href="$group__counter.html#ga3fb156fd09b7bff2df7c0fb36b7a1357" title="Create a timeout object based on hal::counter." alt="" coords="247,78,377,105"/>
-<area shape="rect" id="node5" href="$group__counter.html#gad6b2dea2bf157a3df06253aac6354586" title="Delay execution for a duration of time using a hardware counter." alt="" coords="124,78,199,105"/>
-<area shape="rect" id="node6" href="$group__serial.html#ga62a11b4820816132ad98cc6cbdc97725" title="Read bytes from a serial port." alt="" coords="5,78,76,105"/>
+<area shape="rect" id="node2" href="$group__utility.html#gadbf6d9dce469abb142fc77e0905d88aa" title="Calculate a duty cycle based on a source frequency, target wavelength and a percentage." alt="" coords="431,5,559,47"/>
+<area shape="rect" id="node3" href="$classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" title="Create a counter_timeout." alt="" coords="425,71,564,112"/>
+<area shape="rect" id="node4" href="$group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" title="Create a timeout object based on hal::counter." alt="" coords="247,78,377,105"/>
+<area shape="rect" id="node5" href="$group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter." alt="" coords="124,78,199,105"/>
+<area shape="rect" id="node6" href="$group__serial.html#ga56a1548bd7b5f4b6f1dfa9e616b126e4" title="Read bytes from a serial port." alt="" coords="5,78,76,105"/>
 </map>

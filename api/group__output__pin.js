@@ -7,9 +7,9 @@ var group__output__pin =
         [ "resistor", "structhal_1_1output__pin_1_1settings.html#acc0286364894f7c74c2380aa25825cab", null ],
         [ "starting_level", "structhal_1_1output__pin_1_1settings.html#a84a854843b8cb88d5550a65c14d2093b", null ]
       ] ],
-      [ "configure", "classhal_1_1output__pin.html#a247ce91046b56c6c076d326601536892", null ],
-      [ "level", "classhal_1_1output__pin.html#a3d7683b26756a734fcaee7ab0c604cc0", null ],
-      [ "level", "classhal_1_1output__pin.html#ae2df2a80eb22e37a1c66a8cc1fbe41c9", null ]
+      [ "configure", "classhal_1_1output__pin.html#a0da6c7e20f5c99d6fdf0cd6ba4e5d4ca", null ],
+      [ "level", "classhal_1_1output__pin.html#add34674591deb1cdf0037c4081b43e31", null ],
+      [ "level", "classhal_1_1output__pin.html#ad37e98adee5c45b1f0d15ce9a0c8fb1b", null ]
     ] ],
     [ "hal::mock::output_pin", "structhal_1_1mock_1_1output__pin.html", [
       [ "reset", "structhal_1_1mock_1_1output__pin.html#a7ca18ce52efdac4c61d8c56a38ee1a93", null ],

@@ -1,7 +1,7 @@
 var group__motor =
 [
     [ "hal::motor", "classhal_1_1motor.html", [
-      [ "power", "classhal_1_1motor.html#a8a27c0032f7b7ff00247ec80921d36f2", null ]
+      [ "power", "classhal_1_1motor.html#aed1fc8e28a1c8da2ef8f5a1341c06c63", null ]
     ] ],
     [ "hal::mock::motor", "structhal_1_1mock_1_1motor.html", [
       [ "reset", "structhal_1_1mock_1_1motor.html#a1374ffa020a2616544b598ef8cc1c500", null ],

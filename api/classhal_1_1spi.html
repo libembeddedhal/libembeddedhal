@@ -120,12 +120,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa6c507e75eb541788a3e809d6a8b2d5"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5">configure</a> (const <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
-<tr class="memdesc:afa6c507e75eb541788a3e809d6a8b2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure spi to match the settings supplied.  <a href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5">More...</a><br /></td></tr>
-<tr class="separator:afa6c507e75eb541788a3e809d6a8b2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01dcd9e730d8c3cd6dee2ed80d6d94ef"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef">transfer</a> (std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:a01dcd9e730d8c3cd6dee2ed80d6d94ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef">More...</a><br /></td></tr>
-<tr class="separator:a01dcd9e730d8c3cd6dee2ed80d6d94ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad760b829c1b680db63db635a2d0892ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea">configure</a> (const <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
+<tr class="memdesc:ad760b829c1b680db63db635a2d0892ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure spi to match the settings supplied.  <a href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea">More...</a><br /></td></tr>
+<tr class="separator:ad760b829c1b680db63db635a2d0892ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ecd84e485646e4a2c3b1aef97d2b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3">transfer</a> (std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:a323ecd84e485646e4a2c3b1aef97d2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data between a selected device on the spi bus. This function will block until the entire transfer is finished.  <a href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3">More...</a><br /></td></tr>
+<tr class="separator:a323ecd84e485646e4a2c3b1aef97d2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -135,8 +135,8 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Serial peripheral interface (SPI) communication protocol hardware abstract interface. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa6c507e75eb541788a3e809d6a8b2d5" name="afa6c507e75eb541788a3e809d6a8b2d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6c507e75eb541788a3e809d6a8b2d5">&#9670;&nbsp;</a></span>configure()</h2>
+<a id="ad760b829c1b680db63db635a2d0892ea" name="ad760b829c1b680db63db635a2d0892ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad760b829c1b680db63db635a2d0892ea">&#9670;&nbsp;</a></span>configure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::spi::configure </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::spi::configure </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structhal_1_1spi_1_1settings.html">settings</a> &amp;&#160;</td>
           <td class="paramname"><em>p_settings</em></td><td>)</td>
@@ -166,7 +166,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
@@ -176,8 +176,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a01dcd9e730d8c3cd6dee2ed80d6d94ef" name="a01dcd9e730d8c3cd6dee2ed80d6d94ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01dcd9e730d8c3cd6dee2ed80d6d94ef">&#9670;&nbsp;</a></span>transfer()</h2>
+<a id="a323ecd84e485646e4a2c3b1aef97d2b3" name="a323ecd84e485646e4a2c3b1aef97d2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323ecd84e485646e4a2c3b1aef97d2b3">&#9670;&nbsp;</a></span>transfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::spi::transfer </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::spi::transfer </td>
           <td>(</td>
           <td class="paramtype">std::span&lt; const std::byte &gt;&#160;</td>
           <td class="paramname"><em>p_data_out</em>, </td>
@@ -225,7 +225,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any error that occurred during this operation. </dd></dl>
 
 </div>
 </div>

@@ -6,8 +6,8 @@
 <area shape="rect" id="node8" href="$classhal_1_1percent.html#af31fb73a5d9b8abf34b2eb111cfeaf26" title=" " alt="" coords="212,325,360,352"/>
 <area shape="rect" id="node9" href="$classhal_1_1percent.html#aa120c82da4e8ccac1a58e4b0ab2de1f9" title="Get +100% percentage." alt="" coords="227,224,345,251"/>
 <area shape="rect" id="node12" href="$classhal_1_1percent.html#ae6a1e30546203a5f9d8879dff495d252" title="Get &#45;100% percentage." alt="" coords="229,275,343,301"/>
-<area shape="rect" id="node4" href="$classhal_1_1rc__servo.html#a92fdc2e2edc65f3a37a6c72e3e9c6918" title="Factory function to create a rc_servo object." alt="" coords="16,5,153,32"/>
-<area shape="rect" id="node5" href="$group__utility.html#ga77d31febabe2a57097ff3777f8d0fa9e" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="49,56,120,83"/>
+<area shape="rect" id="node4" href="$classhal_1_1rc__servo.html#a4b6b2863a7ea2f9e426f32c89a29c8c5" title="Factory function to create a rc_servo object." alt="" coords="16,5,153,32"/>
+<area shape="rect" id="node5" href="$group__utility.html#gacf35495e951216c5f4765dbe9f256fdd" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="49,56,120,83"/>
 <area shape="rect" id="node6" href="$structhal_1_1duty__cycle.html#a5f5bad1e9e0cd329eeecd5c0db0e0a32" title="Conversion from duty cycle to percentage." alt="" coords="5,107,164,149"/>
 <area shape="rect" id="node10" href="$classhal_1_1percent.html#ad5ed3b476e65e3b5aec2408f76865500" title="Assignment operator for a percent object based on a floating point value." alt="" coords="10,224,159,251"/>
 <area shape="rect" id="node11" href="$group__utility.html#gaeb9131fb2e9aa8b5b404c1d52197cea2" title="convert this percentage value into a string from &#45;1.0 to +1.0" alt="" coords="37,275,132,301"/>

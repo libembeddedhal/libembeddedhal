@@ -112,16 +112,16 @@ Inheritance diagram for hal::adc:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a782a17e49d136c65553aca5cfb4efccd"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="classhal_1_1percent.html">percent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#a782a17e49d136c65553aca5cfb4efccd">read</a> () noexcept</td></tr>
-<tr class="memdesc:a782a17e49d136c65553aca5cfb4efccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#a782a17e49d136c65553aca5cfb4efccd">More...</a><br /></td></tr>
-<tr class="separator:a782a17e49d136c65553aca5cfb4efccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc7ab057b78c03f4f1bef8fab48893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="classhal_1_1percent.html">percent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#a78fc7ab057b78c03f4f1bef8fab48893">read</a> () noexcept</td></tr>
+<tr class="memdesc:a78fc7ab057b78c03f4f1bef8fab48893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#a78fc7ab057b78c03f4f1bef8fab48893">More...</a><br /></td></tr>
+<tr class="separator:a78fc7ab057b78c03f4f1bef8fab48893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Analog to Digital Converter (ADC) hardware abstraction interface. </p>
 <p >Use this interface for devices and peripherals that can convert analog voltage signals into a digital number. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a782a17e49d136c65553aca5cfb4efccd" name="a782a17e49d136c65553aca5cfb4efccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a782a17e49d136c65553aca5cfb4efccd">&#9670;&nbsp;</a></span>read()</h2>
+<a id="a78fc7ab057b78c03f4f1bef8fab48893" name="a78fc7ab057b78c03f4f1bef8fab48893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78fc7ab057b78c03f4f1bef8fab48893">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; <a class="el" href="classhal_1_1percent.html">percent</a> &gt; hal::adc::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="classhal_1_1percent.html">percent</a> &gt; hal::adc::read </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -145,11 +145,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Read a sample from the analog to digital converter. </p>
 <p >This function makes no assumptions about how the conversation is made via the ADC. Conversions could be performed at each call of this function. Conversions can be ongoing by hardware and this function returns the latest sample or the first sample from a queue. The conversation can also occur over a communication protocol like SPI or I2C which could effect the time it takes for this function to return. It is the responsibility of the application developer to understand how a particular ADC will effect their application.</p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;percent&gt; - Return the value of the ADC as a full_scale value. Typical implementation for a 12-bit adc would look like: <code>return hal::bit_depth&lt;uint32_t, 12&gt;(adc_value);</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;percent&gt; - Return the value of the ADC as a full_scale value. Typical implementation for a 12-bit adc would look like: <code>return hal::bit_depth&lt;uint32_t, 12&gt;(adc_value);</code>. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1adc_a782a17e49d136c65553aca5cfb4efccd_icgraph.svg" width="319" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1adc_a78fc7ab057b78c03f4f1bef8fab48893_icgraph.svg" width="319" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

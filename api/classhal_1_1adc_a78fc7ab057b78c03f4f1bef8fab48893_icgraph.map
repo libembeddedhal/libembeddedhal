@@ -1,0 +1,4 @@
+<map id="hal::adc::read" name="hal::adc::read">
+<area shape="rect" id="node1" title="Read a sample from the analog to digital converter." alt="" coords="216,13,313,39"/>
+<area shape="rect" id="node2" href="$classhal_1_1linear__potentiometer.html#acc2151b07dcc240108c420e7b89220f8" title="Read the distance the linear potentiometer has traveled." alt="" coords="5,5,168,47"/>
+</map>

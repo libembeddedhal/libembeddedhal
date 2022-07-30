@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classhal_1_1can.html#a47990153617bc89602d94057dbc42f0f" target="_top" xlink:title="Setup driver to execute callback when a can message is received.">
+<g id="a_node2"><a xlink:href="classhal_1_1can.html#a9410c459a90e95e68a27f629342e8c35" target="_top" xlink:title="Setup driver to execute callback when a can message is received.">
 <polygon fill="white" stroke="black" points="146,-6 146,-25 268,-25 268,-6 146,-6"/>
 <text text-anchor="middle" x="207" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">hal::can::attach_interrupt</text>
 </a>

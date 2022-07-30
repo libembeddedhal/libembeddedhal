@@ -129,18 +129,18 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a91e5479f0a21151cc7d28ba4adeee3fc"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#a91e5479f0a21151cc7d28ba4adeee3fc">configure</a> (const <a class="el" href="structhal_1_1interrupt__pin_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
-<tr class="memdesc:a91e5479f0a21151cc7d28ba4adeee3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the interrupt pin to match the settings supplied.  <a href="classhal_1_1interrupt__pin.html#a91e5479f0a21151cc7d28ba4adeee3fc">More...</a><br /></td></tr>
-<tr class="separator:a91e5479f0a21151cc7d28ba4adeee3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ac75749bf89ac8b7cbc7a10ced69bd"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#ae6ac75749bf89ac8b7cbc7a10ced69bd">level</a> () noexcept</td></tr>
-<tr class="memdesc:ae6ac75749bf89ac8b7cbc7a10ced69bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the voltage level of the pin.  <a href="classhal_1_1interrupt__pin.html#ae6ac75749bf89ac8b7cbc7a10ced69bd">More...</a><br /></td></tr>
-<tr class="separator:ae6ac75749bf89ac8b7cbc7a10ced69bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a835281187964e7fc3f8265deddb17e85"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#a835281187964e7fc3f8265deddb17e85">attach_interrupt</a> (std::function&lt; void(void)&gt; p_callback, <a class="el" href="classhal_1_1interrupt__pin.html#a2e2cf60fe30a8683fb30cec584c7de81">trigger_edge</a> p_trigger) noexcept</td></tr>
-<tr class="memdesc:a835281187964e7fc3f8265deddb17e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts for this pin. Pass in the callback to be executed when the trigger condition is met. This function can be called multiple times if the callback or trigger conditions need to be changed. detach_interrupts() does not need to be called before re-running this function.  <a href="classhal_1_1interrupt__pin.html#a835281187964e7fc3f8265deddb17e85">More...</a><br /></td></tr>
-<tr class="separator:a835281187964e7fc3f8265deddb17e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64de264ed4d62c2022e3077d17202c46"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#a64de264ed4d62c2022e3077d17202c46">detach_interrupt</a> () noexcept</td></tr>
-<tr class="memdesc:a64de264ed4d62c2022e3077d17202c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupts for this pin.  <a href="classhal_1_1interrupt__pin.html#a64de264ed4d62c2022e3077d17202c46">More...</a><br /></td></tr>
-<tr class="separator:a64de264ed4d62c2022e3077d17202c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7b6dab52e970b1c6906721b9a68a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#aad7b6dab52e970b1c6906721b9a68a59">configure</a> (const <a class="el" href="structhal_1_1interrupt__pin_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
+<tr class="memdesc:aad7b6dab52e970b1c6906721b9a68a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the interrupt pin to match the settings supplied.  <a href="classhal_1_1interrupt__pin.html#aad7b6dab52e970b1c6906721b9a68a59">More...</a><br /></td></tr>
+<tr class="separator:aad7b6dab52e970b1c6906721b9a68a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cca0fecf2bf0afb1dbc029fefb1658f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#a7cca0fecf2bf0afb1dbc029fefb1658f">level</a> () noexcept</td></tr>
+<tr class="memdesc:a7cca0fecf2bf0afb1dbc029fefb1658f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the voltage level of the pin.  <a href="classhal_1_1interrupt__pin.html#a7cca0fecf2bf0afb1dbc029fefb1658f">More...</a><br /></td></tr>
+<tr class="separator:a7cca0fecf2bf0afb1dbc029fefb1658f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13963b5bdeae5f3efde45937c6c540f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#af13963b5bdeae5f3efde45937c6c540f">attach_interrupt</a> (std::function&lt; void(void)&gt; p_callback, <a class="el" href="classhal_1_1interrupt__pin.html#a2e2cf60fe30a8683fb30cec584c7de81">trigger_edge</a> p_trigger) noexcept</td></tr>
+<tr class="memdesc:af13963b5bdeae5f3efde45937c6c540f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts for this pin. Pass in the callback to be executed when the trigger condition is met. This function can be called multiple times if the callback or trigger conditions need to be changed. detach_interrupts() does not need to be called before re-running this function.  <a href="classhal_1_1interrupt__pin.html#af13963b5bdeae5f3efde45937c6c540f">More...</a><br /></td></tr>
+<tr class="separator:af13963b5bdeae5f3efde45937c6c540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6679629e056a86fd5ee8ac3ea296f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1interrupt__pin.html#ad6679629e056a86fd5ee8ac3ea296f9f">detach_interrupt</a> () noexcept</td></tr>
+<tr class="memdesc:ad6679629e056a86fd5ee8ac3ea296f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupts for this pin.  <a href="classhal_1_1interrupt__pin.html#ad6679629e056a86fd5ee8ac3ea296f9f">More...</a><br /></td></tr>
+<tr class="separator:ad6679629e056a86fd5ee8ac3ea296f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Digital interrupt pin hardware abstraction. </p>
@@ -179,8 +179,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a835281187964e7fc3f8265deddb17e85" name="a835281187964e7fc3f8265deddb17e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835281187964e7fc3f8265deddb17e85">&#9670;&nbsp;</a></span>attach_interrupt()</h2>
+<a id="af13963b5bdeae5f3efde45937c6c540f" name="af13963b5bdeae5f3efde45937c6c540f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13963b5bdeae5f3efde45937c6c540f">&#9670;&nbsp;</a></span>attach_interrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::interrupt_pin::attach_interrupt </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::interrupt_pin::attach_interrupt </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
           <td class="paramname"><em>p_callback</em>, </td>
@@ -221,12 +221,12 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 
 </div>
 </div>
-<a id="a91e5479f0a21151cc7d28ba4adeee3fc" name="a91e5479f0a21151cc7d28ba4adeee3fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91e5479f0a21151cc7d28ba4adeee3fc">&#9670;&nbsp;</a></span>configure()</h2>
+<a id="aad7b6dab52e970b1c6906721b9a68a59" name="aad7b6dab52e970b1c6906721b9a68a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7b6dab52e970b1c6906721b9a68a59">&#9670;&nbsp;</a></span>configure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::interrupt_pin::configure </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::interrupt_pin::configure </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structhal_1_1interrupt__pin_1_1settings.html">settings</a> &amp;&#160;</td>
           <td class="paramname"><em>p_settings</em></td><td>)</td>
@@ -256,7 +256,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::invalid_argument</td><td>if the settings could not be achieved. </td></tr>
@@ -266,8 +266,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a64de264ed4d62c2022e3077d17202c46" name="a64de264ed4d62c2022e3077d17202c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64de264ed4d62c2022e3077d17202c46">&#9670;&nbsp;</a></span>detach_interrupt()</h2>
+<a id="ad6679629e056a86fd5ee8ac3ea296f9f" name="ad6679629e056a86fd5ee8ac3ea296f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6679629e056a86fd5ee8ac3ea296f9f">&#9670;&nbsp;</a></span>detach_interrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +276,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::interrupt_pin::detach_interrupt </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::interrupt_pin::detach_interrupt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -290,12 +290,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disable interrupts for this pin. </p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any error that occurred during this operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any error that occurred during this operation. </dd></dl>
 
 </div>
 </div>
-<a id="ae6ac75749bf89ac8b7cbc7a10ced69bd" name="ae6ac75749bf89ac8b7cbc7a10ced69bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ac75749bf89ac8b7cbc7a10ced69bd">&#9670;&nbsp;</a></span>level()</h2>
+<a id="a7cca0fecf2bf0afb1dbc029fefb1658f" name="a7cca0fecf2bf0afb1dbc029fefb1658f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cca0fecf2bf0afb1dbc029fefb1658f">&#9670;&nbsp;</a></span>level()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; bool &gt; hal::interrupt_pin::level </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; bool &gt; hal::interrupt_pin::level </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -318,7 +318,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the voltage level of the pin. </p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 
 </div>
 </div>

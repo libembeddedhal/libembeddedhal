@@ -1,7 +1,7 @@
 var group__dac =
 [
     [ "hal::dac", "classhal_1_1dac.html", [
-      [ "write", "classhal_1_1dac.html#a7dbf47d48254522e80831405474d5013", null ]
+      [ "write", "classhal_1_1dac.html#a87c35a37cb156b7233a11b9a7a53181d", null ]
     ] ],
     [ "hal::mock::dac", "structhal_1_1mock_1_1dac.html", [
       [ "reset", "structhal_1_1mock_1_1dac.html#a895ef11a9f64df6e406fc5fa88efb1e5", null ],

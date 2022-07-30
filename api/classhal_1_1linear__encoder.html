@@ -106,15 +106,15 @@ $(document).ready(function(){initNavTree('classhal_1_1linear__encoder.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b492e1edc35b4a51a3ab5794656bcb1"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; length &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1linear__encoder.html#a6b492e1edc35b4a51a3ab5794656bcb1">read</a> () noexcept</td></tr>
-<tr class="memdesc:a6b492e1edc35b4a51a3ab5794656bcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current position from the device.  <a href="classhal_1_1linear__encoder.html#a6b492e1edc35b4a51a3ab5794656bcb1">More...</a><br /></td></tr>
-<tr class="separator:a6b492e1edc35b4a51a3ab5794656bcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae168c8a284be3bdec2145f5b76923fc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; length &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1linear__encoder.html#ae168c8a284be3bdec2145f5b76923fc0">read</a> () noexcept</td></tr>
+<tr class="memdesc:ae168c8a284be3bdec2145f5b76923fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current position from the device.  <a href="classhal_1_1linear__encoder.html#ae168c8a284be3bdec2145f5b76923fc0">More...</a><br /></td></tr>
+<tr class="separator:ae168c8a284be3bdec2145f5b76923fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hardware abstraction interface for devices that report position of a linear encoder. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6b492e1edc35b4a51a3ab5794656bcb1" name="a6b492e1edc35b4a51a3ab5794656bcb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b492e1edc35b4a51a3ab5794656bcb1">&#9670;&nbsp;</a></span>read()</h2>
+<a id="ae168c8a284be3bdec2145f5b76923fc0" name="ae168c8a284be3bdec2145f5b76923fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae168c8a284be3bdec2145f5b76923fc0">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; length &gt; hal::linear_encoder::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; length &gt; hal::linear_encoder::read </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return the current position from the device. </p>
 <p >The linear position can be relative, meaning that it will initialize to a position of 0, and does not have information of its current orientation. The linear position can also be absolute, meaning that the encoder knows its current orientation at start and can return value a non-zero value at initialization. This interface does not distinguish between these two encoder schemes.</p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;length&gt; - current position reading or an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;length&gt; - current position reading or an error </dd></dl>
 
 </div>
 </div>

@@ -105,34 +105,34 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial peripheral interface (SPI) communication protocol hardware abstract interface.  <a href="classhal_1_1spi.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1write__only__spi.html">hal::mock::write_only_spi</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#afa6c507e75eb541788a3e809d6a8b2d5" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a01dcd9e730d8c3cd6dee2ed80d6d94ef" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later.  <a href="structhal_1_1mock_1_1write__only__spi.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mock spi implementation for use in unit tests and simulations with a spy functions for <a class="el" href="classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea" title="Configure spi to match the settings supplied.">configure()</a> and a record for the <a class="el" href="classhal_1_1spi.html#a323ecd84e485646e4a2c3b1aef97d2b3" title="Send and receive data between a selected device on the spi bus. This function will block until the en...">transfer()</a> out data. The record ignores the in buffer and just stores the data being sent so it can be inspected later.  <a href="structhal_1_1mock_1_1write__only__spi.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5cd8da4cfef182b29e14ad2434910b5d"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga5cd8da4cfef182b29e14ad2434910b5d">hal::write</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
-<tr class="memdesc:ga5cd8da4cfef182b29e14ad2434910b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus.  <a href="group__spi.html#ga5cd8da4cfef182b29e14ad2434910b5d">More...</a><br /></td></tr>
-<tr class="separator:ga5cd8da4cfef182b29e14ad2434910b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab36771a8bce314418fbb65e304ae070f"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gab36771a8bce314418fbb65e304ae070f">hal::read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:gab36771a8bce314418fbb65e304ae070f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the SPI bus.  <a href="group__spi.html#gab36771a8bce314418fbb65e304ae070f">More...</a><br /></td></tr>
-<tr class="separator:gab36771a8bce314418fbb65e304ae070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4131f2d460c43fc001204cf483b3abc"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:gaa4131f2d460c43fc001204cf483b3abc"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__spi.html#gaa4131f2d460c43fc001204cf483b3abc">hal::read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:gaa4131f2d460c43fc001204cf483b3abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the SPI bus and return a std::array of bytes.  <a href="group__spi.html#gaa4131f2d460c43fc001204cf483b3abc">More...</a><br /></td></tr>
-<tr class="separator:gaa4131f2d460c43fc001204cf483b3abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga548fe2eba26aa5fb4519691f5c45a1bb"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga548fe2eba26aa5fb4519691f5c45a1bb">hal::write_then_read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:ga548fe2eba26aa5fb4519691f5c45a1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SPI and fill the write line with filler bytes.  <a href="group__spi.html#ga548fe2eba26aa5fb4519691f5c45a1bb">More...</a><br /></td></tr>
-<tr class="separator:ga548fe2eba26aa5fb4519691f5c45a1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6168b9537bd5fdb0cb96818934728fd7"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
-<tr class="memitem:ga6168b9537bd5fdb0cb96818934728fd7"><td class="memTemplItemLeft" align="right" valign="top">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__spi.html#ga6168b9537bd5fdb0cb96818934728fd7">hal::write_then_read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
-<tr class="memdesc:ga6168b9537bd5fdb0cb96818934728fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SPI, fill the write line with filler bytes and return an array of bytes.  <a href="group__spi.html#ga6168b9537bd5fdb0cb96818934728fd7">More...</a><br /></td></tr>
-<tr class="separator:ga6168b9537bd5fdb0cb96818934728fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b1372e01c3e9cecb143382708444f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga45b1372e01c3e9cecb143382708444f4">hal::write</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga45b1372e01c3e9cecb143382708444f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus.  <a href="group__spi.html#ga45b1372e01c3e9cecb143382708444f4">More...</a><br /></td></tr>
+<tr class="separator:ga45b1372e01c3e9cecb143382708444f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad51ba14db89acd5dbe6ba6f55c47a942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad51ba14db89acd5dbe6ba6f55c47a942">hal::read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:gad51ba14db89acd5dbe6ba6f55c47a942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the SPI bus.  <a href="group__spi.html#gad51ba14db89acd5dbe6ba6f55c47a942">More...</a><br /></td></tr>
+<tr class="separator:gad51ba14db89acd5dbe6ba6f55c47a942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae40287ffa98d17c9794cf851916eb763"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:gae40287ffa98d17c9794cf851916eb763"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__spi.html#gae40287ffa98d17c9794cf851916eb763">hal::read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:gae40287ffa98d17c9794cf851916eb763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the SPI bus and return a std::array of bytes.  <a href="group__spi.html#gae40287ffa98d17c9794cf851916eb763">More...</a><br /></td></tr>
+<tr class="separator:gae40287ffa98d17c9794cf851916eb763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26a95eebba22c0b9d1d9534a0e561597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga26a95eebba22c0b9d1d9534a0e561597">hal::write_then_read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out, std::span&lt; std::byte &gt; p_data_in, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:ga26a95eebba22c0b9d1d9534a0e561597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SPI and fill the write line with filler bytes.  <a href="group__spi.html#ga26a95eebba22c0b9d1d9534a0e561597">More...</a><br /></td></tr>
+<tr class="separator:ga26a95eebba22c0b9d1d9534a0e561597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87d2df47c3039eb340b810903e848ca9"><td class="memTemplParams" colspan="2">template&lt;size_t BytesToRead&gt; </td></tr>
+<tr class="memitem:ga87d2df47c3039eb340b810903e848ca9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__spi.html#ga87d2df47c3039eb340b810903e848ca9">hal::write_then_read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const std::byte &gt; p_data_out, std::byte p_filler=<a class="el" href="classhal_1_1spi.html#a197acbbeecc376bdfd94266c20246cfc">spi::default_filler</a>) noexcept</td></tr>
+<tr class="memdesc:ga87d2df47c3039eb340b810903e848ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SPI, fill the write line with filler bytes and return an array of bytes.  <a href="group__spi.html#ga87d2df47c3039eb340b810903e848ca9">More...</a><br /></td></tr>
+<tr class="separator:ga87d2df47c3039eb340b810903e848ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Available spi APIs </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa4131f2d460c43fc001204cf483b3abc" name="gaa4131f2d460c43fc001204cf483b3abc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4131f2d460c43fc001204cf483b3abc">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<a id="gae40287ffa98d17c9794cf851916eb763" name="gae40287ffa98d17c9794cf851916eb763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae40287ffa98d17c9794cf851916eb763">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1spi.html">spi</a> &amp;&#160;</td>
           <td class="paramname"><em>p_spi</em>, </td>
@@ -182,12 +182,12 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; - any errors associated with this call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> - any errors associated with this call </dd></dl>
 
 </div>
 </div>
-<a id="gab36771a8bce314418fbb65e304ae070f" name="gab36771a8bce314418fbb65e304ae070f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab36771a8bce314418fbb65e304ae070f">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<a id="gad51ba14db89acd5dbe6ba6f55c47a942" name="gad51ba14db89acd5dbe6ba6f55c47a942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad51ba14db89acd5dbe6ba6f55c47a942">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +196,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1spi.html">spi</a> &amp;&#160;</td>
           <td class="paramname"><em>p_spi</em>, </td>
@@ -236,12 +236,12 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any errors associated with this call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any errors associated with this call </dd></dl>
 
 </div>
 </div>
-<a id="ga5cd8da4cfef182b29e14ad2434910b5d" name="ga5cd8da4cfef182b29e14ad2434910b5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5cd8da4cfef182b29e14ad2434910b5d">&#9670;&nbsp;</a></span>write()</h2>
+<a id="ga45b1372e01c3e9cecb143382708444f4" name="ga45b1372e01c3e9cecb143382708444f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45b1372e01c3e9cecb143382708444f4">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +250,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1spi.html">spi</a> &amp;&#160;</td>
           <td class="paramname"><em>p_spi</em>, </td>
@@ -282,12 +282,12 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; - any errors associated with this call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - any errors associated with this call </dd></dl>
 
 </div>
 </div>
-<a id="ga6168b9537bd5fdb0cb96818934728fd7" name="ga6168b9537bd5fdb0cb96818934728fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6168b9537bd5fdb0cb96818934728fd7">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
+<a id="ga87d2df47c3039eb340b810903e848ca9" name="ga87d2df47c3039eb340b810903e848ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87d2df47c3039eb340b810903e848ca9">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +298,7 @@ template&lt;size_t BytesToRead&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; std::byte, BytesToRead &gt; &gt; hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1spi.html">spi</a> &amp;&#160;</td>
           <td class="paramname"><em>p_spi</em>, </td>
@@ -343,18 +343,18 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;std::byte, BytesToRead&gt;&gt;</a> </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__spi_ga6168b9537bd5fdb0cb96818934728fd7_cgraph.svg" width="450" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__spi_ga87d2df47c3039eb340b810903e848ca9_cgraph.svg" width="450" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga548fe2eba26aa5fb4519691f5c45a1bb" name="ga548fe2eba26aa5fb4519691f5c45a1bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga548fe2eba26aa5fb4519691f5c45a1bb">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
+<a id="ga26a95eebba22c0b9d1d9534a0e561597" name="ga26a95eebba22c0b9d1d9534a0e561597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26a95eebba22c0b9d1d9534a0e561597">&#9670;&nbsp;</a></span>write_then_read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +363,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; void &gt; hal::write_then_read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write_then_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1spi.html">spi</a> &amp;&#160;</td>
           <td class="paramname"><em>p_spi</em>, </td>
@@ -410,11 +410,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__spi_ga548fe2eba26aa5fb4519691f5c45a1bb_cgraph.svg" width="450" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__spi_ga26a95eebba22c0b9d1d9534a0e561597_cgraph.svg" width="450" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

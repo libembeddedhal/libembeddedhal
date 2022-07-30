@@ -106,15 +106,15 @@ $(document).ready(function(){initNavTree('classhal_1_1rotary__encoder.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a639b98b8150c0df9bb4f9b4d099642ab"><td class="memItemLeft" align="right" valign="top">boost::leaf::result&lt; <a class="el" href="namespacehal.html#ad0ff4f7d8b78198c2ad2d53db1af9357">microrotation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1rotary__encoder.html#a639b98b8150c0df9bb4f9b4d099642ab">read</a> () noexcept</td></tr>
-<tr class="memdesc:a639b98b8150c0df9bb4f9b4d099642ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current angular position from the feedback device.  <a href="classhal_1_1rotary__encoder.html#a639b98b8150c0df9bb4f9b4d099642ab">More...</a><br /></td></tr>
-<tr class="separator:a639b98b8150c0df9bb4f9b4d099642ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3975e0e6e3c995385a0f4ce55b57fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="namespacehal.html#ad0ff4f7d8b78198c2ad2d53db1af9357">microrotation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1rotary__encoder.html#ab3975e0e6e3c995385a0f4ce55b57fba">read</a> () noexcept</td></tr>
+<tr class="memdesc:ab3975e0e6e3c995385a0f4ce55b57fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current angular position from the feedback device.  <a href="classhal_1_1rotary__encoder.html#ab3975e0e6e3c995385a0f4ce55b57fba">More...</a><br /></td></tr>
+<tr class="separator:ab3975e0e6e3c995385a0f4ce55b57fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hardware abstraction interface for devices that report rotational position of an actuator, knob, or some other system. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a639b98b8150c0df9bb4f9b4d099642ab" name="a639b98b8150c0df9bb4f9b4d099642ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a639b98b8150c0df9bb4f9b4d099642ab">&#9670;&nbsp;</a></span>read()</h2>
+<a id="ab3975e0e6e3c995385a0f4ce55b57fba" name="ab3975e0e6e3c995385a0f4ce55b57fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3975e0e6e3c995385a0f4ce55b57fba">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::leaf::result&lt; <a class="el" href="namespacehal.html#ad0ff4f7d8b78198c2ad2d53db1af9357">microrotation</a> &gt; hal::rotary_encoder::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="namespacehal.html#ad0ff4f7d8b78198c2ad2d53db1af9357">microrotation</a> &gt; hal::rotary_encoder::read </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <p>Return the current angular position from the feedback device. </p>
 <p >The angular position can be relative, meaning that they initialize to an angular position of 0 and does not have information of its current orientation. The angular position can also be absolute, meaning that the encoder knows its current orientation at start and can return value a non-zero value at initialization. This interface does not distinguish between these two encoder schemes.</p>
 <p >The fastest practical motor velocity for this API is 100,000 RPM and at this velocity, it would take 10.19 days to overflow the underlying int64_t of data type angular_position. If the use of this api requires more stored rotations than allowed, then external support will need to be added to allow for an additional counter of storage.</p>
-<dl class="section return"><dt>Returns</dt><dd>boost::leaf::result&lt;microrotation&gt; - current angular position reading or an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;microrotation&gt; - current angular position reading or an error. </dd></dl>
 
 </div>
 </div>
