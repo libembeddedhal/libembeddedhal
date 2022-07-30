@@ -3,7 +3,7 @@
 #include <cstdint>
 
 #include "../error.hpp"
-#include "../percent.hpp"
+#include "../percentage.hpp"
 
 namespace hal {
 /**
@@ -38,13 +38,13 @@ public:
    * look like: `return hal::bit_depth<uint32_t, 12>(adc_value);`.
    *
    */
-  [[nodiscard]] result<percent> read() noexcept
+  [[nodiscard]] result<percentage<float_t>> read() noexcept
   {
     return driver_read();
   }
 
 private:
-  virtual result<percent> driver_read() noexcept = 0;
+  virtual result<percentage<float_t>> driver_read() noexcept = 0;
 };
 /** @} */
 }  // namespace hal
