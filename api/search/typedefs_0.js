@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['id_5ft_0',['id_t',['../classhal_1_1can.html#ae85571b4f7aac93fca8503aafcb32a47',1,'hal::can']]],
-  ['int_5ft_1',['int_t',['../classhal_1_1percent.html#ad44888dcbdf13a1673a21e211f5e8fc9',1,'hal::percent']]]
+  ['float_5ft_0',['float_t',['../namespacehal_1_1config_1_1defaults.html#ae05069c180ce2084525e79202d56426d',1,'hal::config::defaults']]]
 ];
