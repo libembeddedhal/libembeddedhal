@@ -7,6 +7,8 @@ var searchData=
   ['adc_4',['adc',['../classembed_1_1adc.html',1,'embed::adc'],['../structembed_1_1mock_1_1adc.html',1,'embed::mock::adc']]],
   ['api_20documentation_5',['API Documentation',['../index.html',1,'']]],
   ['attach_5finterrupt_6',['attach_interrupt',['../classembed_1_1can.html#a756c443b46b839c437af2a59e4b5a47f',1,'embed::can::attach_interrupt()'],['../classembed_1_1interrupt__pin.html#ad46cc3a599f62213939d04cff781a0f1',1,'embed::interrupt_pin::attach_interrupt()']]],
-  ['axis_7',['axis',['../structembed_1_1accelerometer_1_1sample.html#a3e3dec2a0207ddf5a8bec1cd4630ee1d',1,'embed::accelerometer::sample']]],
-  ['axis_5ft_8',['axis_t',['../structembed_1_1accelerometer_1_1axis__t.html',1,'embed::accelerometer']]]
+  ['attempt_7',['attempt',['../namespaceembed.html#ad7d2490785eb652ecae161309abf7a42',1,'embed']]],
+  ['attempt_5fall_8',['attempt_all',['../namespaceembed.html#a5fde2d889de3a238f48797aa2973f970',1,'embed']]],
+  ['axis_9',['axis',['../structembed_1_1accelerometer_1_1sample.html#a3e3dec2a0207ddf5a8bec1cd4630ee1d',1,'embed::accelerometer::sample']]],
+  ['axis_5ft_10',['axis_t',['../structembed_1_1accelerometer_1_1axis__t.html',1,'embed::accelerometer']]]
 ];

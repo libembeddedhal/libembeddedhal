@@ -1,4 +1,5 @@
 <map id="embed::counter_timeout::operator()" name="embed::counter_timeout::operator()">
-<area shape="rect" id="node1" title="Call this object to check if it has timed out." alt="" coords="5,5,165,47"/>
-<area shape="rect" id="node2" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="213,13,368,39"/>
+<area shape="rect" id="node1" title="Call this object to check if it has timed out." alt="" coords="5,47,165,89"/>
+<area shape="rect" id="node2" href="$namespaceembed.html#a87973d938f95cc08d58ae8d55707043a" title=" " alt="" coords="229,29,353,56"/>
+<area shape="rect" id="node3" href="$classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738" title="Get the uptime of the counter since it has started." alt="" coords="213,80,368,107"/>
 </map>

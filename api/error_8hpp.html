@@ -95,11 +95,15 @@ $(document).ready(function(){initNavTree('error_8hpp.html',''); initResizable();
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">error.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;internal/third_party/leaf.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;system_error&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8hpp_source.html">config.hpp</a>&quot;</code><br />
+<code>#include &quot;internal/third_party/leaf.hpp&quot;</code><br />
 </div>
 <p><a href="error_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,6 +119,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceembed_1_1error"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed_1_1error.html">embed::error</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a3555d39c8f21a674761b49edfb16eaa3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3555d39c8f21a674761b49edfb16eaa3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">embed::result</a> = boost::leaf::result&lt; T &gt;</td></tr>
+<tr class="separator:a3555d39c8f21a674761b49edfb16eaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326d7576347529a718e821271b9e02dc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a326d7576347529a718e821271b9e02dc">embed::status</a> = boost::leaf::result&lt; void &gt;</td></tr>
+<tr class="separator:a326d7576347529a718e821271b9e02dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad7d2490785eb652ecae161309abf7a42"><td class="memTemplParams" colspan="2">template&lt;class TryBlock , class... H&gt; </td></tr>
+<tr class="memitem:ad7d2490785eb652ecae161309abf7a42"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#ad7d2490785eb652ecae161309abf7a42">embed::attempt</a> (TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</td></tr>
+<tr class="separator:ad7d2490785eb652ecae161309abf7a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fde2d889de3a238f48797aa2973f970"><td class="memTemplParams" colspan="2">template&lt;class TryBlock , class... H&gt; </td></tr>
+<tr class="memitem:a5fde2d889de3a238f48797aa2973f970"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a5fde2d889de3a238f48797aa2973f970">embed::attempt_all</a> (TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</td></tr>
+<tr class="separator:a5fde2d889de3a238f48797aa2973f970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87973d938f95cc08d58ae8d55707043a"><td class="memTemplParams" colspan="2">template&lt;class... Item&gt; </td></tr>
+<tr class="memitem:a87973d938f95cc08d58ae8d55707043a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">embed::new_error</a> (Item &amp;&amp;... p_item) noexcept</td></tr>
+<tr class="separator:a87973d938f95cc08d58ae8d55707043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

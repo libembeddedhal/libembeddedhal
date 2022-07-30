@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('math_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> T{ 0 };</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  T result = p_lhs * p_rhs;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  T <a class="code hl_typedef" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">result</a> = p_lhs * p_rhs;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">if</span> (p_lhs != result / p_rhs) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> boost::leaf::new_error(std::errc::result_out_of_range);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">if</span> (p_lhs != <a class="code hl_typedef" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">result</a> / p_rhs) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">boost::leaf::new_error</a>(std::errc::result_out_of_range);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">result</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
@@ -206,6 +206,8 @@ $(document).ready(function(){initNavTree('math_8hpp_source.html',''); initResiza
 <div class="ttc" id="agroup__utility_html_ga6f0922a28ac81378eb689b2ab4bc299a"><div class="ttname"><a href="group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a">embed::absolute_value</a></div><div class="ttdeci">constexpr T absolute_value(T p_value) noexcept</div><div class="ttdoc">Generic absolute value function that works for integer types.</div><div class="ttdef"><b>Definition:</b> math.hpp:61</div></div>
 <div class="ttc" id="agroup__utility_html_ga84ea33bb969785c47247cfe0da9aa98e"><div class="ttname"><a href="group__utility.html#ga84ea33bb969785c47247cfe0da9aa98e">embed::rounding_division</a></div><div class="ttdeci">constexpr T rounding_division(T p_numerator, T p_denominator) noexcept</div><div class="ttdoc">Perform integer division and round the value up if the next decimal place is greater than or equal to...</div><div class="ttdef"><b>Definition:</b> math.hpp:87</div></div>
 <div class="ttc" id="anamespaceembed_html"><div class="ttname"><a href="namespaceembed.html">embed</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespaceembed_html_a3555d39c8f21a674761b49edfb16eaa3"><div class="ttname"><a href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">embed::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:11</div></div>
+<div class="ttc" id="anamespaceembed_html_a87973d938f95cc08d58ae8d55707043a"><div class="ttname"><a href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">embed::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

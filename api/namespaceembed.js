@@ -47,6 +47,8 @@ var namespaceembed =
     [ "microkelvin", "namespaceembed.html#a70b643f59e2cc0014a084ee2c7715ad4", null ],
     [ "micrometer", "namespaceembed.html#ad28e6edb1011552bbf4d61afd83c4ce2", null ],
     [ "microrotation", "namespaceembed.html#a5ef7ace2f6ff2bb1f00aaa9efda7d3c8", null ],
+    [ "result", "namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3", null ],
+    [ "status", "namespaceembed.html#a326d7576347529a718e821271b9e02dc", null ],
     [ "time_duration", "group__utility.html#ga702bc5c739d1887d639f6d61ba2addba", null ],
     [ "timeout", "group__utility.html#gaa382c9191c7e30f24ba3753cc8e87569", null ],
     [ "divider_rule", "group__utility.html#gabc9a8424e1c83c594e6a3799a36b2d39", [
@@ -60,6 +62,8 @@ var namespaceembed =
       [ "pull_up", "group__input__pin.html#gga5ab6b9e7ccdd68ae6b998c8b586a75a6a5dd40e1f7d5c287d1df85dac013c1c38", null ]
     ] ],
     [ "absolute_value", "group__utility.html#ga6f0922a28ac81378eb689b2ab4bc299a", null ],
+    [ "attempt", "namespaceembed.html#ad7d2490785eb652ecae161309abf7a42", null ],
+    [ "attempt_all", "namespaceembed.html#a5fde2d889de3a238f48797aa2973f970", null ],
     [ "calculate_duty_cycle", "group__utility.html#gaa1a076554c019239de0fb3e3fb4edcf2", null ],
     [ "calculate_duty_cycle", "group__utility.html#gac197fc46936b832a6e9219b248e2f9bb", null ],
     [ "closest", "group__utility.html#ga7c61114c56c371ced7e50428411220db", null ],
@@ -77,6 +81,7 @@ var namespaceembed =
     [ "map", "group__utility.html#gafa1bc584612147c23f340cfd2786199c", null ],
     [ "multiply", "group__utility.html#ga4d83f2b0d5ca7f22c7170e2999018fc7", null ],
     [ "never_timeout", "group__utility.html#ga4ae62d3ea26b0599c574c0181a202529", null ],
+    [ "new_error", "namespaceembed.html#a87973d938f95cc08d58ae8d55707043a", null ],
     [ "operator*", "group__utility.html#gaa024ea76ffc0034560ac1548c1b7e581", null ],
     [ "operator/", "group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372", null ],
     [ "operator/", "group__utility.html#gac9bc7388bf0424bc41cf69ced37ef3df", null ],

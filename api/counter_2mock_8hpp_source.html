@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('counter_2mock_8hpp_source.html',''); i
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  boost::leaf::result&lt;uptime_t&gt; driver_uptime() noexcept</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (m_uptimes.size() == 0) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">return</span> boost::leaf::new_error(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">boost::leaf::new_error</a>(</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        std::out_of_range(<span class="stringliteral">&quot;uptimes queue is empty!&quot;</span>));</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    uptime_t m_current_value = m_uptimes.front();</div>
@@ -126,6 +126,7 @@ $(document).ready(function(){initNavTree('counter_2mock_8hpp_source.html',''); i
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}  <span class="comment">// namespace embed::mock</span></div>
 <div class="ttc" id="aclassembed_1_1counter_html"><div class="ttname"><a href="classembed_1_1counter.html">embed::counter</a></div><div class="ttdoc">Hardware Counter abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:27</div></div>
 <div class="ttc" id="anamespaceembed_1_1mock_html"><div class="ttname"><a href="namespaceembed_1_1mock.html">embed::mock</a></div><div class="ttdef"><b>Definition:</b> mock.hpp:4</div></div>
+<div class="ttc" id="anamespaceembed_html_a87973d938f95cc08d58ae8d55707043a"><div class="ttname"><a href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">embed::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
 <div class="ttc" id="astructembed_1_1mock_1_1counter_html"><div class="ttname"><a href="structembed_1_1mock_1_1counter.html">embed::mock::counter</a></div><div class="ttdoc">mock counter implementation for use in unit tests and simulations.</div><div class="ttdef"><b>Definition:</b> mock.hpp:18</div></div>
 <div class="ttc" id="astructembed_1_1mock_1_1counter_html_abe7650e522e97f7d40dff444e923c4ca"><div class="ttname"><a href="structembed_1_1mock_1_1counter.html#abe7650e522e97f7d40dff444e923c4ca">embed::mock::counter::set</a></div><div class="ttdeci">void set(std::queue&lt; uptime_t &gt; &amp;p_uptimes)</div><div class="ttdoc">Queues the uptimes to be returned for uptime()</div><div class="ttdef"><b>Definition:</b> mock.hpp:24</div></div>
 <div class="ttc" id="atimer_2interface_8hpp_html"><div class="ttname"><a href="timer_2interface_8hpp.html">interface.hpp</a></div></div>

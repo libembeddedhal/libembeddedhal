@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('counter_2timeout_8hpp_source.html','')
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_typedef" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a> p_duration)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (p_duration &lt; <a class="code hl_typedef" href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a>(0)) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordflow">return</span> boost::leaf::new_error(std::errc::result_out_of_range);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">boost::leaf::new_error</a>(std::errc::result_out_of_range);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> <span class="keyword">auto</span> [<a class="code hl_struct" href="structembed_1_1frequency.html">frequency</a>, count] = BOOST_LEAF_CHECK(p_counter.<a class="code hl_function" href="classembed_1_1counter.html#a02c24fbeaac81ef1030ff8e1a41b0738">uptime</a>());</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('counter_2timeout_8hpp_source.html','')
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    m_cycles_until_timeout -= delta_count;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (m_cycles_until_timeout &lt;= 0) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">return</span> boost::leaf::new_error(std::errc::timed_out);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">boost::leaf::new_error</a>(std::errc::timed_out);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    m_previous_count = current_count;</div>
@@ -167,6 +167,7 @@ $(document).ready(function(){initNavTree('counter_2timeout_8hpp_source.html','')
 <div class="ttc" id="agroup__utility_html_ga61711bf3d8c25b82fb37db4f53426ef0"><div class="ttname"><a href="group__utility.html#ga61711bf3d8c25b82fb37db4f53426ef0">embed::cycles_per</a></div><div class="ttdeci">constexpr std::int64_t cycles_per(const frequency &amp;p_source, embed::time_duration p_duration) noexcept</div><div class="ttdoc">Calculate the number of cycles of this frequency within the time duration. This function is meant for...</div><div class="ttdef"><b>Definition:</b> frequency.hpp:171</div></div>
 <div class="ttc" id="agroup__utility_html_ga702bc5c739d1887d639f6d61ba2addba"><div class="ttname"><a href="group__utility.html#ga702bc5c739d1887d639f6d61ba2addba">embed::time_duration</a></div><div class="ttdeci">std::chrono::duration&lt; std::int32_t, std::micro &gt; time_duration</div><div class="ttdef"><b>Definition:</b> units.hpp:14</div></div>
 <div class="ttc" id="anamespaceembed_html"><div class="ttname"><a href="namespaceembed.html">embed</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespaceembed_html_a87973d938f95cc08d58ae8d55707043a"><div class="ttname"><a href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">embed::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:28</div></div>
 <div class="ttc" id="astructembed_1_1frequency_html"><div class="ttname"><a href="structembed_1_1frequency.html">embed::frequency</a></div><div class="ttdoc">Represents the frequency of a signal. It consists of a single integer 64-bit number that presents the...</div><div class="ttdef"><b>Definition:</b> frequency.hpp:79</div></div>
 <div class="ttc" id="atimer_2interface_8hpp_html"><div class="ttname"><a href="timer_2interface_8hpp.html">interface.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

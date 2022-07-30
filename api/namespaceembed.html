@@ -226,6 +226,11 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a3555d39c8f21a674761b49edfb16eaa3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3555d39c8f21a674761b49edfb16eaa3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">result</a> = boost::leaf::result&lt; T &gt;</td></tr>
+<tr class="separator:a3555d39c8f21a674761b49edfb16eaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326d7576347529a718e821271b9e02dc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a326d7576347529a718e821271b9e02dc">status</a> = boost::leaf::result&lt; void &gt;</td></tr>
+<tr class="separator:a326d7576347529a718e821271b9e02dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29e3f87bfd14a811b6bbf1b29950b80"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed.html#aa29e3f87bfd14a811b6bbf1b29950b80">microgravity</a> = std::int32_t</td></tr>
 <tr class="separator:aa29e3f87bfd14a811b6bbf1b29950b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad28e6edb1011552bbf4d61afd83c4ce2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceembed.html#ad28e6edb1011552bbf4d61afd83c4ce2">micrometer</a> = std::int32_t</td></tr>
@@ -279,6 +284,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">value</a> (enumeration auto p_enum_value) noexcept</td></tr>
 <tr class="memdesc:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert an enum to its integral value.  <a href="group__utility.html#gae16c194ce0da26dc80d1aabd4a87d5cd">More...</a><br /></td></tr>
 <tr class="separator:gae16c194ce0da26dc80d1aabd4a87d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d2490785eb652ecae161309abf7a42"><td class="memTemplParams" colspan="2">template&lt;class TryBlock , class... H&gt; </td></tr>
+<tr class="memitem:ad7d2490785eb652ecae161309abf7a42"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#ad7d2490785eb652ecae161309abf7a42">attempt</a> (TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</td></tr>
+<tr class="separator:ad7d2490785eb652ecae161309abf7a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fde2d889de3a238f48797aa2973f970"><td class="memTemplParams" colspan="2">template&lt;class TryBlock , class... H&gt; </td></tr>
+<tr class="memitem:a5fde2d889de3a238f48797aa2973f970"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a5fde2d889de3a238f48797aa2973f970">attempt_all</a> (TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</td></tr>
+<tr class="separator:a5fde2d889de3a238f48797aa2973f970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87973d938f95cc08d58ae8d55707043a"><td class="memTemplParams" colspan="2">template&lt;class... Item&gt; </td></tr>
+<tr class="memitem:a87973d938f95cc08d58ae8d55707043a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceembed.html#a87973d938f95cc08d58ae8d55707043a">new_error</a> (Item &amp;&amp;... p_item) noexcept</td></tr>
+<tr class="separator:a87973d938f95cc08d58ae8d55707043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structembed_1_1frequency.html">frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372">operator/</a> (const <a class="el" href="structembed_1_1frequency.html">frequency</a> &amp;p_lhs, std::uint32_t p_rhs) noexcept</td></tr>
 <tr class="memdesc:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale down a frequency by an integer factor.  <a href="group__utility.html#gaae7b07b6a4aaa1b6342b676f9b864372">More...</a><br /></td></tr>
 <tr class="separator:gaae7b07b6a4aaa1b6342b676f9b864372"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,7 +483,113 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3555d39c8f21a674761b49edfb16eaa3" name="a3555d39c8f21a674761b49edfb16eaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3555d39c8f21a674761b49edfb16eaa3">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceembed.html#a3555d39c8f21a674761b49edfb16eaa3">embed::result</a> = typedef boost::leaf::result&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a326d7576347529a718e821271b9e02dc" name="a326d7576347529a718e821271b9e02dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326d7576347529a718e821271b9e02dc">&#9670;&nbsp;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceembed.html#a326d7576347529a718e821271b9e02dc">embed::status</a> = typedef boost::leaf::result&lt;void&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad7d2490785eb652ecae161309abf7a42" name="ad7d2490785eb652ecae161309abf7a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d2490785eb652ecae161309abf7a42">&#9670;&nbsp;</a></span>attempt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TryBlock , class... H&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto embed::attempt </td>
+          <td>(</td>
+          <td class="paramtype">TryBlock &amp;&amp;&#160;</td>
+          <td class="paramname"><em>p_try_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">H &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>p_handlers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fde2d889de3a238f48797aa2973f970" name="a5fde2d889de3a238f48797aa2973f970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fde2d889de3a238f48797aa2973f970">&#9670;&nbsp;</a></span>attempt_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TryBlock , class... H&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto embed::attempt_all </td>
+          <td>(</td>
+          <td class="paramtype">TryBlock &amp;&amp;&#160;</td>
+          <td class="paramname"><em>p_try_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">H &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>p_handlers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga0abcbcb6d4ed9f8dc86ca404255d36d1" name="ga0abcbcb6d4ed9f8dc86ca404255d36d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0abcbcb6d4ed9f8dc86ca404255d36d1">&#9670;&nbsp;</a></span>distance()</h2>
 
@@ -592,6 +712,46 @@ false - this application is not a test </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true - matches the platform string </dd>
 <dd>
 false - does not matches the platform string </dd></dl>
+
+</div>
+</div>
+<a id="a87973d938f95cc08d58ae8d55707043a" name="a87973d938f95cc08d58ae8d55707043a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87973d938f95cc08d58ae8d55707043a">&#9670;&nbsp;</a></span>new_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Item&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto embed::new_error </td>
+          <td>(</td>
+          <td class="paramtype">Item &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceembed_a87973d938f95cc08d58ae8d55707043a_cgraph.svg" width="135" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceembed_a87973d938f95cc08d58ae8d55707043a_icgraph.svg" width="830" height="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

@@ -1,6 +1,7 @@
 <map id="embed::map" name="embed::map">
-<area shape="rect" id="node1" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="5,81,97,108"/>
+<area shape="rect" id="node1" title="Map an target value [x] from an input range [a,b] to an output range [c,d]." alt="" coords="5,123,97,149"/>
 <area shape="rect" id="node2" href="$classembed_1_1percent.html#a3031fcd41ebdbc14fe77114d239c0b27" title="Generate a percentage based on input relative to the maximum possible value." alt="" coords="145,74,288,115"/>
+<area shape="rect" id="node8" href="$namespaceembed.html#a87973d938f95cc08d58ae8d55707043a" title=" " alt="" coords="155,164,279,191"/>
 <area shape="rect" id="node3" href="$classembed_1_1percent.html#a3635a4d8e47f6a65226ee6391509f3a1" title="Construct 0% percent object." alt="" coords="341,5,499,32"/>
 <area shape="rect" id="node4" href="$classembed_1_1percent.html#a18867853ebb7f7101932f298ef9ac059" title="Get the 100% value in its raw representation." alt="" coords="336,56,504,83"/>
 <area shape="rect" id="node5" href="$classembed_1_1percent.html#addd3062c4b442314f9b135b532367c44" title="Get the &#45;100% value in its raw representation." alt="" coords="337,107,503,133"/>
